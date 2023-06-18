@@ -31,4 +31,4 @@ jobs:
           remote_host: ${{ secrets.DEPLOY_HOST }} # 远程主机 IP
           remote_port: ${{ secrets.DEPLOY_PORT }} # ssh 端口，默认为 22
           remote_user: ${{ secrets.DEPLOY_USER }} # ssh user
-          remote_password: ${{ secrets.DEPLOY_PASSWORD }}
+          remote_key: ${{ secrets.DEPLOY_KEY }}
