@@ -1,7 +1,7 @@
 baseURL = ''
 relativeURLs= true
 uglyurls= true
-title = "Geekdocs"
+title = "Vic"
 theme = "hugo-geekdoc"
 
 pluralizeListTitles = false
@@ -10,6 +10,7 @@ pluralizeListTitles = false
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 disablePathToLower = true
+
 
 # Required if you want to render robots.txt template
 enableRobotsTXT = true
@@ -25,3 +26,8 @@ endLevel = 9
 
 [taxonomies]
 tag = "tags"
+
+[params]
+#geekdocCollapseAllSections = true
+#geekdocToC = 3
+#geekdocMenuBundle = true

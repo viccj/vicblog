@@ -1,73 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Geekdocs</title>
+    <title>Welcome to My Blog on Vic</title>
     <link>/</link>
-    <description>Recent content on Geekdocs</description>
+    <description>Recent content in Welcome to My Blog on Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Jun 2023 15:34:03 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jun 2023 22:00:41 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test5</title>
-      <link>/posts/test5.html</link>
-      <pubDate>Sun, 18 Jun 2023 15:34:03 +0800</pubDate>
+      <title>1-1</title>
+      <link>/Blogs/Hugo/test1.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>/posts/test5.html</guid>
+      <guid>/Blogs/Hugo/test1.html</guid>
       <description></description>
     </item>
     
     <item>
-      <title>CiTest1</title>
-      <link>/posts/ciTest1.html</link>
-      <pubDate>Sun, 18 Jun 2023 14:34:00 +0800</pubDate>
+      <title>1-2</title>
+      <link>/Blogs/Hugo/test2.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>/posts/ciTest1.html</guid>
+      <guid>/Blogs/Hugo/test2.html</guid>
       <description></description>
     </item>
     
     <item>
-      <title>CiTest</title>
-      <link>/posts/ciTest.html</link>
-      <pubDate>Sun, 18 Jun 2023 13:13:51 +0800</pubDate>
+      <title>2-1</title>
+      <link>/Blogs/Java/test1.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>/posts/ciTest.html</guid>
+      <guid>/Blogs/Java/test1.html</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Test4</title>
-      <link>/posts/test4.html</link>
-      <pubDate>Sun, 18 Jun 2023 13:06:10 +0800</pubDate>
+      <title>2-1</title>
+      <link>/Blogs/LeetCode/test1.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>/posts/test4.html</guid>
+      <guid>/Blogs/LeetCode/test1.html</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Test3</title>
-      <link>/posts/test3.html</link>
-      <pubDate>Sun, 18 Jun 2023 12:42:20 +0800</pubDate>
+      <title>2-1</title>
+      <link>/Blogs/PHP/test1.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>/posts/test3.html</guid>
+      <guid>/Blogs/PHP/test1.html</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Test2</title>
-      <link>/posts/test2.html</link>
-      <pubDate>Sun, 18 Jun 2023 12:39:57 +0800</pubDate>
+      <title>2-2</title>
+      <link>/Blogs/Java/test2.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>/posts/test2.html</guid>
+      <guid>/Blogs/Java/test2.html</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Test</title>
-      <link>/posts/test.html</link>
-      <pubDate>Sun, 18 Jun 2023 12:34:03 +0800</pubDate>
+      <title>2-2</title>
+      <link>/Blogs/LeetCode/test2.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>/posts/test.html</guid>
-      <description>test ci</description>
+      <guid>/Blogs/LeetCode/test2.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2-2</title>
+      <link>/Blogs/PHP/test2.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
+      
+      <guid>/Blogs/PHP/test2.html</guid>
+      <description></description>
     </item>
     
   </channel>
