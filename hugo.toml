@@ -1,7 +1,7 @@
 baseURL = ''
 relativeURLs= true
 uglyurls= true
-title = "Vic"
+title = "Too Lazy"
 theme = "hugo-geekdoc"
 
 pluralizeListTitles = false
