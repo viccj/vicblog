@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About Code on Vic</title>
+    <title>Code on Vic</title>
     <link>/Blogs.html</link>
-    <description>Recent content in About Code on Vic</description>
+    <description>Recent content in Code on Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 18 Jun 2023 22:00:41 +0800</lastBuildDate><atom:link href="/Blogs/index.xml" rel="self" type="application/rss+xml" />

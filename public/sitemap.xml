@@ -2,12 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/Blogs/Hugo/test1.html</loc>
-    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
-  </url><url>
-    <loc>/Blogs/Hugo/test2.html</loc>
-    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
-  </url><url>
     <loc>/Blogs/Java/test1.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
@@ -29,7 +23,13 @@
     <loc>/Blogs.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
+    <loc>/Blogs/Hugo/test2.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
     <loc>/Blogs/Hugo.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/Blogs/Hugo/SSL.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
     <loc>/Blogs/Java.html</loc>

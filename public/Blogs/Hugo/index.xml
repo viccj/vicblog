@@ -8,21 +8,31 @@
     <language>en</language>
     <lastBuildDate>Sun, 18 Jun 2023 22:00:41 +0800</lastBuildDate><atom:link href="/Blogs/Hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1-1</title>
-      <link>/Blogs/Hugo/test1.html</link>
-      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
-      
-      <guid>/Blogs/Hugo/test1.html</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>1-2</title>
+      <title>GitHub Action/ VPS</title>
       <link>/Blogs/Hugo/test2.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
       <guid>/Blogs/Hugo/test2.html</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Install SSL</title>
+      <link>/Blogs/Hugo/SSL.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
+      
+      <guid>/Blogs/Hugo/SSL.html</guid>
+      <description>Domain 是在 namespace 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
+領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。
+接著用剛剛的私鑰生成CSR（證書簽署請求）
+openssl req -new -key private.key -out csr.csr 會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。
+Common Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說填個名字就好我就傻傻的填我的英文名字，結果一直失敗..
+生成的CSR文件 csr.csr 就可以整個複製上去。 收到憑證後 通常在取得 SSL 憑證時，您會收到兩個檔案：.crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案。
+.crt 憑證檔案是您的 SSL 證書，它包含您的網站的公開金鑰以及其他相關的證書資訊。
+.ca-bundle（或 .bundle）憑證束檔案是根憑證和中繼憑證的集合。它包含了憑證鏈中的所有憑證，用於驗證您的 SSL 憑證的合法性。憑證鏈包括根憑證（Root Certificate）和中繼憑證（Intermediate Certificate）。根憑證是由受信任的憑證授權中心（Certificate Authority）簽署的，而中繼憑證是由根憑證簽署的其他憑證。
+在設定 Nginx 的 SSL 時，需要將 .crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案合併為一個檔案，形成完整的憑證鏈。
+順序不能錯，要先crt再ca-bundle
+cat domain.crt domain.ca-bundle &amp;gt; server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic.</description>
     </item>
     
   </channel>

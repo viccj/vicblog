@@ -1,5 +1,9 @@
 ---
-title: About Code
+title: Code
 geekdocCollapseSection: false
 ---
-collapse
+<!-- spellchecker-disable -->
+
+{{< toc-tree >}}
+
+<!-- spellchecker-enable -->
