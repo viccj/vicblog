@@ -3,6 +3,7 @@ relativeURLs= true
 uglyurls= true
 title = "Log of Vic"
 theme = "hugo-geekdoc"
+homepage = "https://lazyvic.com/"
 
 
 pluralizeListTitles = false

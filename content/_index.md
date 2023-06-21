@@ -3,6 +3,7 @@ title:
 geekdocNav: false
 geekdocAlign: left
 geekdocAnchor: false
+geekdocBreadcrumb : false
 ---
 {{< columns >}}
 
