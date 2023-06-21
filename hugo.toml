@@ -1,4 +1,4 @@
-baseURL = ''
+baseURL = 'https://lazyvic.com/'
 relativeURLs= true
 uglyurls= true
 title = "Log of Vic"
