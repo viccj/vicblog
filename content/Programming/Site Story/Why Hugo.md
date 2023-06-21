@@ -3,6 +3,9 @@ title: "Why Hugo"
 date: 2023-06-21T22:00:41+08:00
 type: posts
 weight : 1
+tags:
+- hugo
+- trash talk
 ---
 
 為啥我搞了半天最後決定用 [Hugo](https://gohugo.io/)弄個網站？

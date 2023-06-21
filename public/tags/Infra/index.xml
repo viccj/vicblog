@@ -26,14 +26,5 @@ Common Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說�
 cat domain.crt domain.ca-bundle &amp;gt; server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic.</description>
     </item>
     
-    <item>
-      <title>Best Time to Buy and Sell Stock</title>
-      <link>/Programming/Algorithm/Blind-75/Array/Best-Time-to-Buy-and-Sell-Stock.html</link>
-      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
-      
-      <guid>/Programming/Algorithm/Blind-75/Array/Best-Time-to-Buy-and-Sell-Stock.html</guid>
-      <description>my solution</description>
-    </item>
-    
   </channel>
 </rss>

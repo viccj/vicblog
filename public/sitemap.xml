@@ -51,7 +51,16 @@
     <loc>/</loc>
     <lastmod>2023-06-21T22:00:41+08:00</lastmod>
   </url><url>
+    <loc>/tags/hugo.html</loc>
+    <lastmod>2023-06-21T22:00:41+08:00</lastmod>
+  </url><url>
     <loc>/Programming.html</loc>
+    <lastmod>2023-06-21T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/tags.html</loc>
+    <lastmod>2023-06-21T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/tags/trash-talk.html</loc>
     <lastmod>2023-06-21T22:00:41+08:00</lastmod>
   </url><url>
     <loc>/Programming/Algorithm/Blind-75/Array.html</loc>
@@ -129,19 +138,10 @@
     <loc>/Programming/Languages/PHP/PhpUnit/Getting-started-with-Spring/Start.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
-    <loc>/tags/tag.html</loc>
-    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
-  </url><url>
-    <loc>/tags.html</loc>
-    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
-  </url><url>
     <loc>/Programming/Algorithm/Blind-75/Array/two-sum.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
     <loc>/Programming/Algorithm/Grind-75/Week-1/two-sum.html</loc>
-    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
-  </url><url>
-    <loc>/tags/web.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url>
 </urlset>
