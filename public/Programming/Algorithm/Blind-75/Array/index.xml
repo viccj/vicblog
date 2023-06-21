@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Too Lazy</title>
+    <link>/Programming/Algorithm/Blind-75/Array.html</link>
+    <description>Recent content on Too Lazy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 18 Jun 2023 22:00:41 +0800</lastBuildDate><atom:link href="/Programming/Algorithm/Blind-75/Array/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Best Time to Buy and Sell Stock</title>
+      <link>/Programming/Algorithm/Blind-75/Array/Best-Time-to-Buy-and-Sell-Stock.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
+      
+      <guid>/Programming/Algorithm/Blind-75/Array/Best-Time-to-Buy-and-Sell-Stock.html</guid>
+      <description>my solution</description>
+    </item>
+    
+    <item>
+      <title>two sum</title>
+      <link>/Programming/Algorithm/Blind-75/Array/two-sum.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
+      
+      <guid>/Programming/Algorithm/Blind-75/Array/two-sum.html</guid>
+      <description>My two sum solution</description>
+    </item>
+    
+  </channel>
+</rss>

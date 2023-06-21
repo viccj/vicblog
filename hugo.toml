@@ -27,7 +27,6 @@ endLevel = 9
 
 [taxonomies]
 tag = "tags"
-infra = "infra"
 
 
 [params]
