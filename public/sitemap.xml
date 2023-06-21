@@ -2,10 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/Blogs/Java/test1.html</loc>
+    <loc>/Blogs/Algorithm.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
-    <loc>/Blogs/LeetCode/test1.html</loc>
+    <loc>/Blogs/Algorithm/Blind-75.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/Blogs/Algorithm/Grind-75.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/Blogs/Algorithm/Blind-75/Array/test.html</loc>
+  </url><url>
+    <loc>/Blogs/Algorithm/Grind-75/Week-1/test.html</loc>
+  </url><url>
+    <loc>/Blogs/Algorithm/Blind-75/Array/test/two-sum.html</loc>
+  </url><url>
+    <loc>/Blogs/Algorithm/Grind-75/Week-1/test/two-sum.html</loc>
+  </url><url>
+    <loc>/Blogs/Algorithm/Blind-75/Array.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/Blogs/Algorithm/Blind-75/Tree.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/Blogs/Algorithm/Grind-75/Week-1.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/Blogs/Algorithm/Grind-75/Week-2.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/Blogs/Java/test1.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
     <loc>/Blogs/PHP/test1.html</loc>
@@ -14,10 +40,13 @@
     <loc>/Blogs/Java/test2.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
-    <loc>/Blogs/LeetCode/test2.html</loc>
+    <loc>/Blogs/PHP/test2.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
-    <loc>/Blogs/PHP/test2.html</loc>
+    <loc>/Blogs/Algorithm/Blind-75/Array/Best-Time-to-Buy-and-Sell-Stock.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/Blogs/Algorithm/Grind-75/Week-1/Best-Time-to-Buy-and-Sell-Stock.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
     <loc>/Blogs.html</loc>
@@ -35,10 +64,25 @@
     <loc>/Blogs/Java.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
-    <loc>/Blogs/LeetCode.html</loc>
+    <loc>/Blogs/Algorithm/Blind-75/Tree/Maximum-Depth-of-Binary-Tree.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/Blogs/Algorithm/Blind-75/Tree/same-tree.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/Blogs/Algorithm/Grind-75/Week-2/Maximum-Depth-of-Binary-Tree.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/Blogs/Algorithm/Grind-75/Week-2/same-tree.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
     <loc>/Blogs/PHP.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/Blogs/Algorithm/Blind-75/Array/two-sum.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/Blogs/Algorithm/Grind-75/Week-1/two-sum.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
     <loc>/</loc>

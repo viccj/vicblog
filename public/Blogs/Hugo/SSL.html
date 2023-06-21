@@ -12,7 +12,7 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="Domain 是在 namespace 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
+  <meta name="description" content="Domain 是在 namecheap 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
 領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。
 接著用剛剛的私鑰生成CSR（證書簽署請求）
 openssl req -new -key private.key -out csr.csr 會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。
@@ -24,7 +24,7 @@ Common Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說�
 順序不能錯，要先crt再ca-bundle
 cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic." />
 
-    <title>Install SSL | Vic</title>
+    <title>Install SSL | Too Lazy</title>
 
     <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg" />
 <link
@@ -47,8 +47,8 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
     property="og:title"
     content="Install SSL"
   />
-  <meta property="og:site_name" content="Vic" />
-  <meta property="og:description" content="Domain 是在 namespace 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
+  <meta property="og:site_name" content="Too Lazy" />
+  <meta property="og:description" content="Domain 是在 namecheap 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
 領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。
 接著用剛剛的私鑰生成CSR（證書簽署請求）
 openssl req -new -key private.key -out csr.csr 會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。
@@ -75,7 +75,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Install SSL" />
-  <meta name="twitter:description" content="Domain 是在 namespace 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
+  <meta name="twitter:description" content="Domain 是在 namecheap 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
 領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。
 接著用剛剛的私鑰生成CSR（證書簽署請求）
 openssl req -new -key private.key -out csr.csr 會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。
@@ -96,7 +96,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
       "name": "Install SSL",
       "url" : "/Blogs/Hugo/SSL.html",
       "headline": "Install SSL",
-      "description": "Domain 是在 namespace 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。\n領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。\n接著用剛剛的私鑰生成CSR（證書簽署請求）\nopenssl req -new -key private.key -out csr.csr 會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。\nCommon Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說填個名字就好我就傻傻的填我的英文名字，結果一直失敗..\n生成的CSR文件 csr.csr 就可以整個複製上去。 收到憑證後 通常在取得 SSL 憑證時，您會收到兩個檔案：.crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案。\n.crt 憑證檔案是您的 SSL 證書，它包含您的網站的公開金鑰以及其他相關的證書資訊。\n.ca-bundle（或 .bundle）憑證束檔案是根憑證和中繼憑證的集合。它包含了憑證鏈中的所有憑證，用於驗證您的 SSL 憑證的合法性。憑證鏈包括根憑證（Root Certificate）和中繼憑證（Intermediate Certificate）。根憑證是由受信任的憑證授權中心（Certificate Authority）簽署的，而中繼憑證是由根憑證簽署的其他憑證。\n在設定 Nginx 的 SSL 時，需要將 .crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案合併為一個檔案，形成完整的憑證鏈。\n順序不能錯，要先crt再ca-bundle\ncat domain.crt domain.ca-bundle \u003e server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic.",
+      "description": "Domain 是在 namecheap 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。\n領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。\n接著用剛剛的私鑰生成CSR（證書簽署請求）\nopenssl req -new -key private.key -out csr.csr 會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。\nCommon Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說填個名字就好我就傻傻的填我的英文名字，結果一直失敗..\n生成的CSR文件 csr.csr 就可以整個複製上去。 收到憑證後 通常在取得 SSL 憑證時，您會收到兩個檔案：.crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案。\n.crt 憑證檔案是您的 SSL 證書，它包含您的網站的公開金鑰以及其他相關的證書資訊。\n.ca-bundle（或 .bundle）憑證束檔案是根憑證和中繼憑證的集合。它包含了憑證鏈中的所有憑證，用於驗證您的 SSL 憑證的合法性。憑證鏈包括根憑證（Root Certificate）和中繼憑證（Intermediate Certificate）。根憑證是由受信任的憑證授權中心（Certificate Authority）簽署的，而中繼憑證是由根憑證簽署的其他憑證。\n在設定 Nginx 的 SSL 時，需要將 .crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案合併為一個檔案，形成完整的憑證鏈。\n順序不能錯，要先crt再ca-bundle\ncat domain.crt domain.ca-bundle \u003e server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic.",
       "wordCount" : "206",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -104,14 +104,14 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
           "@type": "WebPage",
           "@id": "/Blogs/Hugo/SSL.html"
       },
-      "copyrightHolder" : "Vic",
+      "copyrightHolder" : "Too Lazy",
       "copyrightYear" : "2023",
       "dateCreated": "2023-06-18T22:00:41.00Z",
       "datePublished": "2023-06-18T22:00:41.00Z",
       "dateModified": "2023-06-18T22:00:41.00Z",
       "publisher":{
           "@type":"Organization",
-          "name": "Vic",
+          "name": "Too Lazy",
           "url": "",
           "logo": {
               "@type": "ImageObject",
@@ -230,7 +230,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
             src="../../brand.svg"
             alt=""
           />
-          <span class="gdoc-brand__title">Vic</span>
+          <span class="gdoc-brand__title">Too Lazy</span>
         </span>
       </a>
     </div>
@@ -312,7 +312,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
 
 
   <section class="gdoc-nav--main">
-    <h2>Navigation</h2>
+    <h2>Yo</h2>
     
       
 
@@ -640,128 +640,6 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
             <input
               type="checkbox"
               
-                class="gdoc-nav__toggle" id="navtree-65a4358d"
-                
-              
-            />
-            <label
-              
-                for="navtree-65a4358d" class="flex justify-between align-center"
-              
-            >
-              
-                <span class="flex">
-                  <a
-                    href="../../Blogs/LeetCode.html"
-                    class="gdoc-nav__entry"
-                  >
-                    Leetcode
-                  </a>
-                </span>
-              
-              
-                <svg class="gdoc-icon toggle gdoc_keyboard_arrow_left">
-                  <use xlink:href="#gdoc_keyboard_arrow_left"></use>
-                </svg>
-                <svg class="gdoc-icon toggle gdoc_keyboard_arrow_down">
-                  <use xlink:href="#gdoc_keyboard_arrow_down"></use>
-                </svg>
-              
-            </label>
-
-            
-              
-  
-
-
-  <ul class="gdoc-nav__list">
-    
-    
-      
-
-      
-        
-      
-
-      
-        
-          
-          
-          
-          
-          
-          
-
-
-          <li>
-            <input
-              type="checkbox"
-              
-                class="hidden"
-              
-            />
-            <label
-              
-            >
-              
-                <span class="flex">2-1</span>
-              
-              
-            </label>
-
-            
-          </li>
-        
-      
-        
-          
-          
-          
-          
-          
-          
-
-
-          <li>
-            <input
-              type="checkbox"
-              
-                class="hidden"
-              
-            />
-            <label
-              
-            >
-              
-                <span class="flex">2-2</span>
-              
-              
-            </label>
-
-            
-          </li>
-        
-      
-    
-  </ul>
-
-            
-          </li>
-        
-      
-        
-          
-          
-          
-          
-          
-          
-
-
-          <li>
-            <input
-              type="checkbox"
-              
                 class="gdoc-nav__toggle" id="navtree-73450d5e"
                 
               
@@ -872,6 +750,50 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
         
       
     
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="../../Blogs/Algorithm.html"
+                    class="gdoc-nav__entry"
+                  >
+                    Algorithm
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+    
   </ul>
 
             
@@ -974,7 +896,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
     <p>Domain 是在 <a
   class="gdoc-markdown__link"
   href="https://www.namecheap.com/"
->namespace</a> 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證
+>namecheap</a> 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證
 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。</p>
 <div class="gdoc-toc gdoc-toc__level--6">
       <nav id="TableOfContents"><ul>
