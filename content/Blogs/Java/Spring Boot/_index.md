@@ -1,10 +1,10 @@
 ---
-title: Java
+title: Spring Boot
 weight : 10
 geekdocFlatSection: true
 ---
 
-My Java 75 trip...
+My leetcode blind 75 trip...
 
 <!-- spellchecker-disable -->
 

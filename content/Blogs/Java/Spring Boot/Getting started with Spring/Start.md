@@ -1,4 +1,6 @@
 ---
-title: "2-2"
+title: "Start"
 date: 2023-06-18T22:00:41+08:00
 ---
+
+my solution

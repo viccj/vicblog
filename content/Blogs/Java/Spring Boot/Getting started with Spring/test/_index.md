@@ -1,10 +1,10 @@
+
 ---
-title: Java
+title: Level 1.3
 weight : 10
-geekdocFlatSection: true
 ---
 
-My Java 75 trip...
+Nested folder test
 
 <!-- spellchecker-disable -->
 
