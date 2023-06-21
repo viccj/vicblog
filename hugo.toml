@@ -5,6 +5,7 @@ title = "Too Lazy"
 theme = "hugo-geekdoc"
 
 pluralizeListTitles = false
+disqusShortname = "lazyvic-com"
 
 # Geekdoc required configuration
 pygmentsUseClasses = true

@@ -158,7 +158,7 @@ cat domain.crt domain.ca-bundle &amp;gt; server.crt nginx設定 # HTTP 重定向
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
       <guid>/Blogs/Java/Spring-Boot/Getting-started-with-Spring/two-sum.html</guid>
-      <description>My two sum solution</description>
+      <description>asdf My two sum solution</description>
     </item>
     
     <item>

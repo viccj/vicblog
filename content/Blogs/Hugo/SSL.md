@@ -1,8 +1,6 @@
 ---
 title: "Install SSL"
 date: 2023-06-18T22:00:41+08:00
-type: posts
-sidebar: 自定義側邊欄名稱
 tags:
 - tags
 - Infra

@@ -1,0 +1,18 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+
+  <article
+    class="gdoc-markdown gdoc-markdown__align--{{ default "left" (.Page.Params.GeekdocAlign | lower) }}"
+  >
+    <h1>{{ partial "utils/title" . }}</h1>
+    {{ partial "utils/content" . }}
+  </article>
+<br>
+<br>
+<br>
+<br>
+<div class="disqus markdown">
+    {{ partial "disqus.html" . }}
+</div>
+{{ end }}

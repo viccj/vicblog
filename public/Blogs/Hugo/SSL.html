@@ -853,77 +853,75 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
 
         <div class="gdoc-page">
           
-  <article class="gdoc-post">
-    <header class="gdoc-post__header">
-      <h1 class="gdoc-post__title">Install SSL</h1>
-      <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
-        <span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
-  <span class="gdoc-post__tag">
-    <time datetime="2023-06-18T22:00:41&#43;08:00">
-      
-      Jun 18, 2023
-    </time>
-  </span>
-</span>
-
-<span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">One minute to read</span>
-</span>
-
-
-
   
-    
-    
-      
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../../tags/Infra.html"
-      title="All posts tagged with &#39;Infra&#39;"
-    >
-      Infra
-    </a>
-  </span>
 
-        </span>
-      
-    
-    
-  
-    
-    
-      
-        <span class="flex align-center">
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../../tags/tags.html"
-      title="All posts tagged with &#39;tags&#39;"
-    >
-      tags
-    </a>
-  </span>
 
-        </span>
-      
-    
-    
   
 
 
 
 
-      </div>
-    </header>
-    <section class="gdoc-markdown">
-      <p>Domain 是在 <a
+
+
+<div
+  class="gdoc-page__header flex flex-wrap
+  
+    justify-between
+  
+  hidden-mobile
+  "
+  itemprop="breadcrumb"
+>
+  
+    <div>
+      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
+      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        
+        
+        
+        
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Blogs.html' href='../../Blogs.html'><span itemprop='name'>Code</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Blogs/Hugo.html' href='../../Blogs/Hugo.html'><span itemprop='name'>Hugo</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Install SSL</span><meta itemprop='position' content='3' /></li>
+  
+
+  
+
+  
+
+  
+
+      </ol>
+    </div>
+  
+  
+</div>
+
+
+
+  <article
+    class="gdoc-markdown gdoc-markdown__align--left"
+  >
+    <h1>Install SSL</h1>
+    <p>Domain 是在 <a
   class="gdoc-markdown__link"
   href="https://www.namecheap.com/"
 >namecheap</a> 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證
@@ -1037,8 +1035,28 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
 <p>這樣做可以確保 Nginx 服務以適當的安全上下文執行，並且具有正確的存取權限，從而能夠正確載入並使用 SSL 憑證。</p>
 </blockquote>
 
-    </section>
   </article>
+<br>
+<br>
+<br>
+<br>
+<div class="disqus markdown">
+    <div id="disqus_thread"></div>
+<script>
+    
+
+    
+
+    (function() { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lazyvic-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
 
 
 
