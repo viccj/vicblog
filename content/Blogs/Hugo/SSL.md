@@ -5,7 +5,7 @@ sidebar: 自定義側邊欄名稱
 
 ---
 
-Domain 是在 [namespace](https://www.namecheap.com/) 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證
+Domain 是在 [namecheap](https://www.namecheap.com/) 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證
 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
 
 {{< toc >}}
