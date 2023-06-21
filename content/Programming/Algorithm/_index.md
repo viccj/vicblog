@@ -1,6 +1,5 @@
 ---
 title: Algorithm
-weight : 10
 geekdocFlatSection: true
 ---
 

@@ -12,22 +12,34 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="my solution" />
+  <meta name="description" content="為啥我搞了半天最後決定用 Hugo弄個網站？
+錯綜複雜的原因 斷斷續續的筆記習慣 VPS Domain 為了讓Domain的錢花得心安 Hugo 錯綜複雜的原因 會用Hugo架網站完全就是個意外，或許可以說是不同時間點覺得有趣的東西結合起來的結果。
+斷斷續續的筆記習慣 在轉職成為軟體工程師前，就有在記錄我最近學了什麼東西的習慣，原本是記在HackMD，但上班後就棄用了，上班後用的東西就記在Apple Notes上，比較偏各專案得紀錄跟常用的指令。前陣子也有用過一陣子medium寫過幾篇刷題紀錄，真的是幾篇就四篇吧 (而且都是複製別人的解法用自己的話重講一次，還都是easy)。
+VPS 跟Billy大神閒聊的時候知道他最近考過了AWS證照，夢想成為離前端越遠越好的軟體工程師的我很羨慕又欽佩，便在1 on 1的時候與主管聊起這話題，在主管的推薦下建議我可以先玩玩VPS，比起AWS單純也便宜，原理也都差不多，熟悉之後去用AWS會比較快上手因為AWS實在太雜了。
+然後我就馬上開了一開VPS起來然後發現我不知道要幹嘛&hellip; 就又關掉了。
+Domain 做某專案的時候要請客戶提供Domain讓我們設定，或是我們幫他們弄一組，但我一開始完全不知道這些東西如何去用專業術語溝通，就問了旁邊的同事，發現他熟的跟啥一樣，我跟他比起來大概是全熟的牛排VS旁邊的生菜。
+後來知道他有在架NAS，也有買自己的Domain，還親手登入後台設定一遍給我看。聽到他有自己的domain我眼睛都亮起來了，感覺超屌，心想我一定也要一個自己的Domain。
+為了讓Domain的錢花得心安 接著好一陣子我每天朝思暮想要買一個domain，也去Godaddy上面瞎晃，不過畢竟 我也不是啥有錢人，買domain一定要物盡其用，只能為了說服我自己買domain而努力找出一個用途來，最好還要對我的職業生涯很有幫助。
+最後想著想著突然想到我可以用WordPress弄個blog來寫學習筆記，綁上我的domain！咦～聽起來不錯，便開始利用通勤時研究WordPress怎麼弄。
+Hugo WordPress研究了半天，也不時看到其他架靜態blog的工具，發現這東西真是五花八門，馬上就又稍微研究了一下 (真的只有稍微)
+Jekyll：Ruby寫的，沒什麼感覺 Hugo：Go寫的，好像很潮 Hexo：Node.js寫的，直接刪掉 刪掉了Jekyll跟Hexo最後在wordpress跟Hugo選一個，一開始還是有點猶豫不決，最後壓垮我的倒數第二根稻草是看到一篇 Hugo&#43;github action 自動部署到 VPS的文章，心裡想哇靠這不是把我的三個願望一次完成了嗎？還多點了一滴滴CI/CD。
+最後一根稻草是也去看了一下技術名人的網站，看到良葛格的新網站也是用Hugo架的，整個簡潔又專業。
+因此最後，就決定是Hugo了" />
 
-    <title>Maximum Depth of Binary Tree | Log of Vic</title>
+    <title>Why Hugo | Log of Vic</title>
 
-    <link rel="icon" type="image/svg+xml" href="../../../../favicon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg" />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="../../../../favicon/favicon-32x32.png"
+  href="../../favicon/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="../../../../favicon/favicon-16x16.png"
+  href="../../favicon/favicon-16x16.png"
 />
 
     
@@ -35,27 +47,51 @@
     
   <meta
     property="og:title"
-    content="Maximum Depth of Binary Tree"
+    content="Why Hugo"
   />
   <meta property="og:site_name" content="Log of Vic" />
-  <meta property="og:description" content="my solution" />
+  <meta property="og:description" content="為啥我搞了半天最後決定用 Hugo弄個網站？
+錯綜複雜的原因 斷斷續續的筆記習慣 VPS Domain 為了讓Domain的錢花得心安 Hugo 錯綜複雜的原因 會用Hugo架網站完全就是個意外，或許可以說是不同時間點覺得有趣的東西結合起來的結果。
+斷斷續續的筆記習慣 在轉職成為軟體工程師前，就有在記錄我最近學了什麼東西的習慣，原本是記在HackMD，但上班後就棄用了，上班後用的東西就記在Apple Notes上，比較偏各專案得紀錄跟常用的指令。前陣子也有用過一陣子medium寫過幾篇刷題紀錄，真的是幾篇就四篇吧 (而且都是複製別人的解法用自己的話重講一次，還都是easy)。
+VPS 跟Billy大神閒聊的時候知道他最近考過了AWS證照，夢想成為離前端越遠越好的軟體工程師的我很羨慕又欽佩，便在1 on 1的時候與主管聊起這話題，在主管的推薦下建議我可以先玩玩VPS，比起AWS單純也便宜，原理也都差不多，熟悉之後去用AWS會比較快上手因為AWS實在太雜了。
+然後我就馬上開了一開VPS起來然後發現我不知道要幹嘛… 就又關掉了。
+Domain 做某專案的時候要請客戶提供Domain讓我們設定，或是我們幫他們弄一組，但我一開始完全不知道這些東西如何去用專業術語溝通，就問了旁邊的同事，發現他熟的跟啥一樣，我跟他比起來大概是全熟的牛排VS旁邊的生菜。
+後來知道他有在架NAS，也有買自己的Domain，還親手登入後台設定一遍給我看。聽到他有自己的domain我眼睛都亮起來了，感覺超屌，心想我一定也要一個自己的Domain。
+為了讓Domain的錢花得心安 接著好一陣子我每天朝思暮想要買一個domain，也去Godaddy上面瞎晃，不過畢竟 我也不是啥有錢人，買domain一定要物盡其用，只能為了說服我自己買domain而努力找出一個用途來，最好還要對我的職業生涯很有幫助。
+最後想著想著突然想到我可以用WordPress弄個blog來寫學習筆記，綁上我的domain！咦～聽起來不錯，便開始利用通勤時研究WordPress怎麼弄。
+Hugo WordPress研究了半天，也不時看到其他架靜態blog的工具，發現這東西真是五花八門，馬上就又稍微研究了一下 (真的只有稍微)
+Jekyll：Ruby寫的，沒什麼感覺 Hugo：Go寫的，好像很潮 Hexo：Node.js寫的，直接刪掉 刪掉了Jekyll跟Hexo最後在wordpress跟Hugo選一個，一開始還是有點猶豫不決，最後壓垮我的倒數第二根稻草是看到一篇 Hugo&#43;github action 自動部署到 VPS的文章，心裡想哇靠這不是把我的三個願望一次完成了嗎？還多點了一滴滴CI/CD。
+最後一根稻草是也去看了一下技術名人的網站，看到良葛格的新網站也是用Hugo架的，整個簡潔又專業。
+因此最後，就決定是Hugo了" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/Programming/Algorithm/Grind-75/Week-2/same-tree.html" />
+<meta property="og:url" content="/Programming/Site-Story/Why-Hugo.html" />
 
 <meta property="article:section" content="Programming" />
     <meta
       property="article:published_time"
-      content="2023-06-18T22:00:41+08:00"
+      content="2023-06-21T22:00:41+08:00"
     />
     <meta
       property="article:modified_time"
-      content="2023-06-18T22:00:41+08:00"
+      content="2023-06-21T22:00:41+08:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Maximum Depth of Binary Tree" />
-  <meta name="twitter:description" content="my solution" />
+<meta name="twitter:title" content="Why Hugo" />
+  <meta name="twitter:description" content="為啥我搞了半天最後決定用 Hugo弄個網站？
+錯綜複雜的原因 斷斷續續的筆記習慣 VPS Domain 為了讓Domain的錢花得心安 Hugo 錯綜複雜的原因 會用Hugo架網站完全就是個意外，或許可以說是不同時間點覺得有趣的東西結合起來的結果。
+斷斷續續的筆記習慣 在轉職成為軟體工程師前，就有在記錄我最近學了什麼東西的習慣，原本是記在HackMD，但上班後就棄用了，上班後用的東西就記在Apple Notes上，比較偏各專案得紀錄跟常用的指令。前陣子也有用過一陣子medium寫過幾篇刷題紀錄，真的是幾篇就四篇吧 (而且都是複製別人的解法用自己的話重講一次，還都是easy)。
+VPS 跟Billy大神閒聊的時候知道他最近考過了AWS證照，夢想成為離前端越遠越好的軟體工程師的我很羨慕又欽佩，便在1 on 1的時候與主管聊起這話題，在主管的推薦下建議我可以先玩玩VPS，比起AWS單純也便宜，原理也都差不多，熟悉之後去用AWS會比較快上手因為AWS實在太雜了。
+然後我就馬上開了一開VPS起來然後發現我不知道要幹嘛… 就又關掉了。
+Domain 做某專案的時候要請客戶提供Domain讓我們設定，或是我們幫他們弄一組，但我一開始完全不知道這些東西如何去用專業術語溝通，就問了旁邊的同事，發現他熟的跟啥一樣，我跟他比起來大概是全熟的牛排VS旁邊的生菜。
+後來知道他有在架NAS，也有買自己的Domain，還親手登入後台設定一遍給我看。聽到他有自己的domain我眼睛都亮起來了，感覺超屌，心想我一定也要一個自己的Domain。
+為了讓Domain的錢花得心安 接著好一陣子我每天朝思暮想要買一個domain，也去Godaddy上面瞎晃，不過畢竟 我也不是啥有錢人，買domain一定要物盡其用，只能為了說服我自己買domain而努力找出一個用途來，最好還要對我的職業生涯很有幫助。
+最後想著想著突然想到我可以用WordPress弄個blog來寫學習筆記，綁上我的domain！咦～聽起來不錯，便開始利用通勤時研究WordPress怎麼弄。
+Hugo WordPress研究了半天，也不時看到其他架靜態blog的工具，發現這東西真是五花八門，馬上就又稍微研究了一下 (真的只有稍微)
+Jekyll：Ruby寫的，沒什麼感覺 Hugo：Go寫的，好像很潮 Hexo：Node.js寫的，直接刪掉 刪掉了Jekyll跟Hexo最後在wordpress跟Hugo選一個，一開始還是有點猶豫不決，最後壓垮我的倒數第二根稻草是看到一篇 Hugo&#43;github action 自動部署到 VPS的文章，心裡想哇靠這不是把我的三個願望一次完成了嗎？還多點了一滴滴CI/CD。
+最後一根稻草是也去看了一下技術名人的網站，看到良葛格的新網站也是用Hugo架的，整個簡潔又專業。
+因此最後，就決定是Hugo了" />
 
 
   <script type="application/ld+json">
@@ -63,22 +99,22 @@
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Programming",
-      "name": "Maximum Depth of Binary Tree",
-      "url" : "/Programming/Algorithm/Grind-75/Week-2/same-tree.html",
-      "headline": "Maximum Depth of Binary Tree",
-      "description": "my solution",
-      "wordCount" : "2",
+      "name": "Why Hugo",
+      "url" : "/Programming/Site-Story/Why-Hugo.html",
+      "headline": "Why Hugo",
+      "description": "為啥我搞了半天最後決定用 Hugo弄個網站？\n錯綜複雜的原因 斷斷續續的筆記習慣 VPS Domain 為了讓Domain的錢花得心安 Hugo 錯綜複雜的原因 會用Hugo架網站完全就是個意外，或許可以說是不同時間點覺得有趣的東西結合起來的結果。\n斷斷續續的筆記習慣 在轉職成為軟體工程師前，就有在記錄我最近學了什麼東西的習慣，原本是記在HackMD，但上班後就棄用了，上班後用的東西就記在Apple Notes上，比較偏各專案得紀錄跟常用的指令。前陣子也有用過一陣子medium寫過幾篇刷題紀錄，真的是幾篇就四篇吧 (而且都是複製別人的解法用自己的話重講一次，還都是easy)。\nVPS 跟Billy大神閒聊的時候知道他最近考過了AWS證照，夢想成為離前端越遠越好的軟體工程師的我很羨慕又欽佩，便在1 on 1的時候與主管聊起這話題，在主管的推薦下建議我可以先玩玩VPS，比起AWS單純也便宜，原理也都差不多，熟悉之後去用AWS會比較快上手因為AWS實在太雜了。\n然後我就馬上開了一開VPS起來然後發現我不知道要幹嘛… 就又關掉了。\nDomain 做某專案的時候要請客戶提供Domain讓我們設定，或是我們幫他們弄一組，但我一開始完全不知道這些東西如何去用專業術語溝通，就問了旁邊的同事，發現他熟的跟啥一樣，我跟他比起來大概是全熟的牛排VS旁邊的生菜。\n後來知道他有在架NAS，也有買自己的Domain，還親手登入後台設定一遍給我看。聽到他有自己的domain我眼睛都亮起來了，感覺超屌，心想我一定也要一個自己的Domain。\n為了讓Domain的錢花得心安 接著好一陣子我每天朝思暮想要買一個domain，也去Godaddy上面瞎晃，不過畢竟 我也不是啥有錢人，買domain一定要物盡其用，只能為了說服我自己買domain而努力找出一個用途來，最好還要對我的職業生涯很有幫助。\n最後想著想著突然想到我可以用WordPress弄個blog來寫學習筆記，綁上我的domain！咦～聽起來不錯，便開始利用通勤時研究WordPress怎麼弄。\nHugo WordPress研究了半天，也不時看到其他架靜態blog的工具，發現這東西真是五花八門，馬上就又稍微研究了一下 (真的只有稍微)\nJekyll：Ruby寫的，沒什麼感覺 Hugo：Go寫的，好像很潮 Hexo：Node.js寫的，直接刪掉 刪掉了Jekyll跟Hexo最後在wordpress跟Hugo選一個，一開始還是有點猶豫不決，最後壓垮我的倒數第二根稻草是看到一篇 Hugo\u002bgithub action 自動部署到 VPS的文章，心裡想哇靠這不是把我的三個願望一次完成了嗎？還多點了一滴滴CI\/CD。\n最後一根稻草是也去看了一下技術名人的網站，看到良葛格的新網站也是用Hugo架的，整個簡潔又專業。\n因此最後，就決定是Hugo了",
+      "wordCount" : "40",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "/Programming/Algorithm/Grind-75/Week-2/same-tree.html"
+          "@id": "/Programming/Site-Story/Why-Hugo.html"
       },
       "copyrightHolder" : "Log of Vic",
       "copyrightYear" : "2023",
-      "dateCreated": "2023-06-18T22:00:41.00Z",
-      "datePublished": "2023-06-18T22:00:41.00Z",
-      "dateModified": "2023-06-18T22:00:41.00Z",
+      "dateCreated": "2023-06-21T22:00:41.00Z",
+      "datePublished": "2023-06-21T22:00:41.00Z",
+      "dateModified": "2023-06-21T22:00:41.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Log of Vic",
@@ -95,68 +131,68 @@
 
 
     
-  <script src="../../../../js/colortheme-d3e4d351.bundle.min.js"></script>
-<script src="../../../../js/main-fbb9c8b0.bundle.min.js"></script>
+  <script src="../../js/colortheme-d3e4d351.bundle.min.js"></script>
+<script src="../../js/main-fbb9c8b0.bundle.min.js"></script>
 
 <link
   rel="preload"
   as="font"
-  href="../../../../fonts/Metropolis.woff2"
+  href="../../fonts/Metropolis.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 <link
   rel="preload"
   as="font"
-  href="../../../../fonts/LiberationSans.woff2"
+  href="../../fonts/LiberationSans.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 
 <link
   rel="preload"
-  href="../../../../main-ba0e2765.min.css"
+  href="../../main-ba0e2765.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../../main-ba0e2765.min.css"
+  href="../../main-ba0e2765.min.css"
   media="all"
 />
 
 <link
   rel="preload"
-  href="../../../../mobile-79ddc617.min.css"
+  href="../../mobile-79ddc617.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../../mobile-79ddc617.min.css"
+  href="../../mobile-79ddc617.min.css"
   media="screen and (max-width: 45rem)"
 />
 
 <link
   rel="preload"
-  href="../../../../print-735ccc12.min.css"
+  href="../../print-735ccc12.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../../print-735ccc12.min.css"
+  href="../../print-735ccc12.min.css"
   media="print"
 />
 
 <link
   rel="preload"
-  href="../../../../custom.css"
+  href="../../custom.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../../custom.css"
+  href="../../custom.css"
   media="all"
 />
-  <link href="../../../../Programming/Algorithm/Grind-75/Week-2/same-tree.html" rel="canonical" type="text/html" />
+  <link href="../../Programming/Site-Story/Why-Hugo.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -197,7 +233,7 @@
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
-            src="../../../../brand.svg"
+            src="../../brand.svg"
             alt=""
           />
           <span class="gdoc-brand__title">Log of Vic</span>
@@ -321,7 +357,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../../Programming.html"
+                    href="../../Programming.html"
                     class="gdoc-nav__entry"
                   >
                     Programming
@@ -368,7 +404,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../../Programming/Algorithm.html"
+                    href="../../Programming/Algorithm.html"
                     class="gdoc-nav__entry"
                   >
                     Algorithm
@@ -404,7 +440,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../../Programming/Languages.html"
+                    href="../../Programming/Languages.html"
                     class="gdoc-nav__entry"
                   >
                     Language
@@ -440,7 +476,7 @@
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-cc8ca730"
-                
+                checked
               
             />
             <label
@@ -451,7 +487,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../../Programming/Site-Story.html"
+                    href="../../Programming/Site-Story.html"
                     class="gdoc-nav__entry"
                   >
                     Site Story
@@ -505,8 +541,8 @@
               
                 <span class="flex">
                   <a
-                    href="../../../../Programming/Site-Story/Why-Hugo.html"
-                    class="gdoc-nav__entry"
+                    href="../../Programming/Site-Story/Why-Hugo.html"
+                    class="gdoc-nav__entry is-active"
                   >
                     Why Hugo
                   </a>
@@ -586,7 +622,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../../Programming/Site-Story/SSL.html"
+                    href="../../Programming/Site-Story/SSL.html"
                     class="gdoc-nav__entry"
                   >
                     Install SSL
@@ -752,114 +788,138 @@
 
         <div class="gdoc-page">
           
-  
+  <article class="gdoc-post">
+    <header class="gdoc-post__header">
+      <h1 class="gdoc-post__title">Why Hugo</h1>
+      <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
+        <span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+  <span class="gdoc-post__tag">
+    <time datetime="2023-06-21T22:00:41&#43;08:00">
+      
+      Jun 21, 2023
+    </time>
+  </span>
+</span>
+
+<span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
+  <span class="gdoc-post__tag">One minute to read</span>
+</span>
 
 
-  
 
 
 
 
-
-
-<div
-  class="gdoc-page__header flex flex-wrap
-  
-    justify-between
-  
-  hidden-mobile
-  "
-  itemprop="breadcrumb"
->
-  
-    <div>
-      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
-      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-        
-        
-        
-        
-  
-  
-    
-    
-    
-    
-  
-  
-    
-    
-    
-    
-  
-  
-    
-    
-    
-    
-  
-  
-    
-    
-    
-    
-  
-  
-    
-    
-    
-    
-  
-  
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind-75.html' href='../../../../Programming/Algorithm/Grind-75.html'><span itemprop='name'>Grind 75</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind-75/Week-2.html' href='../../../../Programming/Algorithm/Grind-75/Week-2.html'><span itemprop='name'>Week 2</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Maximum Depth of Binary Tree</span><meta itemprop='position' content='5' /></li>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-      </ol>
+      </div>
+    </header>
+    <section class="gdoc-markdown">
+      <p>為啥我搞了半天最後決定用 <a
+  class="gdoc-markdown__link"
+  href="https://gohugo.io/"
+>Hugo</a>弄個網站？</p>
+<div class="gdoc-toc gdoc-toc__level--6">
+      <nav id="TableOfContents"><ul>
+        <li><a href="#錯綜複雜的原因">錯綜複雜的原因</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#斷斷續續的筆記習慣">斷斷續續的筆記習慣</a></li>
+                <li><a href="#vps">VPS</a></li>
+                <li><a href="#domain">Domain</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#為了讓domain的錢花得心安">為了讓Domain的錢花得心安</a></li>
+        <li><a href="#hugo">Hugo</a></li>
+      </ul></nav>
+      <hr />
     </div>
-  
-  
+<div class="gdoc-page__anchorwrap">
+    <h2 id="錯綜複雜的原因"
+    >
+        錯綜複雜的原因
+        <a data-clipboard-text="/Programming/Site-Story/Why-Hugo.html#錯綜複雜的原因" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 錯綜複雜的原因" aria-label="Anchor to: 錯綜複雜的原因" href="#%e9%8c%af%e7%b6%9c%e8%a4%87%e9%9b%9c%e7%9a%84%e5%8e%9f%e5%9b%a0">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
 </div>
+<p>會用Hugo架網站完全就是個意外，或許可以說是不同時間點覺得有趣的東西結合起來的結果。</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="斷斷續續的筆記習慣"
+    >
+        斷斷續續的筆記習慣
+        <a data-clipboard-text="/Programming/Site-Story/Why-Hugo.html#斷斷續續的筆記習慣" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 斷斷續續的筆記習慣" aria-label="Anchor to: 斷斷續續的筆記習慣" href="#%e6%96%b7%e6%96%b7%e7%ba%8c%e7%ba%8c%e7%9a%84%e7%ad%86%e8%a8%98%e7%bf%92%e6%85%a3">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>在轉職成為軟體工程師前，就有在記錄我最近學了什麼東西的習慣，原本是記在<a
+  class="gdoc-markdown__link"
+  href="https://hackmd.io/"
+>HackMD</a>，但上班後就棄用了，上班後用的東西就記在Apple Notes上，比較偏各專案得紀錄跟常用的指令。前陣子也有用過一陣子medium寫過幾篇刷題紀錄，真的是幾篇就四篇吧 (而且都是複製別人的解法用自己的話重講一次，還都是easy)。</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="vps"
+    >
+        VPS
+        <a data-clipboard-text="/Programming/Site-Story/Why-Hugo.html#vps" class="gdoc-page__anchor clip flex align-center" title="Anchor to: VPS" aria-label="Anchor to: VPS" href="#vps">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>跟Billy大神閒聊的時候知道他最近考過了AWS證照，夢想成為離前端越遠越好的軟體工程師的我很羨慕又欽佩，便在1 on 1的時候與主管聊起這話題，在主管的推薦下建議我可以先玩玩VPS，比起AWS單純也便宜，原理也都差不多，熟悉之後去用AWS會比較快上手因為AWS實在太雜了。</p>
+<p>然後我就馬上開了一開VPS起來然後發現我不知道要幹嘛&hellip; 就又關掉了。</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="domain"
+    >
+        Domain
+        <a data-clipboard-text="/Programming/Site-Story/Why-Hugo.html#domain" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Domain" aria-label="Anchor to: Domain" href="#domain">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>做某專案的時候要請客戶提供Domain讓我們設定，或是我們幫他們弄一組，但我一開始完全不知道這些東西如何去用專業術語溝通，就問了旁邊的同事，發現他熟的跟啥一樣，我跟他比起來大概是全熟的牛排VS旁邊的生菜。</p>
+<p>後來知道他有在架NAS，也有買自己的Domain，還親手登入後台設定一遍給我看。聽到他有自己的domain我眼睛都亮起來了，感覺超屌，心想我一定也要一個自己的Domain。</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="為了讓domain的錢花得心安"
+    >
+        為了讓Domain的錢花得心安
+        <a data-clipboard-text="/Programming/Site-Story/Why-Hugo.html#為了讓domain的錢花得心安" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 為了讓Domain的錢花得心安" aria-label="Anchor to: 為了讓Domain的錢花得心安" href="#%e7%82%ba%e4%ba%86%e8%ae%93domain%e7%9a%84%e9%8c%a2%e8%8a%b1%e5%be%97%e5%bf%83%e5%ae%89">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>接著好一陣子我每天朝思暮想要買一個domain，也去Godaddy上面瞎晃，不過畢竟 我也不是啥有錢人，買domain一定要物盡其用，只能為了說服我自己買domain而努力找出一個用途來，最好還要對我的職業生涯很有幫助。</p>
+<p>最後想著想著突然想到我可以用WordPress弄個blog來寫學習筆記，綁上我的domain！咦～聽起來不錯，便開始利用通勤時研究WordPress怎麼弄。</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="hugo"
+    >
+        Hugo
+        <a data-clipboard-text="/Programming/Site-Story/Why-Hugo.html#hugo" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Hugo" aria-label="Anchor to: Hugo" href="#hugo">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>WordPress研究了半天，也不時看到其他架靜態blog的工具，發現這東西真是五花八門，馬上就又稍微研究了一下 (真的只有稍微)</p>
+<ul>
+<li>Jekyll：Ruby寫的，沒什麼感覺</li>
+<li>Hugo：Go寫的，好像很潮</li>
+<li>Hexo：Node.js寫的，直接刪掉</li>
+</ul>
+<p>刪掉了Jekyll跟Hexo最後在wordpress跟Hugo選一個，一開始還是有點猶豫不決，最後壓垮我的倒數第二根稻草是看到一篇 <a
+  class="gdoc-markdown__link"
+  href="https://blog.lancitou.net/using-github-actions-to-deploy-hugo-blog-to-self-hosted-vps/"
+>Hugo+github action 自動部署到 VPS</a>的文章，心裡想哇靠這不是把我的三個願望一次完成了嗎？還多點了一滴滴CI/CD。</p>
+<p>最後一根稻草是也去看了一下技術名人的網站，看到<a
+  class="gdoc-markdown__link"
+  href="https://openhome.cc/zh-tw/"
+>良葛格的新網站</a>也是用Hugo架的，整個簡潔又專業。</p>
+<p>因此最後，就決定是Hugo了</p>
 
-
-
-  <article
-    class="gdoc-markdown gdoc-markdown__align--left"
-  >
-    <h1>Maximum Depth of Binary Tree</h1>
-    <p>my solution</p>
-
+    </section>
   </article>
-<br>
-<br>
-<br>
-<br>
-<div class="disqus markdown">
-    <div id="disqus_thread"></div>
-<script>
-    
-
-    
-
-    (function() { 
-        var d = document, s = d.createElement('script');
-        s.src = 'https://lazyvic-com.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-</div>
 
 
 
@@ -919,7 +979,7 @@
     </div>
 
     
-  <script defer src="../../../../js/search-83320133.bundle.min.js"></script>
+  <script defer src="../../js/search-83320133.bundle.min.js"></script>
 
   </body>
 </html>

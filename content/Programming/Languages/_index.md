@@ -1,6 +1,5 @@
 ---
 title: Language
-weight : 10
 geekdocFlatSection: true
 ---
 

@@ -12,22 +12,32 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="my solution" />
+  <meta name="description" content="Domain 是在 namecheap 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
+領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。
+接著用剛剛的私鑰生成CSR（證書簽署請求）
+openssl req -new -key private.key -out csr.csr 會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。
+Common Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說填個名字就好我就傻傻的填我的英文名字，結果一直失敗..
+生成的CSR文件 csr.csr 就可以整個複製上去。 收到憑證後 通常在取得 SSL 憑證時，您會收到兩個檔案：.crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案。
+.crt 憑證檔案是您的 SSL 證書，它包含您的網站的公開金鑰以及其他相關的證書資訊。
+.ca-bundle（或 .bundle）憑證束檔案是根憑證和中繼憑證的集合。它包含了憑證鏈中的所有憑證，用於驗證您的 SSL 憑證的合法性。憑證鏈包括根憑證（Root Certificate）和中繼憑證（Intermediate Certificate）。根憑證是由受信任的憑證授權中心（Certificate Authority）簽署的，而中繼憑證是由根憑證簽署的其他憑證。
+在設定 Nginx 的 SSL 時，需要將 .crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案合併為一個檔案，形成完整的憑證鏈。
+順序不能錯，要先crt再ca-bundle
+cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic." />
 
-    <title>Maximum Depth of Binary Tree | Log of Vic</title>
+    <title>Install SSL | Log of Vic</title>
 
-    <link rel="icon" type="image/svg+xml" href="../../../../favicon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg" />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="../../../../favicon/favicon-32x32.png"
+  href="../../favicon/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="../../../../favicon/favicon-16x16.png"
+  href="../../favicon/favicon-16x16.png"
 />
 
     
@@ -35,12 +45,22 @@
     
   <meta
     property="og:title"
-    content="Maximum Depth of Binary Tree"
+    content="Install SSL"
   />
   <meta property="og:site_name" content="Log of Vic" />
-  <meta property="og:description" content="my solution" />
+  <meta property="og:description" content="Domain 是在 namecheap 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
+領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。
+接著用剛剛的私鑰生成CSR（證書簽署請求）
+openssl req -new -key private.key -out csr.csr 會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。
+Common Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說填個名字就好我就傻傻的填我的英文名字，結果一直失敗..
+生成的CSR文件 csr.csr 就可以整個複製上去。 收到憑證後 通常在取得 SSL 憑證時，您會收到兩個檔案：.crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案。
+.crt 憑證檔案是您的 SSL 證書，它包含您的網站的公開金鑰以及其他相關的證書資訊。
+.ca-bundle（或 .bundle）憑證束檔案是根憑證和中繼憑證的集合。它包含了憑證鏈中的所有憑證，用於驗證您的 SSL 憑證的合法性。憑證鏈包括根憑證（Root Certificate）和中繼憑證（Intermediate Certificate）。根憑證是由受信任的憑證授權中心（Certificate Authority）簽署的，而中繼憑證是由根憑證簽署的其他憑證。
+在設定 Nginx 的 SSL 時，需要將 .crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案合併為一個檔案，形成完整的憑證鏈。
+順序不能錯，要先crt再ca-bundle
+cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/Programming/Algorithm/Grind-75/Week-2/same-tree.html" />
+<meta property="og:url" content="/Programming/Site-Story/SSL.html" />
 
 <meta property="article:section" content="Programming" />
     <meta
@@ -54,8 +74,18 @@
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Maximum Depth of Binary Tree" />
-  <meta name="twitter:description" content="my solution" />
+<meta name="twitter:title" content="Install SSL" />
+  <meta name="twitter:description" content="Domain 是在 namecheap 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
+領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。
+接著用剛剛的私鑰生成CSR（證書簽署請求）
+openssl req -new -key private.key -out csr.csr 會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。
+Common Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說填個名字就好我就傻傻的填我的英文名字，結果一直失敗..
+生成的CSR文件 csr.csr 就可以整個複製上去。 收到憑證後 通常在取得 SSL 憑證時，您會收到兩個檔案：.crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案。
+.crt 憑證檔案是您的 SSL 證書，它包含您的網站的公開金鑰以及其他相關的證書資訊。
+.ca-bundle（或 .bundle）憑證束檔案是根憑證和中繼憑證的集合。它包含了憑證鏈中的所有憑證，用於驗證您的 SSL 憑證的合法性。憑證鏈包括根憑證（Root Certificate）和中繼憑證（Intermediate Certificate）。根憑證是由受信任的憑證授權中心（Certificate Authority）簽署的，而中繼憑證是由根憑證簽署的其他憑證。
+在設定 Nginx 的 SSL 時，需要將 .crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案合併為一個檔案，形成完整的憑證鏈。
+順序不能錯，要先crt再ca-bundle
+cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic." />
 
 
   <script type="application/ld+json">
@@ -63,17 +93,18 @@
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Programming",
-      "name": "Maximum Depth of Binary Tree",
-      "url" : "/Programming/Algorithm/Grind-75/Week-2/same-tree.html",
-      "headline": "Maximum Depth of Binary Tree",
-      "description": "my solution",
-      "wordCount" : "2",
+      "name": "Install SSL",
+      "url" : "/Programming/Site-Story/SSL.html",
+      "headline": "Install SSL",
+      "description": "Domain 是在 namecheap 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。\n領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。\n接著用剛剛的私鑰生成CSR（證書簽署請求）\nopenssl req -new -key private.key -out csr.csr 會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。\nCommon Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說填個名字就好我就傻傻的填我的英文名字，結果一直失敗..\n生成的CSR文件 csr.csr 就可以整個複製上去。 收到憑證後 通常在取得 SSL 憑證時，您會收到兩個檔案：.crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案。\n.crt 憑證檔案是您的 SSL 證書，它包含您的網站的公開金鑰以及其他相關的證書資訊。\n.ca-bundle（或 .bundle）憑證束檔案是根憑證和中繼憑證的集合。它包含了憑證鏈中的所有憑證，用於驗證您的 SSL 憑證的合法性。憑證鏈包括根憑證（Root Certificate）和中繼憑證（Intermediate Certificate）。根憑證是由受信任的憑證授權中心（Certificate Authority）簽署的，而中繼憑證是由根憑證簽署的其他憑證。\n在設定 Nginx 的 SSL 時，需要將 .crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案合併為一個檔案，形成完整的憑證鏈。\n順序不能錯，要先crt再ca-bundle\ncat domain.crt domain.ca-bundle \u003e server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic.",
+      "wordCount" : "206",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "/Programming/Algorithm/Grind-75/Week-2/same-tree.html"
+          "@id": "/Programming/Site-Story/SSL.html"
       },
+      "keywords" : [ "tag" , "web" , "infra" ],
       "copyrightHolder" : "Log of Vic",
       "copyrightYear" : "2023",
       "dateCreated": "2023-06-18T22:00:41.00Z",
@@ -95,68 +126,68 @@
 
 
     
-  <script src="../../../../js/colortheme-d3e4d351.bundle.min.js"></script>
-<script src="../../../../js/main-fbb9c8b0.bundle.min.js"></script>
+  <script src="../../js/colortheme-d3e4d351.bundle.min.js"></script>
+<script src="../../js/main-fbb9c8b0.bundle.min.js"></script>
 
 <link
   rel="preload"
   as="font"
-  href="../../../../fonts/Metropolis.woff2"
+  href="../../fonts/Metropolis.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 <link
   rel="preload"
   as="font"
-  href="../../../../fonts/LiberationSans.woff2"
+  href="../../fonts/LiberationSans.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 
 <link
   rel="preload"
-  href="../../../../main-ba0e2765.min.css"
+  href="../../main-ba0e2765.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../../main-ba0e2765.min.css"
+  href="../../main-ba0e2765.min.css"
   media="all"
 />
 
 <link
   rel="preload"
-  href="../../../../mobile-79ddc617.min.css"
+  href="../../mobile-79ddc617.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../../mobile-79ddc617.min.css"
+  href="../../mobile-79ddc617.min.css"
   media="screen and (max-width: 45rem)"
 />
 
 <link
   rel="preload"
-  href="../../../../print-735ccc12.min.css"
+  href="../../print-735ccc12.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../../print-735ccc12.min.css"
+  href="../../print-735ccc12.min.css"
   media="print"
 />
 
 <link
   rel="preload"
-  href="../../../../custom.css"
+  href="../../custom.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../../custom.css"
+  href="../../custom.css"
   media="all"
 />
-  <link href="../../../../Programming/Algorithm/Grind-75/Week-2/same-tree.html" rel="canonical" type="text/html" />
+  <link href="../../Programming/Site-Story/SSL.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -197,7 +228,7 @@
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
-            src="../../../../brand.svg"
+            src="../../brand.svg"
             alt=""
           />
           <span class="gdoc-brand__title">Log of Vic</span>
@@ -321,7 +352,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../../Programming.html"
+                    href="../../Programming.html"
                     class="gdoc-nav__entry"
                   >
                     Programming
@@ -368,7 +399,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../../Programming/Algorithm.html"
+                    href="../../Programming/Algorithm.html"
                     class="gdoc-nav__entry"
                   >
                     Algorithm
@@ -404,7 +435,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../../Programming/Languages.html"
+                    href="../../Programming/Languages.html"
                     class="gdoc-nav__entry"
                   >
                     Language
@@ -440,7 +471,7 @@
               type="checkbox"
               
                 class="gdoc-nav__toggle" id="navtree-cc8ca730"
-                
+                checked
               
             />
             <label
@@ -451,7 +482,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../../Programming/Site-Story.html"
+                    href="../../Programming/Site-Story.html"
                     class="gdoc-nav__entry"
                   >
                     Site Story
@@ -505,7 +536,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../../Programming/Site-Story/Why-Hugo.html"
+                    href="../../Programming/Site-Story/Why-Hugo.html"
                     class="gdoc-nav__entry"
                   >
                     Why Hugo
@@ -586,8 +617,8 @@
               
                 <span class="flex">
                   <a
-                    href="../../../../Programming/Site-Story/SSL.html"
-                    class="gdoc-nav__entry"
+                    href="../../Programming/Site-Story/SSL.html"
+                    class="gdoc-nav__entry is-active"
                   >
                     Install SSL
                   </a>
@@ -752,114 +783,212 @@
 
         <div class="gdoc-page">
           
+  <article class="gdoc-post">
+    <header class="gdoc-post__header">
+      <h1 class="gdoc-post__title">Install SSL</h1>
+      <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
+        <span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+  <span class="gdoc-post__tag">
+    <time datetime="2023-06-18T22:00:41&#43;08:00">
+      
+      Jun 18, 2023
+    </time>
+  </span>
+</span>
+
+<span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
+  <span class="gdoc-post__tag">One minute to read</span>
+</span>
+
+
+
+  
+    
+    
+      
+        <span class="flex align-center no-wrap">
+          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../../tags/infra.html"
+      title="All posts tagged with &#39;infra&#39;"
+    >
+      infra
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+    
+    
+      
+        <span class="flex align-center">
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../../tags/tag.html"
+      title="All posts tagged with &#39;tag&#39;"
+    >
+      tag
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+    
+    
+      
+        <span class="flex align-center">
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../../tags/web.html"
+      title="All posts tagged with &#39;web&#39;"
+    >
+      web
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
   
 
 
-  
 
 
-
-
-
-
-<div
-  class="gdoc-page__header flex flex-wrap
-  
-    justify-between
-  
-  hidden-mobile
-  "
-  itemprop="breadcrumb"
->
-  
-    <div>
-      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
-      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-        
-        
-        
-        
-  
-  
-    
-    
-    
-    
-  
-  
-    
-    
-    
-    
-  
-  
-    
-    
-    
-    
-  
-  
-    
-    
-    
-    
-  
-  
-    
-    
-    
-    
-  
-  
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind-75.html' href='../../../../Programming/Algorithm/Grind-75.html'><span itemprop='name'>Grind 75</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind-75/Week-2.html' href='../../../../Programming/Algorithm/Grind-75/Week-2.html'><span itemprop='name'>Week 2</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Maximum Depth of Binary Tree</span><meta itemprop='position' content='5' /></li>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-      </ol>
+      </div>
+    </header>
+    <section class="gdoc-markdown">
+      <p>Domain 是在 <a
+  class="gdoc-markdown__link"
+  href="https://www.namecheap.com/"
+>namecheap</a> 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證
+糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。</p>
+<div class="gdoc-toc gdoc-toc__level--6">
+      <nav id="TableOfContents"><ul>
+        <li><a href="#領取ssl憑證">領取SSL憑證</a></li>
+        <li><a href="#收到憑證後">收到憑證後</a></li>
+        <li><a href="#nginx設定">nginx設定</a></li>
+        <li><a href="#nginx--t-通過但是一直重啟不了nginx">nginx -t 通過但是一直重啟不了nginx</a></li>
+      </ul></nav>
+      <hr />
     </div>
-  
-  
+<div class="gdoc-page__anchorwrap">
+    <h2 id="領取ssl憑證"
+    >
+        領取SSL憑證
+        <a data-clipboard-text="/Programming/Site-Story/SSL.html#領取ssl憑證" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 領取SSL憑證" aria-label="Anchor to: 領取SSL憑證" href="#%e9%a0%98%e5%8f%96ssl%e6%86%91%e8%ad%89">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
 </div>
+<ol>
+<li>生成私鑰：</li>
+</ol>
+<pre tabindex="0"><code>openssl genrsa -out private.key 2048
+</code></pre><p>生成一個2048位的RSA私鑰，並將其保存在名為 <code>private.key</code> 的文件中。</p>
+<p>接著用剛剛的私鑰生成CSR（證書簽署請求）</p>
+<pre tabindex="0"><code>openssl req -new -key private.key -out csr.csr
+</code></pre><p>會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。</p>
+<p>Common Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說填個名字就好我就傻傻的填我的英文名字，結果一直失敗..</p>
+<ol start="2">
+<li>生成的CSR文件 <code>csr.csr</code> 就可以整個複製上去。</li>
+</ol>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="收到憑證後"
+    >
+        收到憑證後
+        <a data-clipboard-text="/Programming/Site-Story/SSL.html#收到憑證後" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 收到憑證後" aria-label="Anchor to: 收到憑證後" href="#%e6%94%b6%e5%88%b0%e6%86%91%e8%ad%89%e5%be%8c">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>通常在取得 SSL 憑證時，您會收到兩個檔案：<code>.crt</code> 憑證檔案和 <code>.ca-bundle</code>（或 <code>.bundle</code>）憑證束檔案。</p>
+<p><code>.crt</code> 憑證檔案是您的 SSL 證書，它包含您的網站的公開金鑰以及其他相關的證書資訊。</p>
+<p><code>.ca-bundle</code>（或 <code>.bundle</code>）憑證束檔案是根憑證和中繼憑證的集合。它包含了憑證鏈中的所有憑證，用於驗證您的 SSL 憑證的合法性。憑證鏈包括根憑證（Root Certificate）和中繼憑證（Intermediate Certificate）。根憑證是由受信任的憑證授權中心（Certificate Authority）簽署的，而中繼憑證是由根憑證簽署的其他憑證。</p>
+<p>在設定 Nginx 的 SSL 時，<strong>需要將 <code>.crt</code> 憑證檔案和 <code>.ca-bundle</code>（或 <code>.bundle</code>）憑證束檔案合併為一個檔案</strong>，形成完整的憑證鏈。</p>
+<blockquote>
+<p>順序不能錯，要先crt再ca-bundle</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"> cat domain.crt domain.ca-bundle &gt; server.crt
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="nginx設定"
+    >
+        nginx設定
+        <a data-clipboard-text="/Programming/Site-Story/SSL.html#nginx設定" class="gdoc-page__anchor clip flex align-center" title="Anchor to: nginx設定" aria-label="Anchor to: nginx設定" href="#nginx%e8%a8%ad%e5%ae%9a">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># HTTP 重定向到 HTTPS</span>
+</span></span><span class="line"><span class="cl">server <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    listen       80<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    server_name  lazyvic.com<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="m">301</span> https://lazyvic.com<span class="nv">$request_uri</span><span class="p">;</span>  <span class="c1"># 返回 301 重定向到相應的 HTTPS URL</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># HTTPS 配置</span>
+</span></span><span class="line"><span class="cl">server <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    listen <span class="m">443</span> ssl<span class="p">;</span>  <span class="c1"># 監聽 443 端口，啟用 SSL</span>
+</span></span><span class="line"><span class="cl">    server_name lazyvic.com<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    ssl_certificate /etc/nginx/ssl/server.crt<span class="p">;</span>  <span class="c1"># SSL 憑證路徑</span>
+</span></span><span class="line"><span class="cl">    ssl_certificate_key /etc/nginx/ssl/private.key<span class="p">;</span>  <span class="c1"># SSL 憑證私鑰路徑</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    location / <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        root   /var/www/html/public<span class="p">;</span>  <span class="c1"># 根目錄，用於存放網站文件</span>
+</span></span><span class="line"><span class="cl">        index  index.html index.htm<span class="p">;</span>  <span class="c1"># 默認索引文件</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 自定義 404 頁面</span>
+</span></span><span class="line"><span class="cl">    error_page <span class="m">404</span> /404.html<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">location</span> <span class="o">=</span> /404.html <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># 這裡可以指定自定義的 404 頁面的路徑和檔名</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 自定義 50x 錯誤頁面</span>
+</span></span><span class="line"><span class="cl">    error_page   <span class="m">500</span> <span class="m">502</span> <span class="m">503</span> <span class="m">504</span>  /50x.html<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">location</span> <span class="o">=</span> /50x.html <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        root   /usr/share/nginx/html<span class="p">;</span>  <span class="c1"># 50x 錯誤頁面的路徑</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="nginx--t-通過但是一直重啟不了nginx"
+    >
+        nginx -t 通過但是一直重啟不了nginx
+        <a data-clipboard-text="/Programming/Site-Story/SSL.html#nginx--t-通過但是一直重啟不了nginx" class="gdoc-page__anchor clip flex align-center" title="Anchor to: nginx -t 通過但是一直重啟不了nginx" aria-label="Anchor to: nginx -t 通過但是一直重啟不了nginx" href="#nginx--t-%e9%80%9a%e9%81%8e%e4%bd%86%e6%98%af%e4%b8%80%e7%9b%b4%e9%87%8d%e5%95%9f%e4%b8%8d%e4%ba%86nginx">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>在重啟前有先用 <code>nginx -t</code> 確認無誤，但是重啟nginx卻一直失敗，看了log說是沒有權限取得檔案，查了一下解法如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">restorecon -v -R /etc/nginx
+</span></span></code></pre></div><p>查了一下這個restorecon到底是啥東西</p>
+<blockquote>
+<p><code>restorecon</code> 指令用於恢復檔案和目錄的 SELinux 安全上下文。在某些 Linux 發行版中，如 CentOS 和 RHEL，安全上下文是用於控制檔案和目錄的存取權限和 SELinux 政策的一部分。</p>
+</blockquote>
+<blockquote>
+<p>當您遭遇 Nginx SSL 憑證無法載入的問題時，有時是由於 SELinux 安全上下文不正確導致的。透過執行 <code>restorecon</code> 指令，您可以將 <code>/etc/nginx</code> 目錄及其內部的檔案和目錄恢復為預設的 SELinux 安全上下文。</p>
+</blockquote>
+<blockquote>
+<p>這樣做可以確保 Nginx 服務以適當的安全上下文執行，並且具有正確的存取權限，從而能夠正確載入並使用 SSL 憑證。</p>
+</blockquote>
 
-
-
-  <article
-    class="gdoc-markdown gdoc-markdown__align--left"
-  >
-    <h1>Maximum Depth of Binary Tree</h1>
-    <p>my solution</p>
-
+    </section>
   </article>
-<br>
-<br>
-<br>
-<br>
-<div class="disqus markdown">
-    <div id="disqus_thread"></div>
-<script>
-    
-
-    
-
-    (function() { 
-        var d = document, s = d.createElement('script');
-        s.src = 'https://lazyvic-com.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-</div>
 
 
 
@@ -919,7 +1048,7 @@
     </div>
 
     
-  <script defer src="../../../../js/search-83320133.bundle.min.js"></script>
+  <script defer src="../../js/search-83320133.bundle.min.js"></script>
 
   </body>
 </html>

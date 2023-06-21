@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>web on Too Lazy</title>
+    <title>web on Log of Vic</title>
     <link>/tags/web.html</link>
-    <description>Recent content in web on Too Lazy</description>
+    <description>Recent content in web on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 18 Jun 2023 22:00:41 +0800</lastBuildDate><atom:link href="/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Best Time to Buy and Sell Stock</title>
-      <link>/Programming/Algorithm/Blind-75/Array/Best-Time-to-Buy-and-Sell-Stock.html</link>
-      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
-      
-      <guid>/Programming/Algorithm/Blind-75/Array/Best-Time-to-Buy-and-Sell-Stock.html</guid>
-      <description>my solution</description>
-    </item>
-    
-    <item>
       <title>Install SSL</title>
-      <link>/Programming/Hugo/SSL.html</link>
+      <link>/Programming/Site-Story/SSL.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>/Programming/Hugo/SSL.html</guid>
+      <guid>/Programming/Site-Story/SSL.html</guid>
       <description>Domain 是在 namecheap 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
 領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。
 接著用剛剛的私鑰生成CSR（證書簽署請求）
@@ -33,6 +24,15 @@ Common Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說�
 在設定 Nginx 的 SSL 時，需要將 .crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案合併為一個檔案，形成完整的憑證鏈。
 順序不能錯，要先crt再ca-bundle
 cat domain.crt domain.ca-bundle &amp;gt; server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic.</description>
+    </item>
+    
+    <item>
+      <title>Best Time to Buy and Sell Stock</title>
+      <link>/Programming/Algorithm/Blind-75/Array/Best-Time-to-Buy-and-Sell-Stock.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
+      
+      <guid>/Programming/Algorithm/Blind-75/Array/Best-Time-to-Buy-and-Sell-Stock.html</guid>
+      <description>my solution</description>
     </item>
     
   </channel>

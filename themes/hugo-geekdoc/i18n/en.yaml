@@ -1,7 +1,7 @@
 ---
 edit_page: Edit page
 
-nav_navigation: "CATEGORIES"
+nav_navigation: "Jotting Down"
 nav_tags: Tags
 nav_more: More
 nav_top: Back to top
@@ -35,7 +35,7 @@ posts_count:
 posts_tagged_with: All posts tagged with '{{ . }}'
 
 footer_build_with: >
-  Built with <a href="https://gohugo.io/" class="gdoc-footer__link">Hugo</a> and
+  Built with <a href="https://gohugo.io/" class="gdoc-footer__link">Hugo</a> and Vic
   <svg class="gdoc-icon gdoc_heart"><use xlink:href="#gdoc_heart"></use></svg>
 footer_legal_notice: Legal Notice
 footer_privacy_policy: Privacy Policy

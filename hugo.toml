@@ -1,8 +1,9 @@
 baseURL = ''
 relativeURLs= true
 uglyurls= true
-title = "Too Lazy"
+title = "Log of Vic"
 theme = "hugo-geekdoc"
+
 
 pluralizeListTitles = false
 disqusShortname = "lazyvic-com"
