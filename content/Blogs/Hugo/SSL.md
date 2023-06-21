@@ -1,8 +1,11 @@
 ---
 title: "Install SSL"
 date: 2023-06-18T22:00:41+08:00
+type: posts
 sidebar: 自定義側邊欄名稱
-
+tags:
+- tags
+- Infra
 ---
 
 Domain 是在 [namecheap](https://www.namecheap.com/) 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證

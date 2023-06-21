@@ -26,8 +26,11 @@ endLevel = 9
 
 [taxonomies]
 tag = "tags"
+infra = "infra"
+
 
 [params]
 #geekdocCollapseAllSections = true
 #geekdocToC = 3
 #geekdocMenuBundle = true
+geekdocTagsToMenu = true

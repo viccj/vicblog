@@ -1,0 +1,11 @@
+---
+more:
+  - name: About Me
+    ref: "https://linkedin.com/in/chung-jui-chang-7b7642111"
+    external: true
+    icon: "gdoc_person"
+  - name: "Github"
+    ref: "https://github.com/viccj"
+    external: true
+    icon: "gdoc_github"
+

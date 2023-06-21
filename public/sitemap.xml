@@ -71,6 +71,9 @@
     <loc>/Blogs/Hugo.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
+    <loc>/tags/Infra.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
     <loc>/Blogs/Hugo/SSL.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
@@ -101,12 +104,18 @@
     <loc>/Blogs/Java/Spring-Boot/Getting-started-with-Spring/Start.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
+    <loc>/tags/tags.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>/tags.html</loc>
+    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
     <loc>/Blogs/Algorithm/Blind-75/Array/two-sum.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
     <loc>/Blogs/Algorithm/Grind-75/Week-1/two-sum.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
-    <loc>/tags.html</loc>
+    <loc>/infra.html</loc>
   </url>
 </urlset>
