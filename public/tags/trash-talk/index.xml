@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 21 Jun 2023 22:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/trash-talk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Hugo</title>
-      <link>https://lazyvic.com/Programming/Site-Story/Why-Hugo.html</link>
+      <link>https://lazyvic.com/Programming/SiteStory/WhyHugo.html</link>
       <pubDate>Wed, 21 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>https://lazyvic.com/Programming/Site-Story/Why-Hugo.html</guid>
+      <guid>https://lazyvic.com/Programming/SiteStory/WhyHugo.html</guid>
       <description>為啥我搞了半天最後決定用 Hugo弄個網站？
 錯綜複雜的原因 斷斷續續的筆記習慣 VPS Domain 為了讓Domain的錢花得心安 Hugo 錯綜複雜的原因 會用Hugo架網站完全就是個意外，或許可以說是不同時間點覺得有趣的東西結合起來的結果。
 斷斷續續的筆記習慣 在轉職成為軟體工程師前，就有在記錄我最近學了什麼東西的習慣，原本是記在HackMD，但上班後就棄用了， 上班後用的東西就記在Apple Notes上，比較偏各專案得紀錄跟常用的指令。前陣子也有用過一陣子medium寫過幾篇刷題紀錄， 真的是幾篇就四篇吧 (而且都是複製別人的解法用自己的話重講一次，還都是easy)。

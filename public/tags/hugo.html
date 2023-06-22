@@ -394,19 +394,19 @@
             <input
               type="checkbox"
               
-                class="gdoc-nav__toggle" id="navtree-be3c07c1"
+                class="gdoc-nav__toggle" id="navtree-f73c6f6a"
                 
               
             />
             <label
               
-                for="navtree-be3c07c1" class="flex justify-between align-center"
+                for="navtree-f73c6f6a" class="flex justify-between align-center"
               
             >
               
                 <span class="flex">
                   <a
-                    href="../Programming/Site-Story.html"
+                    href="../Programming/SiteStory.html"
                     class="gdoc-nav__entry"
                   >
                     Site Story
@@ -460,10 +460,54 @@
               
                 <span class="flex">
                   <a
-                    href="../Programming/Site-Story/Why-Hugo.html"
+                    href="../Programming/SiteStory/WhyHugo.html"
                     class="gdoc-nav__entry"
                   >
                     Why Hugo
+                  </a>
+                </span>
+              
+              
+            </label>
+
+            
+          </li>
+        
+      
+    
+      
+
+      
+        
+      
+
+      
+        
+          
+          
+          
+          
+          
+          
+
+
+          <li>
+            <input
+              type="checkbox"
+              
+                class="hidden"
+              
+            />
+            <label
+              
+            >
+              
+                <span class="flex">
+                  <a
+                    href="../Programming/SiteStory/GettingStart.html"
+                    class="gdoc-nav__entry"
+                  >
+                    Hugo Github Page
                   </a>
                 </span>
               
@@ -511,14 +555,6 @@
           </li>
         
       
-    
-      
-
-      
-        
-      
-
-      
         
           
           
@@ -541,7 +577,7 @@
               
                 <span class="flex">
                   <a
-                    href="../Programming/Site-Story/SSL.html"
+                    href="../Programming/SiteStory/SSL.html"
                     class="gdoc-nav__entry"
                   >
                     Install SSL
@@ -763,7 +799,7 @@
     <article class="gdoc-post">
       <header class="gdoc-post__header">
         <h1 class="gdoc-post__title">
-          <a href="../Programming/Site-Story/Why-Hugo.html">Why Hugo</a>
+          <a href="../Programming/SiteStory/WhyHugo.html">Why Hugo</a>
         </h1>
       </header>
 
@@ -859,7 +895,84 @@ Jekyll：Ruby寫的，沒什麼感覺 Hugo：Go寫的，好像很潮 Hexo：Node
     <article class="gdoc-post">
       <header class="gdoc-post__header">
         <h1 class="gdoc-post__title">
-          <a href="../Programming/Site-Story/SSL.html">Install SSL</a>
+          <a href="../Programming/SiteStory/GettingStart.html">Hugo Github Page</a>
+        </h1>
+      </header>
+
+      <section class="gdoc-markdown">
+        離安裝好Hugo並胡搞瞎搞也過了大概一週，用我僅存的記憶記錄一下，前面都是湊字數的，重點是最後一段哈哈
+安裝Hugo 主題安裝 Github Page 抓不到css 安裝Hugo 因為我是Mac，所以直接用 brew intstall hugo安裝。
+安裝好之後就可以用 hugo new site blog-test來建立新的網站。
+主題安裝 安裝好Hugo之後，下一步就是挑選主題，我是使用 geekdoc 這個主題，主要是看到他的example site覺得很簡單，剛好我也不想花太多時間在把我的頁面弄的很fancy
+安裝的方法是直接下載他們的release bundle
+// 在themes的folder下面建立hugo-geekdoc的folder mkdir -p themes/hugo-geekdoc/ // 下載 curl -L https://github.com/thegeeklab/hugo-geekdoc/releases/latest/download/hugo-geekdoc.tar.gz | tar -xz -C themes/hugo-geekdoc/ --strip-components=1 安裝好之後再到Hugo的設定檔中把主題設定上去
+theme = &#34;hugo-geekdoc&#34; 然後啟動Hugo就可以看到預設的頁面了
+hugo server -D 雖然hugo server會自動重build頁面，但是我發現有時候更改檔案內容或是資料夾結構，會無法正確顯示，這時候還是手動重啟hugo server比較穩。 編輯一下就可以用
+hugo 生成靜態內容，會建立一個public的資料夾將你剛剛的文件都放進去。
+然後就可以把他推到github的repository拉
+Github Page 抓不到css 其實前面的步驟網路上都一堆教學，唯一我遇到的問題就是部署到github page後，發現
+我的css一直跑掉，打開開發工具看一下發現抓不到我的css跟js等檔案。
+在stackoverflow上找了半天，發現是相對路徑的問題，最後在config.toml檔案上加上
+relativeURLs= true 就解決了。
+      </section>
+
+      <div class="gdoc-post__readmore">
+        
+      </div>
+
+      <footer class="gdoc-post__footer">
+        <div class="flex flex-wrap align-center gdoc-post__meta">
+          <span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+  <span class="gdoc-post__tag">
+    <time datetime="2023-06-22T14:00:41&#43;08:00">
+      
+      Jun 22, 2023
+    </time>
+  </span>
+</span>
+
+<span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
+  <span class="gdoc-post__tag">One minute to read</span>
+</span>
+
+
+
+  
+    
+    
+      
+        <span class="flex align-center no-wrap">
+          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../tags/hugo.html"
+      title="All posts tagged with &#39;hugo&#39;"
+    >
+      hugo
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+
+
+
+
+        </div>
+      </footer>
+    </article>
+  
+    <article class="gdoc-post">
+      <header class="gdoc-post__header">
+        <h1 class="gdoc-post__title">
+          <a href="../Programming/SiteStory/SSL.html">Install SSL</a>
         </h1>
       </header>
 
@@ -882,7 +995,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
           <a
             class="flex-inline align-center fake-link"
             title="Read full post"
-            href="../Programming/Site-Story/SSL.html"
+            href="../Programming/SiteStory/SSL.html"
           >
             Read full post
             <i class="gdoc-icon">gdoc_arrow_right_alt</i>

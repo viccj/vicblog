@@ -4,8 +4,9 @@ weight : 10
 geekdocFlatSection: true
 ---
 
-My leetcode Grind 75 trip...
-
+{{<ref-out href="https://www.techinterviewhandbook.org/grind75">}}
+### Grind 75
+{{</ref-out>}}
 <!-- spellchecker-disable -->
 
 {{< toc-tree >}}

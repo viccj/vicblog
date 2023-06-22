@@ -5,7 +5,9 @@ geekdocFlatSection: true
 ---
 
 
-{{<ref-out href="https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions">}}### List of Blind 75{{</ref-out>}}
+{{<ref-out href="https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions">}}
+### List of Blind 75
+{{</ref-out>}}
 
 
 <!-- spellchecker-disable -->
