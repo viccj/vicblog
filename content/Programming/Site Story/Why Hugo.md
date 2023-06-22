@@ -18,7 +18,9 @@ tags:
 
 #### 斷斷續續的筆記習慣
 
-在轉職成為軟體工程師前，就有在記錄我最近學了什麼東西的習慣，原本是記在[HackMD](https://hackmd.io/)，但上班後就棄用了，上班後用的東西就記在Apple Notes上，比較偏各專案得紀錄跟常用的指令。前陣子也有用過一陣子medium寫過幾篇刷題紀錄，真的是幾篇就四篇吧 (而且都是複製別人的解法用自己的話重講一次，還都是easy)。
+在轉職成為軟體工程師前，就有在記錄我最近學了什麼東西的習慣，原本是記在[HackMD](https://hackmd.io/)，但上班後就棄用了，
+上班後用的東西就記在Apple Notes上，比較偏各專案得紀錄跟常用的指令。前陣子也有用過一陣子medium寫過幾篇刷題紀錄，
+真的是幾篇就四篇吧 (而且都是複製別人的解法用自己的話重講一次，還都是easy)。
 
 #### VPS
 
@@ -48,7 +50,7 @@ tags:
 
 ## Hugo
 
-WordPress研究了半天，也不時看到其他架靜態blog的工具，發現這東西真是五花八門，馬上就又稍微研究了一下 (真的只有稍微)
+WordPress研究了半天，也不時看到其他架靜態blog的工具，發現這東西真是五花八門，馬上就又稍微研究了一下 (真的只有稍微)。
 
 
 
@@ -58,11 +60,14 @@ WordPress研究了半天，也不時看到其他架靜態blog的工具，發現�
 
 
 
-刪掉了Jekyll跟Hexo最後在wordpress跟Hugo選一個，一開始還是有點猶豫不決，最後壓垮我的倒數第二根稻草是看到一篇 [Hugo+github action 自動部署到 VPS](https://blog.lancitou.net/using-github-actions-to-deploy-hugo-blog-to-self-hosted-vps/)的文章，心裡想哇靠這不是把我的三個願望一次完成了嗎？還多點了一滴滴CI/CD。
+刪掉了Jekyll跟Hexo最後在wordpress跟Hugo選一個，一開始還是有點猶豫不決，最後壓垮我的倒數第二根稻草是看到一篇 {{<ref-out href="https://blog.lancitou.net/using-github-actions-to-deploy-hugo-blog-to-self-hosted-vps/">}} 
+Hugo+Github Action 自動部署到 VPS{{</ref-out>}} 
+的文章，
+心裡想哇靠這不是把我的三個願望一次完成了嗎？還多點了一滴滴CI/CD。
 
 
 
-最後一根稻草是也去看了一下技術名人的網站，看到[良葛格的新網站](https://openhome.cc/zh-tw/)也是用Hugo架的，整個簡潔又專業。
+最後一根稻草是也去看了一下技術名人的網站，看到 {{<ref-out href="https://openhome.cc/zh-tw/">}}良葛格的新網站{{</ref-out>}} 也是用Hugo架的，整個簡潔又專業。
 
 
 

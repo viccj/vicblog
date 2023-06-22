@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>infra on Log of Vic</title>
-    <link>/tags/infra.html</link>
+    <link>https://lazyvic.com/tags/infra.html</link>
     <description>Recent content in infra on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Jun 2023 22:00:41 +0800</lastBuildDate><atom:link href="/tags/infra/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jun 2023 22:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/infra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install SSL</title>
-      <link>/Programming/Site-Story/SSL.html</link>
+      <link>https://lazyvic.com/Programming/Site-Story/SSL.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>/Programming/Site-Story/SSL.html</guid>
+      <guid>https://lazyvic.com/Programming/Site-Story/SSL.html</guid>
       <description>Domain 是在 namecheap 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
 領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。
 接著用剛剛的私鑰生成CSR（證書簽署請求）

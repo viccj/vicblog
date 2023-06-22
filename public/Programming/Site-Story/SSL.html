@@ -60,7 +60,7 @@ Common Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說�
 順序不能錯，要先crt再ca-bundle
 cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/Programming/Site-Story/SSL.html" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Site-Story/SSL.html" />
 
 <meta property="article:section" content="Programming" />
     <meta
@@ -94,7 +94,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
       "@type": "TechArticle",
       "articleSection": "Programming",
       "name": "Install SSL",
-      "url" : "/Programming/Site-Story/SSL.html",
+      "url" : "https://lazyvic.com/Programming/Site-Story/SSL.html",
       "headline": "Install SSL",
       "description": "Domain 是在 namecheap 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。\n領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。\n接著用剛剛的私鑰生成CSR（證書簽署請求）\nopenssl req -new -key private.key -out csr.csr 會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。\nCommon Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說填個名字就好我就傻傻的填我的英文名字，結果一直失敗..\n生成的CSR文件 csr.csr 就可以整個複製上去。 收到憑證後 通常在取得 SSL 憑證時，您會收到兩個檔案：.crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案。\n.crt 憑證檔案是您的 SSL 證書，它包含您的網站的公開金鑰以及其他相關的證書資訊。\n.ca-bundle（或 .bundle）憑證束檔案是根憑證和中繼憑證的集合。它包含了憑證鏈中的所有憑證，用於驗證您的 SSL 憑證的合法性。憑證鏈包括根憑證（Root Certificate）和中繼憑證（Intermediate Certificate）。根憑證是由受信任的憑證授權中心（Certificate Authority）簽署的，而中繼憑證是由根憑證簽署的其他憑證。\n在設定 Nginx 的 SSL 時，需要將 .crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案合併為一個檔案，形成完整的憑證鏈。\n順序不能錯，要先crt再ca-bundle\ncat domain.crt domain.ca-bundle \u003e server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic.",
       "wordCount" : "206",
@@ -102,7 +102,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "/Programming/Site-Story/SSL.html"
+          "@id": "https://lazyvic.com/Programming/Site-Story/SSL.html"
       },
       "keywords" : [ "hugo" , "infra" ],
       "copyrightHolder" : "Log of Vic",
@@ -113,10 +113,10 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
       "publisher":{
           "@type":"Organization",
           "name": "Log of Vic",
-          "url": "",
+          "url": "https://lazyvic.com/",
           "logo": {
               "@type": "ImageObject",
-              "url": "brand.svg",
+              "url": "https://lazyvic.com/brand.svg",
               "width":"32",
               "height":"32"
           }
@@ -187,7 +187,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
   href="../../custom.css"
   media="all"
 />
-  <link href="../../Programming/Site-Story/SSL.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Site-Story/SSL.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -224,7 +224,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
       </label>
     
     <div>
-      <a class="gdoc-brand gdoc-header__link" href="">
+      <a class="gdoc-brand gdoc-header__link" href="https://lazyvic.com/">
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
@@ -256,7 +256,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
         </span>
 
         <span class="gdoc-menu-header__home">
-          <a href="" class="gdoc-header__link">
+          <a href="https://lazyvic.com/" class="gdoc-header__link">
             <svg class="gdoc-icon gdoc_home">
               <title>Back to homepage</title>
               <use xlink:href="#gdoc_home"></use>
@@ -303,7 +303,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
       placeholder="Search..."
       aria-label="Search"
       maxlength="64"
-      data-site-base-url=""
+      data-site-base-url="https://lazyvic.com/"
       data-site-lang="en"
     />
     <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
@@ -313,7 +313,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
 
 
   <section class="gdoc-nav--main">
-    <h2>Jotting Down</h2>
+    <h2>Jottings</h2>
     
       
 
@@ -470,13 +470,13 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
             <input
               type="checkbox"
               
-                class="gdoc-nav__toggle" id="navtree-cc8ca730"
+                class="gdoc-nav__toggle" id="navtree-be3c07c1"
                 checked
               
             />
             <label
               
-                for="navtree-cc8ca730" class="flex justify-between align-center"
+                for="navtree-be3c07c1" class="flex justify-between align-center"
               
             >
               
@@ -578,7 +578,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
               
             >
               
-                <span class="flex">GitHub Action/ VPS</span>
+                <span class="flex">GitHub Action w/ VPS</span>
               
               
             </label>
@@ -871,7 +871,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
     <h2 id="領取ssl憑證"
     >
         領取SSL憑證
-        <a data-clipboard-text="/Programming/Site-Story/SSL.html#領取ssl憑證" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 領取SSL憑證" aria-label="Anchor to: 領取SSL憑證" href="#%e9%a0%98%e5%8f%96ssl%e6%86%91%e8%ad%89">
+        <a data-clipboard-text="https://lazyvic.com/Programming/Site-Story/SSL.html#領取ssl憑證" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 領取SSL憑證" aria-label="Anchor to: 領取SSL憑證" href="#%e9%a0%98%e5%8f%96ssl%e6%86%91%e8%ad%89">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
@@ -892,7 +892,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
     <h2 id="收到憑證後"
     >
         收到憑證後
-        <a data-clipboard-text="/Programming/Site-Story/SSL.html#收到憑證後" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 收到憑證後" aria-label="Anchor to: 收到憑證後" href="#%e6%94%b6%e5%88%b0%e6%86%91%e8%ad%89%e5%be%8c">
+        <a data-clipboard-text="https://lazyvic.com/Programming/Site-Story/SSL.html#收到憑證後" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 收到憑證後" aria-label="Anchor to: 收到憑證後" href="#%e6%94%b6%e5%88%b0%e6%86%91%e8%ad%89%e5%be%8c">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
@@ -909,7 +909,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
     <h2 id="nginx設定"
     >
         nginx設定
-        <a data-clipboard-text="/Programming/Site-Story/SSL.html#nginx設定" class="gdoc-page__anchor clip flex align-center" title="Anchor to: nginx設定" aria-label="Anchor to: nginx設定" href="#nginx%e8%a8%ad%e5%ae%9a">
+        <a data-clipboard-text="https://lazyvic.com/Programming/Site-Story/SSL.html#nginx設定" class="gdoc-page__anchor clip flex align-center" title="Anchor to: nginx設定" aria-label="Anchor to: nginx設定" href="#nginx%e8%a8%ad%e5%ae%9a">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
@@ -949,7 +949,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
     <h2 id="nginx--t-通過但是一直重啟不了nginx"
     >
         nginx -t 通過但是一直重啟不了nginx
-        <a data-clipboard-text="/Programming/Site-Story/SSL.html#nginx--t-通過但是一直重啟不了nginx" class="gdoc-page__anchor clip flex align-center" title="Anchor to: nginx -t 通過但是一直重啟不了nginx" aria-label="Anchor to: nginx -t 通過但是一直重啟不了nginx" href="#nginx--t-%e9%80%9a%e9%81%8e%e4%bd%86%e6%98%af%e4%b8%80%e7%9b%b4%e9%87%8d%e5%95%9f%e4%b8%8d%e4%ba%86nginx">
+        <a data-clipboard-text="https://lazyvic.com/Programming/Site-Story/SSL.html#nginx--t-通過但是一直重啟不了nginx" class="gdoc-page__anchor clip flex align-center" title="Anchor to: nginx -t 通過但是一直重啟不了nginx" aria-label="Anchor to: nginx -t 通過但是一直重啟不了nginx" href="#nginx--t-%e9%80%9a%e9%81%8e%e4%bd%86%e6%98%af%e4%b8%80%e7%9b%b4%e9%87%8d%e5%95%9f%e4%b8%8d%e4%ba%86nginx">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>

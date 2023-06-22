@@ -9,7 +9,7 @@ geekdocBreadcrumb : false
 
 <--->
 
-### Jotting Down
+### Jottings
 
 <!-- spellchecker-disable -->
 

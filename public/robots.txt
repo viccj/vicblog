@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /tags/*
 
-Sitemap: sitemap.xml
+Sitemap: https://lazyvic.com/sitemap.xml

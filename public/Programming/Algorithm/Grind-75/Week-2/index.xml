@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Log of Vic</title>
-    <link>/Programming/Algorithm/Grind-75/Week-2.html</link>
+    <link>https://lazyvic.com/Programming/Algorithm/Grind-75/Week-2.html</link>
     <description>Recent content on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Jun 2023 22:00:41 +0800</lastBuildDate><atom:link href="/Programming/Algorithm/Grind-75/Week-2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jun 2023 22:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/Programming/Algorithm/Grind-75/Week-2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Maximum Depth of Binary Tree</title>
-      <link>/Programming/Algorithm/Grind-75/Week-2/Maximum-Depth-of-Binary-Tree.html</link>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind-75/Week-2/Maximum-Depth-of-Binary-Tree.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>/Programming/Algorithm/Grind-75/Week-2/Maximum-Depth-of-Binary-Tree.html</guid>
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind-75/Week-2/Maximum-Depth-of-Binary-Tree.html</guid>
       <description>My same tree solution</description>
     </item>
     
     <item>
       <title>Maximum Depth of Binary Tree</title>
-      <link>/Programming/Algorithm/Grind-75/Week-2/same-tree.html</link>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind-75/Week-2/same-tree.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>/Programming/Algorithm/Grind-75/Week-2/same-tree.html</guid>
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind-75/Week-2/same-tree.html</guid>
       <description>my solution</description>
     </item>
     

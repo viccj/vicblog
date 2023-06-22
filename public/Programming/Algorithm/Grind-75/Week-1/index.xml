@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Log of Vic</title>
-    <link>/Programming/Algorithm/Grind-75/Week-1.html</link>
+    <link>https://lazyvic.com/Programming/Algorithm/Grind-75/Week-1.html</link>
     <description>Recent content on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Jun 2023 22:00:41 +0800</lastBuildDate><atom:link href="/Programming/Algorithm/Grind-75/Week-1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jun 2023 22:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/Programming/Algorithm/Grind-75/Week-1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Best Time to Buy and Sell Stock</title>
-      <link>/Programming/Algorithm/Grind-75/Week-1/Best-Time-to-Buy-and-Sell-Stock.html</link>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind-75/Week-1/Best-Time-to-Buy-and-Sell-Stock.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>/Programming/Algorithm/Grind-75/Week-1/Best-Time-to-Buy-and-Sell-Stock.html</guid>
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind-75/Week-1/Best-Time-to-Buy-and-Sell-Stock.html</guid>
       <description>my solution</description>
     </item>
     
     <item>
       <title>two sum</title>
-      <link>/Programming/Algorithm/Grind-75/Week-1/two-sum.html</link>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind-75/Week-1/two-sum.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>/Programming/Algorithm/Grind-75/Week-1/two-sum.html</guid>
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind-75/Week-1/two-sum.html</guid>
       <description>My two sum solution</description>
     </item>
     
