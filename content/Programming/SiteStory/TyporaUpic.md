@@ -57,6 +57,10 @@ Hugo是用MarkDown來編輯文件的，這時候有個好用的MarkDown 編輯�
 
 ![Screen Shot 2023-06-22 at 17.25.25](https://raw.githubusercontent.com/viccj/upic/master/uPic/Screen%20Shot%202023-06-22%20at%2017.25.25.png)
 
+設定好後再把uPic預設上傳方式改成GitHub即可
+
+
+![Screen Shot 2023-06-22 at 17.55.09](https://raw.githubusercontent.com/viccj/upic/master/uPic/Screen%20Shot%202023-06-22%20at%2017.55.09.png)
 
 
 ## Typora設定

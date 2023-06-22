@@ -69,6 +69,7 @@ GitHub開一個新的Repo並產生token uPic 安裝uPic 配置 Typora設定 GitH
 uPic 安裝uPic brew install bigwig-club/brew/upic --cask 配置 安裝好之後打開uPic，是Mac的話會在最上面那一條出現，一開始沒注意到還一直想說怎麼打不開&amp;hellip;
 進入設定頁面
 Owner -&amp;gt; 你的github帳號 Repo -&amp;gt; 你的repo Token-&amp;gt; GitHub token 然後可以按下驗證聽說會有成功畫面出現，但我按了都沒反應就是了。最後是去Typora那邊測試可不可以成功
+設定好後再把uPic預設上傳方式改成GitHub即可
 Typora設定 照著設定按一下test Uploader顯示成功，之後圖片拖進來就會自動寫好Markdown嚕。</description>
     </item>
     
