@@ -6,7 +6,7 @@
     <description>Recent content in hugo on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 Jun 2023 14:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jun 2023 17:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Hugo</title>
       <link>https://lazyvic.com/Programming/SiteStory/WhyHugo.html</link>
@@ -29,28 +29,6 @@ Jekyll：Ruby寫的，沒什麼感覺 Hugo：Go寫的，好像很潮 Hexo：Node
     </item>
     
     <item>
-      <title>Hugo Github Page</title>
-      <link>https://lazyvic.com/Programming/SiteStory/GettingStart.html</link>
-      <pubDate>Thu, 22 Jun 2023 14:00:41 +0800</pubDate>
-      
-      <guid>https://lazyvic.com/Programming/SiteStory/GettingStart.html</guid>
-      <description>離安裝好Hugo並胡搞瞎搞也過了大概一週，用我僅存的記憶記錄一下，前面都是湊字數的，重點是最後一段哈哈
-安裝Hugo 主題安裝 Github Page 抓不到css 安裝Hugo 因為我是Mac，所以直接用 brew intstall hugo安裝。
-安裝好之後就可以用 hugo new site blog-test來建立新的網站。
-主題安裝 安裝好Hugo之後，下一步就是挑選主題，我是使用 geekdoc 這個主題，主要是看到他的example site覺得很簡單，剛好我也不想花太多時間在把我的頁面弄的很fancy
-安裝的方法是直接下載他們的release bundle
-// 在themes的folder下面建立hugo-geekdoc的folder mkdir -p themes/hugo-geekdoc/ // 下載 curl -L https://github.com/thegeeklab/hugo-geekdoc/releases/latest/download/hugo-geekdoc.tar.gz | tar -xz -C themes/hugo-geekdoc/ --strip-components=1 安裝好之後再到Hugo的設定檔中把主題設定上去
-theme = &amp;#34;hugo-geekdoc&amp;#34; 然後啟動Hugo就可以看到預設的頁面了
-hugo server -D 雖然hugo server會自動重build頁面，但是我發現有時候更改檔案內容或是資料夾結構，會無法正確顯示，這時候還是手動重啟hugo server比較穩。 編輯一下就可以用
-hugo 生成靜態內容，會建立一個public的資料夾將你剛剛的文件都放進去。
-然後就可以把他推到github的repository拉
-Github Page 抓不到css 其實前面的步驟網路上都一堆教學，唯一我遇到的問題就是部署到github page後，發現
-我的css一直跑掉，打開開發工具看一下發現抓不到我的css跟js等檔案。
-在stackoverflow上找了半天，發現是相對路徑的問題，最後在config.toml檔案上加上
-relativeURLs= true 就解決了。</description>
-    </item>
-    
-    <item>
       <title>Install SSL</title>
       <link>https://lazyvic.com/Programming/SiteStory/SSL.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
@@ -67,6 +45,22 @@ Common Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說�
 在設定 Nginx 的 SSL 時，需要將 .crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案合併為一個檔案，形成完整的憑證鏈。
 順序不能錯，要先crt再ca-bundle
 cat domain.crt domain.ca-bundle &amp;gt; server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic.</description>
+    </item>
+    
+    <item>
+      <title>Typora &#43; Upic</title>
+      <link>https://lazyvic.com/Programming/SiteStory/TyporaUpic.html</link>
+      <pubDate>Thu, 22 Jun 2023 17:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/SiteStory/TyporaUpic.html</guid>
+      <description>Hugo是用MarkDown來編輯文件的，這時候有個好用的MarkDown 編輯器就很好用，最後我是選擇用Typroa來編輯文件，再貼到Hugo發布，會選擇Typora的原因是因為Typora支援自動上傳圖片並產生連結功能，非常適合Lazy的我。 簡單記錄一下如何用uPic自動上傳圖片到我的GitHub
+GitHub開一個新的Repo並產生token uPic 安裝uPic 配置 Typora設定 GitHub開一個新的Repo並產生token 在GitHub首頁-&amp;gt;setting-&amp;gt;Developer Setting-&amp;gt; Personal Ascess Token裡面產生一組新的Token。
+我是選classic的token，因為看到另一個還在beta。
+可以只勾public_repo，剩下我都沒勾，Note隨便打就好。
+uPic 安裝uPic brew install bigwig-club/brew/upic --cask 配置 安裝好之後打開uPic，是Mac的話會在最上面那一條出現，一開始沒注意到還一直想說怎麼打不開&amp;hellip;
+進入設定頁面
+Owner -&amp;gt; 你的github帳號 Repo -&amp;gt; 你的repo Token-&amp;gt; GitHub token 然後可以按下驗證聽說會有成功畫面出現，但我按了都沒反應就是了。最後是去Typora那邊測試可不可以成功
+Typora設定 照著設定按一下test Uploader顯示成功，之後圖片拖進來就會自動寫好Markdown嚕。</description>
     </item>
     
   </channel>

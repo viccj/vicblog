@@ -1,5 +1,6 @@
 ---
-title: "Hugo Github Page"
+title: "Hugo GitHub Page"
+draft: true
 date: 2023-06-22T14:00:41+08:00
 type: posts
 weight : 2
@@ -17,7 +18,6 @@ tags:
 因為我是Mac，所以直接用 `brew intstall hugo`安裝。
 
 安裝好之後就可以用 `hugo new site blog-test`來建立新的網站。
-
 
 
 ## 主題安裝
