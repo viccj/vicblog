@@ -4,6 +4,7 @@ uglyurls= true
 title = "Log of Vic"
 theme = "hugo-geekdoc"
 homepage = "https://lazyvic.com/"
+description = "Log of vic"
 
 
 pluralizeListTitles = false
