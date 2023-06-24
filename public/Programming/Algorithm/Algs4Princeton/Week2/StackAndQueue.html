@@ -12,21 +12,22 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
+  <meta name="description" content=" Stacks Resizing Arrays " />
 
-    <title>Week2 | Log of Vic</title>
+    <title>Stack And Queue | Log of Vic</title>
 
-    <link rel="icon" type="image/svg+xml" href="../../../favicon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../../../favicon/favicon.svg" />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="../../../favicon/favicon-32x32.png"
+  href="../../../../favicon/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="../../../favicon/favicon-16x16.png"
+  href="../../../../favicon/favicon-16x16.png"
 />
 
     
@@ -34,21 +35,23 @@
     
   <meta
     property="og:title"
-    content="Week2"
+    content="Stack And Queue"
   />
   <meta property="og:site_name" content="Log of Vic" />
+  <meta property="og:description" content=" Stacks Resizing Arrays " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Grind75/Week2.html" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue.html" />
 
 <meta property="article:section" content="Programming" />
     <meta
       property="article:modified_time"
-      content="2023-06-18T22:00:41+08:00"
+      content="2023-06-24T10:00:41+08:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Week2" />
+<meta name="twitter:title" content="Stack And Queue" />
+  <meta name="twitter:description" content=" Stacks Resizing Arrays " />
 
 
   <script type="application/ld+json">
@@ -56,21 +59,22 @@
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Programming",
-      "name": "Week2",
-      "url" : "https://lazyvic.com/Programming/Algorithm/Grind75/Week2.html",
-      "headline": "Week2",
-      "wordCount" : "0",
+      "name": "Stack And Queue",
+      "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue.html",
+      "headline": "Stack And Queue",
+      "description": " Stacks Resizing Arrays ",
+      "wordCount" : "3",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://lazyvic.com/Programming/Algorithm/Grind75/Week2.html"
+          "@id": "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue.html"
       },
       "copyrightHolder" : "Log of Vic",
       "copyrightYear" : "2023",
-      "dateCreated": "2023-06-18T22:00:41.00Z",
+      "dateCreated": "2023-06-24T10:00:41.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-06-18T22:00:41.00Z",
+      "dateModified": "2023-06-24T10:00:41.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Log of Vic",
@@ -87,68 +91,68 @@
 
 
     
-  <script src="../../../js/colortheme-d3e4d351.bundle.min.js"></script>
-<script src="../../../js/main-fbb9c8b0.bundle.min.js"></script>
+  <script src="../../../../js/colortheme-d3e4d351.bundle.min.js"></script>
+<script src="../../../../js/main-fbb9c8b0.bundle.min.js"></script>
 
 <link
   rel="preload"
   as="font"
-  href="../../../fonts/Metropolis.woff2"
+  href="../../../../fonts/Metropolis.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 <link
   rel="preload"
   as="font"
-  href="../../../fonts/LiberationSans.woff2"
+  href="../../../../fonts/LiberationSans.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 
 <link
   rel="preload"
-  href="../../../main-ba0e2765.min.css"
+  href="../../../../main-ba0e2765.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../main-ba0e2765.min.css"
+  href="../../../../main-ba0e2765.min.css"
   media="all"
 />
 
 <link
   rel="preload"
-  href="../../../mobile-79ddc617.min.css"
+  href="../../../../mobile-79ddc617.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../mobile-79ddc617.min.css"
+  href="../../../../mobile-79ddc617.min.css"
   media="screen and (max-width: 45rem)"
 />
 
 <link
   rel="preload"
-  href="../../../print-735ccc12.min.css"
+  href="../../../../print-735ccc12.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../print-735ccc12.min.css"
+  href="../../../../print-735ccc12.min.css"
   media="print"
 />
 
 <link
   rel="preload"
-  href="../../../custom.css"
+  href="../../../../custom.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../custom.css"
+  href="../../../../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/Programming/Algorithm/Grind75/Week2.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -189,7 +193,7 @@
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
-            src="../../../brand.svg"
+            src="../../../../brand.svg"
             alt=""
           />
           <span class="gdoc-brand__title">Log of Vic</span>
@@ -313,7 +317,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../Programming.html"
+                    href="../../../../Programming.html"
                     class="gdoc-nav__entry"
                   >
                     Programming
@@ -360,7 +364,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../Programming/Algorithm.html"
+                    href="../../../../Programming/Algorithm.html"
                     class="gdoc-nav__entry"
                   >
                     Algorithm
@@ -396,7 +400,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../Programming/Languages.html"
+                    href="../../../../Programming/Languages.html"
                     class="gdoc-nav__entry"
                   >
                     Language
@@ -443,7 +447,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../Programming/SiteStory.html"
+                    href="../../../../Programming/SiteStory.html"
                     class="gdoc-nav__entry"
                   >
                     Site Story
@@ -497,7 +501,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../Programming/SiteStory/WhyHugo.html"
+                    href="../../../../Programming/SiteStory/WhyHugo.html"
                     class="gdoc-nav__entry"
                   >
                     Why Hugo
@@ -570,7 +574,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../Programming/SiteStory/SSL.html"
+                    href="../../../../Programming/SiteStory/SSL.html"
                     class="gdoc-nav__entry"
                   >
                     Install SSL
@@ -614,7 +618,7 @@
               
                 <span class="flex">
                   <a
-                    href="../../../Programming/SiteStory/TyporaUpic.html"
+                    href="../../../../Programming/SiteStory/TyporaUpic.html"
                     class="gdoc-nav__entry"
                   >
                     Typora &#43; Upic
@@ -833,7 +837,15 @@
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75.html' href='../../../Programming/Algorithm/Grind75.html'><span itemprop='name'>Grind 75</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Week2</span><meta itemprop='position' content='4' /></li>
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton.html' href='../../../../Programming/Algorithm/Algs4Princeton.html'><span itemprop='name'>Princeton Algorithms</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week2.html' href='../../../../Programming/Algorithm/Algs4Princeton/Week2.html'><span itemprop='name'>Week 2</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Stack And Queue</span><meta itemprop='position' content='5' /></li>
+  
+
   
 
   
@@ -855,8 +867,31 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Week2</h1>
+    <h1>Stack And Queue</h1>
+    <!-- spellchecker-disable -->
+
+  <div class="gdoc-toc gdoc-toc__level--6">
     
+  <ul>
+          <li>
+              <span>
+                <a href="../../../../Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html" class="gdoc-toc__entry">Stacks
+                </a>
+              </span>
+          </li>
+          <li>
+              <span>
+                <a href="../../../../Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html" class="gdoc-toc__entry">Resizing Arrays
+                </a>
+              </span>
+          </li>
+  </ul>
+  </div>
+
+
+
+
+<!-- spellchecker-enable
   </article>
 
 
@@ -917,7 +952,7 @@
     </div>
 
     
-  <script defer src="../../../js/search-83320133.bundle.min.js"></script>
+  <script defer src="../../../../js/search-83320133.bundle.min.js"></script>
 
   </body>
 </html>

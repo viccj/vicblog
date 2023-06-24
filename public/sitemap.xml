@@ -2,11 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
     <loc>https://lazyvic.com/Programming/SiteStory/WhyHugo.html</loc>
     <lastmod>2023-06-21T22:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Blind75/Array/TwoSum.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/AnalysisOfAlgorithm.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/UnionFind.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Blind75/Array/BestTimeToBuyAndSellStock.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
@@ -58,12 +79,42 @@
     <loc>https://lazyvic.com/Programming/Languages/PHP/PhpUnit/Getting-started-with-Spring/test/two-sum.html</loc>
   </url><url>
     <loc>https://lazyvic.com/</loc>
-    <lastmod>2023-06-22T17:00:41+08:00</lastmod>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
   </url><url>
-    <loc>https://lazyvic.com/tags/hugo.html</loc>
-    <lastmod>2023-06-22T17:00:41+08:00</lastmod>
+    <loc>https://lazyvic.com/Programming/Algorithm.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty/UnionFind.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/AnalysisOfAlgorithm/MathematicalModels.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/AnalysisOfAlgorithm/MathematicalModels/MathematicalModels.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays/ResizingArrays.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks/UnionFind.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/UnionFind/UnionFind.html</loc>
+    <lastmod>2023-06-24T10:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/tags/hugo.html</loc>
     <lastmod>2023-06-22T17:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags.html</loc>
@@ -94,9 +145,6 @@
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Languages/PHP/PhpUnit/Integrated-Spring.html</loc>
-    <lastmod>2023-06-18T22:00:41+08:00</lastmod>
-  </url><url>
-    <loc>https://lazyvic.com/Programming/Algorithm.html</loc>
     <lastmod>2023-06-18T22:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Grind75/Week1/Best-Time-to-Buy-and-Sell-Stock.html</loc>
