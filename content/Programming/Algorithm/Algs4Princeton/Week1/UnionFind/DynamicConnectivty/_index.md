@@ -10,11 +10,13 @@ resources:
     credits: "[Robert Sedgewick](https://www.coursera.org/instructor/~250165) | [KEVIN WAYNE](https://www.coursera.org/instructor/~246867) on [Algorithms](https://d3c33hcgiwev3.cloudfront.net/_b65e7611894ba175de27bd14793f894a_15UnionFind.pdf?Expires=1687737600&Signature=ibQ5L3KCmNZqZ0-6PS6EQ9GitVnR6V9~lSEmgU4Tku2ayd7mCBMo4yUKPTRtcl6bAH5OmB0H6KPcIWUrObqS8AqvErqcO9wjEuZZ3dpdP0neG9qBKvk9nqShhAna6H4iSx34KPv0J6iKu-ZdDUwxFo9ve1RbGCriRekIchJHSMw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)"
 ---
 
-### 前提
+{{< toc >}}
+
+## 前提
 
 Giving N objects
 
-### 目的
+## 目的
 
 寫出演算法來完成以下兩點
 
@@ -40,3 +42,8 @@ connectivity 的狀況會如下圖
 
 {{< img name="Dynamic-connectivity-example" size="large" lazy=false >}}
 
+## 相關應用
+
+- 數位照片的Pixels
+- 在同一個網路的電腦
+- 社群網站的好友
