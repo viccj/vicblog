@@ -1,6 +1,5 @@
 ---
 title: "Install SSL"
-type: "posts"
 date: 2023-06-18T22:00:41+08:00
 weight : 3
 tags:

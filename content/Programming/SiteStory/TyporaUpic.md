@@ -1,7 +1,6 @@
 ---
 title: "Typora + Upic"
 date: 2023-06-22T17:00:41+08:00
-type: posts
 weight : 4
 tags:
 - hugo

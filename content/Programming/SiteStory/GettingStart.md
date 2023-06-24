@@ -1,8 +1,6 @@
 ---
 title: "Hugo GitHub Page"
-draft: true
 date: 2023-06-22T14:00:41+08:00
-type: posts
 weight : 2
 tags:
 - hugo
