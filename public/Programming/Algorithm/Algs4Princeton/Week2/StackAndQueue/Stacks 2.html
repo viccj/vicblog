@@ -12,13 +12,8 @@
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="前提 目的 相關應用 連接的定義 演算法實作 Union-find data type (API) 目標：為了union-find 設計一個有效率的資料結構 Union-find implementation 前提 Giving N objects
-目的 寫出演算法來完成以下兩點
-Union command: connect two objects Find/connected query: Is there a path connecting the two objects? 假設給定的物件為 0,1,2,3,4,5,6,7,8,9，在執行完以下的union命令後，
-Union(4, 3) Union(3, 8) Union(6, 5) Union(9, 4) Union(2, 1) connected(0, 7) // no connected connected(8, 9) // connected union(5, 0) union(7, 2) connected(0, 7) union(1, 0) // connected connectivity 的狀況會如下圖
-Dynamic connectivity example (Robert Sedgewick | KEVIN WAYNE on Algorithms) 相關應用 數位照片的Pixels 在同一個網路的電腦 社群網站的好友 連接的定義 Reflexive: p 跟 p 自己連接 Symmetric: 若p跟q連接，q也跟p連接 Transitive: 若p跟q連接，q跟r連接，則p跟r連接 物件如果連接可以想成他們是在同一個component裏面，因此就剛剛的例子，會有2個component set" />
 
-    <title>Dynamic Connectivity | Log of Vic</title>
+    <title>Stacks | Log of Vic</title>
 
     <link rel="icon" type="image/svg+xml" href="../../../../../favicon/favicon.svg" />
 <link
@@ -39,22 +34,13 @@ Dynamic connectivity example (Robert Sedgewick | KEVIN WAYNE on Algorithms) 相�
     
   <meta
     property="og:title"
-    content="Dynamic Connectivity"
+    content="Stacks"
   />
   <meta property="og:site_name" content="Log of Vic" />
-  <meta property="og:description" content="前提 目的 相關應用 連接的定義 演算法實作 Union-find data type (API) 目標：為了union-find 設計一個有效率的資料結構 Union-find implementation 前提 Giving N objects
-目的 寫出演算法來完成以下兩點
-Union command: connect two objects Find/connected query: Is there a path connecting the two objects? 假設給定的物件為 0,1,2,3,4,5,6,7,8,9，在執行完以下的union命令後，
-Union(4, 3) Union(3, 8) Union(6, 5) Union(9, 4) Union(2, 1) connected(0, 7) // no connected connected(8, 9) // connected union(5, 0) union(7, 2) connected(0, 7) union(1, 0) // connected connectivity 的狀況會如下圖
-Dynamic connectivity example (Robert Sedgewick | KEVIN WAYNE on Algorithms) 相關應用 數位照片的Pixels 在同一個網路的電腦 社群網站的好友 連接的定義 Reflexive: p 跟 p 自己連接 Symmetric: 若p跟q連接，q也跟p連接 Transitive: 若p跟q連接，q跟r連接，則p跟r連接 物件如果連接可以想成他們是在同一個component裏面，因此就剛剛的例子，會有2個component set" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty.html" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html" />
 
 <meta property="article:section" content="Programming" />
-    <meta
-      property="article:published_time"
-      content="2023-06-24T10:00:41+08:00"
-    />
     <meta
       property="article:modified_time"
       content="2023-06-24T10:00:41+08:00"
@@ -62,12 +48,7 @@ Dynamic connectivity example (Robert Sedgewick | KEVIN WAYNE on Algorithms) 相�
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Dynamic Connectivity" />
-  <meta name="twitter:description" content="前提 目的 相關應用 連接的定義 演算法實作 Union-find data type (API) 目標：為了union-find 設計一個有效率的資料結構 Union-find implementation 前提 Giving N objects
-目的 寫出演算法來完成以下兩點
-Union command: connect two objects Find/connected query: Is there a path connecting the two objects? 假設給定的物件為 0,1,2,3,4,5,6,7,8,9，在執行完以下的union命令後，
-Union(4, 3) Union(3, 8) Union(6, 5) Union(9, 4) Union(2, 1) connected(0, 7) // no connected connected(8, 9) // connected union(5, 0) union(7, 2) connected(0, 7) union(1, 0) // connected connectivity 的狀況會如下圖
-Dynamic connectivity example (Robert Sedgewick | KEVIN WAYNE on Algorithms) 相關應用 數位照片的Pixels 在同一個網路的電腦 社群網站的好友 連接的定義 Reflexive: p 跟 p 自己連接 Symmetric: 若p跟q連接，q也跟p連接 Transitive: 若p跟q連接，q跟r連接，則p跟r連接 物件如果連接可以想成他們是在同一個component裏面，因此就剛剛的例子，會有2個component set" />
+<meta name="twitter:title" content="Stacks" />
 
 
   <script type="application/ld+json">
@@ -75,21 +56,20 @@ Dynamic connectivity example (Robert Sedgewick | KEVIN WAYNE on Algorithms) 相�
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Programming",
-      "name": "Dynamic Connectivity",
-      "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty.html",
-      "headline": "Dynamic Connectivity",
-      "description": "前提 目的 相關應用 連接的定義 演算法實作 Union-find data type (API) 目標：為了union-find 設計一個有效率的資料結構 Union-find implementation 前提 Giving N objects\n目的 寫出演算法來完成以下兩點\nUnion command: connect two objects Find\/connected query: Is there a path connecting the two objects? 假設給定的物件為 0,1,2,3,4,5,6,7,8,9，在執行完以下的union命令後，\nUnion(4, 3) Union(3, 8) Union(6, 5) Union(9, 4) Union(2, 1) connected(0, 7) \/\/ no connected connected(8, 9) \/\/ connected union(5, 0) union(7, 2) connected(0, 7) union(1, 0) \/\/ connected connectivity 的狀況會如下圖\nDynamic connectivity example (Robert Sedgewick | KEVIN WAYNE on Algorithms) 相關應用 數位照片的Pixels 在同一個網路的電腦 社群網站的好友 連接的定義 Reflexive: p 跟 p 自己連接 Symmetric: 若p跟q連接，q也跟p連接 Transitive: 若p跟q連接，q跟r連接，則p跟r連接 物件如果連接可以想成他們是在同一個component裏面，因此就剛剛的例子，會有2個component set",
-      "wordCount" : "416",
+      "name": "Stacks",
+      "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html",
+      "headline": "Stacks",
+      "wordCount" : "0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty.html"
+          "@id": "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html"
       },
       "copyrightHolder" : "Log of Vic",
       "copyrightYear" : "2023",
       "dateCreated": "2023-06-24T10:00:41.00Z",
-      "datePublished": "2023-06-24T10:00:41.00Z",
+      "datePublished": "0001-01-01T00:00:00.00Z",
       "dateModified": "2023-06-24T10:00:41.00Z",
       "publisher":{
           "@type":"Organization",
@@ -168,7 +148,7 @@ Dynamic connectivity example (Robert Sedgewick | KEVIN WAYNE on Algorithms) 相�
   href="../../../../../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -559,50 +539,6 @@ Dynamic connectivity example (Robert Sedgewick | KEVIN WAYNE on Algorithms) 相�
               
             >
               
-                <span class="flex">
-                  <a
-                    href="../../../../../Programming/SiteStory/GettingStart.html"
-                    class="gdoc-nav__entry"
-                  >
-                    Hugo GitHub Page
-                  </a>
-                </span>
-              
-              
-            </label>
-
-            
-          </li>
-        
-      
-    
-      
-
-      
-        
-      
-
-      
-        
-          
-          
-          
-          
-          
-          
-
-
-          <li>
-            <input
-              type="checkbox"
-              
-                class="hidden"
-              
-            />
-            <label
-              
-            >
-              
                 <span class="flex">GitHub Action w/ VPS</span>
               
               
@@ -909,7 +845,7 @@ Dynamic connectivity example (Robert Sedgewick | KEVIN WAYNE on Algorithms) 相�
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton.html' href='../../../../../Programming/Algorithm/Algs4Princeton.html'><span itemprop='name'>Princeton Algorithms</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week1.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week1.html'><span itemprop='name'>Week 1</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week1/UnionFind.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week1/UnionFind.html'><span itemprop='name'>Union Find</span></a><meta itemprop='position' content='5' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Dynamic Connectivity</span><meta itemprop='position' content='6' /></li>
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton.html' href='../../../../../Programming/Algorithm/Algs4Princeton.html'><span itemprop='name'>Princeton Algorithms</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week2.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week2.html'><span itemprop='name'>Week 2</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue.html'><span itemprop='name'>Stack And Queue</span></a><meta itemprop='position' content='5' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Stacks</span><meta itemprop='position' content='6' /></li>
   
 
   
@@ -935,252 +871,8 @@ Dynamic connectivity example (Robert Sedgewick | KEVIN WAYNE on Algorithms) 相�
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Dynamic Connectivity</h1>
-    <div class="gdoc-toc gdoc-toc__level--6">
-      <nav id="TableOfContents"><ul>
-        <li><a href="#前提">前提</a></li>
-        <li><a href="#目的">目的</a></li>
-        <li><a href="#相關應用">相關應用</a></li>
-        <li><a href="#連接的定義">連接的定義</a></li>
-        <li><a href="#演算法實作">演算法實作</a>
-          <ul>
-            <li><a href="#union-find-data-type-api">Union-find data type (API)</a></li>
-            <li><a href="#目標為了union-find-設計一個有效率的資料結構">目標：為了union-find 設計一個有效率的資料結構</a></li>
-            <li><a href="#union-find-implementation">Union-find implementation</a></li>
-          </ul>
-        </li>
-      </ul></nav>
-      <hr />
-    </div>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="前提"
-    >
-        前提
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty.html#前提" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 前提" aria-label="Anchor to: 前提" href="#%e5%89%8d%e6%8f%90">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>Giving N objects</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="目的"
-    >
-        目的
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty.html#目的" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 目的" aria-label="Anchor to: 目的" href="#%e7%9b%ae%e7%9a%84">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>寫出演算法來完成以下兩點</p>
-<ul>
-<li>Union command: connect two objects</li>
-<li>Find/connected query: Is there a path connecting the two objects?</li>
-</ul>
-<p>假設給定的物件為 0,1,2,3,4,5,6,7,8,9，在執行完以下的<code>union</code>命令後，</p>
-<pre tabindex="0"><code>Union(4, 3)
-Union(3, 8)
-Union(6, 5)
-Union(9, 4)
-Union(2, 1)
-connected(0, 7) // no connected
-connected(8, 9) // connected
-union(5, 0)
-union(7, 2)
-connected(0, 7)
-union(1, 0) // connected
-</code></pre><p>connectivity 的狀況會如下圖</p>
-
-
-
-  <div class="flex justify-center">
-    <figure
-      class="gdoc-markdown__figure"
-    >
-      <a class="gdoc-markdown__link--raw" href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty/DynamicConnectivityExample.png">
-        <picture>
-            <source
-                srcset="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty/DynamicConnectivityExample_hu088580e9a8b63364f78d723058ebeb0d_44990_1800x0_resize_box_3.png"
-            />
-          <img
-                src="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty/DynamicConnectivityExample_hu088580e9a8b63364f78d723058ebeb0d_44990_1800x0_resize_box_3.png"
-              alt="Dynamic connectivity example"
-          />
-        </picture>
-      </a>
-          <figcaption>
-            Dynamic connectivity example
-              (<a
-  class="gdoc-markdown__link"
-  href="https://www.coursera.org/instructor/~250165"
->Robert Sedgewick</a> | <a
-  class="gdoc-markdown__link"
-  href="https://www.coursera.org/instructor/~246867"
->KEVIN WAYNE</a> on <a
-  class="gdoc-markdown__link"
-  href="https://d3c33hcgiwev3.cloudfront.net/_b65e7611894ba175de27bd14793f894a_15UnionFind.pdf?Expires=1687737600&amp;Signature=ibQ5L3KCmNZqZ0-6PS6EQ9GitVnR6V9~lSEmgU4Tku2ayd7mCBMo4yUKPTRtcl6bAH5OmB0H6KPcIWUrObqS8AqvErqcO9wjEuZZ3dpdP0neG9qBKvk9nqShhAna6H4iSx34KPv0J6iKu-ZdDUwxFo9ve1RbGCriRekIchJHSMw_&amp;Key-Pair-Id=APKAJLTNE6QMUY6HBC5A"
->Algorithms</a>)
-          </figcaption>
-    </figure>
-  </div>
-
-<div class="gdoc-page__anchorwrap">
-    <h2 id="相關應用"
-    >
-        相關應用
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty.html#相關應用" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 相關應用" aria-label="Anchor to: 相關應用" href="#%e7%9b%b8%e9%97%9c%e6%87%89%e7%94%a8">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<ul>
-<li>數位照片的Pixels</li>
-<li>在同一個網路的電腦</li>
-<li>社群網站的好友</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="連接的定義"
-    >
-        連接的定義
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty.html#連接的定義" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 連接的定義" aria-label="Anchor to: 連接的定義" href="#%e9%80%a3%e6%8e%a5%e7%9a%84%e5%ae%9a%e7%be%a9">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<ul>
-<li>Reflexive: p 跟 p 自己連接</li>
-<li>Symmetric: 若p跟q連接，q也跟p連接</li>
-<li>Transitive: 若p跟q連接，q跟r連接，則p跟r連接</li>
-</ul>
-<p>物件如果連接可以想成他們是在同一個component裏面，因此就剛剛的例子，會有2個component set</p>
-<pre tabindex="0"><code>{0,1,2,5,6,7} {3,4,8,9}
-</code></pre><div class="gdoc-page__anchorwrap">
-    <h2 id="演算法實作"
-    >
-        演算法實作
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty.html#演算法實作" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 演算法實作" aria-label="Anchor to: 演算法實作" href="#%e6%bc%94%e7%ae%97%e6%b3%95%e5%af%a6%e4%bd%9c">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<ul>
-<li>Find query: 檢查兩個物件是不是在相同的components</li>
-<li>Union command: 將兩個物件所在的component取聯集</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-    <h3 id="union-find-data-type-api"
-    >
-        Union-find data type (API)
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty.html#union-find-data-type-api" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Union-find data type (API)" aria-label="Anchor to: Union-find data type (API)" href="#union-find-data-type-api">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h3>
-</div>
-<div class="gdoc-page__anchorwrap">
-    <h3 id="目標為了union-find-設計一個有效率的資料結構"
-    >
-        目標：為了union-find 設計一個有效率的資料結構
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty.html#目標為了union-find-設計一個有效率的資料結構" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 目標：為了union-find 設計一個有效率的資料結構" aria-label="Anchor to: 目標：為了union-find 設計一個有效率的資料結構" href="#%e7%9b%ae%e6%a8%99%e7%82%ba%e4%ba%86union-find-%e8%a8%ad%e8%a8%88%e4%b8%80%e5%80%8b%e6%9c%89%e6%95%88%e7%8e%87%e7%9a%84%e8%b3%87%e6%96%99%e7%b5%90%e6%a7%8b">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h3>
-</div>
-<p>其中</p>
-<ul>
-<li>Number of object N can be huge.</li>
-<li>Number of operation M can be huge.</li>
-<li>Find queries and union commands may be intermixed(交錯進行).</li>
-</ul>
-<p>API 設計如下</p>
-<pre tabindex="0"><code>public class UF
-
----
-
-UF(int N) // initialize N sites with integer names (0 to N-1)
-
-void union(int p, int q) // add connection between p and q
-
-int find(int p) // component identifier for p (0 to N-1)
-
-boolean connected(int p, int q) // return true if p and q are in the same component
-
-int count // number of components
-</code></pre><div class="gdoc-page__anchorwrap">
-    <h3 id="union-find-implementation"
-    >
-        Union-find implementation
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivty.html#union-find-implementation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Union-find implementation" aria-label="Anchor to: Union-find implementation" href="#union-find-implementation">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h3>
-</div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UF</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">id</span><span class="o">;</span>  <span class="c1">// access to component id (site indexed)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">private</span> <span class="kt">int</span> <span class="n">count</span><span class="o">;</span> <span class="c1">// number of components
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">UF</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// Initialize component id array
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">count</span> <span class="o">=</span> <span class="n">N</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">id</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">N</span><span class="o">];</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">count</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">count</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">connected</span><span class="o">(</span><span class="kt">int</span> <span class="n">p</span><span class="o">,</span> <span class="kt">int</span> <span class="n">q</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">find</span><span class="o">[</span><span class="n">p</span><span class="o">]</span> <span class="o">==</span> <span class="n">find</span><span class="o">[</span><span class="n">q</span><span class="o">];</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">find</span><span class="o">(</span><span class="kt">int</span> <span class="n">p</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="n">id</span><span class="o">[</span><span class="n">p</span><span class="o">];</span>  
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">union</span><span class="o">(</span><span class="kt">int</span> <span class="n">p</span><span class="o">,</span> <span class="kt">int</span> <span class="n">q</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// Put p and q into the same component.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">pID</span> <span class="o">=</span> <span class="n">find</span><span class="o">(</span><span class="n">p</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">qID</span> <span class="o">=</span> <span class="n">find</span><span class="o">(</span><span class="n">q</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="c1">// Nothing to do if p and q are already in the same component.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="o">(</span><span class="n">pID</span> <span class="o">==</span> <span class="n">qID</span><span class="o">)</span> <span class="k">return</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="c1">// Rename p’s component to q’s name.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">id</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">==</span> <span class="n">pID</span><span class="o">)</span> <span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">qID</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">            <span class="n">count</span><span class="o">--;</span> 
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">            
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="c1">// Read number of sites.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">StdIn</span><span class="o">.</span><span class="na">readInt</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="c1">// Initialize N components.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">UF</span> <span class="n">uf</span> <span class="o">=</span> <span class="k">new</span> <span class="n">UF</span><span class="o">(</span><span class="n">n</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="o">(!</span><span class="n">StdIn</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">p</span> <span class="o">=</span> <span class="n">StdIn</span><span class="o">.</span><span class="na">readInt</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">            
-</span></span><span class="line"><span class="cl">            <span class="c1">// Read pair to connect.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="kt">int</span> <span class="n">q</span> <span class="o">=</span> <span class="n">StdIn</span><span class="o">.</span><span class="na">readInt</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">            
-</span></span><span class="line"><span class="cl">            <span class="c1">// Ignore if connected.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="k">if</span> <span class="o">(</span><span class="n">uf</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">p</span><span class="o">)</span> <span class="o">==</span> <span class="n">uf</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">q</span><span class="o">))</span> <span class="k">continue</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">            
-</span></span><span class="line"><span class="cl">            <span class="c1">// Combine components
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">uf</span><span class="o">.</span><span class="na">union</span><span class="o">(</span><span class="n">p</span><span class="o">,</span> <span class="n">q</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">            
-</span></span><span class="line"><span class="cl">            <span class="c1">// Print connections.
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">StdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">p</span> <span class="o">+</span> <span class="s">&#34; &#34;</span> <span class="o">+</span> <span class="n">q</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">        <span class="n">StdOut</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">uf</span><span class="o">.</span><span class="na">count</span><span class="o">()</span> <span class="o">+</span> <span class="s">&#34; components&#34;</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">    <span class="o">}</span>
-</span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div>
+    <h1>Stacks</h1>
+    
   </article>
 
 

@@ -47,3 +47,132 @@ connectivity 的狀況會如下圖
 - 數位照片的Pixels
 - 在同一個網路的電腦
 - 社群網站的好友
+
+
+
+## 連接的定義
+
+- Reflexive: p 跟 p 自己連接
+- Symmetric: 若p跟q連接，q也跟p連接
+- Transitive: 若p跟q連接，q跟r連接，則p跟r連接
+
+
+
+物件如果連接可以想成他們是在同一個component裏面，因此就剛剛的例子，會有2個component set
+
+```
+{0,1,2,5,6,7} {3,4,8,9}
+```
+
+
+
+## 演算法實作
+
+- Find query: 檢查兩個物件是不是在相同的components
+- Union command: 將兩個物件所在的component取聯集
+
+
+
+### Union-find data type (API)
+
+### 目標：為了union-find 設計一個有效率的資料結構
+
+其中
+
+- Number of object N can be huge.
+- Number of operation M can be huge.
+- Find queries and union commands may be intermixed(交錯進行).
+
+
+
+API 設計如下
+
+```
+public class UF
+
+---
+
+UF(int N) // initialize N sites with integer names (0 to N-1)
+
+void union(int p, int q) // add connection between p and q
+
+int find(int p) // component identifier for p (0 to N-1)
+
+boolean connected(int p, int q) // return true if p and q are in the same component
+
+int count // number of components
+
+
+```
+
+### Union-find implementation
+
+```java
+public class UF {
+
+    private int[] id;  // access to component id (site indexed)
+    private int count; // number of components
+
+    public UF(int n) {
+        // Initialize component id array
+        count = N;
+        id = new int[N];
+        for (int i = 0; i < N; i++) {
+            id[i] = i;
+        }
+    }
+
+    public int count() {
+        return count;
+    }
+
+    public boolean connected(int p, int q) {
+        return find[p] == find[q];
+    }
+
+    public int find(int p) {
+      return id[p];  
+    }
+    
+    public void union(int p, int q) {
+        // Put p and q into the same component.
+        int pID = find(p);
+        int qID = find(q);
+        
+        // Nothing to do if p and q are already in the same component.
+        if (pID == qID) return;
+        
+        // Rename p’s component to q’s name.
+        for (int i = 0; i < id.length; i++) {
+            if (id[i] == pID) id[i] = qID;
+            count--; 
+        }
+            
+    }
+
+
+    public static void main(String[] args) {
+        // Read number of sites.
+        int n = StdIn.readInt();
+        
+        // Initialize N components.
+        UF uf = new UF(n);
+        while (!StdIn.isEmpty()) {
+            int p = StdIn.readInt();
+            
+            // Read pair to connect.
+            int q = StdIn.readInt();
+            
+            // Ignore if connected.
+            if (uf.find(p) == uf.find(q)) continue;
+            
+            // Combine components
+            uf.union(p, q);
+            
+            // Print connections.
+            StdOut.println(p + " " + q);
+        }
+        StdOut.println(uf.count() + " components");
+    }
+}
+```
