@@ -17,9 +17,9 @@ resources:
 ---
 ## 初始資料結構
 
-- 名為 `id[]` 且數量為 `N` 的陣列
+- 名為 `id[]` 且數量為 N 的陣列
 
-- `id[p]` 是物件 `p` 所屬於的`component id`
+- `id[p]` 是物件 p 所屬於的 component id
 
 
 
@@ -49,7 +49,7 @@ ex: `id[6] = 0, id[7] =1`, 6 跟7 並沒有connect
 
 {{< img name="quick-union-example" size="large">}}
 
-如上圖再union 6跟1之後，所有原本 `id = id[6]` 的id都改為 id[1]
+如上圖，在union 6跟1之後，所有原本 `id = id[6]` 的id值變為 `id[1]`
 
 
 
