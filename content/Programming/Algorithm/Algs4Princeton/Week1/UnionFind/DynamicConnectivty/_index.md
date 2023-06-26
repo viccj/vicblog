@@ -7,7 +7,7 @@ resources:
   src: "DynamicConnectivityExample.png"
   title: Dynamic connectivity example
   params:
-    credits: "[ROBERT SEDGEWICK](https://www.coursera.org/instructor/~250165) | [KEVIN WAYNE](https://www.coursera.org/instructor/~246867) on [Coursera Algorithms-Part1](https://www.coursera.org/learn/algorithms-part1/home/info)"
+    credits: "[ROBERT SEDGEWICK](https://sedgewick.io/) | [KEVIN WAYNE](https://www.cs.princeton.edu/people/profile/wayne) on [Algorithms in Java, 4th Edition](https://algs4.cs.princeton.edu/lectures/keynote/15UnionFind.pdf)"
 ---
 
 {{< toc >}}
