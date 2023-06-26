@@ -105,7 +105,7 @@ int count // number of components
 
 ```
 
-### Union-find implementation
+### Union-find implementation[<sup>[1]</sup>](#refer-anchor-1)
 
 ```java
 public class UF {
@@ -179,5 +179,7 @@ public class UF {
 
 ```
 ## 參考來源
-- {{<ref-out href="https://algs4.cs.princeton.edu/home/">}} Algorithms, 4th Edition{{</ref-out>}}
+<div id="refer-anchor-1"></div>
+
+[1] {{<ref-out href="https://algs4.cs.princeton.edu/home/">}} Algorithms, 4th Edition{{</ref-out>}}
 
