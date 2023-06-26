@@ -38,9 +38,10 @@ union(7, 2)
 connected(0, 7)
 union(1, 0) // connected
 ```
-connectivity 的狀況會如下圖
+connectivity 的狀況會如下圖[<sup>[1]</sup>](#refer-anchor-1)
 
-{{< img name="Dynamic-connectivity-example" size="large">}}
+![DynamicConnectivityExample](https://raw.githubusercontent.com/viccj/upic/master/uPic/DynamicConnectivityExample.png)
+
 
 ## 相關應用
 
@@ -105,7 +106,7 @@ int count // number of components
 
 ```
 
-### Union-find implementation[<sup>[1]</sup>](#refer-anchor-1)
+### Union-find implementation[<sup>[2]</sup>](#refer-anchor-2)
 
 ```java
 public class UF {
@@ -179,7 +180,11 @@ public class UF {
 
 ```
 ## 參考來源
+
 <div id="refer-anchor-1"></div>
 
-[1] {{<ref-out href="https://algs4.cs.princeton.edu/home/">}} Algorithms, 4th Edition{{</ref-out>}}
+[1] {{<ref-out href="https://algs4.cs.princeton.edu/lectures/keynote/15UnionFind.pdf">}} Algorithms in Java, Lecture slide{{</ref-out>}}
 
+<div id="refer-anchor-2"></div>
+
+[2] {{<ref-out href="https://algs4.cs.princeton.edu/home/">}} Algorithms, 4th Edition{{</ref-out>}}

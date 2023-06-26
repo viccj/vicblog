@@ -30,12 +30,13 @@ if (!doNotTrack) {
 
   <meta name="description" content="初始資料結構 名為 id[] 且數量為 N 的陣列
 id[p] 是物件 p 所屬於的 component id
-Quick Find example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 以上圖為例，id[6] = 0
+以上圖 [1]為例，id[6] = 0
 Find p 的 id 為？
 Connected. p 跟 q 是否有相同的 id？
 ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
 Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].
-Quick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 如上圖，在union 6跟1之後，所有原本 id = id[6] 的id值變為 id[1]" />
+如上圖 [1]，在union 6跟1之後，所有原本 id = id[6] 的id值變為 id[1]
+Implemetion public class QuickUF { private int[] id; public QuickFindUF(int N) { for (int i = 0; i &lt; N; i&#43;&#43;) { id[i] = i; } } public int find(int p) { return id[p]; } public void union(int p, int q) { int pId = id[p]; int qid = id[q]; for (int i = 0; i &lt; id." />
 
     <title>Quick Find | Log of Vic</title>
 
@@ -63,28 +64,38 @@ Quick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th E
   <meta property="og:site_name" content="Log of Vic" />
   <meta property="og:description" content="初始資料結構 名為 id[] 且數量為 N 的陣列
 id[p] 是物件 p 所屬於的 component id
-Quick Find example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 以上圖為例，id[6] = 0
+以上圖 [1]為例，id[6] = 0
 Find p 的 id 為？
 Connected. p 跟 q 是否有相同的 id？
 ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
 Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].
-Quick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 如上圖，在union 6跟1之後，所有原本 id = id[6] 的id值變為 id[1]" />
+如上圖 [1]，在union 6跟1之後，所有原本 id = id[6] 的id值變為 id[1]
+Implemetion public class QuickUF { private int[] id; public QuickFindUF(int N) { for (int i = 0; i &lt; N; i&#43;&#43;) { id[i] = i; } } public int find(int p) { return id[p]; } public void union(int p, int q) { int pId = id[p]; int qid = id[q]; for (int i = 0; i &lt; id." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html" />
 
 <meta property="article:section" content="Programming" />
+    <meta
+      property="article:published_time"
+      content="2023-06-26T10:00:41+08:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2023-06-26T10:00:41+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Quick Find" />
   <meta name="twitter:description" content="初始資料結構 名為 id[] 且數量為 N 的陣列
 id[p] 是物件 p 所屬於的 component id
-Quick Find example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 以上圖為例，id[6] = 0
+以上圖 [1]為例，id[6] = 0
 Find p 的 id 為？
 Connected. p 跟 q 是否有相同的 id？
 ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
 Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].
-Quick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 如上圖，在union 6跟1之後，所有原本 id = id[6] 的id值變為 id[1]" />
+如上圖 [1]，在union 6跟1之後，所有原本 id = id[6] 的id值變為 id[1]
+Implemetion public class QuickUF { private int[] id; public QuickFindUF(int N) { for (int i = 0; i &lt; N; i&#43;&#43;) { id[i] = i; } } public int find(int p) { return id[p]; } public void union(int p, int q) { int pId = id[p]; int qid = id[q]; for (int i = 0; i &lt; id." />
 
 
   <script type="application/ld+json">
@@ -95,8 +106,8 @@ Quick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th E
       "name": "Quick Find",
       "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html",
       "headline": "Quick Find",
-      "description": "初始資料結構 名為 id[] 且數量為 N 的陣列\nid[p] 是物件 p 所屬於的 component id\nQuick Find example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 以上圖為例，id[6] = 0\nFind p 的 id 為？\nConnected. p 跟 q 是否有相同的 id？\nex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect\nUnion. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].\nQuick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 如上圖，在union 6跟1之後，所有原本 id = id[6] 的id值變為 id[1]",
-      "wordCount" : "156",
+      "description": "初始資料結構 名為 id[] 且數量為 N 的陣列\nid[p] 是物件 p 所屬於的 component id\n以上圖 [1]為例，id[6] = 0\nFind p 的 id 為？\nConnected. p 跟 q 是否有相同的 id？\nex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect\nUnion. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].\n如上圖 [1]，在union 6跟1之後，所有原本 id = id[6] 的id值變為 id[1]\nImplemetion public class QuickUF { private int[] id; public QuickFindUF(int N) { for (int i = 0; i \u003c N; i\u002b\u002b) { id[i] = i; } } public int find(int p) { return id[p]; } public void union(int p, int q) { int pId = id[p]; int qid = id[q]; for (int i = 0; i \u003c id.",
+      "wordCount" : "137",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -104,10 +115,10 @@ Quick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th E
           "@id": "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html"
       },
       "copyrightHolder" : "Log of Vic",
-      "copyrightYear" : "0001",
-      "dateCreated": "0001-01-01T00:00:00.00Z",
-      "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "0001-01-01T00:00:00.00Z",
+      "copyrightYear" : "2023",
+      "dateCreated": "2023-06-26T10:00:41.00Z",
+      "datePublished": "2023-06-26T10:00:41.00Z",
+      "dateModified": "2023-06-26T10:00:41.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Log of Vic",
@@ -953,6 +964,19 @@ Quick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th E
     class="gdoc-markdown gdoc-markdown__align--left"
   >
     <h1>Quick Find</h1>
+
+
+
+
+
+
+
+<span class="date-info italic" style="color: gray">Published on: 2023-06-26</span>
+
+
+
+
+
     <div class="gdoc-page__anchorwrap">
     <h2 id="初始資料結構"
     >
@@ -970,41 +994,15 @@ Quick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th E
 <p><code>id[p]</code> 是物件 p 所屬於的 component id</p>
 </li>
 </ul>
-
-
-
-  <div class="flex justify-center">
-    <figure
-      class="gdoc-markdown__figure"
-    >
-      <a class="gdoc-markdown__link--raw" href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind/quick-find-example.png">
-        <picture>
-            <source
-                srcset="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind/quick-find-example_hu0165ddcd233b9f6c80484545917831d5_153757_1800x0_resize_box_3.png"
-            />
-          <img loading="lazy"
-                src="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind/quick-find-example_hu0165ddcd233b9f6c80484545917831d5_153757_1800x0_resize_box_3.png"
-              alt="Quick Find example"
-          />
-        </picture>
-      </a>
-          <figcaption>
-            Quick Find example
-              (<a
+<p><img
+  src="https://raw.githubusercontent.com/viccj/upic/master/uPic/quick-find-example.png"
+  alt="quick-find-example"
+  
+/></p>
+<p>以上圖 <a
   class="gdoc-markdown__link"
-  href="https://sedgewick.io/"
->ROBERT SEDGEWICK</a> | <a
-  class="gdoc-markdown__link"
-  href="https://www.cs.princeton.edu/people/profile/wayne"
->KEVIN WAYNE</a> on <a
-  class="gdoc-markdown__link"
-  href="https://algs4.cs.princeton.edu/lectures/keynote/15UnionFind.pdf"
->Algorithms in Java, 4th Edition</a>)
-          </figcaption>
-    </figure>
-  </div>
-
-<p>以上圖為例，<code>id[6] = 0</code></p>
+  href="#refer-anchor-1"
+><sup>[1]</sup></a>為例，<code>id[6] = 0</code></p>
 <div class="gdoc-page__anchorwrap">
     <h2 id="find"
     >
@@ -1036,41 +1034,15 @@ Quick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th E
     </h2>
 </div>
 <p>要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].</p>
-
-
-
-  <div class="flex justify-center">
-    <figure
-      class="gdoc-markdown__figure"
-    >
-      <a class="gdoc-markdown__link--raw" href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind/quick-union-example.png">
-        <picture>
-            <source
-                srcset="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind/quick-union-example_hua85f177abc6cf20e1599d816cee9c794_42111_1800x0_resize_box_3.png"
-            />
-          <img loading="lazy"
-                src="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind/quick-union-example_hua85f177abc6cf20e1599d816cee9c794_42111_1800x0_resize_box_3.png"
-              alt="Quick union example"
-          />
-        </picture>
-      </a>
-          <figcaption>
-            Quick union example
-              (<a
+<p><img
+  src="https://raw.githubusercontent.com/viccj/upic/master/uPic/quick-union-example.png"
+  alt="quick-union-example"
+  
+/></p>
+<p>如上圖 <a
   class="gdoc-markdown__link"
-  href="https://sedgewick.io/"
->ROBERT SEDGEWICK</a> | <a
-  class="gdoc-markdown__link"
-  href="https://www.cs.princeton.edu/people/profile/wayne"
->KEVIN WAYNE</a> on <a
-  class="gdoc-markdown__link"
-  href="https://algs4.cs.princeton.edu/lectures/keynote/15UnionFind.pdf"
->Algorithms in Java, 4th Edition</a>)
-          </figcaption>
-    </figure>
-  </div>
-
-<p>如上圖，在union 6跟1之後，所有原本 <code>id = id[6]</code> 的id值變為 <code>id[1]</code></p>
+  href="#refer-anchor-1"
+><sup>[1]</sup></a>，在union 6跟1之後，所有原本 <code>id = id[6]</code> 的id值變為 <code>id[1]</code></p>
 <div class="gdoc-page__anchorwrap">
     <h2 id="implemetion"
     >
@@ -1105,8 +1077,42 @@ Quick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th E
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl">  
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="參考來源"
+    >
+        參考來源
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html#參考來源" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 參考來源" aria-label="Anchor to: 參考來源" href="#%e5%8f%83%e8%80%83%e4%be%86%e6%ba%90">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div id="refer-anchor-1"></div>
+<p>[1] <a href="https://algs4.cs.princeton.edu/lectures/keynote/15UnionFind.pdf" target="_blank">Algorithms in Java, Lecture slide</a></p>
+
   </article>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="disqus markdown">
+    <div id="disqus_thread"></div>
+<script>
+    
+
+    
+
+    (function() { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lazyvic-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
 
 
 

@@ -5,8 +5,7 @@
     <link>https://lazyvic.com/Programming/SiteStory.html</link>
     <description>Recent content in Site Story on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 22 Jun 2023 17:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/Programming/SiteStory/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://lazyvic.com/Programming/SiteStory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Hugo</title>
       <link>https://lazyvic.com/Programming/SiteStory/WhyHugo.html</link>
@@ -31,7 +30,7 @@ Jekyll：Ruby寫的，沒什麼感覺 Hugo：Go寫的，好像很潮 Hexo：Node
     <item>
       <title>Hugo GitHub Page</title>
       <link>https://lazyvic.com/Programming/SiteStory/GettingStart.html</link>
-      <pubDate>Thu, 22 Jun 2023 14:00:41 +0800</pubDate>
+      <pubDate>Sun, 18 Jun 2023 14:00:41 +0800</pubDate>
       
       <guid>https://lazyvic.com/Programming/SiteStory/GettingStart.html</guid>
       <description>離安裝好Hugo並胡搞瞎搞也過了大概一週，用我僅存的記憶記錄一下，前面都是湊字數的，重點是最後一段哈哈

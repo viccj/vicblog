@@ -1,6 +1,6 @@
 ---
 title: "Hugo GitHub Page"
-date: 2023-06-22T14:00:41+08:00
+date: 2023-06-18T14:00:41+08:00
 weight : 2
 tags:
 - hugo

@@ -6,12 +6,29 @@
     class="gdoc-markdown gdoc-markdown__align--{{ default "left" (.Page.Params.GeekdocAlign | lower) }}"
   >
     <h1>{{ partial "utils/title" . }}</h1>
+
+
+<!--publish& lastmod-->
+
+{{ $date := .Date.Format "2006-01-02" }}
+{{ $lastmod := .Lastmod.Format "2006-01-02" }}
+
+<span class="date-info italic" style="color: gray">Published on: {{ $date }}</span>
+{{ if ne $lastmod $date }}
+<span class="date-info italic" style="color: gray">    • Last modified: {{ .Lastmod.Format "2006-01-02" }}</span>
+{{ end }}
+
+
+
+
     {{ partial "utils/content" . }}
   </article>
 <br>
 <br>
 <br>
 <br>
+
+<!--disqus-->
 <div class="disqus markdown">
     {{ partial "disqus.html" . }}
 </div>

@@ -5,7 +5,36 @@
     <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind.html</link>
     <description>Recent content in Union Find on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 24 Jun 2023 10:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dynamic Connectivity</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivity.html</link>
+      <pubDate>Sat, 24 Jun 2023 10:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivity.html</guid>
+      <description>前提 目的 相關應用 連接的定義 演算法實作 Union-find data type (API) 目標：為了union-find 設計一個有效率的資料結構 Union-find implementation[2] 參考來源 前提 Giving N objects
+目的 寫出演算法來完成以下兩點
+Union command: connect two objects Find/connected query: Is there a path connecting the two objects? 假設給定的物件為 0,1,2,3,4,5,6,7,8,9，在執行完以下的union命令後，
+Union(4, 3) Union(3, 8) Union(6, 5) Union(9, 4) Union(2, 1) connected(0, 7) // no connected connected(8, 9) // connected union(5, 0) union(7, 2) connected(0, 7) union(1, 0) // connected connectivity 的狀況會如下圖[1]
+相關應用 數位照片的Pixels 在同一個網路的電腦 社群網站的好友 連接的定義 Reflexive: p 跟 p 自己連接 Symmetric: 若p跟q連接，q也跟p連接 Transitive: 若p跟q連接，q跟r連接，則p跟r連接 物件如果連接可以想成他們是在同一個component裏面，因此就剛剛的例子，會有2個component set</description>
+    </item>
+    
+    <item>
+      <title>Quick Find</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html</link>
+      <pubDate>Mon, 26 Jun 2023 10:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html</guid>
+      <description>初始資料結構 名為 id[] 且數量為 N 的陣列
+id[p] 是物件 p 所屬於的 component id
+以上圖 [1]為例，id[6] = 0
+Find p 的 id 為？
+Connected. p 跟 q 是否有相同的 id？
+ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
+Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].
+如上圖 [1]，在union 6跟1之後，所有原本 id = id[6] 的id值變為 id[1]
+Implemetion public class QuickUF { private int[] id; public QuickFindUF(int N) { for (int i = 0; i &amp;lt; N; i++) { id[i] = i; } } public int find(int p) { return id[p]; } public void union(int p, int q) { int pId = id[p]; int qid = id[q]; for (int i = 0; i &amp;lt; id.</description>
+    </item>
+    
   </channel>
 </rss>

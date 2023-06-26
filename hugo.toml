@@ -15,6 +15,7 @@ googleAnalytics= "G-W535BCD288"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 disablePathToLower = true
+enableGitInfo = true
 
 
 # Required if you want to render robots.txt template
@@ -38,3 +39,10 @@ tag = "tags"
 #geekdocToC = 3
 #geekdocMenuBundle = true
 geekdocTagsToMenu = true
+
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
