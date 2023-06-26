@@ -7,7 +7,7 @@ resources:
   src: "DynamicConnectivityExample.png"
   title: Dynamic connectivity example
   params:
-    credits: "[Robert Sedgewick](https://www.coursera.org/instructor/~250165) | [KEVIN WAYNE](https://www.coursera.org/instructor/~246867) on [Algorithms](https://d3c33hcgiwev3.cloudfront.net/_b65e7611894ba175de27bd14793f894a_15UnionFind.pdf?Expires=1687737600&Signature=ibQ5L3KCmNZqZ0-6PS6EQ9GitVnR6V9~lSEmgU4Tku2ayd7mCBMo4yUKPTRtcl6bAH5OmB0H6KPcIWUrObqS8AqvErqcO9wjEuZZ3dpdP0neG9qBKvk9nqShhAna6H4iSx34KPv0J6iKu-ZdDUwxFo9ve1RbGCriRekIchJHSMw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)"
+    credits: "[ROBERT SEDGEWICK](https://www.coursera.org/instructor/~250165) | [KEVIN WAYNE](https://www.coursera.org/instructor/~246867) on [Coursera Algorithms-Part1](https://www.coursera.org/learn/algorithms-part1/home/info)"
 ---
 
 {{< toc >}}
@@ -175,4 +175,9 @@ public class UF {
         StdOut.println(uf.count() + " components");
     }
 }
+
+
 ```
+## 參考來源
+- {{<ref-out href="https://algs4.cs.princeton.edu/home/">}} Algorithms, 4th Edition{{</ref-out>}}
+
