@@ -1,12 +1,4 @@
 ---
 title: Union Find
-geekdocFlatSection: true
+weight: 1
 ---
-
-
-
-<!-- spellchecker-disable -->
-
-{{< toc-tree >}}
-
-<!-- spellchecker-enable
