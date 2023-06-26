@@ -9,6 +9,7 @@ description = "Log of vic"
 
 pluralizeListTitles = false
 disqusShortname = "lazyvic-com"
+googleAnalytics= "G-W535BCD288"
 
 # Geekdoc required configuration
 pygmentsUseClasses = true
