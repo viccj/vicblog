@@ -4,7 +4,12 @@ geekdocFlatSection: true
 date: 2023-06-26T10:00:41+08:00
 weight: 2
 ---
-## 初始資料結構
+
+{{< toc >}}
+
+## Quick Find Structure
+
+### 初始資料結構
 
 - 名為 `id[]` 且數量為 N 的陣列
 
@@ -18,13 +23,13 @@ weight: 2
 
 
 
-## Find
+### Find
 
 p 的 id 為？
 
 
 
-## Connected.
+### Connected.
 
 p 跟 q 是否有相同的 id？
 
@@ -32,7 +37,7 @@ ex: `id[6] = 0, id[7] =1`, 6 跟7 並沒有connect
 
 
 
-## Union.
+### Union.
 
 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].
 
