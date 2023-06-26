@@ -40,7 +40,7 @@ union(1, 0) // connected
 ```
 connectivity 的狀況會如下圖
 
-{{< img name="Dynamic-connectivity-example" size="large" lazy=false >}}
+{{< img name="Dynamic-connectivity-example" size="large">}}
 
 ## 相關應用
 

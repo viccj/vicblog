@@ -28,8 +28,16 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
+  <meta name="description" content="初始資料結構 名為 id[] 且數量為 N 的陣列
+id[p] 是物件 p 所屬於的component id
+Quick Find example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 以上圖為例，id[6] = 0
+Find p 的 id 為？
+Connected. p 跟 q 是否有相同的 id？
+ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
+Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].
+Quick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 如上圖再union 6跟1之後，所有原本 id = id[6] 的id都改為 id[1]" />
 
-    <title>Union Find | Log of Vic</title>
+    <title>Quick Find | Log of Vic</title>
 
     <link rel="icon" type="image/svg+xml" href="../../../../../favicon/favicon.svg" />
 <link
@@ -50,21 +58,33 @@ if (!doNotTrack) {
     
   <meta
     property="og:title"
-    content="Union Find"
+    content="Quick Find"
   />
   <meta property="og:site_name" content="Log of Vic" />
+  <meta property="og:description" content="初始資料結構 名為 id[] 且數量為 N 的陣列
+id[p] 是物件 p 所屬於的component id
+Quick Find example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 以上圖為例，id[6] = 0
+Find p 的 id 為？
+Connected. p 跟 q 是否有相同的 id？
+ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
+Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].
+Quick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 如上圖再union 6跟1之後，所有原本 id = id[6] 的id都改為 id[1]" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html" />
 
 <meta property="article:section" content="Programming" />
-    <meta
-      property="article:modified_time"
-      content="2023-06-24T10:00:41+08:00"
-    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Union Find" />
+<meta name="twitter:title" content="Quick Find" />
+  <meta name="twitter:description" content="初始資料結構 名為 id[] 且數量為 N 的陣列
+id[p] 是物件 p 所屬於的component id
+Quick Find example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 以上圖為例，id[6] = 0
+Find p 的 id 為？
+Connected. p 跟 q 是否有相同的 id？
+ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
+Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].
+Quick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 如上圖再union 6跟1之後，所有原本 id = id[6] 的id都改為 id[1]" />
 
 
   <script type="application/ld+json">
@@ -72,10 +92,11 @@ if (!doNotTrack) {
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Programming",
-      "name": "Union Find",
+      "name": "Quick Find",
       "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html",
-      "headline": "Union Find",
-      "wordCount" : "0",
+      "headline": "Quick Find",
+      "description": "初始資料結構 名為 id[] 且數量為 N 的陣列\nid[p] 是物件 p 所屬於的component id\nQuick Find example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 以上圖為例，id[6] = 0\nFind p 的 id 為？\nConnected. p 跟 q 是否有相同的 id？\nex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect\nUnion. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].\nQuick union example (ROBERT SEDGEWICK | KEVIN WAYNE on Algorithms in Java, 4th Edition) 如上圖再union 6跟1之後，所有原本 id = id[6] 的id都改為 id[1]",
+      "wordCount" : "155",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -83,10 +104,10 @@ if (!doNotTrack) {
           "@id": "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html"
       },
       "copyrightHolder" : "Log of Vic",
-      "copyrightYear" : "2023",
-      "dateCreated": "2023-06-24T10:00:41.00Z",
+      "copyrightYear" : "0001",
+      "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-06-24T10:00:41.00Z",
+      "dateModified": "0001-01-01T00:00:00.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Log of Vic",
@@ -905,7 +926,7 @@ if (!doNotTrack) {
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton.html' href='../../../../../Programming/Algorithm/Algs4Princeton.html'><span itemprop='name'>Princeton Algorithms</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week1.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week1.html'><span itemprop='name'>Week 1</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week1/UnionFind.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week1/UnionFind.html'><span itemprop='name'>Union Find</span></a><meta itemprop='position' content='5' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Union Find</span><meta itemprop='position' content='6' /></li>
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton.html' href='../../../../../Programming/Algorithm/Algs4Princeton.html'><span itemprop='name'>Princeton Algorithms</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week1.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week1.html'><span itemprop='name'>Week 1</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week1/UnionFind.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week1/UnionFind.html'><span itemprop='name'>Union Find</span></a><meta itemprop='position' content='5' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Quick Find</span><meta itemprop='position' content='6' /></li>
   
 
   
@@ -931,8 +952,160 @@ if (!doNotTrack) {
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Union Find</h1>
-    
+    <h1>Quick Find</h1>
+    <div class="gdoc-page__anchorwrap">
+    <h2 id="初始資料結構"
+    >
+        初始資料結構
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html#初始資料結構" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 初始資料結構" aria-label="Anchor to: 初始資料結構" href="#%e5%88%9d%e5%a7%8b%e8%b3%87%e6%96%99%e7%b5%90%e6%a7%8b">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<ul>
+<li>
+<p>名為 <code>id[]</code> 且數量為 <code>N</code> 的陣列</p>
+</li>
+<li>
+<p><code>id[p]</code> 是物件 <code>p</code> 所屬於的<code>component id</code></p>
+</li>
+</ul>
+
+
+
+  <div class="flex justify-center">
+    <figure
+      class="gdoc-markdown__figure"
+    >
+      <a class="gdoc-markdown__link--raw" href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind/quick-find-example.png">
+        <picture>
+            <source
+                srcset="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind/quick-find-example_hu0165ddcd233b9f6c80484545917831d5_153757_1800x0_resize_box_3.png"
+            />
+          <img loading="lazy"
+                src="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind/quick-find-example_hu0165ddcd233b9f6c80484545917831d5_153757_1800x0_resize_box_3.png"
+              alt="Quick Find example"
+          />
+        </picture>
+      </a>
+          <figcaption>
+            Quick Find example
+              (<a
+  class="gdoc-markdown__link"
+  href="https://sedgewick.io/"
+>ROBERT SEDGEWICK</a> | <a
+  class="gdoc-markdown__link"
+  href="https://www.cs.princeton.edu/people/profile/wayne"
+>KEVIN WAYNE</a> on <a
+  class="gdoc-markdown__link"
+  href="https://algs4.cs.princeton.edu/lectures/keynote/15UnionFind.pdf"
+>Algorithms in Java, 4th Edition</a>)
+          </figcaption>
+    </figure>
+  </div>
+
+<p>以上圖為例，<code>id[6] = 0</code></p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="find"
+    >
+        Find
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html#find" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Find" aria-label="Anchor to: Find" href="#find">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>p 的 id 為？</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="connected"
+    >
+        Connected.
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html#connected" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Connected." aria-label="Anchor to: Connected." href="#connected">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>p 跟 q 是否有相同的 id？</p>
+<p>ex: <code>id[6] = 0, id[7] =1</code>, 6 跟7 並沒有connect</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="union"
+    >
+        Union.
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html#union" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Union." aria-label="Anchor to: Union." href="#union">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].</p>
+
+
+
+  <div class="flex justify-center">
+    <figure
+      class="gdoc-markdown__figure"
+    >
+      <a class="gdoc-markdown__link--raw" href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind/quick-union-example.png">
+        <picture>
+            <source
+                srcset="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind/quick-union-example_hua85f177abc6cf20e1599d816cee9c794_42111_1800x0_resize_box_3.png"
+            />
+          <img loading="lazy"
+                src="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind/quick-union-example_hua85f177abc6cf20e1599d816cee9c794_42111_1800x0_resize_box_3.png"
+              alt="Quick union example"
+          />
+        </picture>
+      </a>
+          <figcaption>
+            Quick union example
+              (<a
+  class="gdoc-markdown__link"
+  href="https://sedgewick.io/"
+>ROBERT SEDGEWICK</a> | <a
+  class="gdoc-markdown__link"
+  href="https://www.cs.princeton.edu/people/profile/wayne"
+>KEVIN WAYNE</a> on <a
+  class="gdoc-markdown__link"
+  href="https://algs4.cs.princeton.edu/lectures/keynote/15UnionFind.pdf"
+>Algorithms in Java, 4th Edition</a>)
+          </figcaption>
+    </figure>
+  </div>
+
+<p>如上圖再union 6跟1之後，所有原本 <code>id = id[6]</code> 的id都改為 id[1]</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="implemetion"
+    >
+        Implemetion
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html#implemetion" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Implemetion" aria-label="Anchor to: Implemetion" href="#implemetion">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">QuickUF</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">id</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">QuickFindUF</span><span class="o">(</span><span class="kt">int</span> <span class="n">N</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    	    <span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    	<span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">find</span><span class="o">(</span><span class="kt">int</span> <span class="n">p</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    	<span class="k">return</span> <span class="n">id</span><span class="o">[</span><span class="n">p</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">union</span><span class="o">(</span><span class="kt">int</span> <span class="n">p</span><span class="o">,</span> <span class="kt">int</span> <span class="n">q</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    	<span class="kt">int</span> <span class="n">pId</span> <span class="o">=</span> <span class="n">id</span><span class="o">[</span><span class="n">p</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">    	<span class="kt">int</span> <span class="n">qid</span> <span class="o">=</span> <span class="n">id</span><span class="o">[</span><span class="n">q</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">    	<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">id</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">==</span> <span class="n">pid</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">qid</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    	<span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div>
   </article>
 
 
