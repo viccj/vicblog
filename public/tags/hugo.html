@@ -957,6 +957,86 @@ Jekyll：Ruby寫的，沒什麼感覺 Hugo：Go寫的，好像很潮 Hexo：Node
     <article class="gdoc-post">
       <header class="gdoc-post__header">
         <h1 class="gdoc-post__title">
+          <a href="../Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html">Quick Find</a>
+        </h1>
+      </header>
+
+      <section class="gdoc-markdown">
+        Quick Find Structure 初始資料結構 Find Connected. Union. Implemetion 參考來源 Quick Find Structure 初始資料結構 名為 id[] 且數量為 N 的陣列
+id[p] 是物件 p 所屬於的 component id
+以上圖 [1]為例，id[6] = 0
+Find p 的 id 為？
+Connected. p 跟 q 是否有相同的 id？
+ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
+Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].
+如上圖 [1]，在union 6跟1之後，所有原本 id = id[6] 的id值變為 id[1]
+      </section>
+
+      <div class="gdoc-post__readmore">
+        
+          <a
+            class="flex-inline align-center fake-link"
+            title="Read full post"
+            href="../Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html"
+          >
+            Read full post
+            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
+          </a>
+        
+      </div>
+
+      <footer class="gdoc-post__footer">
+        <div class="flex flex-wrap align-center gdoc-post__meta">
+          <span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+  <span class="gdoc-post__tag">
+    <time datetime="2023-06-26T22:42:18&#43;08:00">
+      
+      Jun 26, 2023
+    </time>
+  </span>
+</span>
+
+<span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
+  <span class="gdoc-post__tag">One minute to read</span>
+</span>
+
+
+
+  
+    
+    
+      
+        <span class="flex align-center no-wrap">
+          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../tags/hugo.html"
+      title="All posts tagged with &#39;hugo&#39;"
+    >
+      hugo
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+
+
+
+
+        </div>
+      </footer>
+    </article>
+  
+    <article class="gdoc-post">
+      <header class="gdoc-post__header">
+        <h1 class="gdoc-post__title">
           <a href="../Programming/SiteStory/GettingStart.html">Hugo GitHub Page</a>
         </h1>
       </header>

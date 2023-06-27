@@ -6,7 +6,7 @@
     <description>Recent content in hugo on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 Jun 2023 17:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Jun 2023 10:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Hugo</title>
       <link>https://lazyvic.com/Programming/SiteStory/WhyHugo.html</link>
@@ -26,6 +26,22 @@ Hugo WordPress研究了半天，也不時看到其他架靜態blog的工具，�
 Jekyll：Ruby寫的，沒什麼感覺 Hugo：Go寫的，好像很潮 Hexo：Node.js寫的，直接刪掉 刪掉了Jekyll跟Hexo最後在wordpress跟Hugo選一個，一開始還是有點猶豫不決，最後壓垮我的倒數第二根稻草是看到一篇 Hugo+Github Action 自動部署到 VPS 的文章， 心裡想哇靠這不是把我的三個願望一次完成了嗎？還多點了一滴滴CI/CD。
 最後一根稻草是也去看了一下技術名人的網站，看到 良葛格的新網站 也是用Hugo架的，整個簡潔又專業。
 因此最後，就決定是Hugo了</description>
+    </item>
+    
+    <item>
+      <title>Quick Find</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html</link>
+      <pubDate>Mon, 26 Jun 2023 10:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html</guid>
+      <description>Quick Find Structure 初始資料結構 Find Connected. Union. Implemetion 參考來源 Quick Find Structure 初始資料結構 名為 id[] 且數量為 N 的陣列
+id[p] 是物件 p 所屬於的 component id
+以上圖 [1]為例，id[6] = 0
+Find p 的 id 為？
+Connected. p 跟 q 是否有相同的 id？
+ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
+Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].
+如上圖 [1]，在union 6跟1之後，所有原本 id = id[6] 的id值變為 id[1]</description>
     </item>
     
     <item>

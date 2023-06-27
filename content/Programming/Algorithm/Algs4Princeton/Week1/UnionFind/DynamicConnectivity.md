@@ -2,12 +2,6 @@
 title: Dynamic Connectivity
 date: 2023-06-24T10:00:41+08:00
 weight: 1
-resources:
-- name: Dynamic-connectivity-example
-  src: "DynamicConnectivityExample.png"
-  title: Dynamic connectivity example
-  params:
-    credits: "[ROBERT SEDGEWICK](https://sedgewick.io/) | [KEVIN WAYNE](https://www.cs.princeton.edu/people/profile/wayne) on [Algorithms in Java, 4th Edition](https://algs4.cs.princeton.edu/lectures/keynote/15UnionFind.pdf)"
 ---
 
 {{< toc >}}
