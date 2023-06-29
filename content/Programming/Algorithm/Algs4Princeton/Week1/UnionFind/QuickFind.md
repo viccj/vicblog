@@ -3,7 +3,7 @@ title: Quick Find
 date: 2023-06-26T10:00:41+08:00
 weight: 2
 tags:
-- hugo
+- Algorithm
 ---
 
 {{< toc >}}
@@ -78,6 +78,23 @@ public class QuickUF {
   
 }
 ```
+
+## Too slow
+
+### Cost model
+
+| Algorithm  | initialize | union | Find |
+| ---------- | ---------- | ----- | ---- |
+| Quick-find | N          | N     | 1    |
+
+
+
+#### Quick-find defect: Union too expensive
+
+Ex: 對於N個物件來說，如果有N個Union 指令，那會需要N<sup>2</sup>次
+
+因此要想辦法提高Union的效率
+
 
 ## 參考來源
 
