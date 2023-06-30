@@ -57,6 +57,7 @@ public class QuickUF {
     private int[] id;
     
     public QuickFindUF(int N) {
+        id = new int[N];
         for (int i = 0; i < N; i++) {
     	    id[i] = i;
     	}
@@ -64,6 +65,10 @@ public class QuickUF {
     
     public int find(int p) {
     	return id[p];
+    }
+
+    public boolean connected(int p, int q) {
+        return id[p] == id[q];
     }
     
     public void union(int p, int q) {
@@ -89,7 +94,7 @@ public class QuickUF {
 
 
 
-#### Quick-find defect: Union too expensive
+### Quick-find defect: Union too expensive
 
 Ex: 對於N個物件來說，如果有N個Union 指令，那會需要N<sup>2</sup>次
 

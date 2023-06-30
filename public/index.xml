@@ -55,14 +55,13 @@ Jekyll：Ruby寫的，沒什麼感覺 Hugo：Go寫的，好像很潮 Hexo：Node
       <pubDate>Mon, 26 Jun 2023 10:00:41 +0800</pubDate>
       
       <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html</guid>
-      <description>Quick Find Structure 初始資料結構 Find Connected. Union. Implemetion 參考來源 Quick Find Structure 初始資料結構 名為 id[] 且數量為 N 的陣列
+      <description>Quick Find Structure 初始資料結構 Find Connected. Union. Implemetion Too slow Cost model Quick-find defect: Union too expensive 參考來源 Quick Find Structure 初始資料結構 名為 id[] 且數量為 N 的陣列
 id[p] 是物件 p 所屬於的 component id
 以上圖 [1]為例，id[6] = 0
 Find p 的 id 為？
 Connected. p 跟 q 是否有相同的 id？
 ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
-Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].
-如上圖 [1]，在union 6跟1之後，所有原本 id = id[6] 的id值變為 id[1]</description>
+Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].</description>
     </item>
     
     <item>
@@ -94,6 +93,22 @@ Github Page 抓不到css 其實前面的步驟網路上都一堆教學，唯一�
 我的css一直跑掉，打開開發工具看一下發現抓不到我的css跟js等檔案。
 在stackoverflow上找了半天，發現是相對路徑的問題，最後在config.toml檔案上加上
 relativeURLs= true 就解決了。</description>
+    </item>
+    
+    <item>
+      <title>Quick Union</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickUnion.html</link>
+      <pubDate>Fri, 30 Jun 2023 10:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickUnion.html</guid>
+      <description>初始資料結構 Root Find Union Implement Also too slow Cost model Quick-find defect Quick-union defect 參考來源 因為 Quick-find 演算法中，Union 的效率太低，因此要改善Union，在這章節稱為Quick Union （lazy approach），為什麼要叫Lazy approach呢？因為能躺著就不要做著，能坐著就不要站著，除非死到臨頭不然不要行動。
+初始資料結構 名為 id[] 且數量為 N 的陣列
+id[p] 是物件 p 所屬於的component id
+上面兩個與 Quick-find 一樣，但這次多了一個新的結構， root
+Root 將一整個Array 看成 a set of trees，也就是說每個物件都屬於一個 tree，這個資料結構就是由很多 tree 集合而成。
+每個物件，會有一個Parent，如下圖 [1]（3 可以接到4，3的 parent 是 4，4 的 parent 是 9) 順著線一直找，當找不到 parent 時，這時候就稱這點為 root
+如果這個物件只有自己，那自己就是root，例如1
+Find 因為每個物件都會有一個 root，要找兩個物件是不是同一個 component 的話，只要看他們的 root 是不是一樣就可以</description>
     </item>
     
     <item>

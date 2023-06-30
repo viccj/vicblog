@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivity.html</loc>
-    <lastmod>2023-06-26T22:35:46+08:00</lastmod>
+    <lastmod>2023-06-27T10:52:31+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/SiteStory/WhyHugo.html</loc>
     <lastmod>2023-06-24T16:23:28+08:00</lastmod>
@@ -21,7 +21,7 @@
     <lastmod>2023-06-26T22:42:18+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html</loc>
-    <lastmod>2023-06-26T22:42:18+08:00</lastmod>
+    <lastmod>2023-06-29T14:47:23+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Blind75/Array/BestTimeToBuyAndSellStock.html</loc>
     <lastmod>2023-06-24T16:23:28+08:00</lastmod>
@@ -37,6 +37,9 @@
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2.html</loc>
     <lastmod>2023-06-24T12:37:03+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickUnion.html</loc>
+    <lastmod>2023-06-30T10:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/SiteStory/GitHubActionWithVPS.html</loc>
     <lastmod>2023-06-22T15:56:40+08:00</lastmod>
@@ -92,11 +95,11 @@
     <loc>https://lazyvic.com/Programming/Languages/Java/Spring-Boot.html</loc>
     <lastmod>2023-06-21T23:12:00+08:00</lastmod>
   </url><url>
-    <loc>https://lazyvic.com/tags/hugo.html</loc>
-    <lastmod>2023-06-26T22:42:18+08:00</lastmod>
+    <loc>https://lazyvic.com/tags/Algorithm.html</loc>
+    <lastmod>2023-06-30T10:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags.html</loc>
-    <lastmod>2023-06-26T22:42:18+08:00</lastmod>
+    <lastmod>2023-06-30T10:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/AnalysisOfAlgorithm/MathematicalModels/MathematicalModels.html</loc>
     <lastmod>2023-06-24T12:37:03+08:00</lastmod>
@@ -106,6 +109,9 @@
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks/UnionFind.html</loc>
     <lastmod>2023-06-24T12:37:03+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/tags/hugo.html</loc>
+    <lastmod>2023-06-26T22:35:46+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags/trash-talk.html</loc>
     <lastmod>2023-06-24T16:23:28+08:00</lastmod>
