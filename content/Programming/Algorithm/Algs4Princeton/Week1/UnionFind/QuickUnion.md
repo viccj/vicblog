@@ -28,10 +28,9 @@ tags:
 
 
 
-- 每個物件，會有一個Parent，如下圖 [<sup>[1]</sup>](#refer-anchor-1)（3 可以接到4，3的 parent 是 4，4 的 parent 是 9)
+- 每個物件，會有一個Parent，如下圖，（3 可以接到4，3的 parent 是 4，4 的 parent 是 9)
 
-![](https://raw.githubusercontent.com/viccj/upic/master/uPic/quick-union-data-structure-example.png)
-
+![my-quick-union-ds](https://raw.githubusercontent.com/viccj/upic/master/uPic/my-quick-union-ds.png)
 
 
 - 順著線一直找，當找不到 parent 時，這時候就稱這點為 root
@@ -50,14 +49,13 @@ tags:
 
 要將兩個物件（例如p, q) 合併，只要將 p 的 root 的 id 變成 q 的root的 id 就可以
 
-下圖  [<sup>[1]</sup>](#refer-anchor-1)  為將9 跟6 合併的例子
+下圖為將9 跟6 合併的例子
 
-![](https://raw.githubusercontent.com/viccj/upic/master/uPic/quick-union-tree-example.png)
+![my-qu-exam](https://raw.githubusercontent.com/viccj/upic/master/uPic/my-qu-exam.png)
 
 這時候只需要把`id[9]`改成6 就可以完成合併了
 
-![](https://raw.githubusercontent.com/viccj/upic/master/uPic/quick-union-index-example.png)
-
+![qu-last-one-i](https://raw.githubusercontent.com/viccj/upic/master/uPic/qu-last-one-i.png)
 
 
 ## Implement

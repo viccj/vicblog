@@ -30,7 +30,7 @@ if (!doNotTrack) {
 
   <meta name="description" content="Quick Find Structure 初始資料結構 Find Connected. Union. Implemetion Too slow Cost model Quick-find defect: Union too expensive 參考來源 Quick Find Structure 初始資料結構 名為 id[] 且數量為 N 的陣列
 id[p] 是物件 p 所屬於的 component id
-以上圖 [1]為例，id[6] = 0
+以上圖為例，id[6] = 0
 Find p 的 id 為？
 Connected. p 跟 q 是否有相同的 id？
 ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
@@ -62,7 +62,7 @@ Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p
   <meta property="og:site_name" content="Log of Vic" />
   <meta property="og:description" content="Quick Find Structure 初始資料結構 Find Connected. Union. Implemetion Too slow Cost model Quick-find defect: Union too expensive 參考來源 Quick Find Structure 初始資料結構 名為 id[] 且數量為 N 的陣列
 id[p] 是物件 p 所屬於的 component id
-以上圖 [1]為例，id[6] = 0
+以上圖為例，id[6] = 0
 Find p 的 id 為？
 Connected. p 跟 q 是否有相同的 id？
 ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
@@ -85,7 +85,7 @@ Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p
 <meta name="twitter:title" content="Quick Find" />
   <meta name="twitter:description" content="Quick Find Structure 初始資料結構 Find Connected. Union. Implemetion Too slow Cost model Quick-find defect: Union too expensive 參考來源 Quick Find Structure 初始資料結構 名為 id[] 且數量為 N 的陣列
 id[p] 是物件 p 所屬於的 component id
-以上圖 [1]為例，id[6] = 0
+以上圖為例，id[6] = 0
 Find p 的 id 為？
 Connected. p 跟 q 是否有相同的 id？
 ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
@@ -100,8 +100,8 @@ Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p
       "name": "Quick Find",
       "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html",
       "headline": "Quick Find",
-      "description": "Quick Find Structure 初始資料結構 Find Connected. Union. Implemetion Too slow Cost model Quick-find defect: Union too expensive 參考來源 Quick Find Structure 初始資料結構 名為 id[] 且數量為 N 的陣列\nid[p] 是物件 p 所屬於的 component id\n以上圖 [1]為例，id[6] = 0\nFind p 的 id 為？\nConnected. p 跟 q 是否有相同的 id？\nex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect\nUnion. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].",
-      "wordCount" : "195",
+      "description": "Quick Find Structure 初始資料結構 Find Connected. Union. Implemetion Too slow Cost model Quick-find defect: Union too expensive 參考來源 Quick Find Structure 初始資料結構 名為 id[] 且數量為 N 的陣列\nid[p] 是物件 p 所屬於的 component id\n以上圖為例，id[6] = 0\nFind p 的 id 為？\nConnected. p 跟 q 是否有相同的 id？\nex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect\nUnion. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].",
+      "wordCount" : "193",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -1058,14 +1058,11 @@ Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p
 </li>
 </ul>
 <p><img
-  src="https://raw.githubusercontent.com/viccj/upic/master/uPic/quick-find-example.png"
+  src="https://raw.githubusercontent.com/viccj/upic/master/uPic/my-quick-uinon-example.png"
   alt="quick-find-example"
   
 /></p>
-<p>以上圖 <a
-  class="gdoc-markdown__link"
-  href="#refer-anchor-1"
-><sup>[1]</sup></a>為例，<code>id[6] = 0</code></p>
+<p>以上圖為例，<code>id[6] = 0</code></p>
 <div class="gdoc-page__anchorwrap">
     <h3 id="find"
     >
@@ -1098,14 +1095,11 @@ Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p
 </div>
 <p>要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].</p>
 <p><img
-  src="https://raw.githubusercontent.com/viccj/upic/master/uPic/quick-union-example.png"
-  alt="quick-union-example"
+  src="https://raw.githubusercontent.com/viccj/upic/master/uPic/after-quick-union.png"
+  alt="after-quick-union"
   
 /></p>
-<p>如上圖 <a
-  class="gdoc-markdown__link"
-  href="#refer-anchor-1"
-><sup>[1]</sup></a>，在union 6跟1之後，所有原本 <code>id = id[6]</code> 的id值變為 <code>id[1]</code></p>
+<p>如上圖，在union 6跟1之後，所有原本 <code>id = id[6]</code> 的id值變為 <code>id[1]</code></p>
 <div class="gdoc-page__anchorwrap">
     <h2 id="implemetion"
     >

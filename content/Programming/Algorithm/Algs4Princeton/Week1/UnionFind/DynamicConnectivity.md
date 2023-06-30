@@ -32,11 +32,9 @@ union(7, 2)
 connected(0, 7)
 union(1, 0) // connected
 ```
-connectivity 的狀況會如下圖[<sup>[1]</sup>](#refer-anchor-1)
+connectivity 的狀況會如下圖
 
-![DynamicConnectivityExample](https://raw.githubusercontent.com/viccj/upic/master/uPic/DynamicConnectivityExample.png)
-
-
+![my-dyc](https://raw.githubusercontent.com/viccj/upic/master/uPic/my-dyc.png)
 ## 相關應用
 
 - 數位照片的Pixels

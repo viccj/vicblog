@@ -15,7 +15,7 @@
       <description>前提 目的 相關應用 連接的定義 演算法實作 Union-find data type (API) 目標：為了union-find 設計一個有效率的資料結構 Union-find implementation[2] 參考來源 前提 Giving N objects
 目的 寫出演算法來完成以下兩點
 Union command: connect two objects Find/connected query: Is there a path connecting the two objects? 假設給定的物件為 0,1,2,3,4,5,6,7,8,9，在執行完以下的union命令後，
-Union(4, 3) Union(3, 8) Union(6, 5) Union(9, 4) Union(2, 1) connected(0, 7) // no connected connected(8, 9) // connected union(5, 0) union(7, 2) connected(0, 7) union(1, 0) // connected connectivity 的狀況會如下圖[1]
+Union(4, 3) Union(3, 8) Union(6, 5) Union(9, 4) Union(2, 1) connected(0, 7) // no connected connected(8, 9) // connected union(5, 0) union(7, 2) connected(0, 7) union(1, 0) // connected connectivity 的狀況會如下圖
 相關應用 數位照片的Pixels 在同一個網路的電腦 社群網站的好友 連接的定義 Reflexive: p 跟 p 自己連接 Symmetric: 若p跟q連接，q也跟p連接 Transitive: 若p跟q連接，q跟r連接，則p跟r連接 物件如果連接可以想成他們是在同一個component裏面，因此就剛剛的例子，會有2個component set</description>
     </item>
     
@@ -27,7 +27,7 @@ Union(4, 3) Union(3, 8) Union(6, 5) Union(9, 4) Union(2, 1) connected(0, 7) // n
       <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html</guid>
       <description>Quick Find Structure 初始資料結構 Find Connected. Union. Implemetion Too slow Cost model Quick-find defect: Union too expensive 參考來源 Quick Find Structure 初始資料結構 名為 id[] 且數量為 N 的陣列
 id[p] 是物件 p 所屬於的 component id
-以上圖 [1]為例，id[6] = 0
+以上圖為例，id[6] = 0
 Find p 的 id 為？
 Connected. p 跟 q 是否有相同的 id？
 ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
@@ -45,7 +45,7 @@ Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p
 id[p] 是物件 p 所屬於的component id
 上面兩個與 Quick-find 一樣，但這次多了一個新的結構， root
 Root 將一整個Array 看成 a set of trees，也就是說每個物件都屬於一個 tree，這個資料結構就是由很多 tree 集合而成。
-每個物件，會有一個Parent，如下圖 [1]（3 可以接到4，3的 parent 是 4，4 的 parent 是 9) 順著線一直找，當找不到 parent 時，這時候就稱這點為 root
+每個物件，會有一個Parent，如下圖，（3 可以接到4，3的 parent 是 4，4 的 parent 是 9) 順著線一直找，當找不到 parent 時，這時候就稱這點為 root
 如果這個物件只有自己，那自己就是root，例如1
 Find 因為每個物件都會有一個 root，要找兩個物件是不是同一個 component 的話，只要看他們的 root 是不是一樣就可以</description>
     </item>
