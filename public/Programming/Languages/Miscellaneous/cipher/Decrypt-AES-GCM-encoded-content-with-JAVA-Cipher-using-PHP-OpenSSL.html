@@ -71,7 +71,7 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
     />
     <meta
       property="article:modified_time"
-      content="2023-07-05T15:00:41+08:00"
+      content="2023-07-05T23:59:12+08:00"
     />
 
 
@@ -92,7 +92,7 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
       "url" : "https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html",
       "headline": "Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL",
       "description": "Conclusion The Process 參考資料 最近工作遇到一個專案，是要把透過Java使用AES-GCM加密過的資料解密，因為對方也沒有講清楚（或是不熟）導致解密有點不順利，不過後來還是成功解出來了，因此紀錄一下。\nIn a recent project, I had to decrypt data encrypted using AES-GCM in Java. Despite some initial challenges due to unclear instructions or lack of familiarity, I eventually succeeded in decrypting the data. Here’s a brief summary of the process.\nConclusion Java透過AES-GCM加密後的結果會包含兩部分：加密後字串\u002bTag，要解密時把字串拆開拿到Tag，並且只對加密後字串解密。\nwhen encrypting data using AES-GCM in Java, the resulting ciphertext will consist of two parts: the encrypted string and the tag. When decrypting, it is important to separate the ciphertext and retrieve the tag.",
-      "wordCount" : "871",
+      "wordCount" : "875",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -104,7 +104,7 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
       "copyrightYear" : "2023",
       "dateCreated": "2023-07-05T15:00:41.00Z",
       "datePublished": "2023-07-05T15:00:41.00Z",
-      "dateModified": "2023-07-05T15:00:41.00Z",
+      "dateModified": "2023-07-05T23:59:12.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Log of Vic",
@@ -946,7 +946,7 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
         <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-07-05T15:00:41&#43;08:00">
+    <time datetime="2023-07-05T23:59:12&#43;08:00">
       
       Jul 5, 2023
     </time>
@@ -1125,8 +1125,8 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
 <p>AES-GCM has four inputs: an AES key, an initialization vector (IV), a plaintext content, and optional additional authenticated data (AAD).</p>
 <p>AES-GCM generates two outputs: a ciphertext and message authentication code (also called an authentication tag).</p>
 </blockquote>
-<p>但是我並沒有這個 &ldquo;Tag&rdquo;，客戶也沒提供，因此後來又去查一下資料，看看有沒有辦法透過已經有的資料推出Tag，後來被我查到了，Tag就在加密後字串的最後面</p>
-<p>However, I did not have this &ldquo;Tag&rdquo; and the client did not provide it either. So I further researched and tried to find a way to derive the Tag using the available data. Eventually, I found it! The Tag is located at the end of the encrypted string.</p>
+<p>但是我並沒有這個 &ldquo;Tag&rdquo;，客戶也沒提供，因此後來又去查一下資料，看看有沒有辦法透過已經有的資料推出Tag，後來被我查到了，Tag就在加密後字串的最後面(至少用Java加密後的是這樣)</p>
+<p>However, I did not have this &ldquo;Tag&rdquo; and the client did not provide it either. So I further researched and tried to find a way to derive the Tag using the available data. Eventually, I found it! The Tag is located at the end of the encrypted string (at least for Java).</p>
 <blockquote>
 <p>In Java the tag is <em>unfortunately</em> added at the end of the ciphertext. - <a
   class="gdoc-markdown__link"

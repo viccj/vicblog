@@ -111,9 +111,9 @@ The [RFC](https://www.rfc-editor.org/rfc/rfc5084), also mentions the presence of
 
 
 
-但是我並沒有這個 "Tag"，客戶也沒提供，因此後來又去查一下資料，看看有沒有辦法透過已經有的資料推出Tag，後來被我查到了，Tag就在加密後字串的最後面
+但是我並沒有這個 "Tag"，客戶也沒提供，因此後來又去查一下資料，看看有沒有辦法透過已經有的資料推出Tag，後來被我查到了，Tag就在加密後字串的最後面(至少用Java加密後的是這樣)
 
-However, I did not have this "Tag" and the client did not provide it either. So I further researched and tried to find a way to derive the Tag using the available data. Eventually, I found it! The Tag is located at the end of the encrypted string.
+However, I did not have this "Tag" and the client did not provide it either. So I further researched and tried to find a way to derive the Tag using the available data. Eventually, I found it! The Tag is located at the end of the encrypted string (at least for Java).
 
 > In Java the tag is *unfortunately* added at the end of the ciphertext. - [StackOverFlow](https://stackoverflow.com/questions/23864440/aes-gcm-implementation-with-authentication-tag-in-java)
 

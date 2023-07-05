@@ -5,8 +5,7 @@
     <link>https://lazyvic.com/Programming/Languages/Miscellaneous/cipher.html</link>
     <description>Recent content in Chpher on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 05 Jul 2023 15:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</title>
       <link>https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html</link>
