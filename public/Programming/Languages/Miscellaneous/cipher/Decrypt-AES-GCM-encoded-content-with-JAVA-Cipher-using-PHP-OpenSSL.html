@@ -28,21 +28,25 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
+  <meta name="description" content="Conclusion The Process 參考資料 最近工作遇到一個專案，是要把透過Java使用AES-GCM加密過的資料解密，因為對方也沒有講清楚（或是不熟）導致解密有點不順利，不過後來還是成功解出來了，因此紀錄一下。
+In a recent project, I had to decrypt data encrypted using AES-GCM in Java. Despite some initial challenges due to unclear instructions or lack of familiarity, I eventually succeeded in decrypting the data. Here&rsquo;s a brief summary of the process.
+Conclusion Java透過AES-GCM加密後的結果會包含兩部分：加密後字串&#43;Tag，要解密時把字串拆開拿到Tag，並且只對加密後字串解密。
+when encrypting data using AES-GCM in Java, the resulting ciphertext will consist of two parts: the encrypted string and the tag. When decrypting, it is important to separate the ciphertext and retrieve the tag." />
 
-    <title>java | Log of Vic</title>
+    <title>Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL | Log of Vic</title>
 
-    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../../../favicon/favicon.svg" />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="../favicon/favicon-32x32.png"
+  href="../../../../favicon/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="../favicon/favicon-16x16.png"
+  href="../../../../favicon/favicon-16x16.png"
 />
 
     
@@ -50,84 +54,135 @@ if (!doNotTrack) {
     
   <meta
     property="og:title"
-    content="java"
+    content="Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL"
   />
   <meta property="og:site_name" content="Log of Vic" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://lazyvic.com/tags/java.html" />
+  <meta property="og:description" content="Conclusion The Process 參考資料 最近工作遇到一個專案，是要把透過Java使用AES-GCM加密過的資料解密，因為對方也沒有講清楚（或是不熟）導致解密有點不順利，不過後來還是成功解出來了，因此紀錄一下。
+In a recent project, I had to decrypt data encrypted using AES-GCM in Java. Despite some initial challenges due to unclear instructions or lack of familiarity, I eventually succeeded in decrypting the data. Here’s a brief summary of the process.
+Conclusion Java透過AES-GCM加密後的結果會包含兩部分：加密後字串&#43;Tag，要解密時把字串拆開拿到Tag，並且只對加密後字串解密。
+when encrypting data using AES-GCM in Java, the resulting ciphertext will consist of two parts: the encrypted string and the tag. When decrypting, it is important to separate the ciphertext and retrieve the tag." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html" />
 
-
+<meta property="article:section" content="Programming" />
+    <meta
+      property="article:published_time"
+      content="2023-07-05T15:00:41+08:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2023-07-05T15:00:41+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="java" />
+<meta name="twitter:title" content="Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL" />
+  <meta name="twitter:description" content="Conclusion The Process 參考資料 最近工作遇到一個專案，是要把透過Java使用AES-GCM加密過的資料解密，因為對方也沒有講清楚（或是不熟）導致解密有點不順利，不過後來還是成功解出來了，因此紀錄一下。
+In a recent project, I had to decrypt data encrypted using AES-GCM in Java. Despite some initial challenges due to unclear instructions or lack of familiarity, I eventually succeeded in decrypting the data. Here’s a brief summary of the process.
+Conclusion Java透過AES-GCM加密後的結果會包含兩部分：加密後字串&#43;Tag，要解密時把字串拆開拿到Tag，並且只對加密後字串解密。
+when encrypting data using AES-GCM in Java, the resulting ciphertext will consist of two parts: the encrypted string and the tag. When decrypting, it is important to separate the ciphertext and retrieve the tag." />
 
 
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "TechArticle",
+      "articleSection": "Programming",
+      "name": "Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL",
+      "url" : "https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html",
+      "headline": "Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL",
+      "description": "Conclusion The Process 參考資料 最近工作遇到一個專案，是要把透過Java使用AES-GCM加密過的資料解密，因為對方也沒有講清楚（或是不熟）導致解密有點不順利，不過後來還是成功解出來了，因此紀錄一下。\nIn a recent project, I had to decrypt data encrypted using AES-GCM in Java. Despite some initial challenges due to unclear instructions or lack of familiarity, I eventually succeeded in decrypting the data. Here’s a brief summary of the process.\nConclusion Java透過AES-GCM加密後的結果會包含兩部分：加密後字串\u002bTag，要解密時把字串拆開拿到Tag，並且只對加密後字串解密。\nwhen encrypting data using AES-GCM in Java, the resulting ciphertext will consist of two parts: the encrypted string and the tag. When decrypting, it is important to separate the ciphertext and retrieve the tag.",
+      "wordCount" : "871",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html"
+      },
+      "keywords" : [ "php" , "java" , "cipher" ],
+      "copyrightHolder" : "Log of Vic",
+      "copyrightYear" : "2023",
+      "dateCreated": "2023-07-05T15:00:41.00Z",
+      "datePublished": "2023-07-05T15:00:41.00Z",
+      "dateModified": "2023-07-05T15:00:41.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Log of Vic",
+          "url": "https://lazyvic.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://lazyvic.com/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
+  }
+  </script>
 
 
     
-  <script src="../js/colortheme-d3e4d351.bundle.min.js"></script>
-<script src="../js/main-fbb9c8b0.bundle.min.js"></script>
+  <script src="../../../../js/colortheme-d3e4d351.bundle.min.js"></script>
+<script src="../../../../js/main-fbb9c8b0.bundle.min.js"></script>
 
 <link
   rel="preload"
   as="font"
-  href="../fonts/Metropolis.woff2"
+  href="../../../../fonts/Metropolis.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 <link
   rel="preload"
   as="font"
-  href="../fonts/LiberationSans.woff2"
+  href="../../../../fonts/LiberationSans.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 
 <link
   rel="preload"
-  href="../main-ba0e2765.min.css"
+  href="../../../../main-ba0e2765.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../main-ba0e2765.min.css"
+  href="../../../../main-ba0e2765.min.css"
   media="all"
 />
 
 <link
   rel="preload"
-  href="../mobile-79ddc617.min.css"
+  href="../../../../mobile-79ddc617.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../mobile-79ddc617.min.css"
+  href="../../../../mobile-79ddc617.min.css"
   media="screen and (max-width: 45rem)"
 />
 
 <link
   rel="preload"
-  href="../print-735ccc12.min.css"
+  href="../../../../print-735ccc12.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../print-735ccc12.min.css"
+  href="../../../../print-735ccc12.min.css"
   media="print"
 />
 
 <link
   rel="preload"
-  href="../custom.css"
+  href="../../../../custom.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../custom.css"
+  href="../../../../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/tags/java.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -168,7 +223,7 @@ if (!doNotTrack) {
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
-            src="../brand.svg"
+            src="../../../../brand.svg"
             alt=""
           />
           <span class="gdoc-brand__title">Log of Vic</span>
@@ -292,7 +347,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming.html"
+                    href="../../../../Programming.html"
                     class="gdoc-nav__entry"
                   >
                     Programming
@@ -339,7 +394,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/Algorithm.html"
+                    href="../../../../Programming/Algorithm.html"
                     class="gdoc-nav__entry"
                   >
                     Algorithm
@@ -375,7 +430,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/Languages.html"
+                    href="../../../../Programming/Languages.html"
                     class="gdoc-nav__entry"
                   >
                     Language
@@ -422,7 +477,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory.html"
+                    href="../../../../Programming/SiteStory.html"
                     class="gdoc-nav__entry"
                   >
                     Site Story
@@ -476,7 +531,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/WhyHugo.html"
+                    href="../../../../Programming/SiteStory/WhyHugo.html"
                     class="gdoc-nav__entry"
                   >
                     Why Hugo
@@ -520,7 +575,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/GettingStart.html"
+                    href="../../../../Programming/SiteStory/GettingStart.html"
                     class="gdoc-nav__entry"
                   >
                     Hugo GitHub Page
@@ -593,7 +648,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/SSL.html"
+                    href="../../../../Programming/SiteStory/SSL.html"
                     class="gdoc-nav__entry"
                   >
                     Install SSL
@@ -637,7 +692,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/TyporaUpic.html"
+                    href="../../../../Programming/SiteStory/TyporaUpic.html"
                     class="gdoc-nav__entry"
                   >
                     Typora &#43; Upic
@@ -676,102 +731,6 @@ if (!doNotTrack) {
     
   </section>
 
-  
-    <section class="gdoc-nav--tags">
-      <h2>Tags</h2>
-      <ul class="gdoc-nav__list">
-        
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/Algorithm.html"
-              >
-                Algorithm
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/cipher.html"
-              >
-                cipher
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/hugo.html"
-              >
-                hugo
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/infra.html"
-              >
-                infra
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry is-active"
-                href="../tags/java.html"
-              >
-                java
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/leetcode.html"
-              >
-                leetcode
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/php.html"
-              >
-                php
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/trash-talk.html"
-              >
-                trash talk
-              </a>
-            </li>
-          
-        
-      </ul>
-    </section>
   
 
 
@@ -900,36 +859,91 @@ if (!doNotTrack) {
         <div class="gdoc-page">
           
   
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="../Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html">Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</a>
-        </h1>
-      </header>
 
-      <section class="gdoc-markdown">
-        Conclusion The Process 參考資料 最近工作遇到一個專案，是要把透過Java使用AES-GCM加密過的資料解密，因為對方也沒有講清楚（或是不熟）導致解密有點不順利，不過後來還是成功解出來了，因此紀錄一下。
-In a recent project, I had to decrypt data encrypted using AES-GCM in Java. Despite some initial challenges due to unclear instructions or lack of familiarity, I eventually succeeded in decrypting the data. Here&rsquo;s a brief summary of the process.
-Conclusion Java透過AES-GCM加密後的結果會包含兩部分：加密後字串+Tag，要解密時把字串拆開拿到Tag，並且只對加密後字串解密。
-when encrypting data using AES-GCM in Java, the resulting ciphertext will consist of two parts: the encrypted string and the tag. When decrypting, it is important to separate the ciphertext and retrieve the tag.
-      </section>
 
-      <div class="gdoc-post__readmore">
+  
+
+
+
+
+
+
+<div
+  class="gdoc-page__header flex flex-wrap
+  
+    justify-between
+  
+  hidden-mobile
+  "
+  itemprop="breadcrumb"
+>
+  
+    <div>
+      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
+      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
         
-          <a
-            class="flex-inline align-center fake-link"
-            title="Read full post"
-            href="../Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html"
-          >
-            Read full post
-            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-          </a>
         
-      </div>
+        
+        
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Languages.html' href='../../../../Programming/Languages.html'><span itemprop='name'>Language</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Languages/Miscellaneous.html' href='../../../../Programming/Languages/Miscellaneous.html'><span itemprop='name'>Miscellaneous</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Languages/Miscellaneous/cipher.html' href='../../../../Programming/Languages/Miscellaneous/cipher.html'><span itemprop='name'>Chpher</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</span><meta itemprop='position' content='5' /></li>
+  
 
-      <footer class="gdoc-post__footer">
-        <div class="flex flex-wrap align-center gdoc-post__meta">
-          <span class="flex align-center no-wrap">
+  
+
+  
+
+  
+
+  
+
+  
+
+      </ol>
+    </div>
+  
+  
+</div>
+
+
+
+  <article
+    class="gdoc-markdown gdoc-markdown__align--left"
+  >
+    <h1>Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</h1>
+    <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
+        <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
     <time datetime="2023-07-05T15:00:41&#43;08:00">
@@ -956,7 +970,7 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/cipher.html"
+      href="../../../../tags/cipher.html"
       title="All posts tagged with &#39;cipher&#39;"
     >
       cipher
@@ -976,7 +990,7 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/java.html"
+      href="../../../../tags/java.html"
       title="All posts tagged with &#39;java&#39;"
     >
       java
@@ -996,7 +1010,7 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/php.html"
+      href="../../../../tags/php.html"
       title="All posts tagged with &#39;php&#39;"
     >
       php
@@ -1012,23 +1026,242 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
 
 
 
-        </div>
-      </footer>
-    </article>
-  
-  
+    </div>
 
 
-<nav class="gdoc-paging flex flex-even align-center" role="navigation">
-  <div class="gdoc-paging__item gdoc-paging__item--prev">
+
+
+    <p><div class="gdoc-toc gdoc-toc__level--6">
+      <nav id="TableOfContents"><ul>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#the-process">The Process</a></li>
+        <li><a href="#參考資料">參考資料</a></li>
+      </ul></nav>
+      <hr />
+    </div>
+最近工作遇到一個專案，是要把透過Java使用AES-GCM加密過的資料解密，因為對方也沒有講清楚（或是不熟）導致解密有點不順利，不過後來還是成功解出來了，因此紀錄一下。</p>
+<p>In a recent project, I had to decrypt data encrypted using AES-GCM in Java. Despite some initial challenges due to unclear instructions or lack of familiarity, I eventually succeeded in decrypting the data. Here&rsquo;s a brief summary of the process.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="conclusion"
+    >
+        Conclusion
+        <a data-clipboard-text="https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html#conclusion" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Conclusion" aria-label="Anchor to: Conclusion" href="#conclusion">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Java透過AES-GCM加密後的結果會包含兩部分：加密後字串+Tag，要解密時把字串拆開拿到Tag，並且只對加密後字串解密。</p>
+<p>when encrypting data using AES-GCM in Java, the resulting ciphertext will consist of two parts: the <strong>encrypted string</strong> and the <strong>tag</strong>. When decrypting, it is important to separate the ciphertext and retrieve the tag. The decryption process should only be applied to the encrypted string part.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="the-process"
+    >
+        The Process
+        <a data-clipboard-text="https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html#the-process" class="gdoc-page__anchor clip flex align-center" title="Anchor to: The Process" aria-label="Anchor to: The Process" href="#the-process">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>Given data:</p>
+<ul>
+<li>Cipher: AES-GCM</li>
+<li>Key: i_am_key (to be hashed using SHA-256)</li>
+<li>IV: 6732ebbdb62d93067ad6aad8 (hex)</li>
+<li>encryptedText: e8675abcd27f9b2b734504cb8adfbd88d8592c25960e8e7d4df060</li>
+<li>plainText: &lsquo;hello world&rsquo;</li>
+</ul>
+<p>一開始只有這些資訊，因此我直接先試試看，因為有特地提到 key 要 <code>sha256 hash</code>，因此我判斷是用AES-256-GCM算法</p>
+<p>With the initial information provided, I proceeded with the decryption attempt. Since it was specifically mentioned that the key needed to be hashed using SHA-256, I determined that the AES-256-GCM algorithm was being used.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">testDecrypt</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$plainText</span> <span class="o">=</span> <span class="s1">&#39;hello world&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$cipher</span> <span class="o">=</span> <span class="s1">&#39;AES-256-GCM&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$key</span> <span class="o">=</span> <span class="s1">&#39;i_am_key&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$key</span> <span class="o">=</span> <span class="nx">hash</span><span class="p">(</span><span class="s1">&#39;sha256&#39;</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nv">$iv</span> <span class="o">=</span> <span class="s1">&#39;6732ebbdb62d93067ad6aad8&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$iv</span> <span class="o">=</span> <span class="nx">hex2bin</span><span class="p">(</span><span class="nv">$iv</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$encryptedText</span> <span class="o">=</span> <span class="s1">&#39;e8675abcd27f9b2b734504cb8adfbd88d8592c25960e8e7d4df060&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">   
+</span></span><span class="line"><span class="cl">        <span class="nv">$encryptedBindToken</span> <span class="o">=</span> <span class="nx">hex2bin</span><span class="p">(</span><span class="nx">substr</span><span class="p">(</span><span class="nv">$encryptedText</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="nv">$tagLength</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nv">$tag</span> <span class="o">=</span> <span class="nx">hex2bin</span><span class="p">(</span><span class="nx">substr</span><span class="p">(</span><span class="nv">$encryptedText</span><span class="p">,</span> <span class="o">-</span><span class="nv">$tagLength</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nv">$decrypted</span> <span class="o">=</span> <span class="nx">openssl_decrypt</span><span class="p">(</span><span class="nx">bin2hex</span><span class="p">(</span><span class="nv">$encryptedText</span><span class="p">),</span> <span class="nv">$cipher</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="nx">OPENSSL_RAW_DATA</span> <span class="p">,</span> <span class="nv">$iv</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertEquals</span><span class="p">(</span><span class="nv">$decrypted</span><span class="p">,</span> <span class="nv">$plainText</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>Get <code>false</code> directly, unexpectedly.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">PHPUnit 9.6.9 by Sebastian Bergmann and contributors.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Time: 00:00.060, Memory: 6.00 MB
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">There was <span class="m">1</span> failure:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">1<span class="o">)</span> xxxTest::testDecrypt
+</span></span><span class="line"><span class="cl">   Failed asserting that <span class="s1">&#39;hello world&#39;</span> matches expected false.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">FAILURES!
+</span></span></code></pre></div><p>因此便去查一下資料，發現透過AES-GCM加密後會有一個 Tag 值，這個值也是解密會用到的</p>
+<p>Therefore, I proceeded to look up the information and found that when using AES-GCM encryption, there is a tag value generated, which is also used during the decryption process.</p>
+<p><a
+  class="gdoc-markdown__link"
+  href="https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf"
+>The GCM document from NIST (National Institute of Standards and Technology)</a></p>
+<blockquote>
+<p>The following two bit strings comprise the output data of the authenticated encryption function:</p>
+<p>• A ciphertext, denoted C, whose bit length is the same as that of the plaintext.</p>
+<p>• An authentication tag, or tag, for short, denoted T.</p>
+</blockquote>
+<p>下面這個<a
+  class="gdoc-markdown__link"
+  href="https://www.rfc-editor.org/rfc/rfc5084"
+>RFC</a>也有提到會有一個 &ldquo;Tag&rdquo;</p>
+<p>The <a
+  class="gdoc-markdown__link"
+  href="https://www.rfc-editor.org/rfc/rfc5084"
+>RFC</a>, also mentions the presence of a &ldquo;Tag&rdquo;</p>
+<blockquote>
+<p>AES-GCM has four inputs: an AES key, an initialization vector (IV), a plaintext content, and optional additional authenticated data (AAD).</p>
+<p>AES-GCM generates two outputs: a ciphertext and message authentication code (also called an authentication tag).</p>
+</blockquote>
+<p>但是我並沒有這個 &ldquo;Tag&rdquo;，客戶也沒提供，因此後來又去查一下資料，看看有沒有辦法透過已經有的資料推出Tag，後來被我查到了，Tag就在加密後字串的最後面</p>
+<p>However, I did not have this &ldquo;Tag&rdquo; and the client did not provide it either. So I further researched and tried to find a way to derive the Tag using the available data. Eventually, I found it! The Tag is located at the end of the encrypted string.</p>
+<blockquote>
+<p>In Java the tag is <em>unfortunately</em> added at the end of the ciphertext. - <a
+  class="gdoc-markdown__link"
+  href="https://stackoverflow.com/questions/23864440/aes-gcm-implementation-with-authentication-tag-in-java"
+>StackOverFlow</a></p>
+</blockquote>
+<p>所以客戶提供的字串會有一段是tag，但目前還是不知道長度是多少，本來想直接問一下他們tag長度設定多少，但還是算了，先試試看預設長度 128bits。</p>
+<p>So the string provided contains a section that represents the tag. However, the length of the tag is still unknown. Initially, I thought about directly asking for the tag length, but I decided to try it using the default length of 128 bits.</p>
+<p>因為提供的hex的加密字串，所以直接取的話要算32個字元，如果轉成binary，只要取16個字元就好，這邊就直接抓最後32字元</p>
+<p>Since the provided encrypted string is in hexadecimal format, if we consider each hex digit as one character, it would require 32 characters. However, if we convert it to binary format, we only need 16 characters. Therefore, I will directly extract the last 32 characters as the tag.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">testDecrypt</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$plainText</span> <span class="o">=</span> <span class="s1">&#39;hello world&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$cipher</span> <span class="o">=</span> <span class="s1">&#39;AES-256-GCM&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$key</span> <span class="o">=</span> <span class="s1">&#39;i_am_key&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$key</span> <span class="o">=</span> <span class="nx">hash</span><span class="p">(</span><span class="s1">&#39;sha256&#39;</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nv">$iv</span> <span class="o">=</span> <span class="s1">&#39;6732ebbdb62d93067ad6aad8&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$iv</span> <span class="o">=</span> <span class="nx">hex2bin</span><span class="p">(</span><span class="nv">$iv</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$encryptedText</span> <span class="o">=</span> <span class="s1">&#39;e8675abcd27f9b2b734504cb8adfbd88d8592c25960e8e7d4df060&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$tagLength</span> <span class="o">=</span> <span class="mi">32</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$tag</span> <span class="o">=</span> <span class="nx">hex2bin</span><span class="p">(</span><span class="nx">substr</span><span class="p">(</span><span class="nv">$encryptedText</span><span class="p">,</span> <span class="o">-</span><span class="nv">$tagLength</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$decrypted</span> <span class="o">=</span> <span class="nx">openssl_decrypt</span><span class="p">(</span><span class="nx">bin2hex</span><span class="p">(</span><span class="nv">$encryptedText</span><span class="p">),</span> <span class="nv">$cipher</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="nx">OPENSSL_RAW_DATA</span> <span class="p">,</span> <span class="nv">$iv</span><span class="p">,</span> <span class="nv">$tag</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertEquals</span><span class="p">(</span><span class="nv">$decrypted</span><span class="p">,</span> <span class="nv">$plainText</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">PHPUnit 9.6.9 by Sebastian Bergmann and contributors.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Time: 00:00.060, Memory: 6.00 MB
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">There was <span class="m">1</span> failure:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">1<span class="o">)</span> xxxTest::testDecrypt
+</span></span><span class="line"><span class="cl">   Failed asserting that <span class="s1">&#39;hello world&#39;</span> matches expected false.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">FAILURES!
+</span></span></code></pre></div><p>結果還是 <code>false</code>，不知道是哪邊弄錯了，難道是tag長度弄錯了?!</p>
+<p>The result still turned out to be &ldquo;false,&rdquo; and I&rsquo;m not sure where the mistake lies. Could it be that the tag length was set incorrectly?!</p>
+<p>但後來想到既然沒提供 Tag 的話，代表他們八成也是用預設長度（後來證明沒錯，測了幾個長度的 tag 也是失敗）</p>
+<p>However, later on, I realized that if they didn&rsquo;t provide the tag, it probably means they also used the default length (which was later confirmed to be true as testing different tag lengths also failed).</p>
+<p>最後真的沒辦法了，自己用 key 跟 iv 加密一次看一下結果如何</p>
+<p>In the end, when all else failed, I decided to encrypt it myself using the key and IV and see what the result would be.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">testEncrypt</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$plainText</span> <span class="o">=</span> <span class="s1">&#39;hello world&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$cipher</span> <span class="o">=</span> <span class="s1">&#39;AES-256-GCM&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$key</span> <span class="o">=</span> <span class="s1">&#39;i_am_key&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$key</span> <span class="o">=</span> <span class="nx">hash</span><span class="p">(</span><span class="s1">&#39;sha256&#39;</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nv">$iv</span> <span class="o">=</span> <span class="s1">&#39;6732ebbdb62d93067ad6aad8&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$iv</span> <span class="o">=</span> <span class="nx">hex2bin</span><span class="p">(</span><span class="nv">$iv</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$encryptedText</span> <span class="o">=</span> <span class="s1">&#39;e8675abcd27f9b2b734504cb8adfbd88d8592c25960e8e7d4df060&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$tagLength</span> <span class="o">=</span> <span class="mi">32</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$encryptedBindToken</span> <span class="o">=</span> <span class="nx">hex2bin</span><span class="p">(</span><span class="nx">substr</span><span class="p">(</span><span class="nv">$encryptedText</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="nv">$tagLength</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nv">$encrypted</span> <span class="o">=</span> <span class="nx">openssl_encrypt</span><span class="p">(</span><span class="nv">$plainText</span><span class="p">,</span> <span class="nv">$cipher</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="nx">OPENSSL_RAW_DATA</span> <span class="p">,</span> <span class="nv">$iv</span><span class="p">,</span> <span class="nv">$tag</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">echo</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span><span class="p">;</span><span class="nx">var_dump</span><span class="p">(</span><span class="nx">bin2hex</span><span class="p">(</span><span class="nv">$encrypted</span><span class="p">));</span><span class="k">echo</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span><span class="p">;</span><span class="k">die</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">string<span class="o">(</span>22<span class="o">)</span> <span class="s2">&#34;e8675abcd27f9b2b734504&#34;</span>
+</span></span></code></pre></div><p>發現咦這不是只有加密字串的前面嗎？</p>
+<p>Oh, I just realized that this is not the entire encrypted string, but only the beginning part, right?</p>
+<p><strong>e8675abcd27f9b2b734504</strong>cb8adfbd88d8592c25960e8e7d4df060</p>
+<p>所以真正的加密字串只有一段，後面是tag，解密的時候只要解密tag以外的那一段就好了&hellip;</p>
+<p>So the actual encrypted string consists of a portion followed by the tag. During decryption, we only need to decrypt the part excluding the tag&hellip;</p>
+<p>立馬重新再解密一次</p>
+<p>Let me proceed with decrypting it again immediately.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="k">public</span> <span class="k">function</span> <span class="nf">testDecrypt</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$plainText</span> <span class="o">=</span> <span class="s1">&#39;hello world&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$cipher</span> <span class="o">=</span> <span class="s1">&#39;AES-256-GCM&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$key</span> <span class="o">=</span> <span class="s1">&#39;i_am_key&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$key</span> <span class="o">=</span> <span class="nx">hash</span><span class="p">(</span><span class="s1">&#39;sha256&#39;</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nv">$iv</span> <span class="o">=</span> <span class="s1">&#39;6732ebbdb62d93067ad6aad8&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$iv</span> <span class="o">=</span> <span class="nx">hex2bin</span><span class="p">(</span><span class="nv">$iv</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$encryptedTextAndTag</span> <span class="o">=</span> <span class="s1">&#39;e8675abcd27f9b2b734504cb8adfbd88d8592c25960e8e7d4df060&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$tagLength</span> <span class="o">=</span> <span class="mi">32</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$encryptedTextOnly</span> <span class="o">=</span> <span class="nx">hex2bin</span><span class="p">(</span><span class="nx">substr</span><span class="p">(</span><span class="nv">$encryptedTextAndTag</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="nv">$tagLength</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nv">$tag</span> <span class="o">=</span> <span class="nx">hex2bin</span><span class="p">(</span><span class="nx">substr</span><span class="p">(</span><span class="nv">$encryptedTextAndTag</span><span class="p">,</span> <span class="o">-</span><span class="nv">$tagLength</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nv">$decrypted</span> <span class="o">=</span> <span class="nx">openssl_decrypt</span><span class="p">(</span><span class="nv">$encryptedTextOnly</span><span class="p">,</span> <span class="nv">$cipher</span><span class="p">,</span> <span class="nv">$key</span><span class="p">,</span> <span class="nx">OPENSSL_RAW_DATA</span> <span class="p">,</span> <span class="nv">$iv</span><span class="p">,</span> <span class="nv">$tag</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertEquals</span><span class="p">(</span><span class="nv">$decrypted</span><span class="p">,</span> <span class="nv">$plainText</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">PHPUnit 9.6.9 by Sebastian Bergmann and contributors.
+</span></span><span class="line"><span class="cl">........                                                            <span class="m">8</span> / <span class="m">8</span> <span class="o">(</span>100%<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Time: 00:00.048, Memory: 6.00 MB
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">OK
+</span></span></code></pre></div><p>Bingo!</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="參考資料"
+    >
+        參考資料
+        <a data-clipboard-text="https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html#參考資料" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 參考資料" aria-label="Anchor to: 參考資料" href="#%e5%8f%83%e8%80%83%e8%b3%87%e6%96%99">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<hr>
+<ul>
+<li><a
+  class="gdoc-markdown__link"
+  href="https://xxgblog.com/2021/08/03/java-aes/"
+>叉叉哥的BLOG</a></li>
+</ul>
+
+  </article>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="disqus markdown">
+    <div id="disqus_thread"></div>
+<script>
     
-  </div>
-  <div class="gdoc-paging__state">1/1</div>
-  <div class="gdoc-paging__item gdoc-paging__item--next">
-    
-  </div>
-</nav>
 
+    
+
+    (function() { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lazyvic-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
 
 
 
@@ -1088,7 +1321,7 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
     </div>
 
     
-  <script defer src="../js/search-83320133.bundle.min.js"></script>
+  <script defer src="../../../../js/search-83320133.bundle.min.js"></script>
 
   </body>
 </html>

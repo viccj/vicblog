@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cipher on Log of Vic</title>
-    <link>https://lazyvic.com/tags/cipher.html</link>
-    <description>Recent content in cipher on Log of Vic</description>
+    <title>Chpher on Log of Vic</title>
+    <link>https://lazyvic.com/Programming/Languages/Miscellaneous/cipher.html</link>
+    <description>Recent content in Chpher on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Jul 2023 15:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/cipher/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Jul 2023 15:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</title>
       <link>https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html</link>

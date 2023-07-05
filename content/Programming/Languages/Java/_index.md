@@ -1,6 +1,6 @@
 ---
 title: JAVA
-weight : 10
+weight : 2
 geekdocFlatSection: true
 ---
 

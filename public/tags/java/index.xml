@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 05 Jul 2023 15:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</title>
-      <link>https://lazyvic.com/Programming/Languages/PHP/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html</link>
+      <link>https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html</link>
       <pubDate>Wed, 05 Jul 2023 15:00:41 +0800</pubDate>
       
-      <guid>https://lazyvic.com/Programming/Languages/PHP/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html</guid>
+      <guid>https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html</guid>
       <description>Conclusion The Process 參考資料 最近工作遇到一個專案，是要把透過Java使用AES-GCM加密過的資料解密，因為對方也沒有講清楚（或是不熟）導致解密有點不順利，不過後來還是成功解出來了，因此紀錄一下。
 In a recent project, I had to decrypt data encrypted using AES-GCM in Java. Despite some initial challenges due to unclear instructions or lack of familiarity, I eventually succeeded in decrypting the data. Here&amp;rsquo;s a brief summary of the process.
 Conclusion Java透過AES-GCM加密後的結果會包含兩部分：加密後字串+Tag，要解密時把字串拆開拿到Tag，並且只對加密後字串解密。
