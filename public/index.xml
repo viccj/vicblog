@@ -140,6 +140,22 @@ cat domain.crt domain.ca-bundle &amp;gt; server.crt nginx設定 # HTTP 重定向
     </item>
     
     <item>
+      <title>Weighted Quick Union</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html</link>
+      <pubDate>Sat, 29 Jul 2023 10:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html</guid>
+      <description>Imporvement 1: weighting Data Structure Find Union Implement Weighted quick-union analysis Running time. Proposition Can we impove it even further? 參考來源 How to imporvements Quick-union?
+上一篇中， Quick-Union 演算法中，最後可能因為每個tree長得太高，導致效率變差。
+Imporvement 1: weighting 在每次 Union 時，順帶記錄每棵樹的 size (number of objects)
+在每次 Union 時，刻意將較小的樹連接到較大的樹下
+Data Structure 與 quick-union 一樣，但多追蹤每棵樹的大小 (size of objects for roots)
+Find 與 quick-union 一樣
+Union 修改為：
+將小的樹往大的樹接 更新 sz[] array Implement public class QuickUnionUF { private int[] id; private int[] sz; // size of objects for roots (site indexed) // set id of each object to itself (N array access) public WeightedQuickFindUF(int N) { id = new int[N]; for (int i = 0; i &amp;lt; N; i++) { id[i] = i; } // init sz of every objects sz = new int[N]; for (int i = 0; i &amp;lt; N; i++) { sz[i] = 1; } } public int root(int i) { while (i !</description>
+    </item>
+    
+    <item>
       <title>Typora &#43; Upic</title>
       <link>https://lazyvic.com/Programming/SiteStory/TyporaUpic.html</link>
       <pubDate>Thu, 22 Jun 2023 17:00:41 +0800</pubDate>

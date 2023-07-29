@@ -28,21 +28,29 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
+  <meta name="description" content="Imporvement 1: weighting Data Structure Find Union Implement Weighted quick-union analysis Running time. Proposition Can we impove it even further? 參考來源 How to imporvements Quick-union?
+上一篇中， Quick-Union 演算法中，最後可能因為每個tree長得太高，導致效率變差。
+Imporvement 1: weighting 在每次 Union 時，順帶記錄每棵樹的 size (number of objects)
+在每次 Union 時，刻意將較小的樹連接到較大的樹下
+Data Structure 與 quick-union 一樣，但多追蹤每棵樹的大小 (size of objects for roots)
+Find 與 quick-union 一樣
+Union 修改為：
+將小的樹往大的樹接 更新 sz[] array Implement public class QuickUnionUF { private int[] id; private int[] sz; // size of objects for roots (site indexed) // set id of each object to itself (N array access) public WeightedQuickFindUF(int N) { id = new int[N]; for (int i = 0; i &lt; N; i&#43;&#43;) { id[i] = i; } // init sz of every objects sz = new int[N]; for (int i = 0; i &lt; N; i&#43;&#43;) { sz[i] = 1; } } public int root(int i) { while (i !" />
 
-    <title>cipher | Log of Vic</title>
+    <title>Weighted Quick Union | Log of Vic</title>
 
-    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../../../../favicon/favicon.svg" />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="../favicon/favicon-32x32.png"
+  href="../../../../../favicon/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="../favicon/favicon-16x16.png"
+  href="../../../../../favicon/favicon-16x16.png"
 />
 
     
@@ -50,84 +58,143 @@ if (!doNotTrack) {
     
   <meta
     property="og:title"
-    content="cipher"
+    content="Weighted Quick Union"
   />
   <meta property="og:site_name" content="Log of Vic" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://lazyvic.com/tags/cipher.html" />
+  <meta property="og:description" content="Imporvement 1: weighting Data Structure Find Union Implement Weighted quick-union analysis Running time. Proposition Can we impove it even further? 參考來源 How to imporvements Quick-union?
+上一篇中， Quick-Union 演算法中，最後可能因為每個tree長得太高，導致效率變差。
+Imporvement 1: weighting 在每次 Union 時，順帶記錄每棵樹的 size (number of objects)
+在每次 Union 時，刻意將較小的樹連接到較大的樹下
+Data Structure 與 quick-union 一樣，但多追蹤每棵樹的大小 (size of objects for roots)
+Find 與 quick-union 一樣
+Union 修改為：
+將小的樹往大的樹接 更新 sz[] array Implement public class QuickUnionUF { private int[] id; private int[] sz; // size of objects for roots (site indexed) // set id of each object to itself (N array access) public WeightedQuickFindUF(int N) { id = new int[N]; for (int i = 0; i &lt; N; i&#43;&#43;) { id[i] = i; } // init sz of every objects sz = new int[N]; for (int i = 0; i &lt; N; i&#43;&#43;) { sz[i] = 1; } } public int root(int i) { while (i !" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html" />
 
-
+<meta property="article:section" content="Programming" />
+    <meta
+      property="article:published_time"
+      content="2023-07-29T10:00:41+08:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2023-07-29T10:00:41+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="cipher" />
+<meta name="twitter:title" content="Weighted Quick Union" />
+  <meta name="twitter:description" content="Imporvement 1: weighting Data Structure Find Union Implement Weighted quick-union analysis Running time. Proposition Can we impove it even further? 參考來源 How to imporvements Quick-union?
+上一篇中， Quick-Union 演算法中，最後可能因為每個tree長得太高，導致效率變差。
+Imporvement 1: weighting 在每次 Union 時，順帶記錄每棵樹的 size (number of objects)
+在每次 Union 時，刻意將較小的樹連接到較大的樹下
+Data Structure 與 quick-union 一樣，但多追蹤每棵樹的大小 (size of objects for roots)
+Find 與 quick-union 一樣
+Union 修改為：
+將小的樹往大的樹接 更新 sz[] array Implement public class QuickUnionUF { private int[] id; private int[] sz; // size of objects for roots (site indexed) // set id of each object to itself (N array access) public WeightedQuickFindUF(int N) { id = new int[N]; for (int i = 0; i &lt; N; i&#43;&#43;) { id[i] = i; } // init sz of every objects sz = new int[N]; for (int i = 0; i &lt; N; i&#43;&#43;) { sz[i] = 1; } } public int root(int i) { while (i !" />
 
 
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "TechArticle",
+      "articleSection": "Programming",
+      "name": "Weighted Quick Union",
+      "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html",
+      "headline": "Weighted Quick Union",
+      "description": "Imporvement 1: weighting Data Structure Find Union Implement Weighted quick-union analysis Running time. Proposition Can we impove it even further? 參考來源 How to imporvements Quick-union?\n上一篇中， Quick-Union 演算法中，最後可能因為每個tree長得太高，導致效率變差。\nImporvement 1: weighting 在每次 Union 時，順帶記錄每棵樹的 size (number of objects)\n在每次 Union 時，刻意將較小的樹連接到較大的樹下\nData Structure 與 quick-union 一樣，但多追蹤每棵樹的大小 (size of objects for roots)\nFind 與 quick-union 一樣\nUnion 修改為：\n將小的樹往大的樹接 更新 sz[] array Implement public class QuickUnionUF { private int[] id; private int[] sz; \/\/ size of objects for roots (site indexed) \/\/ set id of each object to itself (N array access) public WeightedQuickFindUF(int N) { id = new int[N]; for (int i = 0; i \u003c N; i\u002b\u002b) { id[i] = i; } \/\/ init sz of every objects sz = new int[N]; for (int i = 0; i \u003c N; i\u002b\u002b) { sz[i] = 1; } } public int root(int i) { while (i !",
+      "wordCount" : "462",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html"
+      },
+      "keywords" : [ "Algorithm" ],
+      "copyrightHolder" : "Log of Vic",
+      "copyrightYear" : "2023",
+      "dateCreated": "2023-07-29T10:00:41.00Z",
+      "datePublished": "2023-07-29T10:00:41.00Z",
+      "dateModified": "2023-07-29T10:00:41.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Log of Vic",
+          "url": "https://lazyvic.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://lazyvic.com/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
+  }
+  </script>
 
 
     
-  <script src="../js/colortheme-d3e4d351.bundle.min.js"></script>
-<script src="../js/main-fbb9c8b0.bundle.min.js"></script>
+  <script src="../../../../../js/colortheme-d3e4d351.bundle.min.js"></script>
+<script src="../../../../../js/main-fbb9c8b0.bundle.min.js"></script>
 
 <link
   rel="preload"
   as="font"
-  href="../fonts/Metropolis.woff2"
+  href="../../../../../fonts/Metropolis.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 <link
   rel="preload"
   as="font"
-  href="../fonts/LiberationSans.woff2"
+  href="../../../../../fonts/LiberationSans.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 
 <link
   rel="preload"
-  href="../main-ba0e2765.min.css"
+  href="../../../../../main-ba0e2765.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../main-ba0e2765.min.css"
+  href="../../../../../main-ba0e2765.min.css"
   media="all"
 />
 
 <link
   rel="preload"
-  href="../mobile-79ddc617.min.css"
+  href="../../../../../mobile-79ddc617.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../mobile-79ddc617.min.css"
+  href="../../../../../mobile-79ddc617.min.css"
   media="screen and (max-width: 45rem)"
 />
 
 <link
   rel="preload"
-  href="../print-735ccc12.min.css"
+  href="../../../../../print-735ccc12.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../print-735ccc12.min.css"
+  href="../../../../../print-735ccc12.min.css"
   media="print"
 />
 
 <link
   rel="preload"
-  href="../custom.css"
+  href="../../../../../custom.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../custom.css"
+  href="../../../../../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/tags/cipher.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -168,7 +235,7 @@ if (!doNotTrack) {
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
-            src="../brand.svg"
+            src="../../../../../brand.svg"
             alt=""
           />
           <span class="gdoc-brand__title">Log of Vic</span>
@@ -292,7 +359,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming.html"
+                    href="../../../../../Programming.html"
                     class="gdoc-nav__entry"
                   >
                     Programming
@@ -339,7 +406,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/Algorithm.html"
+                    href="../../../../../Programming/Algorithm.html"
                     class="gdoc-nav__entry"
                   >
                     Algorithm
@@ -375,7 +442,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/Languages.html"
+                    href="../../../../../Programming/Languages.html"
                     class="gdoc-nav__entry"
                   >
                     Language
@@ -422,7 +489,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory.html"
+                    href="../../../../../Programming/SiteStory.html"
                     class="gdoc-nav__entry"
                   >
                     Site Story
@@ -476,7 +543,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/WhyHugo.html"
+                    href="../../../../../Programming/SiteStory/WhyHugo.html"
                     class="gdoc-nav__entry"
                   >
                     Why Hugo
@@ -520,7 +587,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/GettingStart.html"
+                    href="../../../../../Programming/SiteStory/GettingStart.html"
                     class="gdoc-nav__entry"
                   >
                     Hugo GitHub Page
@@ -593,7 +660,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/SSL.html"
+                    href="../../../../../Programming/SiteStory/SSL.html"
                     class="gdoc-nav__entry"
                   >
                     Install SSL
@@ -637,7 +704,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/TyporaUpic.html"
+                    href="../../../../../Programming/SiteStory/TyporaUpic.html"
                     class="gdoc-nav__entry"
                   >
                     Typora &#43; Upic
@@ -676,102 +743,6 @@ if (!doNotTrack) {
     
   </section>
 
-  
-    <section class="gdoc-nav--tags">
-      <h2>Tags</h2>
-      <ul class="gdoc-nav__list">
-        
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/Algorithm.html"
-              >
-                Algorithm
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry is-active"
-                href="../tags/cipher.html"
-              >
-                cipher
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/hugo.html"
-              >
-                hugo
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/infra.html"
-              >
-                infra
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/java.html"
-              >
-                java
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/leetcode.html"
-              >
-                leetcode
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/php.html"
-              >
-                php
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/trash-talk.html"
-              >
-                trash talk
-              </a>
-            </li>
-          
-        
-      </ul>
-    </section>
   
 
 
@@ -900,48 +871,111 @@ if (!doNotTrack) {
         <div class="gdoc-page">
           
   
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="../Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html">Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</a>
-        </h1>
-      </header>
 
-      <section class="gdoc-markdown">
-        Conclusion The Process 參考資料 最近工作遇到一個專案，是要把透過Java使用AES-GCM加密過的資料解密，因為對方也沒有講清楚（或是不熟）導致解密有點不順利，不過後來還是成功解出來了，因此紀錄一下。
-In a recent project, I had to decrypt data encrypted using AES-GCM in Java. Despite some initial challenges due to unclear instructions or lack of familiarity, I eventually succeeded in decrypting the data. Here&rsquo;s a brief summary of the process.
-Conclusion Java透過AES-GCM加密後的結果會包含兩部分：加密後字串+Tag，要解密時把字串拆開拿到Tag，並且只對加密後字串解密。
-when encrypting data using AES-GCM in Java, the resulting ciphertext will consist of two parts: the encrypted string and the tag. When decrypting, it is important to separate the ciphertext and retrieve the tag.
-      </section>
 
-      <div class="gdoc-post__readmore">
+  
+
+
+
+
+
+
+<div
+  class="gdoc-page__header flex flex-wrap
+  
+    justify-between
+  
+  hidden-mobile
+  "
+  itemprop="breadcrumb"
+>
+  
+    <div>
+      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
+      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
         
-          <a
-            class="flex-inline align-center fake-link"
-            title="Read full post"
-            href="../Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html"
-          >
-            Read full post
-            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-          </a>
         
-      </div>
+        
+        
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton.html' href='../../../../../Programming/Algorithm/Algs4Princeton.html'><span itemprop='name'>Princeton Algorithms</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week1.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week1.html'><span itemprop='name'>Week 1</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week1/UnionFind.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week1/UnionFind.html'><span itemprop='name'>Union Find</span></a><meta itemprop='position' content='5' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Weighted Quick Union</span><meta itemprop='position' content='6' /></li>
+  
 
-      <footer class="gdoc-post__footer">
-        <div class="flex flex-wrap align-center gdoc-post__meta">
-          <span class="flex align-center no-wrap">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+      </ol>
+    </div>
+  
+  
+</div>
+
+
+
+  <article
+    class="gdoc-markdown gdoc-markdown__align--left"
+  >
+    <h1>Weighted Quick Union</h1>
+    <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
+        <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-07-06T00:00:45&#43;08:00">
+    <time datetime="2023-07-29T10:00:41&#43;08:00">
       
-      Jul 6, 2023
+      Jul 29, 2023
     </time>
   </span>
 </span>
 
 <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">5 minutes to read</span>
+  <span class="gdoc-post__tag">3 minutes to read</span>
 </span>
 
 
@@ -956,50 +990,10 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/cipher.html"
-      title="All posts tagged with &#39;cipher&#39;"
+      href="../../../../../tags/Algorithm.html"
+      title="All posts tagged with &#39;Algorithm&#39;"
     >
-      cipher
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-    
-    
-      
-        <span class="flex align-center">
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/java.html"
-      title="All posts tagged with &#39;java&#39;"
-    >
-      java
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-    
-    
-      
-        <span class="flex align-center">
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/php.html"
-      title="All posts tagged with &#39;php&#39;"
-    >
-      php
+      Algorithm
     </a>
   </span>
 
@@ -1012,23 +1006,279 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
 
 
 
-        </div>
-      </footer>
-    </article>
+    </div>
+
+
+
+
+    <div class="gdoc-toc gdoc-toc__level--6">
+      <nav id="TableOfContents"><ul>
+        <li><a href="#imporvement-1-weighting">Imporvement 1: weighting</a>
+          <ul>
+            <li><a href="#data-structure">Data Structure</a></li>
+            <li><a href="#find">Find</a></li>
+            <li><a href="#union">Union</a></li>
+            <li><a href="#implement">Implement</a></li>
+            <li><a href="#weighted-quick-union-analysis">Weighted quick-union analysis</a>
+              <ul>
+                <li><a href="#running-time">Running time.</a></li>
+                <li><a href="#proposition">Proposition</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#can-we-impove-it-even-further">Can we impove it even further?</a></li>
+        <li><a href="#參考來源">參考來源</a></li>
+      </ul></nav>
+      <hr />
+    </div>
+<p>How to imporvements Quick-union?</p>
+<p>上一篇中， Quick-Union 演算法中，最後可能因為每個tree長得太高，導致效率變差。</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="imporvement-1-weighting"
+    >
+        Imporvement 1: weighting
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html#imporvement-1-weighting" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Imporvement 1: weighting" aria-label="Anchor to: Imporvement 1: weighting" href="#imporvement-1-weighting">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<ul>
+<li>
+<p>在每次 Union 時，順帶記錄每棵樹的 size (number of objects)</p>
+</li>
+<li>
+<p>在每次 Union 時，刻意將較小的樹連接到較大的樹下</p>
+</li>
+</ul>
+<p><img
+  src="https://raw.githubusercontent.com/viccj/upic/master/uPic/Weight-Quick-Union_demo.png"
+  alt="Weight-Quick-Union_demo"
   
-  
+/></p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="data-structure"
+    >
+        Data Structure
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html#data-structure" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Data Structure" aria-label="Anchor to: Data Structure" href="#data-structure">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>與 quick-union 一樣，但多追蹤每棵樹的大小 (size of objects for roots)</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="find"
+    >
+        Find
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html#find" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Find" aria-label="Anchor to: Find" href="#find">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>與 quick-union 一樣</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="union"
+    >
+        Union
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html#union" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Union" aria-label="Anchor to: Union" href="#union">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>修改為：</p>
+<ul>
+<li>將小的樹往大的樹接</li>
+<li>更新 <code>sz[]</code> array</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="implement"
+    >
+        Implement
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html#implement" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Implement" aria-label="Anchor to: Implement" href="#implement">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">QuickUnionUF</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">id</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">sz</span><span class="o">;</span> <span class="c1">// size of objects for roots (site indexed)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    
+</span></span><span class="line"><span class="cl">    <span class="c1">// set id of each object to itself (N array access)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">public</span> <span class="nf">WeightedQuickFindUF</span><span class="o">(</span><span class="kt">int</span> <span class="n">N</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">id</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">N</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    	    <span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    	<span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// init sz of every objects
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">sz</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">N</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">sz</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">root</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">		<span class="k">while</span> <span class="o">(</span><span class="n">i</span> <span class="o">!=</span> <span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span> <span class="o">=</span> <span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">i</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">connected</span><span class="o">(</span><span class="kt">int</span> <span class="n">p</span><span class="o">,</span> <span class="kt">int</span> <span class="n">q</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">root</span><span class="o">[</span><span class="n">p</span><span class="o">]</span> <span class="o">==</span> <span class="n">root</span><span class="o">[</span><span class="n">q</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">union</span><span class="o">(</span><span class="kt">int</span> <span class="n">p</span><span class="o">,</span> <span class="kt">int</span> <span class="n">q</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    	<span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">root</span><span class="o">[</span><span class="n">p</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">    	<span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">root</span><span class="o">[</span><span class="n">q</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">==</span> <span class="n">j</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">sz</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">sz</span><span class="o">[</span><span class="n">j</span><span class="o">])</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">j</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">sz</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">+=</span> <span class="n">sz</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">id</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">sz</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">+=</span> <span class="n">sz</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    	<span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">j</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h3 id="weighted-quick-union-analysis"
+    >
+        Weighted quick-union analysis
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html#weighted-quick-union-analysis" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Weighted quick-union analysis" aria-label="Anchor to: Weighted quick-union analysis" href="#weighted-quick-union-analysis">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="running-time"
+    >
+        Running time.
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html#running-time" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Running time." aria-label="Anchor to: Running time." href="#running-time">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<ul>
+<li>Find:  takes time proportional to depth of <em>p</em> and <em>q</em>.</li>
+<li>Union: takes constant time, given roots.</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="proposition"
+    >
+        Proposition
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html#proposition" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Proposition" aria-label="Anchor to: Proposition" href="#proposition">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Depth of any node <em>x</em> is at most <em>lg N</em> (log- base-2 logarithm).</p>
+<p>這裡一開始比較難以理解，教授的原話如下</p>
+<blockquote>
+<p>So, when the depth of x increases, the size of its tree at least doubles. So, that&rsquo;s the key because that means that the size of the tree containing x can double at most log N times because if you start with one and double log N times, you get N and there&rsquo;s only N nodes in the tree.</p>
+</blockquote>
+<p>看了書之後我的理解是：</p>
+<ul>
+<li>
+<p>Maximum height of a tree only increases when 2 trees with same height are merged.</p>
+</li>
+<li>
+<p>You can make maximum logN merges of such trees. (as you will have to keep dividing N with 2 to form i amount of such trees. At the example with N=8 below, you create equally sized trees to merge max 3 times.</p>
+</li>
+<li>
+<p>Therefore, depth of any node x is at most LogN. (due to max height)</p>
+</li>
+</ul>
+<p>假設N是8，每次union後會多一層，每個樹的 objects 數量最多變兩倍，這樣一來對任何一顆樹而言 union 到最後最多只有三層. (log8)，因此對有 N個 object 的集合來說，每一顆 node的深度最多就是 logN。可以大幅減少每個 node 的 depth。</p>
+<div class="table-wrap"> <table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>initialize</th>
+<th>union</th>
+<th>Find</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quick-find</td>
+<td>N</td>
+<td>N</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Quick-union</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Withgted QU</td>
+<td>N</td>
+<td>lg N</td>
+<td>Lg N</td>
+</tr>
+</tbody>
+</table> </div>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="can-we-impove-it-even-further"
+    >
+        Can we impove it even further?
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html#can-we-impove-it-even-further" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Can we impove it even further?" aria-label="Anchor to: Can we impove it even further?" href="#can-we-impove-it-even-further">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>其實是可以的，而且只要多一行code。</p>
+<p>概念是：每次在尋找root的時候，將找到的 children node 都連向 root，這樣可以使得最後的樹趨近於平整</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kt">int</span> <span class="nf">root</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="o">(</span><span class="n">i</span> <span class="o">!=</span> <span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">id</span><span class="o">[</span><span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">]]</span> <span class="c1">// one more line of code
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">i</span> <span class="o">=</span> <span class="n">id</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">i</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="參考來源"
+    >
+        參考來源
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html#參考來源" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 參考來源" aria-label="Anchor to: 參考來源" href="#%e5%8f%83%e8%80%83%e4%be%86%e6%ba%90">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div id="refer-anchor-1"></div>
+<p>[1] <a href="https://algs4.cs.princeton.edu/lectures/keynote/15UnionFind.pdf" target="_blank">Algorithms in Java, Lecture slide</a></p>
+
+  </article>
+<br>
+<br>
+<br>
+<br>
 
 
-<nav class="gdoc-paging flex flex-even align-center" role="navigation">
-  <div class="gdoc-paging__item gdoc-paging__item--prev">
+<div class="disqus markdown">
+    <div id="disqus_thread"></div>
+<script>
     
-  </div>
-  <div class="gdoc-paging__state">1/1</div>
-  <div class="gdoc-paging__item gdoc-paging__item--next">
-    
-  </div>
-</nav>
 
+    
+
+    (function() { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lazyvic-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
 
 
 
@@ -1088,7 +1338,7 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
     </div>
 
     
-  <script defer src="../js/search-83320133.bundle.min.js"></script>
+  <script defer src="../../../../../js/search-83320133.bundle.min.js"></script>
 
   </body>
 </html>

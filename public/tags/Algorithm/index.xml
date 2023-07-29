@@ -6,7 +6,7 @@
     <description>Recent content in Algorithm on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Jun 2023 10:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/Algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jul 2023 10:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/Algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quick Find</title>
       <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html</link>
@@ -36,6 +36,22 @@ Root 將一整個Array 看成 a set of trees，也就是說每個物件都屬於
 每個物件，會有一個Parent，如下圖，（3 可以接到4，3的 parent 是 4，4 的 parent 是 9) 順著線一直找，當找不到 parent 時，這時候就稱這點為 root
 如果這個物件只有自己，那自己就是root，例如1
 Find 因為每個物件都會有一個 root，要找兩個物件是不是同一個 component 的話，只要看他們的 root 是不是一樣就可以</description>
+    </item>
+    
+    <item>
+      <title>Weighted Quick Union</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html</link>
+      <pubDate>Sat, 29 Jul 2023 10:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html</guid>
+      <description>Imporvement 1: weighting Data Structure Find Union Implement Weighted quick-union analysis Running time. Proposition Can we impove it even further? 參考來源 How to imporvements Quick-union?
+上一篇中， Quick-Union 演算法中，最後可能因為每個tree長得太高，導致效率變差。
+Imporvement 1: weighting 在每次 Union 時，順帶記錄每棵樹的 size (number of objects)
+在每次 Union 時，刻意將較小的樹連接到較大的樹下
+Data Structure 與 quick-union 一樣，但多追蹤每棵樹的大小 (size of objects for roots)
+Find 與 quick-union 一樣
+Union 修改為：
+將小的樹往大的樹接 更新 sz[] array Implement public class QuickUnionUF { private int[] id; private int[] sz; // size of objects for roots (site indexed) // set id of each object to itself (N array access) public WeightedQuickFindUF(int N) { id = new int[N]; for (int i = 0; i &amp;lt; N; i++) { id[i] = i; } // init sz of every objects sz = new int[N]; for (int i = 0; i &amp;lt; N; i++) { sz[i] = 1; } } public int root(int i) { while (i !</description>
     </item>
     
   </channel>

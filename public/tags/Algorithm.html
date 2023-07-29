@@ -1061,6 +1061,86 @@ Find 因為每個物件都會有一個 root，要找兩個物件是不是同一�
       </footer>
     </article>
   
+    <article class="gdoc-post">
+      <header class="gdoc-post__header">
+        <h1 class="gdoc-post__title">
+          <a href="../Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html">Weighted Quick Union</a>
+        </h1>
+      </header>
+
+      <section class="gdoc-markdown">
+        Imporvement 1: weighting Data Structure Find Union Implement Weighted quick-union analysis Running time. Proposition Can we impove it even further? 參考來源 How to imporvements Quick-union?
+上一篇中， Quick-Union 演算法中，最後可能因為每個tree長得太高，導致效率變差。
+Imporvement 1: weighting 在每次 Union 時，順帶記錄每棵樹的 size (number of objects)
+在每次 Union 時，刻意將較小的樹連接到較大的樹下
+Data Structure 與 quick-union 一樣，但多追蹤每棵樹的大小 (size of objects for roots)
+Find 與 quick-union 一樣
+Union 修改為：
+將小的樹往大的樹接 更新 sz[] array Implement public class QuickUnionUF { private int[] id; private int[] sz; // size of objects for roots (site indexed) // set id of each object to itself (N array access) public WeightedQuickFindUF(int N) { id = new int[N]; for (int i = 0; i &lt; N; i++) { id[i] = i; } // init sz of every objects sz = new int[N]; for (int i = 0; i &lt; N; i++) { sz[i] = 1; } } public int root(int i) { while (i !
+      </section>
+
+      <div class="gdoc-post__readmore">
+        
+          <a
+            class="flex-inline align-center fake-link"
+            title="Read full post"
+            href="../Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html"
+          >
+            Read full post
+            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
+          </a>
+        
+      </div>
+
+      <footer class="gdoc-post__footer">
+        <div class="flex flex-wrap align-center gdoc-post__meta">
+          <span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+  <span class="gdoc-post__tag">
+    <time datetime="2023-07-29T10:00:41&#43;08:00">
+      
+      Jul 29, 2023
+    </time>
+  </span>
+</span>
+
+<span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
+  <span class="gdoc-post__tag">3 minutes to read</span>
+</span>
+
+
+
+  
+    
+    
+      
+        <span class="flex align-center no-wrap">
+          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../tags/Algorithm.html"
+      title="All posts tagged with &#39;Algorithm&#39;"
+    >
+      Algorithm
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+
+
+
+
+        </div>
+      </footer>
+    </article>
+  
   
 
 
