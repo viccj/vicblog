@@ -1,6 +1,5 @@
 ---
 title: Stack And Queue
-geekdocFlatSection: true
 ---
 
 

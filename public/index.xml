@@ -20,6 +20,15 @@ Union(4, 3) Union(3, 8) Union(6, 5) Union(9, 4) Union(2, 1) connected(0, 7) // n
     </item>
     
     <item>
+      <title>Stacks</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</link>
+      <pubDate>Sat, 24 Jun 2023 10:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</guid>
+      <description>my solution</description>
+    </item>
+    
+    <item>
       <title>Why Hugo</title>
       <link>https://lazyvic.com/Programming/SiteStory/WhyHugo.html</link>
       <pubDate>Wed, 21 Jun 2023 22:00:41 +0800</pubDate>
@@ -62,6 +71,15 @@ Find p 的 id 為？
 Connected. p 跟 q 是否有相同的 id？
 ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
 Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].</description>
+    </item>
+    
+    <item>
+      <title>Resizing Arrays</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html</link>
+      <pubDate>Sat, 24 Jun 2023 10:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html</guid>
+      <description>my solution</description>
     </item>
     
     <item>
@@ -222,24 +240,6 @@ appTest.php
 In a recent project, I had to decrypt data encrypted using AES-GCM in Java. Despite some initial challenges due to unclear instructions or lack of familiarity, I eventually succeeded in decrypting the data. Here&amp;rsquo;s a brief summary of the process.
 Conclusion Java透過AES-GCM加密後的結果會包含兩部分：加密後字串+Tag，要解密時把字串拆開拿到Tag，並且只對加密後字串解密。
 when encrypting data using AES-GCM in Java, the resulting ciphertext will consist of two parts: the encrypted string and the tag. When decrypting, it is important to separate the ciphertext and retrieve the tag.</description>
-    </item>
-    
-    <item>
-      <title>Resizing Arrays</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays/ResizingArrays.html</link>
-      <pubDate>Sat, 24 Jun 2023 10:00:41 +0800</pubDate>
-      
-      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays/ResizingArrays.html</guid>
-      <description>my solution</description>
-    </item>
-    
-    <item>
-      <title>Stacks</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks/UnionFind.html</link>
-      <pubDate>Sat, 24 Jun 2023 10:00:41 +0800</pubDate>
-      
-      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks/UnionFind.html</guid>
-      <description>my solution</description>
     </item>
     
     <item>

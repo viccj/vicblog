@@ -1,7 +1,9 @@
 ---
-title: Week 2
+title: Elementary Sorts
 weight: 2
 ---
+
+
 
 
 <!-- spellchecker-disable -->

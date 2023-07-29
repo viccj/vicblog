@@ -29,7 +29,7 @@ if (!doNotTrack) {
 
 
 
-    <title>php | Log of Vic</title>
+    <title>stacks | Log of Vic</title>
 
     <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
 <link
@@ -50,17 +50,17 @@ if (!doNotTrack) {
     
   <meta
     property="og:title"
-    content="php"
+    content="stacks"
   />
   <meta property="og:site_name" content="Log of Vic" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://lazyvic.com/tags/php.html" />
+<meta property="og:url" content="https://lazyvic.com/tags/stacks.html" />
 
 
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="php" />
+<meta name="twitter:title" content="stacks" />
 
 
 
@@ -127,7 +127,7 @@ if (!doNotTrack) {
   href="../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/tags/php.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/tags/stacks.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -751,7 +751,7 @@ if (!doNotTrack) {
           
             <li>
               <a
-                class="gdoc-nav__entry is-active"
+                class="gdoc-nav__entry"
                 href="../tags/php.html"
               >
                 php
@@ -762,7 +762,7 @@ if (!doNotTrack) {
           
             <li>
               <a
-                class="gdoc-nav__entry"
+                class="gdoc-nav__entry is-active"
                 href="../tags/stacks.html"
               >
                 stacks
@@ -925,28 +925,15 @@ if (!doNotTrack) {
     <article class="gdoc-post">
       <header class="gdoc-post__header">
         <h1 class="gdoc-post__title">
-          <a href="../Programming/Languages/PHP/PhpUnit/BasicSetting.html">Basic Setting</a>
+          <a href="../Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html">Stacks</a>
         </h1>
       </header>
 
       <section class="gdoc-markdown">
-        PHPUnit 安裝 建立設定檔 phpunit.xml 一次執行所有test phpunit.xml 常用參數 The bootstrap Attribute The cacheDirectory Attribute The cacheResult Attribute The colors Attribute PHPUnit 安裝 composer require --dev phpunit/phpunit 安裝完之後就可以執行測試
-php vendor/bin/phpunit yourTest.php 建立設定檔 phpunit.xml 一次執行所有test 建立一個 phpunit.xml檔案，並在裡面指定路徑，之後這個folder裡面所有的測試就會被執行
-&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;phpunit bootstrap=&#34;bootstrap.php&#34; colors=&#34;true&#34;&gt; &lt;testsuites&gt; &lt;testsuite name=&#34;All Tests&#34;&gt; &lt;directory&gt;tests&lt;/directory&gt; &lt;/testsuite&gt; &lt;/testsuites&gt; &lt;/phpunit&gt; 之後這個 folder 裡面所有的測試就會被執行 (測試的檔名要是Test 結尾，測試的method 要是 test 開頭)
-appTest.php
-&lt;?php class appTest extends TestCase { public function testSomething() { assertTrue(true); } } php vendor/bin/phpunit phpunit.
+        my solution
       </section>
 
       <div class="gdoc-post__readmore">
-        
-          <a
-            class="flex-inline align-center fake-link"
-            title="Read full post"
-            href="../Programming/Languages/PHP/PhpUnit/BasicSetting.html"
-          >
-            Read full post
-            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-          </a>
         
       </div>
 
@@ -955,16 +942,16 @@ appTest.php
           <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-07-29T15:28:53&#43;08:00">
+    <time datetime="2023-06-24T10:00:41&#43;08:00">
       
-      Jul 29, 2023
+      Jun 24, 2023
     </time>
   </span>
 </span>
 
 <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">2 minutes to read</span>
+  <span class="gdoc-post__tag">One minute to read</span>
 </span>
 
 
@@ -979,10 +966,10 @@ appTest.php
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/php.html"
-      title="All posts tagged with &#39;php&#39;"
+      href="../tags/Algorithm.html"
+      title="All posts tagged with &#39;Algorithm&#39;"
     >
-      php
+      Algorithm
     </a>
   </span>
 
@@ -999,126 +986,10 @@ appTest.php
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/unittest.html"
-      title="All posts tagged with &#39;unittest&#39;"
+      href="../tags/stacks.html"
+      title="All posts tagged with &#39;stacks&#39;"
     >
-      unittest
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-
-
-
-
-        </div>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="../Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html">Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</a>
-        </h1>
-      </header>
-
-      <section class="gdoc-markdown">
-        Conclusion The Process 參考資料 最近工作遇到一個專案，是要把透過Java使用AES-GCM加密過的資料解密，因為對方也沒有講清楚（或是不熟）導致解密有點不順利，不過後來還是成功解出來了，因此紀錄一下。
-In a recent project, I had to decrypt data encrypted using AES-GCM in Java. Despite some initial challenges due to unclear instructions or lack of familiarity, I eventually succeeded in decrypting the data. Here&rsquo;s a brief summary of the process.
-Conclusion Java透過AES-GCM加密後的結果會包含兩部分：加密後字串+Tag，要解密時把字串拆開拿到Tag，並且只對加密後字串解密。
-when encrypting data using AES-GCM in Java, the resulting ciphertext will consist of two parts: the encrypted string and the tag. When decrypting, it is important to separate the ciphertext and retrieve the tag.
-      </section>
-
-      <div class="gdoc-post__readmore">
-        
-          <a
-            class="flex-inline align-center fake-link"
-            title="Read full post"
-            href="../Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html"
-          >
-            Read full post
-            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-          </a>
-        
-      </div>
-
-      <footer class="gdoc-post__footer">
-        <div class="flex flex-wrap align-center gdoc-post__meta">
-          <span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
-  <span class="gdoc-post__tag">
-    <time datetime="2023-07-06T00:00:45&#43;08:00">
-      
-      Jul 6, 2023
-    </time>
-  </span>
-</span>
-
-<span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">5 minutes to read</span>
-</span>
-
-
-
-  
-    
-    
-      
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/cipher.html"
-      title="All posts tagged with &#39;cipher&#39;"
-    >
-      cipher
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-    
-    
-      
-        <span class="flex align-center">
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/java.html"
-      title="All posts tagged with &#39;java&#39;"
-    >
-      java
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-    
-    
-      
-        <span class="flex align-center">
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/php.html"
-      title="All posts tagged with &#39;php&#39;"
-    >
-      php
+      stacks
     </a>
   </span>
 
