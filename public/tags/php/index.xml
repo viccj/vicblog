@@ -6,7 +6,20 @@
     <description>Recent content in php on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Jul 2023 15:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jul 2023 15:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Setting</title>
+      <link>https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html</link>
+      <pubDate>Sat, 29 Jul 2023 15:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html</guid>
+      <description>PHPUnit 安裝 建立設定檔 phpunit.xml 一次執行所有test phpunit.xml 常用參數 The bootstrap Attribute The cacheDirectory Attribute The cacheResult Attribute The colors Attribute PHPUnit 安裝 composer require --dev phpunit/phpunit 安裝完之後就可以執行測試
+php vendor/bin/phpunit yourTest.php 建立設定檔 phpunit.xml 一次執行所有test 建立一個 phpunit.xml檔案，並在裡面指定路徑，之後這個folder裡面所有的測試就會被執行
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;phpunit bootstrap=&amp;#34;bootstrap.php&amp;#34; colors=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;testsuites&amp;gt; &amp;lt;testsuite name=&amp;#34;All Tests&amp;#34;&amp;gt; &amp;lt;directory&amp;gt;tests&amp;lt;/directory&amp;gt; &amp;lt;/testsuite&amp;gt; &amp;lt;/testsuites&amp;gt; &amp;lt;/phpunit&amp;gt; 之後這個 folder 裡面所有的測試就會被執行 (測試的檔名要是Test 結尾，測試的method 要是 test 開頭)
+appTest.php
+&amp;lt;?php class appTest extends TestCase { public function testSomething() { assertTrue(true); } } php vendor/bin/phpunit phpunit.</description>
+    </item>
+    
     <item>
       <title>Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</title>
       <link>https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html</link>

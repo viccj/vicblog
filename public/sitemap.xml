@@ -54,7 +54,7 @@
     <lastmod>2023-06-24T16:23:28+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html</loc>
-    <lastmod>2023-07-29T10:00:41+08:00</lastmod>
+    <lastmod>2023-07-29T15:14:13+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/SiteStory/TyporaUpic.html</loc>
     <lastmod>2023-06-24T16:23:28+08:00</lastmod>
@@ -77,9 +77,6 @@
     <loc>https://lazyvic.com/Programming/Languages/Java/Spring-Boot/Getting-started-with-Spring/test.html</loc>
     <lastmod>2023-06-21T23:12:00+08:00</lastmod>
   </url><url>
-    <loc>https://lazyvic.com/Programming/Languages/PHP/PhpUnit/Getting-started-with-Spring/test.html</loc>
-    <lastmod>2023-06-21T23:12:00+08:00</lastmod>
-  </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Blind75/Array/test/two-sum.html</loc>
     <lastmod>2023-06-22T15:56:40+08:00</lastmod>
   </url><url>
@@ -87,9 +84,6 @@
     <lastmod>2023-06-22T15:56:40+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Languages/Java/Spring-Boot/Getting-started-with-Spring/test/two-sum.html</loc>
-    <lastmod>2023-06-21T23:12:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lazyvic.com/Programming/Languages/PHP/PhpUnit/Getting-started-with-Spring/test/two-sum.html</loc>
     <lastmod>2023-06-21T23:12:00+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Languages/Miscellaneous.html</loc>
@@ -104,11 +98,20 @@
     <loc>https://lazyvic.com/Programming/Languages/Java/Spring-Boot.html</loc>
     <lastmod>2023-06-21T23:12:00+08:00</lastmod>
   </url><url>
-    <loc>https://lazyvic.com/tags/Algorithm.html</loc>
-    <lastmod>2023-07-29T10:00:41+08:00</lastmod>
+    <loc>https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html</loc>
+    <lastmod>2023-07-29T15:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/tags/php.html</loc>
+    <lastmod>2023-07-29T15:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags.html</loc>
-    <lastmod>2023-07-29T10:00:41+08:00</lastmod>
+    <lastmod>2023-07-29T15:14:13+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/tags/unittest.html</loc>
+    <lastmod>2023-07-29T15:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/tags/Algorithm.html</loc>
+    <lastmod>2023-07-29T15:14:13+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags/cipher.html</loc>
     <lastmod>2023-07-06T00:00:45+08:00</lastmod>
@@ -117,9 +120,6 @@
     <lastmod>2023-07-06T00:00:45+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags/java.html</loc>
-    <lastmod>2023-07-06T00:00:45+08:00</lastmod>
-  </url><url>
-    <loc>https://lazyvic.com/tags/php.html</loc>
     <lastmod>2023-07-06T00:00:45+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/AnalysisOfAlgorithm/MathematicalModels/MathematicalModels.html</loc>
@@ -146,13 +146,7 @@
     <loc>https://lazyvic.com/Programming/Languages/Java/Spring-Boot/Integrated-Spring/Integrate-Spirng-1.html</loc>
     <lastmod>2023-06-21T23:12:00+08:00</lastmod>
   </url><url>
-    <loc>https://lazyvic.com/Programming/Languages/PHP/PhpUnit/Integrated-Spring/Integrate-Spirng-1.html</loc>
-    <lastmod>2023-06-21T23:12:00+08:00</lastmod>
-  </url><url>
     <loc>https://lazyvic.com/Programming/Languages/Java/Spring-Boot/Integrated-Spring/same-tree.html</loc>
-    <lastmod>2023-06-21T23:12:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lazyvic.com/Programming/Languages/PHP/PhpUnit/Integrated-Spring/same-tree.html</loc>
     <lastmod>2023-06-21T23:12:00+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags/leetcode.html</loc>
@@ -173,13 +167,7 @@
     <loc>https://lazyvic.com/Programming/Languages/Java/Spring-Boot/Getting-started-with-Spring/two-sum.html</loc>
     <lastmod>2023-06-21T23:12:00+08:00</lastmod>
   </url><url>
-    <loc>https://lazyvic.com/Programming/Languages/PHP/PhpUnit/Getting-started-with-Spring/two-sum.html</loc>
-    <lastmod>2023-06-21T23:12:00+08:00</lastmod>
-  </url><url>
     <loc>https://lazyvic.com/Programming/Languages/Java/Spring-Boot/Getting-started-with-Spring/Start.html</loc>
-    <lastmod>2023-06-21T23:12:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lazyvic.com/Programming/Languages/PHP/PhpUnit/Getting-started-with-Spring/Start.html</loc>
     <lastmod>2023-06-21T23:12:00+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Grind75/Week1/two-sum.html</loc>
@@ -204,12 +192,6 @@
     <lastmod>2023-06-21T23:12:00+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Languages/Java/Spring-Boot/Integrated-Spring.html</loc>
-    <lastmod>2023-06-21T23:12:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lazyvic.com/Programming/Languages/PHP/PhpUnit/Getting-started-with-Spring.html</loc>
-    <lastmod>2023-06-21T23:12:00+08:00</lastmod>
-  </url><url>
-    <loc>https://lazyvic.com/Programming/Languages/PHP/PhpUnit/Integrated-Spring.html</loc>
     <lastmod>2023-06-21T23:12:00+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm.html</loc>

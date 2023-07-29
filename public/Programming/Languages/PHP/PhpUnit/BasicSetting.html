@@ -28,21 +28,26 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
+  <meta name="description" content="PHPUnit 安裝 建立設定檔 phpunit.xml 一次執行所有test phpunit.xml 常用參數 The bootstrap Attribute The cacheDirectory Attribute The cacheResult Attribute The colors Attribute PHPUnit 安裝 composer require --dev phpunit/phpunit 安裝完之後就可以執行測試
+php vendor/bin/phpunit yourTest.php 建立設定檔 phpunit.xml 一次執行所有test 建立一個 phpunit.xml檔案，並在裡面指定路徑，之後這個folder裡面所有的測試就會被執行
+&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;phpunit bootstrap=&#34;bootstrap.php&#34; colors=&#34;true&#34;&gt; &lt;testsuites&gt; &lt;testsuite name=&#34;All Tests&#34;&gt; &lt;directory&gt;tests&lt;/directory&gt; &lt;/testsuite&gt; &lt;/testsuites&gt; &lt;/phpunit&gt; 之後這個 folder 裡面所有的測試就會被執行 (測試的檔名要是Test 結尾，測試的method 要是 test 開頭)
+appTest.php
+&lt;?php class appTest extends TestCase { public function testSomething() { assertTrue(true); } } php vendor/bin/phpunit phpunit." />
 
-    <title>infra | Log of Vic</title>
+    <title>Basic Setting | Log of Vic</title>
 
-    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../../../favicon/favicon.svg" />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="../favicon/favicon-32x32.png"
+  href="../../../../favicon/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="../favicon/favicon-16x16.png"
+  href="../../../../favicon/favicon-16x16.png"
 />
 
     
@@ -50,84 +55,137 @@ if (!doNotTrack) {
     
   <meta
     property="og:title"
-    content="infra"
+    content="Basic Setting"
   />
   <meta property="og:site_name" content="Log of Vic" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://lazyvic.com/tags/infra.html" />
+  <meta property="og:description" content="PHPUnit 安裝 建立設定檔 phpunit.xml 一次執行所有test phpunit.xml 常用參數 The bootstrap Attribute The cacheDirectory Attribute The cacheResult Attribute The colors Attribute PHPUnit 安裝 composer require --dev phpunit/phpunit 安裝完之後就可以執行測試
+php vendor/bin/phpunit yourTest.php 建立設定檔 phpunit.xml 一次執行所有test 建立一個 phpunit.xml檔案，並在裡面指定路徑，之後這個folder裡面所有的測試就會被執行
+&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;phpunit bootstrap=&#34;bootstrap.php&#34; colors=&#34;true&#34;&gt; &lt;testsuites&gt; &lt;testsuite name=&#34;All Tests&#34;&gt; &lt;directory&gt;tests&lt;/directory&gt; &lt;/testsuite&gt; &lt;/testsuites&gt; &lt;/phpunit&gt; 之後這個 folder 裡面所有的測試就會被執行 (測試的檔名要是Test 結尾，測試的method 要是 test 開頭)
+appTest.php
+&lt;?php class appTest extends TestCase { public function testSomething() { assertTrue(true); } } php vendor/bin/phpunit phpunit." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html" />
 
-
+<meta property="article:section" content="Programming" />
+    <meta
+      property="article:published_time"
+      content="2023-07-29T15:00:41+08:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2023-07-29T15:00:41+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="infra" />
+<meta name="twitter:title" content="Basic Setting" />
+  <meta name="twitter:description" content="PHPUnit 安裝 建立設定檔 phpunit.xml 一次執行所有test phpunit.xml 常用參數 The bootstrap Attribute The cacheDirectory Attribute The cacheResult Attribute The colors Attribute PHPUnit 安裝 composer require --dev phpunit/phpunit 安裝完之後就可以執行測試
+php vendor/bin/phpunit yourTest.php 建立設定檔 phpunit.xml 一次執行所有test 建立一個 phpunit.xml檔案，並在裡面指定路徑，之後這個folder裡面所有的測試就會被執行
+&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;phpunit bootstrap=&#34;bootstrap.php&#34; colors=&#34;true&#34;&gt; &lt;testsuites&gt; &lt;testsuite name=&#34;All Tests&#34;&gt; &lt;directory&gt;tests&lt;/directory&gt; &lt;/testsuite&gt; &lt;/testsuites&gt; &lt;/phpunit&gt; 之後這個 folder 裡面所有的測試就會被執行 (測試的檔名要是Test 結尾，測試的method 要是 test 開頭)
+appTest.php
+&lt;?php class appTest extends TestCase { public function testSomething() { assertTrue(true); } } php vendor/bin/phpunit phpunit." />
 
 
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "TechArticle",
+      "articleSection": "Programming",
+      "name": "Basic Setting",
+      "url" : "https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html",
+      "headline": "Basic Setting",
+      "description": "PHPUnit 安裝 建立設定檔 phpunit.xml 一次執行所有test phpunit.xml 常用參數 The bootstrap Attribute The cacheDirectory Attribute The cacheResult Attribute The colors Attribute PHPUnit 安裝 composer require --dev phpunit\/phpunit 安裝完之後就可以執行測試\nphp vendor\/bin\/phpunit yourTest.php 建立設定檔 phpunit.xml 一次執行所有test 建立一個 phpunit.xml檔案，並在裡面指定路徑，之後這個folder裡面所有的測試就會被執行\n\u003c?xml version=\u00221.0\u0022 encoding=\u0022UTF-8\u0022?\u003e \u003cphpunit bootstrap=\u0022bootstrap.php\u0022 colors=\u0022true\u0022\u003e \u003ctestsuites\u003e \u003ctestsuite name=\u0022All Tests\u0022\u003e \u003cdirectory\u003etests\u003c\/directory\u003e \u003c\/testsuite\u003e \u003c\/testsuites\u003e \u003c\/phpunit\u003e 之後這個 folder 裡面所有的測試就會被執行 (測試的檔名要是Test 結尾，測試的method 要是 test 開頭)\nappTest.php\n\u003c?php class appTest extends TestCase { public function testSomething() { assertTrue(true); } } php vendor\/bin\/phpunit phpunit.",
+      "wordCount" : "224",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html"
+      },
+      "keywords" : [ "php" , "unittest" ],
+      "copyrightHolder" : "Log of Vic",
+      "copyrightYear" : "2023",
+      "dateCreated": "2023-07-29T15:00:41.00Z",
+      "datePublished": "2023-07-29T15:00:41.00Z",
+      "dateModified": "2023-07-29T15:00:41.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Log of Vic",
+          "url": "https://lazyvic.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://lazyvic.com/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
+  }
+  </script>
 
 
     
-  <script src="../js/colortheme-d3e4d351.bundle.min.js"></script>
-<script src="../js/main-fbb9c8b0.bundle.min.js"></script>
+  <script src="../../../../js/colortheme-d3e4d351.bundle.min.js"></script>
+<script src="../../../../js/main-fbb9c8b0.bundle.min.js"></script>
 
 <link
   rel="preload"
   as="font"
-  href="../fonts/Metropolis.woff2"
+  href="../../../../fonts/Metropolis.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 <link
   rel="preload"
   as="font"
-  href="../fonts/LiberationSans.woff2"
+  href="../../../../fonts/LiberationSans.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 
 <link
   rel="preload"
-  href="../main-ba0e2765.min.css"
+  href="../../../../main-ba0e2765.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../main-ba0e2765.min.css"
+  href="../../../../main-ba0e2765.min.css"
   media="all"
 />
 
 <link
   rel="preload"
-  href="../mobile-79ddc617.min.css"
+  href="../../../../mobile-79ddc617.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../mobile-79ddc617.min.css"
+  href="../../../../mobile-79ddc617.min.css"
   media="screen and (max-width: 45rem)"
 />
 
 <link
   rel="preload"
-  href="../print-735ccc12.min.css"
+  href="../../../../print-735ccc12.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../print-735ccc12.min.css"
+  href="../../../../print-735ccc12.min.css"
   media="print"
 />
 
 <link
   rel="preload"
-  href="../custom.css"
+  href="../../../../custom.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../custom.css"
+  href="../../../../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/tags/infra.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -168,7 +226,7 @@ if (!doNotTrack) {
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
-            src="../brand.svg"
+            src="../../../../brand.svg"
             alt=""
           />
           <span class="gdoc-brand__title">Log of Vic</span>
@@ -292,7 +350,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming.html"
+                    href="../../../../Programming.html"
                     class="gdoc-nav__entry"
                   >
                     Programming
@@ -339,7 +397,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/Algorithm.html"
+                    href="../../../../Programming/Algorithm.html"
                     class="gdoc-nav__entry"
                   >
                     Algorithm
@@ -375,7 +433,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/Languages.html"
+                    href="../../../../Programming/Languages.html"
                     class="gdoc-nav__entry"
                   >
                     Language
@@ -422,7 +480,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory.html"
+                    href="../../../../Programming/SiteStory.html"
                     class="gdoc-nav__entry"
                   >
                     Site Story
@@ -476,7 +534,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/WhyHugo.html"
+                    href="../../../../Programming/SiteStory/WhyHugo.html"
                     class="gdoc-nav__entry"
                   >
                     Why Hugo
@@ -520,7 +578,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/GettingStart.html"
+                    href="../../../../Programming/SiteStory/GettingStart.html"
                     class="gdoc-nav__entry"
                   >
                     Hugo GitHub Page
@@ -593,7 +651,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/SSL.html"
+                    href="../../../../Programming/SiteStory/SSL.html"
                     class="gdoc-nav__entry"
                   >
                     Install SSL
@@ -637,7 +695,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/TyporaUpic.html"
+                    href="../../../../Programming/SiteStory/TyporaUpic.html"
                     class="gdoc-nav__entry"
                   >
                     Typora &#43; Upic
@@ -676,113 +734,6 @@ if (!doNotTrack) {
     
   </section>
 
-  
-    <section class="gdoc-nav--tags">
-      <h2>Tags</h2>
-      <ul class="gdoc-nav__list">
-        
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/Algorithm.html"
-              >
-                Algorithm
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/cipher.html"
-              >
-                cipher
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/hugo.html"
-              >
-                hugo
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry is-active"
-                href="../tags/infra.html"
-              >
-                infra
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/java.html"
-              >
-                java
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/leetcode.html"
-              >
-                leetcode
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/php.html"
-              >
-                php
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/trash-talk.html"
-              >
-                trash talk
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/unittest.html"
-              >
-                unittest
-              </a>
-            </li>
-          
-        
-      </ul>
-    </section>
   
 
 
@@ -911,57 +862,103 @@ if (!doNotTrack) {
         <div class="gdoc-page">
           
   
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="../Programming/SiteStory/SSL.html">Install SSL</a>
-        </h1>
-      </header>
 
-      <section class="gdoc-markdown">
-        Domain 是在 namecheap 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
-領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。
-接著用剛剛的私鑰生成CSR（證書簽署請求）
-openssl req -new -key private.key -out csr.csr 會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。
-Common Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說填個名字就好我就傻傻的填我的英文名字，結果一直失敗..
-生成的CSR文件 csr.csr 就可以整個複製上去。 收到憑證後 通常在取得 SSL 憑證時，您會收到兩個檔案：.crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案。
-.crt 憑證檔案是您的 SSL 證書，它包含您的網站的公開金鑰以及其他相關的證書資訊。
-.ca-bundle（或 .bundle）憑證束檔案是根憑證和中繼憑證的集合。它包含了憑證鏈中的所有憑證，用於驗證您的 SSL 憑證的合法性。憑證鏈包括根憑證（Root Certificate）和中繼憑證（Intermediate Certificate）。根憑證是由受信任的憑證授權中心（Certificate Authority）簽署的，而中繼憑證是由根憑證簽署的其他憑證。
-在設定 Nginx 的 SSL 時，需要將 .crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案合併為一個檔案，形成完整的憑證鏈。
-順序不能錯，要先crt再ca-bundle
-cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic.
-      </section>
 
-      <div class="gdoc-post__readmore">
+  
+
+
+
+
+
+
+<div
+  class="gdoc-page__header flex flex-wrap
+  
+    justify-between
+  
+  hidden-mobile
+  "
+  itemprop="breadcrumb"
+>
+  
+    <div>
+      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
+      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
         
-          <a
-            class="flex-inline align-center fake-link"
-            title="Read full post"
-            href="../Programming/SiteStory/SSL.html"
-          >
-            Read full post
-            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-          </a>
         
-      </div>
+        
+        
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Languages.html' href='../../../../Programming/Languages.html'><span itemprop='name'>Language</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Languages/PHP.html' href='../../../../Programming/Languages/PHP.html'><span itemprop='name'>PHP</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Languages/PHP/PhpUnit.html' href='../../../../Programming/Languages/PHP/PhpUnit.html'><span itemprop='name'>PHP UNIT</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Basic Setting</span><meta itemprop='position' content='5' /></li>
+  
 
-      <footer class="gdoc-post__footer">
-        <div class="flex flex-wrap align-center gdoc-post__meta">
-          <span class="flex align-center no-wrap">
+  
+
+  
+
+  
+
+  
+
+  
+
+      </ol>
+    </div>
+  
+  
+</div>
+
+
+
+  <article
+    class="gdoc-markdown gdoc-markdown__align--left"
+  >
+    <h1>Basic Setting</h1>
+    <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
+        <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-06-24T16:23:28&#43;08:00">
+    <time datetime="2023-07-29T15:00:41&#43;08:00">
       
-        Updated on
-      
-      Jun 24, 2023
+      Jul 29, 2023
     </time>
   </span>
 </span>
 
 <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">One minute to read</span>
+  <span class="gdoc-post__tag">2 minutes to read</span>
 </span>
 
 
@@ -976,10 +973,10 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/hugo.html"
-      title="All posts tagged with &#39;hugo&#39;"
+      href="../../../../tags/php.html"
+      title="All posts tagged with &#39;php&#39;"
     >
-      hugo
+      php
     </a>
   </span>
 
@@ -996,10 +993,10 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/infra.html"
-      title="All posts tagged with &#39;infra&#39;"
+      href="../../../../tags/unittest.html"
+      title="All posts tagged with &#39;unittest&#39;"
     >
-      infra
+      unittest
     </a>
   </span>
 
@@ -1012,23 +1009,164 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
 
 
 
-        </div>
-      </footer>
-    </article>
-  
-  
+    </div>
 
 
-<nav class="gdoc-paging flex flex-even align-center" role="navigation">
-  <div class="gdoc-paging__item gdoc-paging__item--prev">
+
+
+    <div class="gdoc-toc gdoc-toc__level--6">
+      <nav id="TableOfContents"><ul>
+        <li><a href="#phpunit-安裝">PHPUnit 安裝</a></li>
+        <li><a href="#建立設定檔-phpunitxml">建立設定檔 phpunit.xml</a>
+          <ul>
+            <li><a href="#一次執行所有test">一次執行所有test</a></li>
+            <li><a href="#phpunitxml-常用參數">phpunit.xml 常用參數</a>
+              <ul>
+                <li><a href="#the-bootstrap-attribute">The <code>bootstrap</code> Attribute</a></li>
+                <li><a href="#the-cachedirectory-attribute">The <code>cacheDirectory</code> Attribute</a></li>
+                <li><a href="#the-cacheresult-attribute">The <code>cacheResult</code> Attribute</a></li>
+                <li><a href="#the-colors-attribute">The <code>colors</code> Attribute</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul></nav>
+      <hr />
+    </div>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="phpunit-安裝"
+    >
+        PHPUnit 安裝
+        <a data-clipboard-text="https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html#phpunit-安裝" class="gdoc-page__anchor clip flex align-center" title="Anchor to: PHPUnit 安裝" aria-label="Anchor to: PHPUnit 安裝" href="#phpunit-%e5%ae%89%e8%a3%9d">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<pre tabindex="0"><code>composer require --dev phpunit/phpunit
+</code></pre><p>安裝完之後就可以執行測試</p>
+<pre tabindex="0"><code>php vendor/bin/phpunit yourTest.php
+</code></pre><div class="gdoc-page__anchorwrap">
+    <h2 id="建立設定檔-phpunitxml"
+    >
+        建立設定檔 phpunit.xml
+        <a data-clipboard-text="https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html#建立設定檔-phpunitxml" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 建立設定檔 phpunit.xml" aria-label="Anchor to: 建立設定檔 phpunit.xml" href="#%e5%bb%ba%e7%ab%8b%e8%a8%ad%e5%ae%9a%e6%aa%94-phpunitxml">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="一次執行所有test"
+    >
+        一次執行所有test
+        <a data-clipboard-text="https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html#一次執行所有test" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 一次執行所有test" aria-label="Anchor to: 一次執行所有test" href="#%e4%b8%80%e6%ac%a1%e5%9f%b7%e8%a1%8c%e6%89%80%e6%9c%89test">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>建立一個 <code>phpunit.xml</code>檔案，並在裡面指定路徑，之後這個folder裡面所有的測試就會被執行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">xml</span> <span class="nx">version</span><span class="o">=</span><span class="s2">&#34;1.0&#34;</span> <span class="nx">encoding</span><span class="o">=</span><span class="s2">&#34;UTF-8&#34;</span><span class="cp">?&gt;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">&lt;phpunit bootstrap=&#34;bootstrap.php&#34; colors=&#34;true&#34;&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">    &lt;testsuites&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">        &lt;testsuite name=&#34;All Tests&#34;&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">            &lt;directory&gt;tests&lt;/directory&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">        &lt;/testsuite&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">    &lt;/testsuites&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">&lt;/phpunit&gt;
+</span></span></span></code></pre></div><p>之後這個 folder 裡面所有的測試就會被執行 (測試的檔名要是Test 結尾，測試的method 要是 test 開頭)</p>
+<p><code>appTest.php</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">appTest</span> <span class="k">extends</span> <span class="nx">TestCase</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">function</span> <span class="nf">testSomething</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">assertTrue</span><span class="p">(</span><span class="k">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">php vendor/bin/phpunit
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h3 id="phpunitxml-常用參數"
+    >
+        phpunit.xml 常用參數
+        <a data-clipboard-text="https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html#phpunitxml-常用參數" class="gdoc-page__anchor clip flex align-center" title="Anchor to: phpunit.xml 常用參數" aria-label="Anchor to: phpunit.xml 常用參數" href="#phpunitxml-%e5%b8%b8%e7%94%a8%e5%8f%83%e6%95%b8">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="the-bootstrap-attribute"
+    >
+        The <code>bootstrap</code> Attribute
+        <a data-clipboard-text="https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html#the-bootstrap-attribute" class="gdoc-page__anchor clip flex align-center" title="Anchor to: The bootstrap Attribute" aria-label="Anchor to: The bootstrap Attribute" href="#the-bootstrap-attribute">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>This attribute configures the bootstrap script that is loaded before the tests are executed. This script usually only registers the autoloader callback that is used to load the code under test.</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="the-cachedirectory-attribute"
+    >
+        The <code>cacheDirectory</code> Attribute
+        <a data-clipboard-text="https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html#the-cachedirectory-attribute" class="gdoc-page__anchor clip flex align-center" title="Anchor to: The cacheDirectory Attribute" aria-label="Anchor to: The cacheDirectory Attribute" href="#the-cachedirectory-attribute">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>This attribute configures the directory in which PHPUnit caches information such as test results (see below) or the result of static code analysis that is performed for code coverage reporting.</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="the-cacheresult-attribute"
+    >
+        The <code>cacheResult</code> Attribute
+        <a data-clipboard-text="https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html#the-cacheresult-attribute" class="gdoc-page__anchor clip flex align-center" title="Anchor to: The cacheResult Attribute" aria-label="Anchor to: The cacheResult Attribute" href="#the-cacheresult-attribute">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Possible values: <code>true</code> or <code>false</code> (default: <code>true</code>)</p>
+<p>This attribute configures the caching of test results. This caching is required for ordering tests by defects or duration with the <code>executionOrder</code> attribute (see <a
+  class="gdoc-markdown__link"
+  href="https://docs.phpunit.de/en/10.2/configuration.html#appendixes-configuration-phpunit-executionorder"
+>The executionOrder Attribute</a>).</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="the-colors-attribute"
+    >
+        The <code>colors</code> Attribute
+        <a data-clipboard-text="https://lazyvic.com/Programming/Languages/PHP/PhpUnit/BasicSetting.html#the-colors-attribute" class="gdoc-page__anchor clip flex align-center" title="Anchor to: The colors Attribute" aria-label="Anchor to: The colors Attribute" href="#the-colors-attribute">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Possible values: <code>true</code> or <code>false</code> (default: <code>false</code>)</p>
+<p>This attribute configures whether colors are used in PHPUnit’s output.</p>
+<p>Setting this attribute to <code>true</code> is equivalent to using the <code>--colors=auto</code> CLI option.</p>
+<p>Setting this attribute to <code>false</code> is equivalent to using the <code>--colors=never</code> CLI option.</p>
+
+  </article>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="disqus markdown">
+    <div id="disqus_thread"></div>
+<script>
     
-  </div>
-  <div class="gdoc-paging__state">1/1</div>
-  <div class="gdoc-paging__item gdoc-paging__item--next">
-    
-  </div>
-</nav>
 
+    
+
+    (function() { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lazyvic-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
 
 
 
@@ -1088,7 +1226,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
     </div>
 
     
-  <script defer src="../js/search-83320133.bundle.min.js"></script>
+  <script defer src="../../../../js/search-83320133.bundle.min.js"></script>
 
   </body>
 </html>
