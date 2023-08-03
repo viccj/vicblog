@@ -964,7 +964,137 @@ class Solution { public int[] twoSum(int[] nums, int target) { Map&lt;Integer, I
           <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-08-03T13:00:41&#43;08:00">
+    <time datetime="2023-08-03T15:46:40&#43;08:00">
+      
+      Aug 3, 2023
+    </time>
+  </span>
+</span>
+
+<span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
+  <span class="gdoc-post__tag">One minute to read</span>
+</span>
+
+
+
+  
+    
+    
+      
+        <span class="flex align-center no-wrap">
+          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../tags/array.html"
+      title="All posts tagged with &#39;array&#39;"
+    >
+      array
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+    
+    
+      
+        <span class="flex align-center">
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../tags/java.html"
+      title="All posts tagged with &#39;java&#39;"
+    >
+      java
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+    
+    
+      
+        <span class="flex align-center">
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../tags/leetcode.html"
+      title="All posts tagged with &#39;leetcode&#39;"
+    >
+      leetcode
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+
+
+
+
+        </div>
+      </footer>
+    </article>
+  
+    <article class="gdoc-post">
+      <header class="gdoc-post__header">
+        <h1 class="gdoc-post__title">
+          <a href="../Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html">Best Time to Buy and Sell Stock</a>
+        </h1>
+      </header>
+
+      <section class="gdoc-markdown">
+        解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。
+但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）
+一開始也只能知道一開始的收益以及目前的金額
+假如給定的價格列表為[7,1,5,3,6,4]
+一開始的收益為 profit = 0
+一開始的金額是 prices [0]
+如果是第一天買股票，第二天賣
+這時候的收益會是 1 - 7 = - 6
+再往後計算的話
+如果是第一天買，第三天賣
+這時候的收益會是 5 - 7 = - 2
+看起來比第一天買第二天賣還要賺（虧比較少）
+但這時發現了一件事，第二天的價格比第一天還要低， 這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算， 算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。 而且時間不能重來。
+因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。
+依照範例給的數據會得到以下結果：
+Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices.
+      </section>
+
+      <div class="gdoc-post__readmore">
+        
+          <a
+            class="flex-inline align-center fake-link"
+            title="Read full post"
+            href="../Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html"
+          >
+            Read full post
+            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
+          </a>
+        
+      </div>
+
+      <footer class="gdoc-post__footer">
+        <div class="flex flex-wrap align-center gdoc-post__meta">
+          <span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+  <span class="gdoc-post__tag">
+    <time datetime="2023-08-03T15:46:40&#43;08:00">
+      
+        Updated on
       
       Aug 3, 2023
     </time>

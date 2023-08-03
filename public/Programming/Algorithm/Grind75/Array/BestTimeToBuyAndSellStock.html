@@ -28,7 +28,22 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="my solution" />
+  <meta name="description" content="解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。
+但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）
+一開始也只能知道一開始的收益以及目前的金額
+假如給定的價格列表為[7,1,5,3,6,4]
+一開始的收益為 profit = 0
+一開始的金額是 prices [0]
+如果是第一天買股票，第二天賣
+這時候的收益會是 1 - 7 = - 6
+再往後計算的話
+如果是第一天買，第三天賣
+這時候的收益會是 5 - 7 = - 2
+看起來比第一天買第二天賣還要賺（虧比較少）
+但這時發現了一件事，第二天的價格比第一天還要低， 這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算， 算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。 而且時間不能重來。
+因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。
+依照範例給的數據會得到以下結果：
+Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices." />
 
     <title>Best Time to Buy and Sell Stock | Log of Vic</title>
 
@@ -54,7 +69,22 @@ if (!doNotTrack) {
     content="Best Time to Buy and Sell Stock"
   />
   <meta property="og:site_name" content="Log of Vic" />
-  <meta property="og:description" content="my solution" />
+  <meta property="og:description" content="解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。
+但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）
+一開始也只能知道一開始的收益以及目前的金額
+假如給定的價格列表為[7,1,5,3,6,4]
+一開始的收益為 profit = 0
+一開始的金額是 prices [0]
+如果是第一天買股票，第二天賣
+這時候的收益會是 1 - 7 = - 6
+再往後計算的話
+如果是第一天買，第三天賣
+這時候的收益會是 5 - 7 = - 2
+看起來比第一天買第二天賣還要賺（虧比較少）
+但這時發現了一件事，第二天的價格比第一天還要低， 這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算， 算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。 而且時間不能重來。
+因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。
+依照範例給的數據會得到以下結果：
+Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html" />
 
@@ -65,13 +95,28 @@ if (!doNotTrack) {
     />
     <meta
       property="article:modified_time"
-      content="2023-06-18T22:00:41+08:00"
+      content="2023-08-03T15:46:40+08:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Best Time to Buy and Sell Stock" />
-  <meta name="twitter:description" content="my solution" />
+  <meta name="twitter:description" content="解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。
+但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）
+一開始也只能知道一開始的收益以及目前的金額
+假如給定的價格列表為[7,1,5,3,6,4]
+一開始的收益為 profit = 0
+一開始的金額是 prices [0]
+如果是第一天買股票，第二天賣
+這時候的收益會是 1 - 7 = - 6
+再往後計算的話
+如果是第一天買，第三天賣
+這時候的收益會是 5 - 7 = - 2
+看起來比第一天買第二天賣還要賺（虧比較少）
+但這時發現了一件事，第二天的價格比第一天還要低， 這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算， 算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。 而且時間不能重來。
+因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。
+依照範例給的數據會得到以下結果：
+Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices." />
 
 
   <script type="application/ld+json">
@@ -82,20 +127,20 @@ if (!doNotTrack) {
       "name": "Best Time to Buy and Sell Stock",
       "url" : "https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html",
       "headline": "Best Time to Buy and Sell Stock",
-      "description": "my solution",
-      "wordCount" : "2",
+      "description": "解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。\n但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）\n一開始也只能知道一開始的收益以及目前的金額\n假如給定的價格列表為[7,1,5,3,6,4]\n一開始的收益為 profit = 0\n一開始的金額是 prices [0]\n如果是第一天買股票，第二天賣\n這時候的收益會是 1 - 7 = - 6\n再往後計算的話\n如果是第一天買，第三天賣\n這時候的收益會是 5 - 7 = - 2\n看起來比第一天買第二天賣還要賺（虧比較少）\n但這時發現了一件事，第二天的價格比第一天還要低， 這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算， 算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。 而且時間不能重來。\n因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。\n依照範例給的數據會得到以下結果：\nProfit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices.",
+      "wordCount" : "177",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
           "@id": "https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html"
       },
-      "keywords" : [ "leetcode" ],
+      "keywords" : [ "leetcode" , "java" , "array" ],
       "copyrightHolder" : "Log of Vic",
       "copyrightYear" : "2023",
       "dateCreated": "2023-06-18T22:00:41.00Z",
       "datePublished": "2023-06-18T22:00:41.00Z",
-      "dateModified": "2023-06-18T22:00:41.00Z",
+      "dateModified": "2023-08-03T15:46:40.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Log of Vic",
@@ -937,9 +982,11 @@ if (!doNotTrack) {
         <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-06-18T22:00:41&#43;08:00">
+    <time datetime="2023-08-03T15:46:40&#43;08:00">
       
-      Jun 18, 2023
+        Updated on
+      
+      Aug 3, 2023
     </time>
   </span>
 </span>
@@ -957,6 +1004,46 @@ if (!doNotTrack) {
       
         <span class="flex align-center no-wrap">
           <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../../../../tags/array.html"
+      title="All posts tagged with &#39;array&#39;"
+    >
+      array
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+    
+    
+      
+        <span class="flex align-center">
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../../../../tags/java.html"
+      title="All posts tagged with &#39;java&#39;"
+    >
+      java
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+    
+    
+      
+        <span class="flex align-center">
           
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
@@ -982,8 +1069,81 @@ if (!doNotTrack) {
 
 
 
-    <p>my solution</p>
+    <div class="gdoc-page__anchorwrap">
+    <h2 id="解題思路"
+    >
+        解題思路
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html#解題思路" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 解題思路" aria-label="Anchor to: 解題思路" href="#%e8%a7%a3%e9%a1%8c%e6%80%9d%e8%b7%af">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>要如何算出最大收益？ 買的價格越低，賣的價格越高。</p>
+<p>但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）</p>
+<p>一開始也只能知道一開始的收益以及目前的金額</p>
+<p>假如給定的價格列表為<code>[7,1,5,3,6,4]</code></p>
+<p>一開始的收益為 <code>profit = 0</code></p>
+<p>一開始的金額是 <code>prices [0]</code></p>
+<p>如果是第一天買股票，第二天賣</p>
+<p>這時候的收益會是 1 - 7 = - 6</p>
+<p>再往後計算的話</p>
+<p>如果是第一天買，第三天賣</p>
+<p>這時候的收益會是 5 - 7 = - 2</p>
+<p>看起來比第一天買第二天賣還要賺（虧比較少）</p>
+<hr>
+<p>但這時發現了一件事，第二天的價格比第一天還要低，
+這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算，
+算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。
+而且時間不能重來。</p>
+<p>因此可以在計算價差時，發現最低價的時候就更新最低價的值，
+計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。</p>
+<p>依照範例給的數據會得到以下結果：</p>
+<pre tabindex="0"><code class="language-agsl" data-lang="agsl">Profit =  price[index] - min
 
+1 - 7 = -6
+
+Min = 1
+
+1 - 1 = 0, min = 1
+
+5 - 1 = 4, min = 1, profit = 0
+
+3 - 1 = 2, min = 1, profit = 2
+
+6 - 1 = 5, min = 1, profit = 6
+
+6 - 1 = 6, min = 1, profit = 5
+
+
+
+Profit = 5, at 1 and 6
+</code></pre><div class="gdoc-page__anchorwrap">
+    <h2 id="程式碼"
+    >
+        程式碼
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html#程式碼" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 程式碼" aria-label="Anchor to: 程式碼" href="#%e7%a8%8b%e5%bc%8f%e7%a2%bc">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">maxProfit</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">prices</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">prices</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">profit</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">prices</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">min</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">min</span> <span class="o">=</span> <span class="n">prices</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">prices</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">-</span> <span class="n">min</span> <span class="o">&gt;</span> <span class="n">profit</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">profit</span> <span class="o">=</span> <span class="n">prices</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">-</span> <span class="n">min</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">profit</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div>
   </article>
 <br>
 <br>
