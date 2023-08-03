@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://lazyvic.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Two Sum</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/TwoSum.html</link>
+      <pubDate>Thu, 03 Aug 2023 13:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Array/TwoSum.html</guid>
+      <description>Two Sum 暴力解 兩個 loop 加起來等於 target, 就回傳他們的 index，應該是最新手最直覺的人（我）都想得出來的解答
+優化解 一樣是用兩個 loop 去解，但是這裡不是用 nested loop，而是先用一個 loop 以及 hashmap 把陣列裡的每個值標記起來 [index, value]，另一個 loop 再去對每個值做計算，如果 target - nums[i] 有在 hashmap裏面，就回傳 i 以及對應的 index
+class Solution { public int[] twoSum(int[] nums, int target) { Map&amp;lt;Integer, Integer&amp;gt; hashmap = new HashMap&amp;lt;&amp;gt;(); for(int i = 0; i &amp;lt; nums.length; i++) { hashmap.put(nums[i], i); } for (int i = 0; i &amp;lt; nums.length; i++) { int difference = target - nums[i]; if(hashmap.</description>
+    </item>
+    
+    <item>
       <title>Dynamic Connectivity</title>
       <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivity.html</link>
       <pubDate>Sat, 24 Jun 2023 10:00:41 +0800</pubDate>
@@ -50,15 +61,6 @@ Jekyll：Ruby寫的，沒什麼感覺 Hugo：Go寫的，好像很潮 Hexo：Node
     </item>
     
     <item>
-      <title>Two Sum</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Blind75/Array/TwoSum.html</link>
-      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
-      
-      <guid>https://lazyvic.com/Programming/Algorithm/Blind75/Array/TwoSum.html</guid>
-      <description>My two sum solution</description>
-    </item>
-    
-    <item>
       <title>Quick Find</title>
       <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html</link>
       <pubDate>Mon, 26 Jun 2023 10:00:41 +0800</pubDate>
@@ -84,10 +86,10 @@ Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p
     
     <item>
       <title>Best Time to Buy and Sell Stock</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Blind75/Array/BestTimeToBuyAndSellStock.html</link>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>https://lazyvic.com/Programming/Algorithm/Blind75/Array/BestTimeToBuyAndSellStock.html</guid>
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html</guid>
       <description>my solution</description>
     </item>
     
@@ -192,24 +194,6 @@ Typora設定 照著設定按一下test Uploader顯示成功，之後圖片拖進
     
     <item>
       <title>Level 1.3.1</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Blind75/Array/test/two-sum.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lazyvic.com/Programming/Algorithm/Blind75/Array/test/two-sum.html</guid>
-      <description>Level 1.3.1</description>
-    </item>
-    
-    <item>
-      <title>Level 1.3.1</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Week1/test/two-sum.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Week1/test/two-sum.html</guid>
-      <description>Level 1.3.1</description>
-    </item>
-    
-    <item>
-      <title>Level 1.3.1</title>
       <link>https://lazyvic.com/Programming/Languages/Java/Spring-Boot/Getting-started-with-Spring/test/two-sum.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -243,15 +227,6 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
     </item>
     
     <item>
-      <title>Best Time to Buy and Sell Stock</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Week1/Best-Time-to-Buy-and-Sell-Stock.html</link>
-      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
-      
-      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Week1/Best-Time-to-Buy-and-Sell-Stock.html</guid>
-      <description>my solution</description>
-    </item>
-    
-    <item>
       <title>Integrate Spring 1</title>
       <link>https://lazyvic.com/Programming/Languages/Java/Spring-Boot/Integrated-Spring/Integrate-Spirng-1.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
@@ -271,37 +246,19 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
     
     <item>
       <title>Maximum Depth of Binary Tree</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Blind75/Tree/MaximumDepthOfBinaryTree.html</link>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Tree/MaximumDepthOfBinaryTree.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>https://lazyvic.com/Programming/Algorithm/Blind75/Tree/MaximumDepthOfBinaryTree.html</guid>
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Tree/MaximumDepthOfBinaryTree.html</guid>
       <description>My same tree solution</description>
     </item>
     
     <item>
       <title>Maximum Depth of Binary Tree</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Blind75/Tree/SameTree.html</link>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Tree/SameTree.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
-      <guid>https://lazyvic.com/Programming/Algorithm/Blind75/Tree/SameTree.html</guid>
-      <description>my solution</description>
-    </item>
-    
-    <item>
-      <title>Maximum Depth of Binary Tree</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Week2/Maximum-Depth-of-Binary-Tree.html</link>
-      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
-      
-      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Week2/Maximum-Depth-of-Binary-Tree.html</guid>
-      <description>My same tree solution</description>
-    </item>
-    
-    <item>
-      <title>Maximum Depth of Binary Tree</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Week2/same-tree.html</link>
-      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
-      
-      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Week2/same-tree.html</guid>
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Tree/SameTree.html</guid>
       <description>my solution</description>
     </item>
     
@@ -321,15 +278,6 @@ when encrypting data using AES-GCM in Java, the resulting ciphertext will consis
       
       <guid>https://lazyvic.com/Programming/Languages/Java/Spring-Boot/Getting-started-with-Spring/Start.html</guid>
       <description>my solution</description>
-    </item>
-    
-    <item>
-      <title>two sum</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Week1/two-sum.html</link>
-      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
-      
-      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Week1/two-sum.html</guid>
-      <description>My two sum solution</description>
     </item>
     
   </channel>

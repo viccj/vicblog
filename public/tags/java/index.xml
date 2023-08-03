@@ -6,7 +6,18 @@
     <description>Recent content in java on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Jul 2023 15:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Aug 2023 13:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Two Sum</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/TwoSum.html</link>
+      <pubDate>Thu, 03 Aug 2023 13:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Array/TwoSum.html</guid>
+      <description>Two Sum 暴力解 兩個 loop 加起來等於 target, 就回傳他們的 index，應該是最新手最直覺的人（我）都想得出來的解答
+優化解 一樣是用兩個 loop 去解，但是這裡不是用 nested loop，而是先用一個 loop 以及 hashmap 把陣列裡的每個值標記起來 [index, value]，另一個 loop 再去對每個值做計算，如果 target - nums[i] 有在 hashmap裏面，就回傳 i 以及對應的 index
+class Solution { public int[] twoSum(int[] nums, int target) { Map&amp;lt;Integer, Integer&amp;gt; hashmap = new HashMap&amp;lt;&amp;gt;(); for(int i = 0; i &amp;lt; nums.length; i++) { hashmap.put(nums[i], i); } for (int i = 0; i &amp;lt; nums.length; i++) { int difference = target - nums[i]; if(hashmap.</description>
+    </item>
+    
     <item>
       <title>Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</title>
       <link>https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html</link>

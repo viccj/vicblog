@@ -28,22 +28,22 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="my solution" />
+  <meta name="description" content="My same tree solution" />
 
-    <title>Stacks | Log of Vic</title>
+    <title>Maximum Depth of Binary Tree | Log of Vic</title>
 
-    <link rel="icon" type="image/svg+xml" href="../../../../../favicon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../../../favicon/favicon.svg" />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="../../../../../favicon/favicon-32x32.png"
+  href="../../../../favicon/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="../../../../../favicon/favicon-16x16.png"
+  href="../../../../favicon/favicon-16x16.png"
 />
 
     
@@ -51,27 +51,27 @@ if (!doNotTrack) {
     
   <meta
     property="og:title"
-    content="Stacks"
+    content="Maximum Depth of Binary Tree"
   />
   <meta property="og:site_name" content="Log of Vic" />
-  <meta property="og:description" content="my solution" />
+  <meta property="og:description" content="My same tree solution" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Grind75/Tree/MaximumDepthOfBinaryTree.html" />
 
 <meta property="article:section" content="Programming" />
     <meta
       property="article:published_time"
-      content="2023-06-24T10:00:41+08:00"
+      content="2023-06-18T22:00:41+08:00"
     />
     <meta
       property="article:modified_time"
-      content="2023-07-29T15:40:40+08:00"
+      content="2023-06-18T22:00:41+08:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Stacks" />
-  <meta name="twitter:description" content="my solution" />
+<meta name="twitter:title" content="Maximum Depth of Binary Tree" />
+  <meta name="twitter:description" content="My same tree solution" />
 
 
   <script type="application/ld+json">
@@ -79,23 +79,22 @@ if (!doNotTrack) {
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Programming",
-      "name": "Stacks",
-      "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html",
-      "headline": "Stacks",
-      "description": "my solution",
-      "wordCount" : "2",
+      "name": "Maximum Depth of Binary Tree",
+      "url" : "https://lazyvic.com/Programming/Algorithm/Grind75/Tree/MaximumDepthOfBinaryTree.html",
+      "headline": "Maximum Depth of Binary Tree",
+      "description": "My same tree solution",
+      "wordCount" : "4",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html"
+          "@id": "https://lazyvic.com/Programming/Algorithm/Grind75/Tree/MaximumDepthOfBinaryTree.html"
       },
-      "keywords" : [ "Algorithm" , "stacks" ],
       "copyrightHolder" : "Log of Vic",
       "copyrightYear" : "2023",
-      "dateCreated": "2023-06-24T10:00:41.00Z",
-      "datePublished": "2023-06-24T10:00:41.00Z",
-      "dateModified": "2023-07-29T15:40:40.00Z",
+      "dateCreated": "2023-06-18T22:00:41.00Z",
+      "datePublished": "2023-06-18T22:00:41.00Z",
+      "dateModified": "2023-06-18T22:00:41.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Log of Vic",
@@ -112,68 +111,68 @@ if (!doNotTrack) {
 
 
     
-  <script src="../../../../../js/colortheme-d3e4d351.bundle.min.js"></script>
-<script src="../../../../../js/main-fbb9c8b0.bundle.min.js"></script>
+  <script src="../../../../js/colortheme-d3e4d351.bundle.min.js"></script>
+<script src="../../../../js/main-fbb9c8b0.bundle.min.js"></script>
 
 <link
   rel="preload"
   as="font"
-  href="../../../../../fonts/Metropolis.woff2"
+  href="../../../../fonts/Metropolis.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 <link
   rel="preload"
   as="font"
-  href="../../../../../fonts/LiberationSans.woff2"
+  href="../../../../fonts/LiberationSans.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 
 <link
   rel="preload"
-  href="../../../../../main-ba0e2765.min.css"
+  href="../../../../main-ba0e2765.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../../../main-ba0e2765.min.css"
+  href="../../../../main-ba0e2765.min.css"
   media="all"
 />
 
 <link
   rel="preload"
-  href="../../../../../mobile-79ddc617.min.css"
+  href="../../../../mobile-79ddc617.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../../../mobile-79ddc617.min.css"
+  href="../../../../mobile-79ddc617.min.css"
   media="screen and (max-width: 45rem)"
 />
 
 <link
   rel="preload"
-  href="../../../../../print-735ccc12.min.css"
+  href="../../../../print-735ccc12.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../../../print-735ccc12.min.css"
+  href="../../../../print-735ccc12.min.css"
   media="print"
 />
 
 <link
   rel="preload"
-  href="../../../../../custom.css"
+  href="../../../../custom.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../../../../../custom.css"
+  href="../../../../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Algorithm/Grind75/Tree/MaximumDepthOfBinaryTree.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -214,7 +213,7 @@ if (!doNotTrack) {
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
-            src="../../../../../brand.svg"
+            src="../../../../brand.svg"
             alt=""
           />
           <span class="gdoc-brand__title">Log of Vic</span>
@@ -338,7 +337,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../../../../../Programming.html"
+                    href="../../../../Programming.html"
                     class="gdoc-nav__entry"
                   >
                     Programming
@@ -385,7 +384,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../../../../../Programming/Algorithm.html"
+                    href="../../../../Programming/Algorithm.html"
                     class="gdoc-nav__entry"
                   >
                     Algorithm
@@ -421,7 +420,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../../../../../Programming/Languages.html"
+                    href="../../../../Programming/Languages.html"
                     class="gdoc-nav__entry"
                   >
                     Language
@@ -468,7 +467,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../../../../../Programming/SiteStory.html"
+                    href="../../../../Programming/SiteStory.html"
                     class="gdoc-nav__entry"
                   >
                     Site Story
@@ -522,7 +521,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../../../../../Programming/SiteStory/WhyHugo.html"
+                    href="../../../../Programming/SiteStory/WhyHugo.html"
                     class="gdoc-nav__entry"
                   >
                     Why Hugo
@@ -566,7 +565,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../../../../../Programming/SiteStory/GettingStart.html"
+                    href="../../../../Programming/SiteStory/GettingStart.html"
                     class="gdoc-nav__entry"
                   >
                     Hugo GitHub Page
@@ -639,7 +638,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../../../../../Programming/SiteStory/SSL.html"
+                    href="../../../../Programming/SiteStory/SSL.html"
                     class="gdoc-nav__entry"
                   >
                     Install SSL
@@ -683,7 +682,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../../../../../Programming/SiteStory/TyporaUpic.html"
+                    href="../../../../Programming/SiteStory/TyporaUpic.html"
                     class="gdoc-nav__entry"
                   >
                     Typora &#43; Upic
@@ -908,15 +907,7 @@ if (!doNotTrack) {
     
   
   
-    
-    
-    
-    
-  
-  
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton.html' href='../../../../../Programming/Algorithm/Algs4Princeton.html'><span itemprop='name'>Princeton Algorithms</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week2.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week2.html'><span itemprop='name'>Week 2</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue.html'><span itemprop='name'>Stack And Queue</span></a><meta itemprop='position' content='5' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Stacks</span><meta itemprop='position' content='6' /></li>
-  
-
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75.html' href='../../../../Programming/Algorithm/Grind75.html'><span itemprop='name'>Grind 75</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75/Tree.html' href='../../../../Programming/Algorithm/Grind75/Tree.html'><span itemprop='name'>Tree</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Maximum Depth of Binary Tree</span><meta itemprop='position' content='5' /></li>
   
 
   
@@ -940,16 +931,14 @@ if (!doNotTrack) {
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Stacks</h1>
+    <h1>Maximum Depth of Binary Tree</h1>
     <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
         <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-07-29T15:40:40&#43;08:00">
+    <time datetime="2023-06-18T22:00:41&#43;08:00">
       
-        Updated on
-      
-      Jul 29, 2023
+      Jun 18, 2023
     </time>
   </span>
 </span>
@@ -961,49 +950,6 @@ if (!doNotTrack) {
 
 
 
-  
-    
-    
-      
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../../../../../tags/Algorithm.html"
-      title="All posts tagged with &#39;Algorithm&#39;"
-    >
-      Algorithm
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-    
-    
-      
-        <span class="flex align-center">
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../../../../../tags/stacks.html"
-      title="All posts tagged with &#39;stacks&#39;"
-    >
-      stacks
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-
 
 
 
@@ -1012,7 +958,7 @@ if (!doNotTrack) {
 
 
 
-    <p>my solution</p>
+    <p>My same tree solution</p>
 
   </article>
 <br>
@@ -1097,7 +1043,7 @@ if (!doNotTrack) {
     </div>
 
     
-  <script defer src="../../../../../js/search-83320133.bundle.min.js"></script>
+  <script defer src="../../../../js/search-83320133.bundle.min.js"></script>
 
   </body>
 </html>

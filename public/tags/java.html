@@ -697,6 +697,17 @@ if (!doNotTrack) {
             <li>
               <a
                 class="gdoc-nav__entry"
+                href="../tags/array.html"
+              >
+                array
+              </a>
+            </li>
+          
+        
+          
+            <li>
+              <a
+                class="gdoc-nav__entry"
                 href="../tags/cipher.html"
               >
                 cipher
@@ -921,6 +932,121 @@ if (!doNotTrack) {
 
         <div class="gdoc-page">
           
+  
+    <article class="gdoc-post">
+      <header class="gdoc-post__header">
+        <h1 class="gdoc-post__title">
+          <a href="../Programming/Algorithm/Grind75/Array/TwoSum.html">Two Sum</a>
+        </h1>
+      </header>
+
+      <section class="gdoc-markdown">
+        Two Sum 暴力解 兩個 loop 加起來等於 target, 就回傳他們的 index，應該是最新手最直覺的人（我）都想得出來的解答
+優化解 一樣是用兩個 loop 去解，但是這裡不是用 nested loop，而是先用一個 loop 以及 hashmap 把陣列裡的每個值標記起來 [index, value]，另一個 loop 再去對每個值做計算，如果 target - nums[i] 有在 hashmap裏面，就回傳 i 以及對應的 index
+class Solution { public int[] twoSum(int[] nums, int target) { Map&lt;Integer, Integer&gt; hashmap = new HashMap&lt;&gt;(); for(int i = 0; i &lt; nums.length; i++) { hashmap.put(nums[i], i); } for (int i = 0; i &lt; nums.length; i++) { int difference = target - nums[i]; if(hashmap.
+      </section>
+
+      <div class="gdoc-post__readmore">
+        
+          <a
+            class="flex-inline align-center fake-link"
+            title="Read full post"
+            href="../Programming/Algorithm/Grind75/Array/TwoSum.html"
+          >
+            Read full post
+            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
+          </a>
+        
+      </div>
+
+      <footer class="gdoc-post__footer">
+        <div class="flex flex-wrap align-center gdoc-post__meta">
+          <span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+  <span class="gdoc-post__tag">
+    <time datetime="2023-08-03T13:00:41&#43;08:00">
+      
+      Aug 3, 2023
+    </time>
+  </span>
+</span>
+
+<span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
+  <span class="gdoc-post__tag">One minute to read</span>
+</span>
+
+
+
+  
+    
+    
+      
+        <span class="flex align-center no-wrap">
+          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../tags/array.html"
+      title="All posts tagged with &#39;array&#39;"
+    >
+      array
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+    
+    
+      
+        <span class="flex align-center">
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../tags/java.html"
+      title="All posts tagged with &#39;java&#39;"
+    >
+      java
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+    
+    
+      
+        <span class="flex align-center">
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../tags/leetcode.html"
+      title="All posts tagged with &#39;leetcode&#39;"
+    >
+      leetcode
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+
+
+
+
+        </div>
+      </footer>
+    </article>
   
     <article class="gdoc-post">
       <header class="gdoc-post__header">
