@@ -98,7 +98,7 @@ class Solution { public int majorityElement(int[] nums) { HashMap&lt;Integer, In
       "url" : "https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html",
       "headline": "169. Majority Element",
       "description": "Given an array nums of size n, return the majority element.\nThe majority element is the element that appears more than ⌊n \/ 2⌋ times. You may assume that the majority element always exists in the array.\nExample 1:\nInput: nums = [3,2,3] Output: 3 Example 2:\nInput: nums = [2,2,1,1,1,2,2] Output: 2 思路: 用 hashmap 統計每個直出現的次數，最後再找出最大的值\nclass Solution { public int majorityElement(int[] nums) { HashMap\u003cInteger, Integer\u003e hashmap = new HashMap\u003c\u003e(); int len = nums.",
-      "wordCount" : "187",
+      "wordCount" : "185",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -1088,19 +1088,16 @@ Output: 2
         </a>
     </h2>
 </div>
-<p>在記錄的時候，連帶檢查每個 element出現的次數，只要出現的次數大於 Array 的長度，就可以確定他是這個 Array 的 majority</p>
+<p>在記錄的時候，連帶檢查每個 element出現的次數，只要出現的次數大於 Array 的長度，就可以確定他是這個 Array 的 majority;
+一開始放建立 HashMap 時也可以用內建的方法 <code>getOrDefault</code></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">majorityElement</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">        <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">hashmap</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;();</span>
 </span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="o">;</span> <span class="n">i</span> <span class="o">++)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="o">(!</span><span class="n">hashmap</span><span class="o">.</span><span class="na">containsKey</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">]))</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">                <span class="n">hashmap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">],</span> <span class="mi">1</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">                <span class="n">hashmap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">],</span> <span class="n">hashmap</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">])</span> <span class="o">+</span> <span class="mi">1</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">            <span class="o">}</span>
-</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">hashmap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">],</span> <span class="n">put</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">],</span> <span class="n">map</span><span class="o">.</span><span class="na">getOrDefault</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">],</span> <span class="mi">0</span><span class="o">)</span> <span class="o">+</span> <span class="mi">1</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl">            
 </span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">hashmap</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">])</span> <span class="o">&gt;</span> <span class="n">len</span> <span class="o">/</span> <span class="mi">2</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
 </span></span><span class="line"><span class="cl">            <span class="o">}</span>

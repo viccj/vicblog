@@ -60,8 +60,8 @@ class Solution {
 ```
 ## 改寫
 
-在記錄的時候，連帶檢查每個 element出現的次數，只要出現的次數大於 Array 的長度，就可以確定他是這個 Array 的 majority
-
+在記錄的時候，連帶檢查每個 element出現的次數，只要出現的次數大於 Array 的長度，就可以確定他是這個 Array 的 majority;
+一開始放建立 HashMap 時也可以用內建的方法 `getOrDefault`
 
 ```java
 class Solution {
@@ -70,12 +70,8 @@ class Solution {
         int len = nums.length;
 
         for(int i = 0; i < len; i ++) {
-            if(!hashmap.containsKey(nums[i])) {
-                hashmap.put(nums[i], 1);
-            } else {
-                hashmap.put(nums[i], hashmap.get(nums[i]) + 1);
-            }
-
+            hashmap.put(nums[i], put(nums[i], map.getOrDefault(nums[i], 0) + 1));
+            
             if (hashmap.get(nums[i]) > len / 2) {
                 return nums[i];
             }
