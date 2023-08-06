@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://lazyvic.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Two Sum</title>
+      <title>1. Two Sum</title>
       <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/TwoSum.html</link>
       <pubDate>Thu, 03 Aug 2023 13:00:41 +0800</pubDate>
       
@@ -85,7 +85,7 @@ Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p
     </item>
     
     <item>
-      <title>Best Time to Buy and Sell Stock</title>
+      <title>121. Best Time to Buy and Sell Stock</title>
       <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
@@ -144,6 +144,20 @@ Root 將一整個Array 看成 a set of trees，也就是說每個物件都屬於
 每個物件，會有一個Parent，如下圖，（3 可以接到4，3的 parent 是 4，4 的 parent 是 9) 順著線一直找，當找不到 parent 時，這時候就稱這點為 root
 如果這個物件只有自己，那自己就是root，例如1
 Find 因為每個物件都會有一個 root，要找兩個物件是不是同一個 component 的話，只要看他們的 root 是不是一樣就可以</description>
+    </item>
+    
+    <item>
+      <title>169. Majority Element</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html</guid>
+      <description>Given an array nums of size n, return the majority element.
+The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+Example 1:
+Input: nums = [3,2,3] Output: 3 Example 2:
+Input: nums = [2,2,1,1,1,2,2] Output: 2 思路: 用 hashmap 統計每個直出現的次數，最後再找出最大的值
+class Solution { public int majorityElement(int[] nums) { HashMap&amp;lt;Integer, Integer&amp;gt; hashmap = new HashMap&amp;lt;&amp;gt;(); int len = nums.</description>
     </item>
     
     <item>

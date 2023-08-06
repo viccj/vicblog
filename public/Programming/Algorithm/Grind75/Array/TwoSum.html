@@ -32,7 +32,7 @@ if (!doNotTrack) {
 優化解 一樣是用兩個 loop 去解，但是這裡不是用 nested loop，而是先用一個 loop 以及 hashmap 把陣列裡的每個值標記起來 [index, value]，另一個 loop 再去對每個值做計算，如果 target - nums[i] 有在 hashmap裏面，就回傳 i 以及對應的 index
 class Solution { public int[] twoSum(int[] nums, int target) { Map&lt;Integer, Integer&gt; hashmap = new HashMap&lt;&gt;(); for(int i = 0; i &lt; nums.length; i&#43;&#43;) { hashmap.put(nums[i], i); } for (int i = 0; i &lt; nums.length; i&#43;&#43;) { int difference = target - nums[i]; if(hashmap." />
 
-    <title>Two Sum | Log of Vic</title>
+    <title>1. Two Sum | Log of Vic</title>
 
     <link rel="icon" type="image/svg+xml" href="../../../../favicon/favicon.svg" />
 <link
@@ -53,7 +53,7 @@ class Solution { public int[] twoSum(int[] nums, int target) { Map&lt;Integer, I
     
   <meta
     property="og:title"
-    content="Two Sum"
+    content="1. Two Sum"
   />
   <meta property="og:site_name" content="Log of Vic" />
   <meta property="og:description" content="Two Sum 暴力解 兩個 loop 加起來等於 target, 就回傳他們的 index，應該是最新手最直覺的人（我）都想得出來的解答
@@ -69,12 +69,12 @@ class Solution { public int[] twoSum(int[] nums, int target) { Map&lt;Integer, I
     />
     <meta
       property="article:modified_time"
-      content="2023-08-03T15:46:40+08:00"
+      content="2023-08-06T08:54:07+08:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Two Sum" />
+<meta name="twitter:title" content="1. Two Sum" />
   <meta name="twitter:description" content="Two Sum 暴力解 兩個 loop 加起來等於 target, 就回傳他們的 index，應該是最新手最直覺的人（我）都想得出來的解答
 優化解 一樣是用兩個 loop 去解，但是這裡不是用 nested loop，而是先用一個 loop 以及 hashmap 把陣列裡的每個值標記起來 [index, value]，另一個 loop 再去對每個值做計算，如果 target - nums[i] 有在 hashmap裏面，就回傳 i 以及對應的 index
 class Solution { public int[] twoSum(int[] nums, int target) { Map&lt;Integer, Integer&gt; hashmap = new HashMap&lt;&gt;(); for(int i = 0; i &lt; nums.length; i&#43;&#43;) { hashmap.put(nums[i], i); } for (int i = 0; i &lt; nums.length; i&#43;&#43;) { int difference = target - nums[i]; if(hashmap." />
@@ -85,9 +85,9 @@ class Solution { public int[] twoSum(int[] nums, int target) { Map&lt;Integer, I
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Programming",
-      "name": "Two Sum",
+      "name": "1. Two Sum",
       "url" : "https://lazyvic.com/Programming/Algorithm/Grind75/Array/TwoSum.html",
-      "headline": "Two Sum",
+      "headline": "1. Two Sum",
       "description": "Two Sum 暴力解 兩個 loop 加起來等於 target, 就回傳他們的 index，應該是最新手最直覺的人（我）都想得出來的解答\n優化解 一樣是用兩個 loop 去解，但是這裡不是用 nested loop，而是先用一個 loop 以及 hashmap 把陣列裡的每個值標記起來 [index, value]，另一個 loop 再去對每個值做計算，如果 target - nums[i] 有在 hashmap裏面，就回傳 i 以及對應的 index\nclass Solution { public int[] twoSum(int[] nums, int target) { Map\u003cInteger, Integer\u003e hashmap = new HashMap\u003c\u003e(); for(int i = 0; i \u003c nums.length; i\u002b\u002b) { hashmap.put(nums[i], i); } for (int i = 0; i \u003c nums.length; i\u002b\u002b) { int difference = target - nums[i]; if(hashmap.",
       "wordCount" : "93",
       "inLanguage": "en",
@@ -101,7 +101,7 @@ class Solution { public int[] twoSum(int[] nums, int target) { Map&lt;Integer, I
       "copyrightYear" : "2023",
       "dateCreated": "2023-08-03T13:00:41.00Z",
       "datePublished": "2023-08-03T13:00:41.00Z",
-      "dateModified": "2023-08-03T15:46:40.00Z",
+      "dateModified": "2023-08-06T08:54:07.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Log of Vic",
@@ -914,7 +914,7 @@ class Solution { public int[] twoSum(int[] nums, int target) { Map&lt;Integer, I
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75.html' href='../../../../Programming/Algorithm/Grind75.html'><span itemprop='name'>Grind 75</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75/Array.html' href='../../../../Programming/Algorithm/Grind75/Array.html'><span itemprop='name'>Array</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Two Sum</span><meta itemprop='position' content='5' /></li>
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75.html' href='../../../../Programming/Algorithm/Grind75.html'><span itemprop='name'>Grind 75</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75/Array.html' href='../../../../Programming/Algorithm/Grind75/Array.html'><span itemprop='name'>Array</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>1. Two Sum</span><meta itemprop='position' content='5' /></li>
   
 
   
@@ -938,14 +938,16 @@ class Solution { public int[] twoSum(int[] nums, int target) { Map&lt;Integer, I
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Two Sum</h1>
+    <h1>1. Two Sum</h1>
     <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
         <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-08-03T15:46:40&#43;08:00">
+    <time datetime="2023-08-06T08:54:07&#43;08:00">
       
-      Aug 3, 2023
+        Updated on
+      
+      Aug 6, 2023
     </time>
   </span>
 </span>

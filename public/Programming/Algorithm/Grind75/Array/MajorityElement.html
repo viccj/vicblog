@@ -28,21 +28,27 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
+  <meta name="description" content="Given an array nums of size n, return the majority element.
+The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+Example 1:
+Input: nums = [3,2,3] Output: 3 Example 2:
+Input: nums = [2,2,1,1,1,2,2] Output: 2 思路: 用 hashmap 統計每個直出現的次數，最後再找出最大的值
+class Solution { public int majorityElement(int[] nums) { HashMap&lt;Integer, Integer&gt; hashmap = new HashMap&lt;&gt;(); int len = nums." />
 
-    <title>Tags | Log of Vic</title>
+    <title>169. Majority Element | Log of Vic</title>
 
-    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../../../favicon/favicon.svg" />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="./favicon/favicon-32x32.png"
+  href="../../../../favicon/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="./favicon/favicon-16x16.png"
+  href="../../../../favicon/favicon-16x16.png"
 />
 
     
@@ -50,84 +56,139 @@ if (!doNotTrack) {
     
   <meta
     property="og:title"
-    content="Tags"
+    content="169. Majority Element"
   />
   <meta property="og:site_name" content="Log of Vic" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://lazyvic.com/tags.html" />
+  <meta property="og:description" content="Given an array nums of size n, return the majority element.
+The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+Example 1:
+Input: nums = [3,2,3] Output: 3 Example 2:
+Input: nums = [2,2,1,1,1,2,2] Output: 2 思路: 用 hashmap 統計每個直出現的次數，最後再找出最大的值
+class Solution { public int majorityElement(int[] nums) { HashMap&lt;Integer, Integer&gt; hashmap = new HashMap&lt;&gt;(); int len = nums." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html" />
 
-
+<meta property="article:section" content="Programming" />
+    <meta
+      property="article:published_time"
+      content="2023-06-18T22:00:41+08:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2023-08-06T08:54:07+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Tags" />
+<meta name="twitter:title" content="169. Majority Element" />
+  <meta name="twitter:description" content="Given an array nums of size n, return the majority element.
+The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+Example 1:
+Input: nums = [3,2,3] Output: 3 Example 2:
+Input: nums = [2,2,1,1,1,2,2] Output: 2 思路: 用 hashmap 統計每個直出現的次數，最後再找出最大的值
+class Solution { public int majorityElement(int[] nums) { HashMap&lt;Integer, Integer&gt; hashmap = new HashMap&lt;&gt;(); int len = nums." />
 
 
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "TechArticle",
+      "articleSection": "Programming",
+      "name": "169. Majority Element",
+      "url" : "https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html",
+      "headline": "169. Majority Element",
+      "description": "Given an array nums of size n, return the majority element.\nThe majority element is the element that appears more than ⌊n \/ 2⌋ times. You may assume that the majority element always exists in the array.\nExample 1:\nInput: nums = [3,2,3] Output: 3 Example 2:\nInput: nums = [2,2,1,1,1,2,2] Output: 2 思路: 用 hashmap 統計每個直出現的次數，最後再找出最大的值\nclass Solution { public int majorityElement(int[] nums) { HashMap\u003cInteger, Integer\u003e hashmap = new HashMap\u003c\u003e(); int len = nums.",
+      "wordCount" : "187",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html"
+      },
+      "keywords" : [ "leetcode" , "java" , "array" ],
+      "copyrightHolder" : "Log of Vic",
+      "copyrightYear" : "2023",
+      "dateCreated": "2023-06-18T22:00:41.00Z",
+      "datePublished": "2023-06-18T22:00:41.00Z",
+      "dateModified": "2023-08-06T08:54:07.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Log of Vic",
+          "url": "https://lazyvic.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://lazyvic.com/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
+  }
+  </script>
 
 
     
-  <script src="./js/colortheme-d3e4d351.bundle.min.js"></script>
-<script src="./js/main-fbb9c8b0.bundle.min.js"></script>
+  <script src="../../../../js/colortheme-d3e4d351.bundle.min.js"></script>
+<script src="../../../../js/main-fbb9c8b0.bundle.min.js"></script>
 
 <link
   rel="preload"
   as="font"
-  href="./fonts/Metropolis.woff2"
+  href="../../../../fonts/Metropolis.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 <link
   rel="preload"
   as="font"
-  href="./fonts/LiberationSans.woff2"
+  href="../../../../fonts/LiberationSans.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 
 <link
   rel="preload"
-  href="./main-ba0e2765.min.css"
+  href="../../../../main-ba0e2765.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="./main-ba0e2765.min.css"
+  href="../../../../main-ba0e2765.min.css"
   media="all"
 />
 
 <link
   rel="preload"
-  href="./mobile-79ddc617.min.css"
+  href="../../../../mobile-79ddc617.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="./mobile-79ddc617.min.css"
+  href="../../../../mobile-79ddc617.min.css"
   media="screen and (max-width: 45rem)"
 />
 
 <link
   rel="preload"
-  href="./print-735ccc12.min.css"
+  href="../../../../print-735ccc12.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="./print-735ccc12.min.css"
+  href="../../../../print-735ccc12.min.css"
   media="print"
 />
 
 <link
   rel="preload"
-  href="./custom.css"
+  href="../../../../custom.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="./custom.css"
+  href="../../../../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/tags.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -168,7 +229,7 @@ if (!doNotTrack) {
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
-            src="./brand.svg"
+            src="../../../../brand.svg"
             alt=""
           />
           <span class="gdoc-brand__title">Log of Vic</span>
@@ -292,7 +353,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming.html"
+                    href="../../../../Programming.html"
                     class="gdoc-nav__entry"
                   >
                     Programming
@@ -339,7 +400,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/Algorithm.html"
+                    href="../../../../Programming/Algorithm.html"
                     class="gdoc-nav__entry"
                   >
                     Algorithm
@@ -375,7 +436,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/Languages.html"
+                    href="../../../../Programming/Languages.html"
                     class="gdoc-nav__entry"
                   >
                     Language
@@ -422,7 +483,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/SiteStory.html"
+                    href="../../../../Programming/SiteStory.html"
                     class="gdoc-nav__entry"
                   >
                     Site Story
@@ -476,7 +537,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/SiteStory/WhyHugo.html"
+                    href="../../../../Programming/SiteStory/WhyHugo.html"
                     class="gdoc-nav__entry"
                   >
                     Why Hugo
@@ -520,7 +581,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/SiteStory/GettingStart.html"
+                    href="../../../../Programming/SiteStory/GettingStart.html"
                     class="gdoc-nav__entry"
                   >
                     Hugo GitHub Page
@@ -593,7 +654,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/SiteStory/SSL.html"
+                    href="../../../../Programming/SiteStory/SSL.html"
                     class="gdoc-nav__entry"
                   >
                     Install SSL
@@ -637,7 +698,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/SiteStory/TyporaUpic.html"
+                    href="../../../../Programming/SiteStory/TyporaUpic.html"
                     class="gdoc-nav__entry"
                   >
                     Typora &#43; Upic
@@ -676,135 +737,6 @@ if (!doNotTrack) {
     
   </section>
 
-  
-    <section class="gdoc-nav--tags">
-      <h2>Tags</h2>
-      <ul class="gdoc-nav__list">
-        
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/Algorithm.html"
-              >
-                Algorithm
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/array.html"
-              >
-                array
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/cipher.html"
-              >
-                cipher
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/hugo.html"
-              >
-                hugo
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/infra.html"
-              >
-                infra
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/java.html"
-              >
-                java
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/leetcode.html"
-              >
-                leetcode
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/php.html"
-              >
-                php
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/stacks.html"
-              >
-                stacks
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/trash-talk.html"
-              >
-                trash talk
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/unittest.html"
-              >
-                unittest
-              </a>
-            </li>
-          
-        
-      </ul>
-    </section>
   
 
 
@@ -933,304 +865,276 @@ if (!doNotTrack) {
         <div class="gdoc-page">
           
   
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/Algorithm.html">Algorithm</a>
-        </h1>
-      </header>
 
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            5 posts
-          </span>
-        </span>
 
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html">Stacks</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/array.html">array</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            3 posts
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html">121. Best Time to Buy and Sell Stock</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/cipher.html">cipher</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            One post
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html">Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/hugo.html">hugo</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            4 posts
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/SiteStory/GettingStart.html">Hugo GitHub Page</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/java.html">java</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            4 posts
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html">121. Best Time to Buy and Sell Stock</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/leetcode.html">leetcode</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            3 posts
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html">121. Best Time to Buy and Sell Stock</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/php.html">php</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            2 posts
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html">Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/stacks.html">stacks</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            One post
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html">Stacks</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/trash-talk.html">trash talk</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            One post
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/SiteStory/WhyHugo.html">Why Hugo</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/unittest.html">unittest</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            One post
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Languages/PHP/PhpUnit/BasicSetting.html">Basic Setting</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
   
 
 
-<nav class="gdoc-paging flex flex-even align-center" role="navigation">
-  <div class="gdoc-paging__item gdoc-paging__item--prev">
+
+
+
+
+<div
+  class="gdoc-page__header flex flex-wrap
+  
+    justify-between
+  
+  hidden-mobile
+  "
+  itemprop="breadcrumb"
+>
+  
+    <div>
+      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
+      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        
+        
+        
+        
+  
+  
     
-  </div>
-  <div class="gdoc-paging__state">1/2</div>
-  <div class="gdoc-paging__item gdoc-paging__item--next">
     
-      <a class="flex-inline align-center fake-link no-wrap" href="./tags/page/2.html">
-        NEXT
-        <i class="gdoc-icon">gdoc_keyboard_arrow_right</i>
-      </a>
     
-  </div>
-</nav>
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75.html' href='../../../../Programming/Algorithm/Grind75.html'><span itemprop='name'>Grind 75</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75/Array.html' href='../../../../Programming/Algorithm/Grind75/Array.html'><span itemprop='name'>Array</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>169. Majority Element</span><meta itemprop='position' content='5' /></li>
+  
 
+  
+
+  
+
+  
+
+  
+
+  
+
+      </ol>
+    </div>
+  
+  
+</div>
+
+
+
+  <article
+    class="gdoc-markdown gdoc-markdown__align--left"
+  >
+    <h1>169. Majority Element</h1>
+    <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
+        <span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+  <span class="gdoc-post__tag">
+    <time datetime="2023-08-06T08:54:07&#43;08:00">
+      
+        Updated on
+      
+      Aug 6, 2023
+    </time>
+  </span>
+</span>
+
+<span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
+  <span class="gdoc-post__tag">One minute to read</span>
+</span>
+
+
+
+  
+    
+    
+      
+        <span class="flex align-center no-wrap">
+          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../../../../tags/array.html"
+      title="All posts tagged with &#39;array&#39;"
+    >
+      array
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+    
+    
+      
+        <span class="flex align-center">
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../../../../tags/java.html"
+      title="All posts tagged with &#39;java&#39;"
+    >
+      java
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+    
+    
+      
+        <span class="flex align-center">
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../../../../tags/leetcode.html"
+      title="All posts tagged with &#39;leetcode&#39;"
+    >
+      leetcode
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+
+
+
+
+    </div>
+
+
+
+
+    <p>Given an array <code>nums</code> of size <code>n</code>, return <em>the majority element</em>.</p>
+<p>The majority element is the element that appears more than <code>⌊n / 2⌋</code> times. You may assume that the majority element always exists in the array.</p>
+<p><strong>Example 1:</strong></p>
+<pre tabindex="0"><code>Input: nums = [3,2,3]
+Output: 3
+</code></pre><p><strong>Example 2:</strong></p>
+<pre tabindex="0"><code>Input: nums = [2,2,1,1,1,2,2]
+Output: 2
+</code></pre><div class="gdoc-page__anchorwrap">
+    <h2 id="思路"
+    >
+        思路:
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html#思路" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 思路:" aria-label="Anchor to: 思路:" href="#%e6%80%9d%e8%b7%af">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>用 hashmap 統計每個直出現的次數，最後再找出最大的值</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">majorityElement</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">hashmap</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;();</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="o">;</span> <span class="n">i</span> <span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="o">(!</span><span class="n">hashmap</span><span class="o">.</span><span class="na">containsKey</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">]))</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">hashmap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">],</span> <span class="mi">1</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">hashmap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">],</span> <span class="n">hashmap</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">])</span> <span class="o">+</span> <span class="mi">1</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">         <span class="kt">int</span> <span class="n">halfLen</span> <span class="o">=</span> <span class="n">len</span> <span class="o">/</span> <span class="mi">2</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">         <span class="k">for</span> <span class="o">(</span><span class="n">Map</span><span class="o">.</span><span class="na">Entry</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">entry</span> <span class="o">:</span> <span class="n">hashmap</span><span class="o">.</span><span class="na">entrySet</span><span class="o">())</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">             <span class="k">if</span> <span class="o">(</span><span class="n">entry</span><span class="o">.</span><span class="na">getValue</span><span class="o">()</span> <span class="o">&gt;</span> <span class="n">halfLen</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                 <span class="k">return</span> <span class="n">entry</span><span class="o">.</span><span class="na">getKey</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">             <span class="o">}</span>
+</span></span><span class="line"><span class="cl">         <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="改寫"
+    >
+        改寫
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html#改寫" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 改寫" aria-label="Anchor to: 改寫" href="#%e6%94%b9%e5%af%ab">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>在記錄的時候，連帶檢查每個 element出現的次數，只要出現的次數大於 Array 的長度，就可以確定他是這個 Array 的 majority</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">majorityElement</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">hashmap</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;();</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="o">;</span> <span class="n">i</span> <span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="o">(!</span><span class="n">hashmap</span><span class="o">.</span><span class="na">containsKey</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">]))</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">hashmap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">],</span> <span class="mi">1</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">hashmap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">],</span> <span class="n">hashmap</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">])</span> <span class="o">+</span> <span class="mi">1</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">hashmap</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">])</span> <span class="o">&gt;</span> <span class="n">len</span> <span class="o">/</span> <span class="mi">2</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">   
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div>
+  </article>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="disqus markdown">
+    <div id="disqus_thread"></div>
+<script>
+    
+
+    
+
+    (function() { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lazyvic-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
 
 
 
@@ -1290,7 +1194,7 @@ if (!doNotTrack) {
     </div>
 
     
-  <script defer src="./js/search-83320133.bundle.min.js"></script>
+  <script defer src="../../../../js/search-83320133.bundle.min.js"></script>
 
   </body>
 </html>

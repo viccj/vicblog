@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://lazyvic.com/Programming/Algorithm/Grind75/Array/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Two Sum</title>
+      <title>1. Two Sum</title>
       <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/TwoSum.html</link>
       <pubDate>Thu, 03 Aug 2023 13:00:41 +0800</pubDate>
       
@@ -18,7 +18,7 @@ class Solution { public int[] twoSum(int[] nums, int target) { Map&amp;lt;Intege
     </item>
     
     <item>
-      <title>Best Time to Buy and Sell Stock</title>
+      <title>121. Best Time to Buy and Sell Stock</title>
       <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html</link>
       <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
       
@@ -39,6 +39,20 @@ class Solution { public int[] twoSum(int[] nums, int target) { Map&amp;lt;Intege
 因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。
 依照範例給的數據會得到以下結果：
 Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices.</description>
+    </item>
+    
+    <item>
+      <title>169. Majority Element</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html</link>
+      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html</guid>
+      <description>Given an array nums of size n, return the majority element.
+The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+Example 1:
+Input: nums = [3,2,3] Output: 3 Example 2:
+Input: nums = [2,2,1,1,1,2,2] Output: 2 思路: 用 hashmap 統計每個直出現的次數，最後再找出最大的值
+class Solution { public int majorityElement(int[] nums) { HashMap&amp;lt;Integer, Integer&amp;gt; hashmap = new HashMap&amp;lt;&amp;gt;(); int len = nums.</description>
     </item>
     
   </channel>
