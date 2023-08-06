@@ -28,24 +28,14 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。
-但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）
-一開始也只能知道一開始的收益以及目前的金額
-假如給定的價格列表為[7,1,5,3,6,4]
-一開始的收益為 profit = 0
-一開始的金額是 prices [0]
-如果是第一天買股票，第二天賣
-這時候的收益會是 1 - 7 = - 6
-再往後計算的話
-如果是第一天買，第三天賣
-這時候的收益會是 5 - 7 = - 2
-看起來比第一天買第二天賣還要賺（虧比較少）
-但這時發現了一件事，第二天的價格比第一天還要低， 這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算， 算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。 而且時間不能重來。
-因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。
-依照範例給的數據會得到以下結果：
-Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices." />
+  <meta name="description" content="Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+Example 1:
+Input: nums = [1,2,3,1] Output: true Example 2:
+Input: nums = [1,2,3,4] Output: false Example 3:
+Input: nums = [1,1,1,3,3,4,3,2,4,2] Output: true 解題思路 一樣用hash map 統計有無重複出現的
+class Solution { public boolean containsDuplicate(int[] nums) { HashMap&lt;Integer, Integer&gt; hashmap = new HashMap&lt;&gt;(); int len = nums." />
 
-    <title>121. Best Time to Buy and Sell Stock | Log of Vic</title>
+    <title>217. Contains Duplicate | Log of Vic</title>
 
     <link rel="icon" type="image/svg+xml" href="../../../../favicon/favicon.svg" />
 <link
@@ -66,57 +56,37 @@ Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min
     
   <meta
     property="og:title"
-    content="121. Best Time to Buy and Sell Stock"
+    content="217. Contains Duplicate"
   />
   <meta property="og:site_name" content="Log of Vic" />
-  <meta property="og:description" content="解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。
-但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）
-一開始也只能知道一開始的收益以及目前的金額
-假如給定的價格列表為[7,1,5,3,6,4]
-一開始的收益為 profit = 0
-一開始的金額是 prices [0]
-如果是第一天買股票，第二天賣
-這時候的收益會是 1 - 7 = - 6
-再往後計算的話
-如果是第一天買，第三天賣
-這時候的收益會是 5 - 7 = - 2
-看起來比第一天買第二天賣還要賺（虧比較少）
-但這時發現了一件事，第二天的價格比第一天還要低， 這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算， 算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。 而且時間不能重來。
-因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。
-依照範例給的數據會得到以下結果：
-Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices." />
+  <meta property="og:description" content="Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+Example 1:
+Input: nums = [1,2,3,1] Output: true Example 2:
+Input: nums = [1,2,3,4] Output: false Example 3:
+Input: nums = [1,1,1,3,3,4,3,2,4,2] Output: true 解題思路 一樣用hash map 統計有無重複出現的
+class Solution { public boolean containsDuplicate(int[] nums) { HashMap&lt;Integer, Integer&gt; hashmap = new HashMap&lt;&gt;(); int len = nums." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Grind75/Array/Contains-Duplicate.html" />
 
 <meta property="article:section" content="Programming" />
     <meta
       property="article:published_time"
-      content="2023-08-03T22:00:41+08:00"
+      content="2023-08-06T09:00:41+08:00"
     />
     <meta
       property="article:modified_time"
-      content="2023-08-06T08:54:07+08:00"
+      content="2023-08-06T09:00:41+08:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="121. Best Time to Buy and Sell Stock" />
-  <meta name="twitter:description" content="解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。
-但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）
-一開始也只能知道一開始的收益以及目前的金額
-假如給定的價格列表為[7,1,5,3,6,4]
-一開始的收益為 profit = 0
-一開始的金額是 prices [0]
-如果是第一天買股票，第二天賣
-這時候的收益會是 1 - 7 = - 6
-再往後計算的話
-如果是第一天買，第三天賣
-這時候的收益會是 5 - 7 = - 2
-看起來比第一天買第二天賣還要賺（虧比較少）
-但這時發現了一件事，第二天的價格比第一天還要低， 這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算， 算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。 而且時間不能重來。
-因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。
-依照範例給的數據會得到以下結果：
-Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices." />
+<meta name="twitter:title" content="217. Contains Duplicate" />
+  <meta name="twitter:description" content="Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+Example 1:
+Input: nums = [1,2,3,1] Output: true Example 2:
+Input: nums = [1,2,3,4] Output: false Example 3:
+Input: nums = [1,1,1,3,3,4,3,2,4,2] Output: true 解題思路 一樣用hash map 統計有無重複出現的
+class Solution { public boolean containsDuplicate(int[] nums) { HashMap&lt;Integer, Integer&gt; hashmap = new HashMap&lt;&gt;(); int len = nums." />
 
 
   <script type="application/ld+json">
@@ -124,23 +94,23 @@ Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Programming",
-      "name": "121. Best Time to Buy and Sell Stock",
-      "url" : "https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html",
-      "headline": "121. Best Time to Buy and Sell Stock",
-      "description": "解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。\n但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）\n一開始也只能知道一開始的收益以及目前的金額\n假如給定的價格列表為[7,1,5,3,6,4]\n一開始的收益為 profit = 0\n一開始的金額是 prices [0]\n如果是第一天買股票，第二天賣\n這時候的收益會是 1 - 7 = - 6\n再往後計算的話\n如果是第一天買，第三天賣\n這時候的收益會是 5 - 7 = - 2\n看起來比第一天買第二天賣還要賺（虧比較少）\n但這時發現了一件事，第二天的價格比第一天還要低， 這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算， 算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。 而且時間不能重來。\n因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。\n依照範例給的數據會得到以下結果：\nProfit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices.",
-      "wordCount" : "177",
+      "name": "217. Contains Duplicate",
+      "url" : "https://lazyvic.com/Programming/Algorithm/Grind75/Array/Contains-Duplicate.html",
+      "headline": "217. Contains Duplicate",
+      "description": "Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.\nExample 1:\nInput: nums = [1,2,3,1] Output: true Example 2:\nInput: nums = [1,2,3,4] Output: false Example 3:\nInput: nums = [1,1,1,3,3,4,3,2,4,2] Output: true 解題思路 一樣用hash map 統計有無重複出現的\nclass Solution { public boolean containsDuplicate(int[] nums) { HashMap\u003cInteger, Integer\u003e hashmap = new HashMap\u003c\u003e(); int len = nums.",
+      "wordCount" : "99",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html"
+          "@id": "https://lazyvic.com/Programming/Algorithm/Grind75/Array/Contains-Duplicate.html"
       },
       "keywords" : [ "leetcode" , "java" , "array" ],
       "copyrightHolder" : "Log of Vic",
       "copyrightYear" : "2023",
-      "dateCreated": "2023-08-03T22:00:41.00Z",
-      "datePublished": "2023-08-03T22:00:41.00Z",
-      "dateModified": "2023-08-06T08:54:07.00Z",
+      "dateCreated": "2023-08-06T09:00:41.00Z",
+      "datePublished": "2023-08-06T09:00:41.00Z",
+      "dateModified": "2023-08-06T09:00:41.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Log of Vic",
@@ -218,7 +188,7 @@ Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min
   href="../../../../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Algorithm/Grind75/Array/Contains-Duplicate.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -953,7 +923,7 @@ Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75.html' href='../../../../Programming/Algorithm/Grind75.html'><span itemprop='name'>Grind 75</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75/Array.html' href='../../../../Programming/Algorithm/Grind75/Array.html'><span itemprop='name'>Array</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>121. Best Time to Buy and Sell Stock</span><meta itemprop='position' content='5' /></li>
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75.html' href='../../../../Programming/Algorithm/Grind75.html'><span itemprop='name'>Grind 75</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75/Array.html' href='../../../../Programming/Algorithm/Grind75/Array.html'><span itemprop='name'>Array</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>217. Contains Duplicate</span><meta itemprop='position' content='5' /></li>
   
 
   
@@ -977,14 +947,12 @@ Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>121. Best Time to Buy and Sell Stock</h1>
+    <h1>217. Contains Duplicate</h1>
     <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
         <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-08-06T08:54:07&#43;08:00">
-      
-        Updated on
+    <time datetime="2023-08-06T09:00:41&#43;08:00">
       
       Aug 6, 2023
     </time>
@@ -1069,78 +1037,39 @@ Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min
 
 
 
-    <div class="gdoc-page__anchorwrap">
+    <p>Given an integer array <code>nums</code>, return <code>true</code> if any value appears <strong>at least twice</strong> in the array, and return <code>false</code> if every element is distinct.</p>
+<p><strong>Example 1:</strong></p>
+<pre tabindex="0"><code>Input: nums = [1,2,3,1]
+Output: true
+</code></pre><p><strong>Example 2:</strong></p>
+<pre tabindex="0"><code>Input: nums = [1,2,3,4]
+Output: false
+</code></pre><p><strong>Example 3:</strong></p>
+<pre tabindex="0"><code>Input: nums = [1,1,1,3,3,4,3,2,4,2]
+Output: true
+</code></pre><div class="gdoc-page__anchorwrap">
     <h2 id="解題思路"
     >
         解題思路
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html#解題思路" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 解題思路" aria-label="Anchor to: 解題思路" href="#%e8%a7%a3%e9%a1%8c%e6%80%9d%e8%b7%af">
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Grind75/Array/Contains-Duplicate.html#解題思路" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 解題思路" aria-label="Anchor to: 解題思路" href="#%e8%a7%a3%e9%a1%8c%e6%80%9d%e8%b7%af">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>要如何算出最大收益？ 買的價格越低，賣的價格越高。</p>
-<p>但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）</p>
-<p>一開始也只能知道一開始的收益以及目前的金額</p>
-<p>假如給定的價格列表為<code>[7,1,5,3,6,4]</code></p>
-<p>一開始的收益為 <code>profit = 0</code></p>
-<p>一開始的金額是 <code>prices [0]</code></p>
-<p>如果是第一天買股票，第二天賣</p>
-<p>這時候的收益會是 1 - 7 = - 6</p>
-<p>再往後計算的話</p>
-<p>如果是第一天買，第三天賣</p>
-<p>這時候的收益會是 5 - 7 = - 2</p>
-<p>看起來比第一天買第二天賣還要賺（虧比較少）</p>
-<hr>
-<p>但這時發現了一件事，第二天的價格比第一天還要低，
-這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算，
-算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。
-而且時間不能重來。</p>
-<p>因此可以在計算價差時，發現最低價的時候就更新最低價的值，
-計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。</p>
-<p>依照範例給的數據會得到以下結果：</p>
-<pre tabindex="0"><code class="language-agsl" data-lang="agsl">Profit =  price[index] - min
-
-1 - 7 = -6
-
-Min = 1
-
-1 - 1 = 0, min = 1
-
-5 - 1 = 4, min = 1, profit = 0
-
-3 - 1 = 2, min = 1, profit = 2
-
-6 - 1 = 5, min = 1, profit = 6
-
-6 - 1 = 6, min = 1, profit = 5
-
-
-
-Profit = 5, at 1 and 6
-</code></pre><div class="gdoc-page__anchorwrap">
-    <h2 id="程式碼"
-    >
-        程式碼
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html#程式碼" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 程式碼" aria-label="Anchor to: 程式碼" href="#%e7%a8%8b%e5%bc%8f%e7%a2%bc">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
+<p>一樣用hash map 統計有無重複出現的</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">maxProfit</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">prices</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">prices</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">profit</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">prices</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">min</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">                <span class="n">min</span> <span class="o">=</span> <span class="n">prices</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
-</span></span><span class="line"><span class="cl">            <span class="o">}</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">prices</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">-</span> <span class="n">min</span> <span class="o">&gt;</span> <span class="n">profit</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">                <span class="n">profit</span> <span class="o">=</span> <span class="n">prices</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">-</span> <span class="n">min</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">containsDuplicate</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">hashmap</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;();</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="o">;</span> <span class="n">i</span> <span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">hashmap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">],</span> <span class="n">hashmap</span><span class="o">.</span><span class="na">getOrDefault</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">],</span> <span class="mi">0</span><span class="o">)</span> <span class="o">+</span> <span class="mi">1</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">hashmap</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">])</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">            <span class="o">}</span>
 </span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">profit</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></div>

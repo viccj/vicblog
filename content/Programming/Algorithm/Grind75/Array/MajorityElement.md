@@ -1,6 +1,6 @@
 ---
 title: "169. Majority Element"
-date: 2023-06-18T22:00:41+08:00
+date: 2023-08-06T08:00:41+08:00
 weight: 3
 tags:
 - leetcode
@@ -70,7 +70,7 @@ class Solution {
         int len = nums.length;
 
         for(int i = 0; i < len; i ++) {
-            hashmap.put(nums[i], put(nums[i], map.getOrDefault(nums[i], 0) + 1));
+            hashmap.put(nums[i], hashmap.getOrDefault(nums[i], 0) + 1);
             
             if (hashmap.get(nums[i]) > len / 2) {
                 return nums[i];

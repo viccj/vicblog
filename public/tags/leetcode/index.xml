@@ -6,7 +6,7 @@
     <description>Recent content in leetcode on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Aug 2023 13:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Aug 2023 09:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1. Two Sum</title>
       <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/TwoSum.html</link>
@@ -21,7 +21,7 @@ class Solution { public int[] twoSum(int[] nums, int target) { Map&amp;lt;Intege
     <item>
       <title>121. Best Time to Buy and Sell Stock</title>
       <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html</link>
-      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
+      <pubDate>Thu, 03 Aug 2023 22:00:41 +0800</pubDate>
       
       <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html</guid>
       <description>解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。
@@ -45,7 +45,7 @@ Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min
     <item>
       <title>169. Majority Element</title>
       <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html</link>
-      <pubDate>Sun, 18 Jun 2023 22:00:41 +0800</pubDate>
+      <pubDate>Sun, 06 Aug 2023 08:00:41 +0800</pubDate>
       
       <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html</guid>
       <description>Given an array nums of size n, return the majority element.
@@ -54,6 +54,20 @@ Example 1:
 Input: nums = [3,2,3] Output: 3 Example 2:
 Input: nums = [2,2,1,1,1,2,2] Output: 2 思路: 用 hashmap 統計每個直出現的次數，最後再找出最大的值
 class Solution { public int majorityElement(int[] nums) { HashMap&amp;lt;Integer, Integer&amp;gt; hashmap = new HashMap&amp;lt;&amp;gt;(); int len = nums.</description>
+    </item>
+    
+    <item>
+      <title>217. Contains Duplicate</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/Contains-Duplicate.html</link>
+      <pubDate>Sun, 06 Aug 2023 09:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Array/Contains-Duplicate.html</guid>
+      <description>Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+Example 1:
+Input: nums = [1,2,3,1] Output: true Example 2:
+Input: nums = [1,2,3,4] Output: false Example 3:
+Input: nums = [1,1,1,3,3,4,3,2,4,2] Output: true 解題思路 一樣用hash map 統計有無重複出現的
+class Solution { public boolean containsDuplicate(int[] nums) { HashMap&amp;lt;Integer, Integer&amp;gt; hashmap = new HashMap&amp;lt;&amp;gt;(); int len = nums.</description>
     </item>
     
   </channel>
