@@ -1,5 +1,5 @@
 ---
-title: "Two Sum"
+title: "1. Two Sum"
 date: 2023-08-03T13:00:41+08:00
 weight: 1
 tags:
