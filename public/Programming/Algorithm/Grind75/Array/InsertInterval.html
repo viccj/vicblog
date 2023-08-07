@@ -28,24 +28,10 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。
-但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）
-一開始也只能知道一開始的收益以及目前的金額
-假如給定的價格列表為[7,1,5,3,6,4]
-一開始的收益為 profit = 0
-一開始的金額是 prices [0]
-如果是第一天買股票，第二天賣
-這時候的收益會是 1 - 7 = - 6
-再往後計算的話
-如果是第一天買，第三天賣
-這時候的收益會是 5 - 7 = - 2
-看起來比第一天買第二天賣還要賺（虧比較少）
-但這時發現了一件事，第二天的價格比第一天還要低， 這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算， 算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。 而且時間不能重來。
-因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。
-依照範例給的數據會得到以下結果：
-Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices." />
+  <meta name="description" content="You are given an array of non-overlapping intervals intervals where intervals[i] = [starti, endi] represent the start and the end of the ith interval and intervals is sorted in ascending order by starti. You are also given an interval newInterval = [start, end] that represents the start and end of another interval.
+Insert newInterval into intervals such that intervals is still sorted in ascending order by starti and intervals still does not have any overlapping intervals (merge overlapping intervals if necessary)." />
 
-    <title>121. Best Time to Buy and Sell Stock | Log of Vic</title>
+    <title>57. Insert Interval | Log of Vic</title>
 
     <link rel="icon" type="image/svg+xml" href="../../../../favicon/favicon.svg" />
 <link
@@ -66,57 +52,29 @@ Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min
     
   <meta
     property="og:title"
-    content="121. Best Time to Buy and Sell Stock"
+    content="57. Insert Interval"
   />
   <meta property="og:site_name" content="Log of Vic" />
-  <meta property="og:description" content="解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。
-但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）
-一開始也只能知道一開始的收益以及目前的金額
-假如給定的價格列表為[7,1,5,3,6,4]
-一開始的收益為 profit = 0
-一開始的金額是 prices [0]
-如果是第一天買股票，第二天賣
-這時候的收益會是 1 - 7 = - 6
-再往後計算的話
-如果是第一天買，第三天賣
-這時候的收益會是 5 - 7 = - 2
-看起來比第一天買第二天賣還要賺（虧比較少）
-但這時發現了一件事，第二天的價格比第一天還要低， 這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算， 算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。 而且時間不能重來。
-因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。
-依照範例給的數據會得到以下結果：
-Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices." />
+  <meta property="og:description" content="You are given an array of non-overlapping intervals intervals where intervals[i] = [starti, endi] represent the start and the end of the ith interval and intervals is sorted in ascending order by starti. You are also given an interval newInterval = [start, end] that represents the start and end of another interval.
+Insert newInterval into intervals such that intervals is still sorted in ascending order by starti and intervals still does not have any overlapping intervals (merge overlapping intervals if necessary)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Grind75/Array/InsertInterval.html" />
 
 <meta property="article:section" content="Programming" />
     <meta
       property="article:published_time"
-      content="2023-08-03T22:00:41+08:00"
+      content="2023-08-07T08:00:41+08:00"
     />
     <meta
       property="article:modified_time"
-      content="2023-08-06T09:26:01+08:00"
+      content="2023-08-07T08:00:41+08:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="121. Best Time to Buy and Sell Stock" />
-  <meta name="twitter:description" content="解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。
-但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）
-一開始也只能知道一開始的收益以及目前的金額
-假如給定的價格列表為[7,1,5,3,6,4]
-一開始的收益為 profit = 0
-一開始的金額是 prices [0]
-如果是第一天買股票，第二天賣
-這時候的收益會是 1 - 7 = - 6
-再往後計算的話
-如果是第一天買，第三天賣
-這時候的收益會是 5 - 7 = - 2
-看起來比第一天買第二天賣還要賺（虧比較少）
-但這時發現了一件事，第二天的價格比第一天還要低， 這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算， 算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。 而且時間不能重來。
-因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。
-依照範例給的數據會得到以下結果：
-Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices." />
+<meta name="twitter:title" content="57. Insert Interval" />
+  <meta name="twitter:description" content="You are given an array of non-overlapping intervals intervals where intervals[i] = [starti, endi] represent the start and the end of the ith interval and intervals is sorted in ascending order by starti. You are also given an interval newInterval = [start, end] that represents the start and end of another interval.
+Insert newInterval into intervals such that intervals is still sorted in ascending order by starti and intervals still does not have any overlapping intervals (merge overlapping intervals if necessary)." />
 
 
   <script type="application/ld+json">
@@ -124,23 +82,23 @@ Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Programming",
-      "name": "121. Best Time to Buy and Sell Stock",
-      "url" : "https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html",
-      "headline": "121. Best Time to Buy and Sell Stock",
-      "description": "解題思路 要如何算出最大收益？ 買的價格越低，賣的價格越高。\n但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）\n一開始也只能知道一開始的收益以及目前的金額\n假如給定的價格列表為[7,1,5,3,6,4]\n一開始的收益為 profit = 0\n一開始的金額是 prices [0]\n如果是第一天買股票，第二天賣\n這時候的收益會是 1 - 7 = - 6\n再往後計算的話\n如果是第一天買，第三天賣\n這時候的收益會是 5 - 7 = - 2\n看起來比第一天買第二天賣還要賺（虧比較少）\n但這時發現了一件事，第二天的價格比第一天還要低， 這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算， 算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。 而且時間不能重來。\n因此可以在計算價差時，發現最低價的時候就更新最低價的值， 計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。\n依照範例給的數據會得到以下結果：\nProfit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min = 1, profit = 0 3 - 1 = 2, min = 1, profit = 2 6 - 1 = 5, min = 1, profit = 6 6 - 1 = 6, min = 1, profit = 5 Profit = 5, at 1 and 6 程式碼 class Solution { public int maxProfit(int[] prices) { int len = prices.",
-      "wordCount" : "177",
+      "name": "57. Insert Interval",
+      "url" : "https://lazyvic.com/Programming/Algorithm/Grind75/Array/InsertInterval.html",
+      "headline": "57. Insert Interval",
+      "description": "You are given an array of non-overlapping intervals intervals where intervals[i] = [starti, endi] represent the start and the end of the ith interval and intervals is sorted in ascending order by starti. You are also given an interval newInterval = [start, end] that represents the start and end of another interval.\nInsert newInterval into intervals such that intervals is still sorted in ascending order by starti and intervals still does not have any overlapping intervals (merge overlapping intervals if necessary).",
+      "wordCount" : "280",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html"
+          "@id": "https://lazyvic.com/Programming/Algorithm/Grind75/Array/InsertInterval.html"
       },
       "keywords" : [ "leetcode" , "java" , "array" ],
       "copyrightHolder" : "Log of Vic",
       "copyrightYear" : "2023",
-      "dateCreated": "2023-08-03T22:00:41.00Z",
-      "datePublished": "2023-08-03T22:00:41.00Z",
-      "dateModified": "2023-08-06T09:26:01.00Z",
+      "dateCreated": "2023-08-07T08:00:41.00Z",
+      "datePublished": "2023-08-07T08:00:41.00Z",
+      "dateModified": "2023-08-07T08:00:41.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Log of Vic",
@@ -218,7 +176,7 @@ Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min
   href="../../../../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Algorithm/Grind75/Array/InsertInterval.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -953,7 +911,7 @@ Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75.html' href='../../../../Programming/Algorithm/Grind75.html'><span itemprop='name'>Grind 75</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75/Array.html' href='../../../../Programming/Algorithm/Grind75/Array.html'><span itemprop='name'>Array</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>121. Best Time to Buy and Sell Stock</span><meta itemprop='position' content='5' /></li>
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75.html' href='../../../../Programming/Algorithm/Grind75.html'><span itemprop='name'>Grind 75</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75/Array.html' href='../../../../Programming/Algorithm/Grind75/Array.html'><span itemprop='name'>Array</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>57. Insert Interval</span><meta itemprop='position' content='5' /></li>
   
 
   
@@ -977,23 +935,21 @@ Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>121. Best Time to Buy and Sell Stock</h1>
+    <h1>57. Insert Interval</h1>
     <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
         <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-08-06T09:26:01&#43;08:00">
+    <time datetime="2023-08-07T08:00:41&#43;08:00">
       
-        Updated on
-      
-      Aug 6, 2023
+      Aug 7, 2023
     </time>
   </span>
 </span>
 
 <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">One minute to read</span>
+  <span class="gdoc-post__tag">2 minutes to read</span>
 </span>
 
 
@@ -1069,78 +1025,84 @@ Profit = price[index] - min 1 - 7 = -6 Min = 1 1 - 1 = 0, min = 1 5 - 1 = 4, min
 
 
 
-    <div class="gdoc-page__anchorwrap">
+    <p>You are given an array of non-overlapping intervals <code>intervals</code> where <code>intervals[i] = [starti, endi]</code> represent the start and the end of the <code>ith</code> interval and <code>intervals</code> is sorted in ascending order by <code>starti</code>. You are also given an interval <code>newInterval = [start, end]</code> that represents the start and end of another interval.</p>
+<p>Insert <code>newInterval</code> into <code>intervals</code> such that <code>intervals</code> is still sorted in ascending order by <code>starti</code> and <code>intervals</code> still does not have any overlapping intervals (merge overlapping intervals if necessary).</p>
+<p>Return <code>intervals</code> <em>after the insertion</em>.</p>
+<p><strong>Example 1:</strong></p>
+<pre tabindex="0"><code>Input: intervals = [[1,3],[6,9]], newInterval = [2,5]
+Output: [[1,5],[6,9]]
+</code></pre><p><strong>Example 2:</strong></p>
+<pre tabindex="0"><code>Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
+Output: [[1,2],[3,10],[12,16]]
+Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
+</code></pre><div class="gdoc-page__anchorwrap">
     <h2 id="解題思路"
     >
         解題思路
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html#解題思路" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 解題思路" aria-label="Anchor to: 解題思路" href="#%e8%a7%a3%e9%a1%8c%e6%80%9d%e8%b7%af">
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Grind75/Array/InsertInterval.html#解題思路" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 解題思路" aria-label="Anchor to: 解題思路" href="#%e8%a7%a3%e9%a1%8c%e6%80%9d%e8%b7%af">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>要如何算出最大收益？ 買的價格越低，賣的價格越高。</p>
-<p>但因為買的時間一定要比賣的時間早，所以只能由左至右開始搜尋（index 從 0 開始）</p>
-<p>一開始也只能知道一開始的收益以及目前的金額</p>
-<p>假如給定的價格列表為<code>[7,1,5,3,6,4]</code></p>
-<p>一開始的收益為 <code>profit = 0</code></p>
-<p>一開始的金額是 <code>prices [0]</code></p>
-<p>如果是第一天買股票，第二天賣</p>
-<p>這時候的收益會是 1 - 7 = - 6</p>
-<p>再往後計算的話</p>
-<p>如果是第一天買，第三天賣</p>
-<p>這時候的收益會是 5 - 7 = - 2</p>
-<p>看起來比第一天買第二天賣還要賺（虧比較少）</p>
-<hr>
-<p>但這時發現了一件事，第二天的價格比第一天還要低，
-這樣根本不用再去管第一天的價格是多少，因為用第二天的價格 (1) 當買入價來繼續計算，
-算出來的收益一定會比用第一天的價格 (7) 當買入價還要划算。
-而且時間不能重來。</p>
-<p>因此可以在計算價差時，發現最低價的時候就更新最低價的值，
-計算價差的時候就只要用後續的價格 - 最低價即可得到最大收益。</p>
-<p>依照範例給的數據會得到以下結果：</p>
-<pre tabindex="0"><code class="language-agsl" data-lang="agsl">Profit =  price[index] - min
-
-1 - 7 = -6
-
-Min = 1
-
-1 - 1 = 0, min = 1
-
-5 - 1 = 4, min = 1, profit = 0
-
-3 - 1 = 2, min = 1, profit = 2
-
-6 - 1 = 5, min = 1, profit = 6
-
-6 - 1 = 6, min = 1, profit = 5
-
-
-
-Profit = 5, at 1 and 6
-</code></pre><div class="gdoc-page__anchorwrap">
-    <h2 id="程式碼"
-    >
-        程式碼
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html#程式碼" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 程式碼" aria-label="Anchor to: 程式碼" href="#%e7%a8%8b%e5%bc%8f%e7%a2%bc">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
+<ol>
+<li>
+<p>建立一個新的<code>ArrayList ans</code></p>
+</li>
+<li>
+<p>把這個題目用數線來思考，從左邊開始檢查。對 <code>newInterval[0]</code> 以及 <code>intervals[[i][0]]</code> 比較，若是 <code>newInterval[0]</code> 較大，就把<code>intervals[i]</code> 加到 <code>ans</code> 內，因為代表 <code>newInterval</code> 的起始點會再加入的這些數線的起始點之後。</p>
+</li>
+<li>
+<p>處理 edge case:</p>
+<ul>
+<li>
+<p>如果巡過一輪，發現 <code>ans</code>是空的，代表新的數線最小值是最小的。直接把數線加進去</p>
+</li>
+<li>
+<p>新的數線的最小值比所有數線的最小值大，這時候直接把 <code>newInterval</code> 加進去。ex <code>intervals = [ [1,3], [4 ,5] ], newInterval = [6, 7], ans = [[1,3], [4 , 5], [6,7]]</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>處理最大值：加完之後將當下<code>ans</code>的最大值與最新數線的最大值比較後取最大的</p>
+</li>
+<li>
+<p>比較剩下的數線，若剩下的束線最小值小於目前數線的最小值，檢查兩者的最大值後取最大的</p>
+</li>
+<li>
+<p>將剩下的數線加入<code>ans</code>內</p>
+</li>
+<li>
+<p>ans ArrayList轉換為2D陣列</p>
+</li>
+</ol>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">maxProfit</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">prices</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">prices</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">profit</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">prices</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">min</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">                <span class="n">min</span> <span class="o">=</span> <span class="n">prices</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
-</span></span><span class="line"><span class="cl">            <span class="o">}</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">prices</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">-</span> <span class="n">min</span> <span class="o">&gt;</span> <span class="n">profit</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">                <span class="n">profit</span> <span class="o">=</span> <span class="n">prices</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">-</span> <span class="n">min</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span><span class="o">[][]</span> <span class="nf">insert</span><span class="o">(</span><span class="kt">int</span><span class="o">[][]</span> <span class="n">intervals</span><span class="o">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">newInterval</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">[]&gt;</span> <span class="n">ans</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="n">intervals</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="o">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span> <span class="o">&amp;&amp;</span> <span class="n">intervals</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span> <span class="o">&lt;</span><span class="n">newInterval</span><span class="o">[</span><span class="mi">0</span><span class="o">])</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ans</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">intervals</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span><span class="o">++;</span>
 </span></span><span class="line"><span class="cl">        <span class="o">}</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">profit</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//edge case
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="o">(</span><span class="n">ans</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">newInterval</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">ans</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">ans</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">-</span> <span class="mi">1</span><span class="o">)[</span><span class="mi">1</span><span class="o">])</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ans</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">newInterval</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="o">[]</span> <span class="n">lastInterval</span> <span class="o">=</span> <span class="n">ans</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">ans</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">-</span> <span class="mi">1</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">lastInterval</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">Math</span><span class="o">.</span><span class="na">max</span><span class="o">(</span><span class="n">lastInterval</span><span class="o">[</span><span class="mi">1</span><span class="o">],</span> <span class="n">newInterval</span><span class="o">[</span><span class="mi">1</span><span class="o">]);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// compare right side of line(interval
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">while</span> <span class="o">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="o">[]</span> <span class="n">lastInterval</span> <span class="o">=</span> <span class="n">ans</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">ans</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">-</span> <span class="mi">1</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">lastInterval</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">&gt;=</span> <span class="n">intervals</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="mi">0</span><span class="o">])</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">lastInterval</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">Math</span><span class="o">.</span><span class="na">max</span><span class="o">(</span><span class="n">lastInterval</span><span class="o">[</span><span class="mi">1</span><span class="o">],</span> <span class="n">intervals</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="mi">1</span><span class="o">]);</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span> <span class="k">else</span><span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// If the last interval does not overlap with the current interval, add it to the answer list
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="n">ans</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">intervals</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span><span class="o">++;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">ans</span><span class="o">.</span><span class="na">toArray</span><span class="o">(</span><span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">ans</span><span class="o">.</span><span class="na">size</span><span class="o">()][]);</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></div>
