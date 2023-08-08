@@ -28,21 +28,27 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
+  <meta name="description" content="Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
+The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+You must write an algorithm that runs in O(n) time and without using the division operation.
+Example 1:
+Input: nums = [1,2,3,4] Output: [24,12,8,6] Example 2:
+Input: nums = [-1,1,0,-3,3] Output: [0,0,9,0,0] 解題思路 個人解 一開始想到，那我不就全部先乘起來，遇到每個值之後用成起來的結果除以自身就可以得到答案，但太天真了，忘了自己是 0 的狀況。" />
 
-    <title>Tags | Log of Vic</title>
+    <title>238. Product of Array Except Self  | Log of Vic</title>
 
-    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../../../favicon/favicon.svg" />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="./favicon/favicon-32x32.png"
+  href="../../../../favicon/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="./favicon/favicon-16x16.png"
+  href="../../../../favicon/favicon-16x16.png"
 />
 
     
@@ -50,84 +56,139 @@ if (!doNotTrack) {
     
   <meta
     property="og:title"
-    content="Tags"
+    content="238. Product of Array Except Self "
   />
   <meta property="og:site_name" content="Log of Vic" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://lazyvic.com/tags.html" />
+  <meta property="og:description" content="Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
+The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+You must write an algorithm that runs in O(n) time and without using the division operation.
+Example 1:
+Input: nums = [1,2,3,4] Output: [24,12,8,6] Example 2:
+Input: nums = [-1,1,0,-3,3] Output: [0,0,9,0,0] 解題思路 個人解 一開始想到，那我不就全部先乘起來，遇到每個值之後用成起來的結果除以自身就可以得到答案，但太天真了，忘了自己是 0 的狀況。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Grind75/Array/ProductOfArrayExceptSelf.html" />
 
-
+<meta property="article:section" content="Programming" />
+    <meta
+      property="article:published_time"
+      content="2023-08-09T07:25:41+08:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2023-08-09T07:25:41+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Tags" />
+<meta name="twitter:title" content="238. Product of Array Except Self " />
+  <meta name="twitter:description" content="Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
+The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+You must write an algorithm that runs in O(n) time and without using the division operation.
+Example 1:
+Input: nums = [1,2,3,4] Output: [24,12,8,6] Example 2:
+Input: nums = [-1,1,0,-3,3] Output: [0,0,9,0,0] 解題思路 個人解 一開始想到，那我不就全部先乘起來，遇到每個值之後用成起來的結果除以自身就可以得到答案，但太天真了，忘了自己是 0 的狀況。" />
 
 
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "TechArticle",
+      "articleSection": "Programming",
+      "name": "238. Product of Array Except Self ",
+      "url" : "https://lazyvic.com/Programming/Algorithm/Grind75/Array/ProductOfArrayExceptSelf.html",
+      "headline": "238. Product of Array Except Self ",
+      "description": "Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].\nThe product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.\nYou must write an algorithm that runs in O(n) time and without using the division operation.\nExample 1:\nInput: nums = [1,2,3,4] Output: [24,12,8,6] Example 2:\nInput: nums = [-1,1,0,-3,3] Output: [0,0,9,0,0] 解題思路 個人解 一開始想到，那我不就全部先乘起來，遇到每個值之後用成起來的結果除以自身就可以得到答案，但太天真了，忘了自己是 0 的狀況。",
+      "wordCount" : "322",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://lazyvic.com/Programming/Algorithm/Grind75/Array/ProductOfArrayExceptSelf.html"
+      },
+      "keywords" : [ "leetcode" , "java" , "array" ],
+      "copyrightHolder" : "Log of Vic",
+      "copyrightYear" : "2023",
+      "dateCreated": "2023-08-09T07:25:41.00Z",
+      "datePublished": "2023-08-09T07:25:41.00Z",
+      "dateModified": "2023-08-09T07:25:41.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Log of Vic",
+          "url": "https://lazyvic.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://lazyvic.com/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
+  }
+  </script>
 
 
     
-  <script src="./js/colortheme-d3e4d351.bundle.min.js"></script>
-<script src="./js/main-fbb9c8b0.bundle.min.js"></script>
+  <script src="../../../../js/colortheme-d3e4d351.bundle.min.js"></script>
+<script src="../../../../js/main-fbb9c8b0.bundle.min.js"></script>
 
 <link
   rel="preload"
   as="font"
-  href="./fonts/Metropolis.woff2"
+  href="../../../../fonts/Metropolis.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 <link
   rel="preload"
   as="font"
-  href="./fonts/LiberationSans.woff2"
+  href="../../../../fonts/LiberationSans.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 
 <link
   rel="preload"
-  href="./main-ba0e2765.min.css"
+  href="../../../../main-ba0e2765.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="./main-ba0e2765.min.css"
+  href="../../../../main-ba0e2765.min.css"
   media="all"
 />
 
 <link
   rel="preload"
-  href="./mobile-79ddc617.min.css"
+  href="../../../../mobile-79ddc617.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="./mobile-79ddc617.min.css"
+  href="../../../../mobile-79ddc617.min.css"
   media="screen and (max-width: 45rem)"
 />
 
 <link
   rel="preload"
-  href="./print-735ccc12.min.css"
+  href="../../../../print-735ccc12.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="./print-735ccc12.min.css"
+  href="../../../../print-735ccc12.min.css"
   media="print"
 />
 
 <link
   rel="preload"
-  href="./custom.css"
+  href="../../../../custom.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="./custom.css"
+  href="../../../../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/tags.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Algorithm/Grind75/Array/ProductOfArrayExceptSelf.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -168,7 +229,7 @@ if (!doNotTrack) {
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
-            src="./brand.svg"
+            src="../../../../brand.svg"
             alt=""
           />
           <span class="gdoc-brand__title">Log of Vic</span>
@@ -292,7 +353,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming.html"
+                    href="../../../../Programming.html"
                     class="gdoc-nav__entry"
                   >
                     Programming
@@ -339,7 +400,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/Algorithm.html"
+                    href="../../../../Programming/Algorithm.html"
                     class="gdoc-nav__entry"
                   >
                     Algorithm
@@ -375,7 +436,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/Languages.html"
+                    href="../../../../Programming/Languages.html"
                     class="gdoc-nav__entry"
                   >
                     Language
@@ -422,7 +483,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/SiteStory.html"
+                    href="../../../../Programming/SiteStory.html"
                     class="gdoc-nav__entry"
                   >
                     Site Story
@@ -476,7 +537,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/SiteStory/WhyHugo.html"
+                    href="../../../../Programming/SiteStory/WhyHugo.html"
                     class="gdoc-nav__entry"
                   >
                     Why Hugo
@@ -520,7 +581,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/SiteStory/GettingStart.html"
+                    href="../../../../Programming/SiteStory/GettingStart.html"
                     class="gdoc-nav__entry"
                   >
                     Hugo GitHub Page
@@ -593,7 +654,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/SiteStory/SSL.html"
+                    href="../../../../Programming/SiteStory/SSL.html"
                     class="gdoc-nav__entry"
                   >
                     Install SSL
@@ -637,7 +698,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="./Programming/SiteStory/TyporaUpic.html"
+                    href="../../../../Programming/SiteStory/TyporaUpic.html"
                     class="gdoc-nav__entry"
                   >
                     Typora &#43; Upic
@@ -676,135 +737,6 @@ if (!doNotTrack) {
     
   </section>
 
-  
-    <section class="gdoc-nav--tags">
-      <h2>Tags</h2>
-      <ul class="gdoc-nav__list">
-        
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/Algorithm.html"
-              >
-                Algorithm
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/array.html"
-              >
-                array
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/cipher.html"
-              >
-                cipher
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/hugo.html"
-              >
-                hugo
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/infra.html"
-              >
-                infra
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/java.html"
-              >
-                java
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/leetcode.html"
-              >
-                leetcode
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/php.html"
-              >
-                php
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/stacks.html"
-              >
-                stacks
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/trash-talk.html"
-              >
-                trash talk
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="./tags/unittest.html"
-              >
-                unittest
-              </a>
-            </li>
-          
-        
-      </ul>
-    </section>
   
 
 
@@ -933,304 +865,305 @@ if (!doNotTrack) {
         <div class="gdoc-page">
           
   
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/Algorithm.html">Algorithm</a>
-        </h1>
-      </header>
 
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            5 posts
-          </span>
-        </span>
 
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html">Stacks</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/array.html">array</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            7 posts
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Algorithm/Grind75/Array/TwoSum.html">1. Two Sum</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/cipher.html">cipher</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            One post
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html">Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/hugo.html">hugo</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            4 posts
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/SiteStory/GettingStart.html">Hugo GitHub Page</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/java.html">java</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            8 posts
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html">Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/leetcode.html">leetcode</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            7 posts
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Algorithm/Grind75/Array/TwoSum.html">1. Two Sum</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/php.html">php</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            2 posts
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html">Decrypt AES-GCM encoded content with JAVA Cipher using PHP OpenSSL</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/stacks.html">stacks</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            One post
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html">Stacks</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/trash-talk.html">trash talk</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            One post
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/SiteStory/WhyHugo.html">Why Hugo</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="./tags/unittest.html">unittest</a>
-        </h1>
-      </header>
-
-      <footer class="gdoc-post__meta flex align-center">
-        <span class="flex align-center no-wrap">
-          
-          <svg class="gdoc-icon gdoc_tag"><use xlink:href="#gdoc_tag"></use></svg>
-          <span class="gdoc-post__tag">
-            One post
-          </span>
-        </span>
-
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_star"><use xlink:href="#gdoc_star"></use></svg>
-          <span>
-            
-            
-              <a href="./Programming/Languages/PHP/PhpUnit/BasicSetting.html">Basic Setting</a>
-            
-          </span>
-        </span>
-      </footer>
-    </article>
-  
   
 
 
-<nav class="gdoc-paging flex flex-even align-center" role="navigation">
-  <div class="gdoc-paging__item gdoc-paging__item--prev">
+
+
+
+
+<div
+  class="gdoc-page__header flex flex-wrap
+  
+    justify-between
+  
+  hidden-mobile
+  "
+  itemprop="breadcrumb"
+>
+  
+    <div>
+      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
+      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        
+        
+        
+        
+  
+  
     
-  </div>
-  <div class="gdoc-paging__state">1/2</div>
-  <div class="gdoc-paging__item gdoc-paging__item--next">
     
-      <a class="flex-inline align-center fake-link no-wrap" href="./tags/page/2.html">
-        NEXT
-        <i class="gdoc-icon">gdoc_keyboard_arrow_right</i>
-      </a>
     
-  </div>
-</nav>
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75.html' href='../../../../Programming/Algorithm/Grind75.html'><span itemprop='name'>Grind 75</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Grind75/Array.html' href='../../../../Programming/Algorithm/Grind75/Array.html'><span itemprop='name'>Array</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>238. Product of Array Except Self </span><meta itemprop='position' content='5' /></li>
+  
 
+  
+
+  
+
+  
+
+  
+
+  
+
+      </ol>
+    </div>
+  
+  
+</div>
+
+
+
+  <article
+    class="gdoc-markdown gdoc-markdown__align--left"
+  >
+    <h1>238. Product of Array Except Self </h1>
+    <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
+        <span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+  <span class="gdoc-post__tag">
+    <time datetime="2023-08-09T07:25:41&#43;08:00">
+      
+      Aug 9, 2023
+    </time>
+  </span>
+</span>
+
+<span class="flex align-center no-wrap">
+  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
+  <span class="gdoc-post__tag">2 minutes to read</span>
+</span>
+
+
+
+  
+    
+    
+      
+        <span class="flex align-center no-wrap">
+          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../../../../tags/array.html"
+      title="All posts tagged with &#39;array&#39;"
+    >
+      array
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+    
+    
+      
+        <span class="flex align-center">
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../../../../tags/java.html"
+      title="All posts tagged with &#39;java&#39;"
+    >
+      java
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+    
+    
+      
+        <span class="flex align-center">
+          
+  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
+    <a
+      class="gdoc-button__link"
+      href="../../../../tags/leetcode.html"
+      title="All posts tagged with &#39;leetcode&#39;"
+    >
+      leetcode
+    </a>
+  </span>
+
+        </span>
+      
+    
+    
+  
+
+
+
+
+    </div>
+
+
+
+
+    <p>Given an integer array <code>nums</code>, return <em>an array</em> <code>answer</code> <em>such that</em> <code>answer[i]</code> <em>is equal to the product of all the elements of</em> <code>nums</code> <em>except</em> <code>nums[i]</code>.</p>
+<p>The product of any prefix or suffix of <code>nums</code> is <strong>guaranteed</strong> to fit in a <strong>32-bit</strong> integer.</p>
+<p>You must write an algorithm that runs in <code>O(n)</code> time and without using the division operation.</p>
+<p><strong>Example 1:</strong></p>
+<pre tabindex="0"><code>Input: nums = [1,2,3,4]
+Output: [24,12,8,6]
+</code></pre><p><strong>Example 2:</strong></p>
+<pre tabindex="0"><code>Input: nums = [-1,1,0,-3,3]
+Output: [0,0,9,0,0]
+</code></pre><div class="gdoc-page__anchorwrap">
+    <h2 id="解題思路"
+    >
+        解題思路
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Grind75/Array/ProductOfArrayExceptSelf.html#解題思路" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 解題思路" aria-label="Anchor to: 解題思路" href="#%e8%a7%a3%e9%a1%8c%e6%80%9d%e8%b7%af">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="個人解"
+    >
+        個人解
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Grind75/Array/ProductOfArrayExceptSelf.html#個人解" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 個人解" aria-label="Anchor to: 個人解" href="#%e5%80%8b%e4%ba%ba%e8%a7%a3">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>一開始想到，那我不就全部先乘起來，遇到每個值之後用成起來的結果除以自身就可以得到答案，但太天真了，忘了自己是 0 的狀況。</p>
+<p>後來處理了自己是 0 的狀況之後，因為預設乘積是 1，處理不到全部都是 0 的狀況。</p>
+<p>全部是0 的狀況處理完之後，又沒處理到 0 的個數 &gt; 2的狀況</p>
+<p>最後處理完之後發現，基本上超過2個0，回傳的答案就會全部是 0</p>
+<p>經過一堆 fail submit之後 總算 pass 了</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">productExceptSelf</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">product</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">zeroCount</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span><span class="o">[]</span> <span class="n">result</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1">// Calculate the product of all elements except zeros.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">num</span> <span class="o">:</span> <span class="n">nums</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">num</span> <span class="o">!=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">product</span> <span class="o">*=</span> <span class="n">num</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">zeroCount</span><span class="o">++;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// Fill the result array.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="o">(</span><span class="n">zeroCount</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">result</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">zeroCount</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">result</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">?</span> <span class="n">product</span> <span class="o">:</span> <span class="mi">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">result</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">product</span> <span class="o">/</span> <span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">            <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="其他解"
+    >
+        其他解
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Grind75/Array/ProductOfArrayExceptSelf.html#其他解" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 其他解" aria-label="Anchor to: 其他解" href="#%e5%85%b6%e4%bb%96%e8%a7%a3">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>網路通常都是用這種解法，比較單純，但我一開始想不到，第二次回來做也還是忘了&hellip;</p>
+<p>是先把這個數左邊的乘積記錄下來，再把右邊的乘積記錄下來，產生兩個 Array (要一個也可以)</p>
+<p>最後在把這兩個 Array 對應的 index 乘起來就是答案。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">productExceptSelf</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span><span class="o">[]</span> <span class="n">prefixProducts</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">n</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span><span class="o">[]</span> <span class="n">suffixProducts</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">n</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span><span class="o">[]</span> <span class="n">result</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">n</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1">// Calculate prefix products
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">prefix</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">prefixProducts</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">prefix</span> <span class="o">*=</span> <span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1">// Calculate suffix products
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kt">int</span> <span class="n">suffix</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">--)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">suffixProducts</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">suffix</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">suffix</span> <span class="o">*=</span> <span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1">// Calculate the result array by combining prefix and suffix products
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">result</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">prefixProducts</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">*</span> <span class="n">suffixProducts</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div>
+  </article>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="disqus markdown">
+    <div id="disqus_thread"></div>
+<script>
+    
+
+    
+
+    (function() { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lazyvic-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
 
 
 
@@ -1290,7 +1223,7 @@ if (!doNotTrack) {
     </div>
 
     
-  <script defer src="./js/search-83320133.bundle.min.js"></script>
+  <script defer src="../../../../js/search-83320133.bundle.min.js"></script>
 
   </body>
 </html>
