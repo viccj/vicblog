@@ -246,6 +246,18 @@ Typora設定 照著設定按一下test Uploader顯示成功，之後圖片拖進
     </item>
     
     <item>
+      <title>15. Three Sum</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/ThreeSum.html</link>
+      <pubDate>Tue, 08 Aug 2023 08:25:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Array/ThreeSum.html</guid>
+      <description>Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+Notice that the solution set must not contain duplicate triplets.
+Example 1:
+Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]] Explanation: nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0. nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.</description>
+    </item>
+    
+    <item>
       <title>Level 1.3.1</title>
       <link>https://lazyvic.com/Programming/Languages/Java/Spring-Boot/Getting-started-with-Spring/test/two-sum.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
