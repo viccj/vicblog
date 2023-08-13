@@ -6,7 +6,7 @@
     <description>Recent content in leetcode on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Aug 2023 10:25:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Aug 2023 16:25:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1. Two Sum</title>
       <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/TwoSum.html</link>
@@ -104,6 +104,19 @@ You must write an algorithm that runs in O(n) time and without using the divisio
 Example 1:
 Input: nums = [1,2,3,4] Output: [24,12,8,6] Example 2:
 Input: nums = [-1,1,0,-3,3] Output: [0,0,9,0,0] 解題思路 個人解 一開始想到，那我不就全部先乘起來，遇到每個值之後用成起來的結果除以自身就可以得到答案，但太天真了，忘了自己是 0 的狀況。</description>
+    </item>
+    
+    <item>
+      <title>56. Merge Interval</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/MergeInterval.html</link>
+      <pubDate>Sun, 13 Aug 2023 16:25:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Grind75/Array/MergeInterval.html</guid>
+      <description>Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. You may return the combinations in any order.
+The same number may be chosen from candidates an unlimited number of times. Two combinations are unique if the
+frequency
+of at least one of the chosen numbers is different.
+The test cases are generated such that the number of unique combinations that sum up to target is less than 150 combinations for the given input.</description>
     </item>
     
     <item>
