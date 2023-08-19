@@ -29,7 +29,7 @@ if (!doNotTrack) {
 
 
 
-    <title>infra | Log of Vic</title>
+    <title>tree | Log of Vic</title>
 
     <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
 <link
@@ -50,17 +50,17 @@ if (!doNotTrack) {
     
   <meta
     property="og:title"
-    content="infra"
+    content="tree"
   />
   <meta property="og:site_name" content="Log of Vic" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://lazyvic.com/tags/infra.html" />
+<meta property="og:url" content="https://lazyvic.com/tags/tree.html" />
 
 
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="infra" />
+<meta name="twitter:title" content="tree" />
 
 
 
@@ -127,7 +127,7 @@ if (!doNotTrack) {
   href="../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/tags/infra.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/tags/tree.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -751,7 +751,7 @@ if (!doNotTrack) {
           
             <li>
               <a
-                class="gdoc-nav__entry is-active"
+                class="gdoc-nav__entry"
                 href="../tags/infra.html"
               >
                 infra
@@ -828,7 +828,7 @@ if (!doNotTrack) {
           
             <li>
               <a
-                class="gdoc-nav__entry"
+                class="gdoc-nav__entry is-active"
                 href="../tags/tree.html"
               >
                 tree
@@ -980,22 +980,13 @@ if (!doNotTrack) {
     <article class="gdoc-post">
       <header class="gdoc-post__header">
         <h1 class="gdoc-post__title">
-          <a href="../Programming/SiteStory/SSL.html">Install SSL</a>
+          <a href="../Programming/Languages/Miscellaneous/ConvertListToTree.html">Convert List To Tree</a>
         </h1>
       </header>
 
       <section class="gdoc-markdown">
-        Domain 是在 namecheap 買的，設定好A紀錄跟CNAME之後就可以用了，再來就是申請SSL憑證 糊裡糊塗就把SSL弄好了，隨手記錄一下印象比較深刻的步驟跟坑。
-領取SSL憑證 收到憑證後 nginx設定 nginx -t 通過但是一直重啟不了nginx 領取SSL憑證 生成私鑰： openssl genrsa -out private.key 2048 生成一個2048位的RSA私鑰，並將其保存在名為 private.key 的文件中。
-接著用剛剛的私鑰生成CSR（證書簽署請求）
-openssl req -new -key private.key -out csr.csr 會要求提供與SSL證書相關的信息，例如域名、組織名稱、所在地等。請根據提示輸入正確的信息。
-Common Name (CN)：這邊要填你的域名 domain.com，它後面本來寫說填個名字就好我就傻傻的填我的英文名字，結果一直失敗..
-生成的CSR文件 csr.csr 就可以整個複製上去。 收到憑證後 通常在取得 SSL 憑證時，您會收到兩個檔案：.crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案。
-.crt 憑證檔案是您的 SSL 證書，它包含您的網站的公開金鑰以及其他相關的證書資訊。
-.ca-bundle（或 .bundle）憑證束檔案是根憑證和中繼憑證的集合。它包含了憑證鏈中的所有憑證，用於驗證您的 SSL 憑證的合法性。憑證鏈包括根憑證（Root Certificate）和中繼憑證（Intermediate Certificate）。根憑證是由受信任的憑證授權中心（Certificate Authority）簽署的，而中繼憑證是由根憑證簽署的其他憑證。
-在設定 Nginx 的 SSL 時，需要將 .crt 憑證檔案和 .ca-bundle（或 .bundle）憑證束檔案合併為一個檔案，形成完整的憑證鏈。
-順序不能錯，要先crt再ca-bundle
-cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 HTTPS server { listen 80; server_name lazyvic.
+        Write a programe take string with dilemeter, and write two funtions
+input: Save input string into a collection. Output: output appearence rate by givin string class TreeNode { public $header; public $count = 0; public $children = []; public function __construct($header) { $this-&gt;header = $header; } } class TokenCollection { private $tokens = []; private $root; public function __construct() { $this-&gt;root = new TreeNode(&#34;root&#34;); } public function ingest($string) { array_push($this-&gt;tokens, $string); $node = $this-&gt;root; foreach (explode(&#34;:&#34;, $string) as $val) { $isNew = true; // Check if current token has existing child nodes foreach ($node-&gt;children as $existingNode) { if ($existingNode-&gt;header === $val) { $node = $existingNode; // Update the current node to the existing child node $isNew = false; break; } } if ($isNew) { // Create a new child node if the token is new $newNode = new TreeNode($val); $node-&gt;children[] = $newNode; // Add the new child node to the current node&#39;s children $node = $newNode; // Update the current node to the new child node } $node-&gt;count++; // Increment the count for the current node } } public function appearance($prefix) { $matchingCount = 0; $totalCount = count($this-&gt;tokens); // Iterate through stored tokens to count matching tokens foreach ($this-&gt;tokens as $token) { if (strpos($token, $prefix) === 0) { $matchingCount++; } } // Calculate and return the appearance percentage return $totalCount &gt; 0 ?
       </section>
 
       <div class="gdoc-post__readmore">
@@ -1003,7 +994,7 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
           <a
             class="flex-inline align-center fake-link"
             title="Read full post"
-            href="../Programming/SiteStory/SSL.html"
+            href="../Programming/Languages/Miscellaneous/ConvertListToTree.html"
           >
             Read full post
             <i class="gdoc-icon">gdoc_arrow_right_alt</i>
@@ -1016,18 +1007,16 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
           <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-06-24T16:23:28&#43;08:00">
+    <time datetime="2023-08-19T08:25:41&#43;08:00">
       
-        Updated on
-      
-      Jun 24, 2023
+      Aug 19, 2023
     </time>
   </span>
 </span>
 
 <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">One minute to read</span>
+  <span class="gdoc-post__tag">2 minutes to read</span>
 </span>
 
 
@@ -1042,10 +1031,10 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/hugo.html"
-      title="All posts tagged with &#39;hugo&#39;"
+      href="../tags/php.html"
+      title="All posts tagged with &#39;php&#39;"
     >
-      hugo
+      php
     </a>
   </span>
 
@@ -1062,10 +1051,10 @@ cat domain.crt domain.ca-bundle &gt; server.crt nginx設定 # HTTP 重定向到 
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/infra.html"
-      title="All posts tagged with &#39;infra&#39;"
+      href="../tags/tree.html"
+      title="All posts tagged with &#39;tree&#39;"
     >
-      infra
+      tree
     </a>
   </span>
 

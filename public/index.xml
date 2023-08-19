@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://lazyvic.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Convert List To Tree</title>
+      <link>https://lazyvic.com/Programming/Languages/Miscellaneous/ConvertListToTree.html</link>
+      <pubDate>Sat, 19 Aug 2023 08:25:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Languages/Miscellaneous/ConvertListToTree.html</guid>
+      <description>Write a programe take string with dilemeter, and write two funtions
+input: Save input string into a collection. Output: output appearence rate by givin string class TreeNode { public $header; public $count = 0; public $children = []; public function __construct($header) { $this-&amp;gt;header = $header; } } class TokenCollection { private $tokens = []; private $root; public function __construct() { $this-&amp;gt;root = new TreeNode(&amp;#34;root&amp;#34;); } public function ingest($string) { array_push($this-&amp;gt;tokens, $string); $node = $this-&amp;gt;root; foreach (explode(&amp;#34;:&amp;#34;, $string) as $val) { $isNew = true; // Check if current token has existing child nodes foreach ($node-&amp;gt;children as $existingNode) { if ($existingNode-&amp;gt;header === $val) { $node = $existingNode; // Update the current node to the existing child node $isNew = false; break; } } if ($isNew) { // Create a new child node if the token is new $newNode = new TreeNode($val); $node-&amp;gt;children[] = $newNode; // Add the new child node to the current node&amp;#39;s children $node = $newNode; // Update the current node to the new child node } $node-&amp;gt;count++; // Increment the count for the current node } } public function appearance($prefix) { $matchingCount = 0; $totalCount = count($this-&amp;gt;tokens); // Iterate through stored tokens to count matching tokens foreach ($this-&amp;gt;tokens as $token) { if (strpos($token, $prefix) === 0) { $matchingCount++; } } // Calculate and return the appearance percentage return $totalCount &amp;gt; 0 ?</description>
+    </item>
+    
+    <item>
       <title>1. Two Sum</title>
       <link>https://lazyvic.com/Programming/Algorithm/Grind75/Array/TwoSum.html</link>
       <pubDate>Thu, 03 Aug 2023 13:00:41 +0800</pubDate>
@@ -255,6 +265,15 @@ Typora設定 照著設定按一下test Uploader顯示成功，之後圖片拖進
 Notice that the solution set must not contain duplicate triplets.
 Example 1:
 Input: nums = [-1,0,1,2,-1,-4] Output: [[-1,-1,2],[-1,0,1]] Explanation: nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0. nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.</description>
+    </item>
+    
+    <item>
+      <title>Design An Cache</title>
+      <link>https://lazyvic.com/Programming/Languages/Miscellaneous/DesignAnCache.html</link>
+      <pubDate>Tue, 08 Aug 2023 08:25:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Languages/Miscellaneous/DesignAnCache.html</guid>
+      <description>class Cache { private $capacity; // Capacity of the cache private $data = []; // Data storage for key-value pairs private $scores = []; // Scores storage for keys public function __construct($capacity) { $this-&amp;gt;capacity = $capacity; // Initialize cache with given capacity } public function get($key) { if (isset($this-&amp;gt;data[$key])) { $this-&amp;gt;updateTimestamp($key); // Update timestamp to reflect recent access return $this-&amp;gt;data[$key][0]; // Return the value associated with the key } return -1; // Return -1 if key is not found } public function put($key, $value, $weight) { if (count($this-&amp;gt;data) &amp;gt;= $this-&amp;gt;capacity) { $this-&amp;gt;evict(); // Perform eviction if cache capacity is reached } $this-&amp;gt;data[$key] = [$value, $weight, time()]; // Store key-value, weight, and timestamp $score = $this-&amp;gt;calculateScore($weight, $this-&amp;gt;data[$key][2]); // Calculate score $this-&amp;gt;updateScore($key, $score); // Update score for the key } private function updateTimestamp($key) { $this-&amp;gt;data[$key][2] = time(); // Update the timestamp for the key } private function evict() { $minKey = array_search(min($this-&amp;gt;scores), $this-&amp;gt;scores); // Find key with the minimum score unset($this-&amp;gt;data[$minKey], $this-&amp;gt;scores[$minKey]); // Remove the key from data and scores } private function updateScore($key, $score) { $this-&amp;gt;scores[$key] = $score; // Update the score for the key } private function calculateScore($weight, $timestamp) { $currentTime = time(); // Get the current time $timeDifference = max(1, $currentTime - $timestamp); // Calculate time difference return $weight / (log($timeDifference) + 1); // Calculate and return the score } } time complexity O(1) for both get and put method</description>
     </item>
     
     <item>

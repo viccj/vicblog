@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Aug 2023 16:25:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Aug 2023 08:25:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>php</title>
+      <link>https://lazyvic.com/tags/php.html</link>
+      <pubDate>Sat, 19 Aug 2023 08:25:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/tags/php.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tree</title>
+      <link>https://lazyvic.com/tags/tree.html</link>
+      <pubDate>Sat, 19 Aug 2023 08:25:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/tags/tree.html</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>array</title>
       <link>https://lazyvic.com/tags/array.html</link>
@@ -53,11 +71,11 @@
     </item>
     
     <item>
-      <title>php</title>
-      <link>https://lazyvic.com/tags/php.html</link>
-      <pubDate>Sat, 29 Jul 2023 15:00:41 +0800</pubDate>
+      <title>cache</title>
+      <link>https://lazyvic.com/tags/cache.html</link>
+      <pubDate>Tue, 08 Aug 2023 08:25:41 +0800</pubDate>
       
-      <guid>https://lazyvic.com/tags/php.html</guid>
+      <guid>https://lazyvic.com/tags/cache.html</guid>
       <description></description>
     </item>
     
