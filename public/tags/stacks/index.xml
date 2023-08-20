@@ -13,7 +13,10 @@
       <pubDate>Sat, 24 Jun 2023 10:00:41 +0800</pubDate>
       
       <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</guid>
-      <description>my solution</description>
+      <description>Stack Api Warmup API. Stack of string data type.
+這裡會建立如下的Stack API
+public clacc StackOfStrings StackOfStrings() // create am empyt stack void push(String item) // insert a new strig onto stack String pop() //remove and return the string most recently added booleam isEmpty() // is the stack empty? int size() // number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除
+public class LinkedStackOfStrings { private Node first = null; private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void push(String item) { Node oldfirst = first; first = new Node(); first.</description>
     </item>
     
   </channel>

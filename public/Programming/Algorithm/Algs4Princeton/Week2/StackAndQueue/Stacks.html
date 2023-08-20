@@ -28,7 +28,10 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="my solution" />
+  <meta name="description" content="Stack Api Warmup API. Stack of string data type.
+這裡會建立如下的Stack API
+public clacc StackOfStrings StackOfStrings() // create am empyt stack void push(String item) // insert a new strig onto stack String pop() //remove and return the string most recently added booleam isEmpty() // is the stack empty? int size() // number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除
+public class LinkedStackOfStrings { private Node first = null; private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void push(String item) { Node oldfirst = first; first = new Node(); first." />
 
     <title>Stacks | Log of Vic</title>
 
@@ -54,7 +57,10 @@ if (!doNotTrack) {
     content="Stacks"
   />
   <meta property="og:site_name" content="Log of Vic" />
-  <meta property="og:description" content="my solution" />
+  <meta property="og:description" content="Stack Api Warmup API. Stack of string data type.
+這裡會建立如下的Stack API
+public clacc StackOfStrings StackOfStrings() // create am empyt stack void push(String item) // insert a new strig onto stack String pop() //remove and return the string most recently added booleam isEmpty() // is the stack empty? int size() // number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除
+public class LinkedStackOfStrings { private Node first = null; private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void push(String item) { Node oldfirst = first; first = new Node(); first." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html" />
 
@@ -71,7 +77,10 @@ if (!doNotTrack) {
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Stacks" />
-  <meta name="twitter:description" content="my solution" />
+  <meta name="twitter:description" content="Stack Api Warmup API. Stack of string data type.
+這裡會建立如下的Stack API
+public clacc StackOfStrings StackOfStrings() // create am empyt stack void push(String item) // insert a new strig onto stack String pop() //remove and return the string most recently added booleam isEmpty() // is the stack empty? int size() // number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除
+public class LinkedStackOfStrings { private Node first = null; private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void push(String item) { Node oldfirst = first; first = new Node(); first." />
 
 
   <script type="application/ld+json">
@@ -82,8 +91,8 @@ if (!doNotTrack) {
       "name": "Stacks",
       "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html",
       "headline": "Stacks",
-      "description": "my solution",
-      "wordCount" : "2",
+      "description": "Stack Api Warmup API. Stack of string data type.\n這裡會建立如下的Stack API\npublic clacc StackOfStrings StackOfStrings() \/\/ create am empyt stack void push(String item) \/\/ insert a new strig onto stack String pop() \/\/remove and return the string most recently added booleam isEmpty() \/\/ is the stack empty? int size() \/\/ number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除\npublic class LinkedStackOfStrings { private Node first = null; private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void push(String item) { Node oldfirst = first; first = new Node(); first.",
+      "wordCount" : "247",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -956,7 +965,7 @@ if (!doNotTrack) {
 
 <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">One minute to read</span>
+  <span class="gdoc-post__tag">2 minutes to read</span>
 </span>
 
 
@@ -1012,7 +1021,136 @@ if (!doNotTrack) {
 
 
 
-    <p>my solution</p>
+    <div class="gdoc-page__anchorwrap">
+    <h2 id="stack-api"
+    >
+        Stack Api
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html#stack-api" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Stack Api" aria-label="Anchor to: Stack Api" href="#stack-api">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<hr>
+<p>Warmup API. Stack of string data type.</p>
+<p>這裡會建立如下的Stack API</p>
+<pre tabindex="0"><code>public clacc StackOfStrings
+
+  StackOfStrings() // create am empyt stack
+  void push(String item) // insert a new strig onto stack
+  String pop() //remove and return the string most recently added
+  booleam isEmpty() // is the stack empty?
+  int size() // number of strings on the stack
+</code></pre><div class="gdoc-page__anchorwrap">
+    <h3 id="linked-list-implementation"
+    >
+        Linked-list implementation
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html#linked-list-implementation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Linked-list implementation" aria-label="Anchor to: Linked-list implementation" href="#linked-list-implementation">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LinkedStackOfStrings</span>
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">private</span> <span class="n">Node</span> <span class="n">first</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">private</span> <span class="kd">class</span> <span class="nc">Node</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">String</span> <span class="n">item</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Node</span> <span class="n">next</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isEmpty</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">first</span> <span class="o">==</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">push</span><span class="o">(</span><span class="n">String</span> <span class="n">item</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Node</span> <span class="n">oldfirst</span> <span class="o">=</span> <span class="n">first</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">first</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Node</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">first</span><span class="o">.</span><span class="na">item</span> <span class="o">=</span> <span class="n">item</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">first</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">oldfirst</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">public</span> <span class="n">String</span> <span class="nf">pop</span><span class="o">()</span>
+</span></span><span class="line"><span class="cl">  <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">String</span> <span class="n">item</span> <span class="o">=</span> <span class="n">first</span><span class="o">.</span><span class="na">item</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">first</span> <span class="o">=</span> <span class="n">first</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">item</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h3 id="array-implementation"
+    >
+        Array implementation
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html#array-implementation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Array implementation" aria-label="Anchor to: Array implementation" href="#array-implementation">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">FixedCapacityStackOfStrings</span>
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">private</span> <span class="n">String</span><span class="o">[]</span> <span class="n">s</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">private</span> <span class="kt">int</span> <span class="n">N</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="kd">public</span> <span class="nf">FixedCapacityStackOfStings</span><span class="o">(</span><span class="kt">int</span> <span class="n">capacity</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">[</span><span class="n">capacity</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">  <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isEmpty</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">N</span> <span class="o">==</span> <span class="mi">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">push</span><span class="o">(</span><span class="n">String</span> <span class="n">item</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">s</span><span class="o">[</span><span class="n">N</span><span class="o">++]</span> <span class="o">=</span> <span class="n">item</span><span class="o">;</span> <span class="err">&#39;</span> <span class="c1">// 簡寫：表示先用index，用完之後將N increment
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">public</span> <span class="n">String</span> <span class="nf">pop</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">s</span><span class="o">[--</span><span class="n">N</span><span class="o">];</span> <span class="c1">// 表示先將Ｎ decrement; 再拿 array index 為 N的 元素
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h3 id="stack-considerations"
+    >
+        Stack considerations
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html#stack-considerations" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Stack considerations" aria-label="Anchor to: Stack considerations" href="#stack-considerations">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="overflow-and-underflow"
+    >
+        Overflow and underflow.
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html#overflow-and-underflow" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Overflow and underflow." aria-label="Anchor to: Overflow and underflow." href="#overflow-and-underflow">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<ul>
+<li>Underflow: throw exception if pop from an empty stack.</li>
+<li>Overflow: use resizing array for array implementation.</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="null-items"
+    >
+        Null items
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html#null-items" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Null items" aria-label="Anchor to: Null items" href="#null-items">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>允許插入 null item</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="loitering"
+    >
+        Loitering
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html#loitering" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Loitering" aria-label="Anchor to: Loitering" href="#loitering">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>Holding a reference to an object when it is no longer needed.</p>
+<p>所以程式可以改寫以避免這種問題</p>
+<pre tabindex="0"><code>public String pop()
+{
+  String item = s[--N];
+  s[N] = null;
+  return item;
+}
+</code></pre><p>Java 的 garbage collector 可以reclaim memory</p>
 
   </article>
 <br>
