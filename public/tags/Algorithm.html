@@ -985,10 +985,9 @@ if (!doNotTrack) {
       </header>
 
       <section class="gdoc-markdown">
-        Stack Api Warmup API. Stack of string data type.
+        Stack Api Linked-list implementation Array implementation Stack considerations Overflow and underflow. Null items Loitering Stack Api Warmup API. Stack of string data type.
 這裡會建立如下的Stack API
 public clacc StackOfStrings StackOfStrings() // create am empyt stack void push(String item) // insert a new strig onto stack String pop() //remove and return the string most recently added booleam isEmpty() // is the stack empty? int size() // number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除
-public class LinkedStackOfStrings { private Node first = null; private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void push(String item) { Node oldfirst = first; first = new Node(); first.
       </section>
 
       <div class="gdoc-post__readmore">
@@ -1009,11 +1008,11 @@ public class LinkedStackOfStrings { private Node first = null; private class Nod
           <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-07-29T15:40:40&#43;08:00">
+    <time datetime="2023-08-20T14:44:41&#43;08:00">
       
         Updated on
       
-      Jul 29, 2023
+      Aug 20, 2023
     </time>
   </span>
 </span>
@@ -1164,10 +1163,20 @@ Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p
       </header>
 
       <section class="gdoc-markdown">
-        my solution
+        Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array Resizing-array implementation Problem 如何增加或減少 array 的 size?
+First try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 + 2+&hellip;+N ~ N²/2 Another way If array is full, create a new array of twice the size, and copy items.
       </section>
 
       <div class="gdoc-post__readmore">
+        
+          <a
+            class="flex-inline align-center fake-link"
+            title="Read full post"
+            href="../Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html"
+          >
+            Read full post
+            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
+          </a>
         
       </div>
 
@@ -1187,7 +1196,7 @@ Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p
 
 <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">One minute to read</span>
+  <span class="gdoc-post__tag">2 minutes to read</span>
 </span>
 
 

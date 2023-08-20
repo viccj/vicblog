@@ -28,7 +28,8 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="my solution" />
+  <meta name="description" content="Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array Resizing-array implementation Problem 如何增加或減少 array 的 size?
+First try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 &#43; 2&#43;&hellip;&#43;N ~ N²/2 Another way If array is full, create a new array of twice the size, and copy items." />
 
     <title>Resizing Arrays | Log of Vic</title>
 
@@ -54,7 +55,8 @@ if (!doNotTrack) {
     content="Resizing Arrays"
   />
   <meta property="og:site_name" content="Log of Vic" />
-  <meta property="og:description" content="my solution" />
+  <meta property="og:description" content="Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array Resizing-array implementation Problem 如何增加或減少 array 的 size?
+First try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 &#43; 2&#43;…&#43;N ~ N²/2 Another way If array is full, create a new array of twice the size, and copy items." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html" />
 
@@ -71,7 +73,8 @@ if (!doNotTrack) {
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Resizing Arrays" />
-  <meta name="twitter:description" content="my solution" />
+  <meta name="twitter:description" content="Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array Resizing-array implementation Problem 如何增加或減少 array 的 size?
+First try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 &#43; 2&#43;…&#43;N ~ N²/2 Another way If array is full, create a new array of twice the size, and copy items." />
 
 
   <script type="application/ld+json">
@@ -82,8 +85,8 @@ if (!doNotTrack) {
       "name": "Resizing Arrays",
       "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html",
       "headline": "Resizing Arrays",
-      "description": "my solution",
-      "wordCount" : "2",
+      "description": "Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array Resizing-array implementation Problem 如何增加或減少 array 的 size?\nFirst try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 \u002b 2\u002b…\u002bN ~ N²\/2 Another way If array is full, create a new array of twice the size, and copy items.",
+      "wordCount" : "278",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -956,7 +959,7 @@ if (!doNotTrack) {
 
 <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">One minute to read</span>
+  <span class="gdoc-post__tag">2 minutes to read</span>
 </span>
 
 
@@ -992,7 +995,191 @@ if (!doNotTrack) {
 
 
 
-    <p>my solution</p>
+    <div class="gdoc-toc gdoc-toc__level--6">
+      <nav id="TableOfContents"><ul>
+        <li>
+          <ul>
+            <li><a href="#resizing-array-implementation">Resizing-array implementation</a>
+              <ul>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#first-try">First try</a></li>
+                <li><a href="#too-expensive">Too expensive</a></li>
+                <li><a href="#another-way">Another way</a></li>
+              </ul>
+            </li>
+            <li><a href="#how-to-shrink-array">How to shrink array</a>
+              <ul>
+                <li><a href="#first-try-1">First try</a></li>
+                <li><a href="#effectient-solution">Effectient solution</a></li>
+              </ul>
+            </li>
+            <li><a href="#resizing-array-vs-linked-list">resizing array vs. linked list</a>
+              <ul>
+                <li><a href="#linked-list">Linked-list</a></li>
+                <li><a href="#resizing-array">Resizing array</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul></nav>
+      <hr />
+    </div>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="resizing-array-implementation"
+    >
+        Resizing-array implementation
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html#resizing-array-implementation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Resizing-array implementation" aria-label="Anchor to: Resizing-array implementation" href="#resizing-array-implementation">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="problem"
+    >
+        Problem
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html#problem" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Problem" aria-label="Anchor to: Problem" href="#problem">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>如何增加或減少 array 的 size?</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="first-try"
+    >
+        First try
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html#first-try" class="gdoc-page__anchor clip flex align-center" title="Anchor to: First try" aria-label="Anchor to: First try" href="#first-try">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<ul>
+<li><code>push() </code>: increase size of array <code>s[]</code> by 1</li>
+<li><code>pop() </code>: decrease size of array <code>s[]</code> by 1</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="too-expensive"
+    >
+        Too expensive
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html#too-expensive" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Too expensive" aria-label="Anchor to: Too expensive" href="#too-expensive">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<ul>
+<li>每次新增都要複製舊的 array 到全新的 array</li>
+<li>push N 個 item 的時間複雜度 是1 + 2+&hellip;+N ~ N²/2</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="another-way"
+    >
+        Another way
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html#another-way" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Another way" aria-label="Anchor to: Another way" href="#another-way">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<p>If array is full, create a new array of twice the size, and copy items.</p>
+<pre tabindex="0"><code>public ResizingArrayStackOfStrings() {
+  s = new String[1];
+}
+
+public void push(String item) {
+  if (N == s.length) {
+    resize(2 * s.length);
+    s[N++] = item;
+  }
+private void resize(int capacity) {
+  String[] copy = new String[capacity];
+  for (int i = 0; i &lt; N; i++) {
+    copy[i] = s[i]
+  }
+  s = copy;
+}
+</code></pre><p>這樣插入 N 個 items 所花費的時間是 N （不是N²）</p>
+<p>N + (2 + 4 + 8 + N) ~ 3N</p>
+<div class="gdoc-page__anchorwrap">
+    <h3 id="how-to-shrink-array"
+    >
+        How to shrink array
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html#how-to-shrink-array" class="gdoc-page__anchor clip flex align-center" title="Anchor to: How to shrink array" aria-label="Anchor to: How to shrink array" href="#how-to-shrink-array">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="first-try-1"
+    >
+        First try
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html#first-try-1" class="gdoc-page__anchor clip flex align-center" title="Anchor to: First try" aria-label="Anchor to: First try" href="#first-try-1">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<ul>
+<li><code>push() </code>: double size of array<code>s[]</code>when array is full</li>
+<li><code>pop() </code>: halve size of array  <code>s[]</code> when array is one-half full</li>
+</ul>
+<p>too expensive in worst case: pop.. push.. pop.. push..</p>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="effectient-solution"
+    >
+        Effectient solution
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html#effectient-solution" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Effectient solution" aria-label="Anchor to: Effectient solution" href="#effectient-solution">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<ul>
+<li><code>push() </code>: double size of array<code>s[]</code>when array is full</li>
+<li><code>pop() </code>: halve size of array  <code>s[]</code> when array is one-quarter full</li>
+</ul>
+<pre tabindex="0"><code>public string pop()
+{
+  String item = s[--N];
+  s[N] = null;
+  if(N &gt; 0 &amp;&amp; N == s.lenght/4) {
+    resize(s.lenght/2);
+    return item;
+  }
+}
+</code></pre><div class="gdoc-page__anchorwrap">
+    <h3 id="resizing-array-vs-linked-list"
+    >
+        resizing array vs. linked list
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html#resizing-array-vs-linked-list" class="gdoc-page__anchor clip flex align-center" title="Anchor to: resizing array vs. linked list" aria-label="Anchor to: resizing array vs. linked list" href="#resizing-array-vs-linked-list">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="linked-list"
+    >
+        Linked-list
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html#linked-list" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Linked-list" aria-label="Anchor to: Linked-list" href="#linked-list">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<ul>
+<li>Every operation take constant time in the worst case.</li>
+<li>Uses extra time and space to deal with the links.</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+    <h4 id="resizing-array"
+    >
+        Resizing array
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html#resizing-array" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Resizing array" aria-label="Anchor to: Resizing array" href="#resizing-array">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h4>
+</div>
+<ul>
+<li>Every operation takes constant amortized time.</li>
+<li>Less wasted space</li>
+</ul>
+<blockquote>
+<p>將一個操作的時間複雜度描述為「constant amortized time」，意味著在一系列操作中，每個操作雖然在某些情況下可能需要更多時間，但平均情況下，每個操作的耗時都是固定的。這就是所謂的「攤銷分析」。在這種分析下，大多數操作的時間消耗都是固定的，但可能有一小部分操作需要較長時間。通過攤銷分析，我們可以確保整體平均下來，每個操作的時間複雜度仍然保持在常數水平</p>
+</blockquote>
 
   </article>
 <br>

@@ -6,6 +6,9 @@ tags:
 - Algorithm
 - stacks
 ---
+
+{{< toc >}}
+
 ## Stack Api
 
 ---

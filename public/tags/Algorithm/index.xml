@@ -13,10 +13,9 @@
       <pubDate>Sat, 24 Jun 2023 10:00:41 +0800</pubDate>
       
       <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</guid>
-      <description>Stack Api Warmup API. Stack of string data type.
+      <description>Stack Api Linked-list implementation Array implementation Stack considerations Overflow and underflow. Null items Loitering Stack Api Warmup API. Stack of string data type.
 這裡會建立如下的Stack API
-public clacc StackOfStrings StackOfStrings() // create am empyt stack void push(String item) // insert a new strig onto stack String pop() //remove and return the string most recently added booleam isEmpty() // is the stack empty? int size() // number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除
-public class LinkedStackOfStrings { private Node first = null; private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void push(String item) { Node oldfirst = first; first = new Node(); first.</description>
+public clacc StackOfStrings StackOfStrings() // create am empyt stack void push(String item) // insert a new strig onto stack String pop() //remove and return the string most recently added booleam isEmpty() // is the stack empty? int size() // number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除</description>
     </item>
     
     <item>
@@ -40,7 +39,8 @@ Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p
       <pubDate>Sat, 24 Jun 2023 10:00:41 +0800</pubDate>
       
       <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html</guid>
-      <description>my solution</description>
+      <description>Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array Resizing-array implementation Problem 如何增加或減少 array 的 size?
+First try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 + 2+&amp;hellip;+N ~ N²/2 Another way If array is full, create a new array of twice the size, and copy items.</description>
     </item>
     
     <item>
