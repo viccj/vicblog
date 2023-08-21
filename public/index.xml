@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://lazyvic.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Stacks</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</link>
+      <pubDate>Sun, 20 Aug 2023 10:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</guid>
+      <description>Stack Api Linked-list implementation Array implementation Stack considerations Overflow and underflow. Null items Loitering 參考來源 Stack Api Warmup API. Stack of string data type.
+這裡會建立如下的Stack API
+public clacc StackOfStrings StackOfStrings() // create am empyt stack void push(String item) // insert a new strig onto stack String pop() //remove and return the string most recently added booleam isEmpty() // is the stack empty? int size() // number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除</description>
+    </item>
+    
+    <item>
       <title>Convert List To Tree</title>
       <link>https://lazyvic.com/Programming/Languages/Miscellaneous/ConvertListToTree.html</link>
       <pubDate>Sat, 19 Aug 2023 08:25:41 +0800</pubDate>
@@ -41,17 +52,6 @@ Union(4, 3) Union(3, 8) Union(6, 5) Union(9, 4) Union(2, 1) connected(0, 7) // n
     </item>
     
     <item>
-      <title>Stacks</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</link>
-      <pubDate>Sat, 24 Jun 2023 10:00:41 +0800</pubDate>
-      
-      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</guid>
-      <description>Stack Api Linked-list implementation Array implementation Stack considerations Overflow and underflow. Null items Loitering Stack Api Warmup API. Stack of string data type.
-這裡會建立如下的Stack API
-public clacc StackOfStrings StackOfStrings() // create am empyt stack void push(String item) // insert a new strig onto stack String pop() //remove and return the string most recently added booleam isEmpty() // is the stack empty? int size() // number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除</description>
-    </item>
-    
-    <item>
       <title>Why Hugo</title>
       <link>https://lazyvic.com/Programming/SiteStory/WhyHugo.html</link>
       <pubDate>Wed, 21 Jun 2023 22:00:41 +0800</pubDate>
@@ -70,6 +70,16 @@ Hugo WordPress研究了半天，也不時看到其他架靜態blog的工具，�
 Jekyll：Ruby寫的，沒什麼感覺 Hugo：Go寫的，好像很潮 Hexo：Node.js寫的，直接刪掉 刪掉了Jekyll跟Hexo最後在wordpress跟Hugo選一個，一開始還是有點猶豫不決，最後壓垮我的倒數第二根稻草是看到一篇 Hugo+Github Action 自動部署到 VPS 的文章， 心裡想哇靠這不是把我的三個願望一次完成了嗎？還多點了一滴滴CI/CD。
 最後一根稻草是也去看了一下技術名人的網站，看到 良葛格的新網站 也是用Hugo架的，整個簡潔又專業。
 因此最後，就決定是Hugo了</description>
+    </item>
+    
+    <item>
+      <title>Resizing Arrays</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html</link>
+      <pubDate>Sun, 20 Aug 2023 10:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html</guid>
+      <description>Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array 參考來源 Resizing-array implementation Problem 如何增加或減少 array 的 size?
+First try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 + 2+&amp;hellip;+N ~ N²/2 Another way If array is full, create a new array of twice the size, and copy items.</description>
     </item>
     
     <item>
@@ -112,16 +122,6 @@ Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p
     </item>
     
     <item>
-      <title>Resizing Arrays</title>
-      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html</link>
-      <pubDate>Sat, 24 Jun 2023 10:00:41 +0800</pubDate>
-      
-      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html</guid>
-      <description>Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array Resizing-array implementation Problem 如何增加或減少 array 的 size?
-First try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 + 2+&amp;hellip;+N ~ N²/2 Another way If array is full, create a new array of twice the size, and copy items.</description>
-    </item>
-    
-    <item>
       <title>Hugo GitHub Page</title>
       <link>https://lazyvic.com/Programming/SiteStory/GettingStart.html</link>
       <pubDate>Sun, 18 Jun 2023 14:00:41 +0800</pubDate>
@@ -141,6 +141,18 @@ Github Page 抓不到css 其實前面的步驟網路上都一堆教學，唯一�
 我的css一直跑掉，打開開發工具看一下發現抓不到我的css跟js等檔案。
 在stackoverflow上找了半天，發現是相對路徑的問題，最後在config.toml檔案上加上
 relativeURLs= true 就解決了。</description>
+    </item>
+    
+    <item>
+      <title>Queues</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html</link>
+      <pubDate>Mon, 21 Aug 2023 07:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html</guid>
+      <description>Queue Api Linked-list implementation 參考來源 Queue Api Just like stack api, only name different
+public clacc QueueOfStrings QueueOfStrings() // create am empyt queue void enqueue(String item) // insert a new strig onto queue String dequeue() //remove and return the string most recently added booleam isEmpty() // is the queue empty? int size() // number of strings on the queue Linked-list implementation 有兩個指針，分別指向第一個以及最後一個 node
+insert 新 item在最後面，remove item在最前面
+public class LinkedQueueOfStrings { private Node first, last private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void enqueue(String item) { Node oldlast = last; last = new Node(); last.</description>
     </item>
     
     <item>

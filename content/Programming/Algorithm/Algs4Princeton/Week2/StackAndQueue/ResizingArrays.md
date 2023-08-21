@@ -1,6 +1,6 @@
 ---
 title: Resizing Arrays
-date: 2023-06-24T10:00:41+08:00
+date: 2023-08-20T10:00:41+08:00
 weight: 2
 tags:
 - Algorithm
@@ -95,3 +95,11 @@ public string pop()
 
 
 > 將一個操作的時間複雜度描述為「constant amortized time」，意味著在一系列操作中，每個操作雖然在某些情況下可能需要更多時間，但平均情況下，每個操作的耗時都是固定的。這就是所謂的「攤銷分析」。在這種分析下，大多數操作的時間消耗都是固定的，但可能有一小部分操作需要較長時間。通過攤銷分析，我們可以確保整體平均下來，每個操作的時間複雜度仍然保持在常數水平
+> 
+> 
+> ## 參考來源
+
+<div id="refer-anchor-1"></div>
+
+[1] {{<ref-out href="https://algs4.cs.princeton.edu/lectures/keynote/13StacksAndQueues.pdf">}} Algorithms in Java, Lecture slide{{</ref-out>}}
+

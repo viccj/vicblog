@@ -28,7 +28,7 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array Resizing-array implementation Problem 如何增加或減少 array 的 size?
+  <meta name="description" content="Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array 參考來源 Resizing-array implementation Problem 如何增加或減少 array 的 size?
 First try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 &#43; 2&#43;&hellip;&#43;N ~ N²/2 Another way If array is full, create a new array of twice the size, and copy items." />
 
     <title>Resizing Arrays | Log of Vic</title>
@@ -55,7 +55,7 @@ First try push() : increase size of array s[] by 1 pop() : decrease size of arra
     content="Resizing Arrays"
   />
   <meta property="og:site_name" content="Log of Vic" />
-  <meta property="og:description" content="Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array Resizing-array implementation Problem 如何增加或減少 array 的 size?
+  <meta property="og:description" content="Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array 參考來源 Resizing-array implementation Problem 如何增加或減少 array 的 size?
 First try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 &#43; 2&#43;…&#43;N ~ N²/2 Another way If array is full, create a new array of twice the size, and copy items." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html" />
@@ -63,17 +63,17 @@ First try push() : increase size of array s[] by 1 pop() : decrease size of arra
 <meta property="article:section" content="Programming" />
     <meta
       property="article:published_time"
-      content="2023-06-24T10:00:41+08:00"
+      content="2023-08-20T10:00:41+08:00"
     />
     <meta
       property="article:modified_time"
-      content="2023-07-29T15:40:40+08:00"
+      content="2023-08-20T15:47:18+08:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Resizing Arrays" />
-  <meta name="twitter:description" content="Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array Resizing-array implementation Problem 如何增加或減少 array 的 size?
+  <meta name="twitter:description" content="Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array 參考來源 Resizing-array implementation Problem 如何增加或減少 array 的 size?
 First try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 &#43; 2&#43;…&#43;N ~ N²/2 Another way If array is full, create a new array of twice the size, and copy items." />
 
 
@@ -85,8 +85,8 @@ First try push() : increase size of array s[] by 1 pop() : decrease size of arra
       "name": "Resizing Arrays",
       "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html",
       "headline": "Resizing Arrays",
-      "description": "Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array Resizing-array implementation Problem 如何增加或減少 array 的 size?\nFirst try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 \u002b 2\u002b…\u002bN ~ N²\/2 Another way If array is full, create a new array of twice the size, and copy items.",
-      "wordCount" : "278",
+      "description": "Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array 參考來源 Resizing-array implementation Problem 如何增加或減少 array 的 size?\nFirst try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 \u002b 2\u002b…\u002bN ~ N²\/2 Another way If array is full, create a new array of twice the size, and copy items.",
+      "wordCount" : "286",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -96,9 +96,9 @@ First try push() : increase size of array s[] by 1 pop() : decrease size of arra
       "keywords" : [ "Algorithm" ],
       "copyrightHolder" : "Log of Vic",
       "copyrightYear" : "2023",
-      "dateCreated": "2023-06-24T10:00:41.00Z",
-      "datePublished": "2023-06-24T10:00:41.00Z",
-      "dateModified": "2023-07-29T15:40:40.00Z",
+      "dateCreated": "2023-08-20T10:00:41.00Z",
+      "datePublished": "2023-08-20T10:00:41.00Z",
+      "dateModified": "2023-08-20T15:47:18.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Log of Vic",
@@ -948,11 +948,9 @@ First try push() : increase size of array s[] by 1 pop() : decrease size of arra
         <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-07-29T15:40:40&#43;08:00">
+    <time datetime="2023-08-20T15:47:18&#43;08:00">
       
-        Updated on
-      
-      Jul 29, 2023
+      Aug 20, 2023
     </time>
   </span>
 </span>
@@ -1021,6 +1019,7 @@ First try push() : increase size of array s[] by 1 pop() : decrease size of arra
             </li>
           </ul>
         </li>
+        <li><a href="#參考來源">參考來源</a></li>
       </ul></nav>
       <hr />
     </div>
@@ -1179,7 +1178,18 @@ private void resize(int capacity) {
 </ul>
 <blockquote>
 <p>將一個操作的時間複雜度描述為「constant amortized time」，意味著在一系列操作中，每個操作雖然在某些情況下可能需要更多時間，但平均情況下，每個操作的耗時都是固定的。這就是所謂的「攤銷分析」。在這種分析下，大多數操作的時間消耗都是固定的，但可能有一小部分操作需要較長時間。通過攤銷分析，我們可以確保整體平均下來，每個操作的時間複雜度仍然保持在常數水平</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="參考來源"
+    >
+        參考來源
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html#參考來源" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 參考來源" aria-label="Anchor to: 參考來源" href="#%e5%8f%83%e8%80%83%e4%be%86%e6%ba%90">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
 </blockquote>
+<div id="refer-anchor-1"></div>
+<p>[1] <a href="https://algs4.cs.princeton.edu/lectures/keynote/13StacksAndQueues.pdf" target="_blank">Algorithms in Java, Lecture slide</a></p>
 
   </article>
 <br>

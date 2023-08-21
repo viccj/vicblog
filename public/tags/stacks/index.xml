@@ -6,16 +6,28 @@
     <description>Recent content in stacks on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Jun 2023 10:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/stacks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Aug 2023 07:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/stacks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stacks</title>
       <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</link>
-      <pubDate>Sat, 24 Jun 2023 10:00:41 +0800</pubDate>
+      <pubDate>Sun, 20 Aug 2023 10:00:41 +0800</pubDate>
       
       <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</guid>
-      <description>Stack Api Linked-list implementation Array implementation Stack considerations Overflow and underflow. Null items Loitering Stack Api Warmup API. Stack of string data type.
+      <description>Stack Api Linked-list implementation Array implementation Stack considerations Overflow and underflow. Null items Loitering 參考來源 Stack Api Warmup API. Stack of string data type.
 這裡會建立如下的Stack API
 public clacc StackOfStrings StackOfStrings() // create am empyt stack void push(String item) // insert a new strig onto stack String pop() //remove and return the string most recently added booleam isEmpty() // is the stack empty? int size() // number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除</description>
+    </item>
+    
+    <item>
+      <title>Queues</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html</link>
+      <pubDate>Mon, 21 Aug 2023 07:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html</guid>
+      <description>Queue Api Linked-list implementation 參考來源 Queue Api Just like stack api, only name different
+public clacc QueueOfStrings QueueOfStrings() // create am empyt queue void enqueue(String item) // insert a new strig onto queue String dequeue() //remove and return the string most recently added booleam isEmpty() // is the queue empty? int size() // number of strings on the queue Linked-list implementation 有兩個指針，分別指向第一個以及最後一個 node
+insert 新 item在最後面，remove item在最前面
+public class LinkedQueueOfStrings { private Node first, last private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void enqueue(String item) { Node oldlast = last; last = new Node(); last.</description>
     </item>
     
   </channel>

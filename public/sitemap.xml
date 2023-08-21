@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</loc>
+    <lastmod>2023-08-20T15:47:18+08:00</lastmod>
+  </url><url>
     <loc>https://lazyvic.com/Programming/Languages/Miscellaneous/ConvertListToTree.html</loc>
     <lastmod>2023-08-19T16:09:29+08:00</lastmod>
   </url><url>
@@ -10,9 +13,6 @@
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/DynamicConnectivity.html</loc>
     <lastmod>2023-06-30T22:56:19+08:00</lastmod>
-  </url><url>
-    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</loc>
-    <lastmod>2023-08-20T14:44:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/SiteStory/WhyHugo.html</loc>
     <lastmod>2023-06-24T16:23:28+08:00</lastmod>
@@ -29,14 +29,14 @@
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1.html</loc>
     <lastmod>2023-06-26T22:42:18+08:00</lastmod>
   </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html</loc>
+    <lastmod>2023-08-20T15:47:18+08:00</lastmod>
+  </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html</loc>
     <lastmod>2023-08-06T09:26:01+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html</loc>
     <lastmod>2023-06-30T22:56:19+08:00</lastmod>
-  </url><url>
-    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html</loc>
-    <lastmod>2023-07-29T15:40:40+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/SiteStory/GettingStart.html</loc>
     <lastmod>2023-06-26T22:35:46+08:00</lastmod>
@@ -52,6 +52,9 @@
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2.html</loc>
     <lastmod>2023-07-29T15:40:40+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html</loc>
+    <lastmod>2023-08-21T07:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html</loc>
     <lastmod>2023-08-06T09:26:01+08:00</lastmod>
@@ -116,11 +119,17 @@
     <loc>https://lazyvic.com/Programming/Languages/Java/Spring-Boot.html</loc>
     <lastmod>2023-06-21T23:12:00+08:00</lastmod>
   </url><url>
-    <loc>https://lazyvic.com/tags/php.html</loc>
-    <lastmod>2023-08-19T16:09:29+08:00</lastmod>
+    <loc>https://lazyvic.com/tags/Algorithm.html</loc>
+    <lastmod>2023-08-21T07:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/tags/stacks.html</loc>
+    <lastmod>2023-08-21T07:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags.html</loc>
-    <lastmod>2023-08-20T14:44:41+08:00</lastmod>
+    <lastmod>2023-08-21T07:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/tags/php.html</loc>
+    <lastmod>2023-08-19T16:09:29+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags/tree.html</loc>
     <lastmod>2023-08-19T16:09:29+08:00</lastmod>
@@ -149,17 +158,11 @@
     <loc>https://lazyvic.com/tags/unittest.html</loc>
     <lastmod>2023-07-29T15:28:53+08:00</lastmod>
   </url><url>
-    <loc>https://lazyvic.com/tags/Algorithm.html</loc>
-    <lastmod>2023-08-20T14:44:41+08:00</lastmod>
-  </url><url>
     <loc>https://lazyvic.com/tags/cipher.html</loc>
     <lastmod>2023-07-06T00:00:45+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Languages/Miscellaneous/cipher/Decrypt-AES-GCM-encoded-content-with-JAVA-Cipher-using-PHP-OpenSSL.html</loc>
     <lastmod>2023-07-06T00:00:45+08:00</lastmod>
-  </url><url>
-    <loc>https://lazyvic.com/tags/stacks.html</loc>
-    <lastmod>2023-08-20T14:44:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags/hugo.html</loc>
     <lastmod>2023-06-26T22:35:46+08:00</lastmod>

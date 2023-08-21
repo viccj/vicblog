@@ -1,6 +1,6 @@
 ---
 title: Stacks
-date: 2023-06-24T10:00:41+08:00
+date: 2023-08-20T10:00:41+08:00
 weight: 1
 tags:
 - Algorithm
@@ -113,4 +113,10 @@ public String pop()
 ```
 
 Java 的 garbage collector 可以reclaim memory
+
+## 參考來源
+
+<div id="refer-anchor-1"></div>
+
+[1] {{<ref-out href="https://algs4.cs.princeton.edu/lectures/keynote/13StacksAndQueues.pdf">}} Algorithms in Java, Lecture slide{{</ref-out>}}
 

@@ -28,21 +28,25 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
+  <meta name="description" content="Queue Api Linked-list implementation 參考來源 Queue Api Just like stack api, only name different
+public clacc QueueOfStrings QueueOfStrings() // create am empyt queue void enqueue(String item) // insert a new strig onto queue String dequeue() //remove and return the string most recently added booleam isEmpty() // is the queue empty? int size() // number of strings on the queue Linked-list implementation 有兩個指針，分別指向第一個以及最後一個 node
+insert 新 item在最後面，remove item在最前面
+public class LinkedQueueOfStrings { private Node first, last private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void enqueue(String item) { Node oldlast = last; last = new Node(); last." />
 
-    <title>Algorithm | Log of Vic</title>
+    <title>Queues | Log of Vic</title>
 
-    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../../../../favicon/favicon.svg" />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="../favicon/favicon-32x32.png"
+  href="../../../../../favicon/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="../favicon/favicon-16x16.png"
+  href="../../../../../favicon/favicon-16x16.png"
 />
 
     
@@ -50,84 +54,135 @@ if (!doNotTrack) {
     
   <meta
     property="og:title"
-    content="Algorithm"
+    content="Queues"
   />
   <meta property="og:site_name" content="Log of Vic" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://lazyvic.com/tags/Algorithm.html" />
+  <meta property="og:description" content="Queue Api Linked-list implementation 參考來源 Queue Api Just like stack api, only name different
+public clacc QueueOfStrings QueueOfStrings() // create am empyt queue void enqueue(String item) // insert a new strig onto queue String dequeue() //remove and return the string most recently added booleam isEmpty() // is the queue empty? int size() // number of strings on the queue Linked-list implementation 有兩個指針，分別指向第一個以及最後一個 node
+insert 新 item在最後面，remove item在最前面
+public class LinkedQueueOfStrings { private Node first, last private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void enqueue(String item) { Node oldlast = last; last = new Node(); last." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html" />
 
-
+<meta property="article:section" content="Programming" />
+    <meta
+      property="article:published_time"
+      content="2023-08-21T07:00:41+08:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2023-08-21T07:00:41+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Algorithm" />
+<meta name="twitter:title" content="Queues" />
+  <meta name="twitter:description" content="Queue Api Linked-list implementation 參考來源 Queue Api Just like stack api, only name different
+public clacc QueueOfStrings QueueOfStrings() // create am empyt queue void enqueue(String item) // insert a new strig onto queue String dequeue() //remove and return the string most recently added booleam isEmpty() // is the queue empty? int size() // number of strings on the queue Linked-list implementation 有兩個指針，分別指向第一個以及最後一個 node
+insert 新 item在最後面，remove item在最前面
+public class LinkedQueueOfStrings { private Node first, last private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void enqueue(String item) { Node oldlast = last; last = new Node(); last." />
 
 
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "TechArticle",
+      "articleSection": "Programming",
+      "name": "Queues",
+      "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html",
+      "headline": "Queues",
+      "description": "Queue Api Linked-list implementation 參考來源 Queue Api Just like stack api, only name different\npublic clacc QueueOfStrings QueueOfStrings() \/\/ create am empyt queue void enqueue(String item) \/\/ insert a new strig onto queue String dequeue() \/\/remove and return the string most recently added booleam isEmpty() \/\/ is the queue empty? int size() \/\/ number of strings on the queue Linked-list implementation 有兩個指針，分別指向第一個以及最後一個 node\ninsert 新 item在最後面，remove item在最前面\npublic class LinkedQueueOfStrings { private Node first, last private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void enqueue(String item) { Node oldlast = last; last = new Node(); last.",
+      "wordCount" : "220",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html"
+      },
+      "keywords" : [ "Algorithm" , "stacks" ],
+      "copyrightHolder" : "Log of Vic",
+      "copyrightYear" : "2023",
+      "dateCreated": "2023-08-21T07:00:41.00Z",
+      "datePublished": "2023-08-21T07:00:41.00Z",
+      "dateModified": "2023-08-21T07:00:41.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Log of Vic",
+          "url": "https://lazyvic.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://lazyvic.com/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
+  }
+  </script>
 
 
     
-  <script src="../js/colortheme-d3e4d351.bundle.min.js"></script>
-<script src="../js/main-fbb9c8b0.bundle.min.js"></script>
+  <script src="../../../../../js/colortheme-d3e4d351.bundle.min.js"></script>
+<script src="../../../../../js/main-fbb9c8b0.bundle.min.js"></script>
 
 <link
   rel="preload"
   as="font"
-  href="../fonts/Metropolis.woff2"
+  href="../../../../../fonts/Metropolis.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 <link
   rel="preload"
   as="font"
-  href="../fonts/LiberationSans.woff2"
+  href="../../../../../fonts/LiberationSans.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 
 <link
   rel="preload"
-  href="../main-ba0e2765.min.css"
+  href="../../../../../main-ba0e2765.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../main-ba0e2765.min.css"
+  href="../../../../../main-ba0e2765.min.css"
   media="all"
 />
 
 <link
   rel="preload"
-  href="../mobile-79ddc617.min.css"
+  href="../../../../../mobile-79ddc617.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../mobile-79ddc617.min.css"
+  href="../../../../../mobile-79ddc617.min.css"
   media="screen and (max-width: 45rem)"
 />
 
 <link
   rel="preload"
-  href="../print-735ccc12.min.css"
+  href="../../../../../print-735ccc12.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../print-735ccc12.min.css"
+  href="../../../../../print-735ccc12.min.css"
   media="print"
 />
 
 <link
   rel="preload"
-  href="../custom.css"
+  href="../../../../../custom.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../custom.css"
+  href="../../../../../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/tags/Algorithm.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -168,7 +223,7 @@ if (!doNotTrack) {
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
-            src="../brand.svg"
+            src="../../../../../brand.svg"
             alt=""
           />
           <span class="gdoc-brand__title">Log of Vic</span>
@@ -292,7 +347,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming.html"
+                    href="../../../../../Programming.html"
                     class="gdoc-nav__entry"
                   >
                     Programming
@@ -339,7 +394,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/Algorithm.html"
+                    href="../../../../../Programming/Algorithm.html"
                     class="gdoc-nav__entry"
                   >
                     Algorithm
@@ -375,7 +430,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/Languages.html"
+                    href="../../../../../Programming/Languages.html"
                     class="gdoc-nav__entry"
                   >
                     Language
@@ -422,7 +477,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory.html"
+                    href="../../../../../Programming/SiteStory.html"
                     class="gdoc-nav__entry"
                   >
                     Site Story
@@ -476,7 +531,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/WhyHugo.html"
+                    href="../../../../../Programming/SiteStory/WhyHugo.html"
                     class="gdoc-nav__entry"
                   >
                     Why Hugo
@@ -520,7 +575,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/GettingStart.html"
+                    href="../../../../../Programming/SiteStory/GettingStart.html"
                     class="gdoc-nav__entry"
                   >
                     Hugo GitHub Page
@@ -593,7 +648,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/SSL.html"
+                    href="../../../../../Programming/SiteStory/SSL.html"
                     class="gdoc-nav__entry"
                   >
                     Install SSL
@@ -637,7 +692,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/TyporaUpic.html"
+                    href="../../../../../Programming/SiteStory/TyporaUpic.html"
                     class="gdoc-nav__entry"
                   >
                     Typora &#43; Upic
@@ -676,179 +731,6 @@ if (!doNotTrack) {
     
   </section>
 
-  
-    <section class="gdoc-nav--tags">
-      <h2>Tags</h2>
-      <ul class="gdoc-nav__list">
-        
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry is-active"
-                href="../tags/Algorithm.html"
-              >
-                Algorithm
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/array.html"
-              >
-                array
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/backtrack.html"
-              >
-                backtrack
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/cache.html"
-              >
-                cache
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/cipher.html"
-              >
-                cipher
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/hugo.html"
-              >
-                hugo
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/infra.html"
-              >
-                infra
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/java.html"
-              >
-                java
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/leetcode.html"
-              >
-                leetcode
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/php.html"
-              >
-                php
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/recursive.html"
-              >
-                recursive
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/stacks.html"
-              >
-                stacks
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/trash-talk.html"
-              >
-                trash talk
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/tree.html"
-              >
-                tree
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/unittest.html"
-              >
-                unittest
-              </a>
-            </li>
-          
-        
-      </ul>
-    </section>
   
 
 
@@ -977,286 +859,99 @@ if (!doNotTrack) {
         <div class="gdoc-page">
           
   
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="../Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html">Stacks</a>
-        </h1>
-      </header>
-
-      <section class="gdoc-markdown">
-        Stack Api Linked-list implementation Array implementation Stack considerations Overflow and underflow. Null items Loitering 參考來源 Stack Api Warmup API. Stack of string data type.
-這裡會建立如下的Stack API
-public clacc StackOfStrings StackOfStrings() // create am empyt stack void push(String item) // insert a new strig onto stack String pop() //remove and return the string most recently added booleam isEmpty() // is the stack empty? int size() // number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除
-      </section>
-
-      <div class="gdoc-post__readmore">
-        
-          <a
-            class="flex-inline align-center fake-link"
-            title="Read full post"
-            href="../Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html"
-          >
-            Read full post
-            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-          </a>
-        
-      </div>
-
-      <footer class="gdoc-post__footer">
-        <div class="flex flex-wrap align-center gdoc-post__meta">
-          <span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
-  <span class="gdoc-post__tag">
-    <time datetime="2023-08-20T15:47:18&#43;08:00">
-      
-      Aug 20, 2023
-    </time>
-  </span>
-</span>
-
-<span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">2 minutes to read</span>
-</span>
-
 
 
   
+
+
+
+
+
+
+<div
+  class="gdoc-page__header flex flex-wrap
+  
+    justify-between
+  
+  hidden-mobile
+  "
+  itemprop="breadcrumb"
+>
+  
+    <div>
+      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
+      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        
+        
+        
+        
+  
+  
     
     
-      
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton.html' href='../../../../../Programming/Algorithm/Algs4Princeton.html'><span itemprop='name'>Princeton Algorithms</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week2.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week2.html'><span itemprop='name'>Week 2</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue.html'><span itemprop='name'>Stack And Queue</span></a><meta itemprop='position' content='5' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Queues</span><meta itemprop='position' content='6' /></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+      </ol>
+    </div>
+  
+  
+</div>
+
+
+
+  <article
+    class="gdoc-markdown gdoc-markdown__align--left"
+  >
+    <h1>Queues</h1>
+    <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
         <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/Algorithm.html"
-      title="All posts tagged with &#39;Algorithm&#39;"
-    >
-      Algorithm
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-    
-    
-      
-        <span class="flex align-center">
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/stacks.html"
-      title="All posts tagged with &#39;stacks&#39;"
-    >
-      stacks
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-
-
-
-
-        </div>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="../Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html">Resizing Arrays</a>
-        </h1>
-      </header>
-
-      <section class="gdoc-markdown">
-        Resizing-array implementation Problem First try Too expensive Another way How to shrink array First try Effectient solution resizing array vs. linked list Linked-list Resizing array 參考來源 Resizing-array implementation Problem 如何增加或減少 array 的 size?
-First try push() : increase size of array s[] by 1 pop() : decrease size of array s[] by 1 Too expensive 每次新增都要複製舊的 array 到全新的 array push N 個 item 的時間複雜度 是1 + 2+&hellip;+N ~ N²/2 Another way If array is full, create a new array of twice the size, and copy items.
-      </section>
-
-      <div class="gdoc-post__readmore">
-        
-          <a
-            class="flex-inline align-center fake-link"
-            title="Read full post"
-            href="../Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html"
-          >
-            Read full post
-            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-          </a>
-        
-      </div>
-
-      <footer class="gdoc-post__footer">
-        <div class="flex flex-wrap align-center gdoc-post__meta">
-          <span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
-  <span class="gdoc-post__tag">
-    <time datetime="2023-08-20T15:47:18&#43;08:00">
-      
-      Aug 20, 2023
-    </time>
-  </span>
-</span>
-
-<span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">2 minutes to read</span>
-</span>
-
-
-
-  
-    
-    
-      
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/Algorithm.html"
-      title="All posts tagged with &#39;Algorithm&#39;"
-    >
-      Algorithm
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-
-
-
-
-        </div>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="../Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html">Quick Find</a>
-        </h1>
-      </header>
-
-      <section class="gdoc-markdown">
-        Quick Find Structure 初始資料結構 Find Connected. Union. Implemetion Too slow Cost model Quick-find defect: Union too expensive 參考來源 Quick Find Structure 初始資料結構 名為 id[] 且數量為 N 的陣列
-id[p] 是物件 p 所屬於的 component id
-以上圖為例，id[6] = 0
-Find p 的 id 為？
-Connected. p 跟 q 是否有相同的 id？
-ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
-Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].
-      </section>
-
-      <div class="gdoc-post__readmore">
-        
-          <a
-            class="flex-inline align-center fake-link"
-            title="Read full post"
-            href="../Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickFind.html"
-          >
-            Read full post
-            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-          </a>
-        
-      </div>
-
-      <footer class="gdoc-post__footer">
-        <div class="flex flex-wrap align-center gdoc-post__meta">
-          <span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
-  <span class="gdoc-post__tag">
-    <time datetime="2023-06-30T22:56:19&#43;08:00">
-      
-        Updated on
-      
-      Jun 30, 2023
-    </time>
-  </span>
-</span>
-
-<span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">One minute to read</span>
-</span>
-
-
-
-  
-    
-    
-      
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/Algorithm.html"
-      title="All posts tagged with &#39;Algorithm&#39;"
-    >
-      Algorithm
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-
-
-
-
-        </div>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="../Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html">Queues</a>
-        </h1>
-      </header>
-
-      <section class="gdoc-markdown">
-        Queue Api Linked-list implementation 參考來源 Queue Api Just like stack api, only name different
-public clacc QueueOfStrings QueueOfStrings() // create am empyt queue void enqueue(String item) // insert a new strig onto queue String dequeue() //remove and return the string most recently added booleam isEmpty() // is the queue empty? int size() // number of strings on the queue Linked-list implementation 有兩個指針，分別指向第一個以及最後一個 node
-insert 新 item在最後面，remove item在最前面
-public class LinkedQueueOfStrings { private Node first, last private class Node { String item; Node next; } public boolean isEmpty() { return first == null; } public void enqueue(String item) { Node oldlast = last; last = new Node(); last.
-      </section>
-
-      <div class="gdoc-post__readmore">
-        
-          <a
-            class="flex-inline align-center fake-link"
-            title="Read full post"
-            href="../Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html"
-          >
-            Read full post
-            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-          </a>
-        
-      </div>
-
-      <footer class="gdoc-post__footer">
-        <div class="flex flex-wrap align-center gdoc-post__meta">
-          <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
     <time datetime="2023-08-21T07:00:41&#43;08:00">
@@ -1283,7 +978,7 @@ public class LinkedQueueOfStrings { private Node first, last private class Node 
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/Algorithm.html"
+      href="../../../../../tags/Algorithm.html"
       title="All posts tagged with &#39;Algorithm&#39;"
     >
       Algorithm
@@ -1303,7 +998,7 @@ public class LinkedQueueOfStrings { private Node first, last private class Node 
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/stacks.html"
+      href="../../../../../tags/stacks.html"
       title="All posts tagged with &#39;stacks&#39;"
     >
       stacks
@@ -1319,183 +1014,125 @@ public class LinkedQueueOfStrings { private Node first, last private class Node 
 
 
 
-        </div>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="../Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickUnion.html">Quick Union</a>
-        </h1>
-      </header>
-
-      <section class="gdoc-markdown">
-        初始資料結構 Root Find Union Implement Also too slow Cost model Quick-find defect Quick-union defect 參考來源 因為 Quick-find 演算法中，Union 的效率太低，因此要改善Union，在這章節稱為Quick Union （lazy approach），為什麼要叫Lazy approach呢？因為能躺著就不要做著，能坐著就不要站著，除非死到臨頭不然不要行動。
-初始資料結構 名為 id[] 且數量為 N 的陣列
-id[p] 是物件 p 所屬於的component id
-上面兩個與 Quick-find 一樣，但這次多了一個新的結構， root
-Root 將一整個Array 看成 a set of trees，也就是說每個物件都屬於一個 tree，這個資料結構就是由很多 tree 集合而成。
-每個物件，會有一個Parent，如下圖，（3 可以接到4，3的 parent 是 4，4 的 parent 是 9) 順著線一直找，當找不到 parent 時，這時候就稱這點為 root
-如果這個物件只有自己，那自己就是root，例如1
-Find 因為每個物件都會有一個 root，要找兩個物件是不是同一個 component 的話，只要看他們的 root 是不是一樣就可以
-      </section>
-
-      <div class="gdoc-post__readmore">
-        
-          <a
-            class="flex-inline align-center fake-link"
-            title="Read full post"
-            href="../Programming/Algorithm/Algs4Princeton/Week1/UnionFind/QuickUnion.html"
-          >
-            Read full post
-            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-          </a>
-        
-      </div>
-
-      <footer class="gdoc-post__footer">
-        <div class="flex flex-wrap align-center gdoc-post__meta">
-          <span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
-  <span class="gdoc-post__tag">
-    <time datetime="2023-06-30T22:56:19&#43;08:00">
-      
-      Jun 30, 2023
-    </time>
-  </span>
-</span>
-
-<span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">2 minutes to read</span>
-</span>
+    </div>
 
 
 
-  
-    
-    
-      
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/Algorithm.html"
-      title="All posts tagged with &#39;Algorithm&#39;"
+
+    <div class="gdoc-toc gdoc-toc__level--6">
+      <nav id="TableOfContents"><ul>
+        <li><a href="#queue-api">Queue Api</a>
+          <ul>
+            <li><a href="#linked-list-implementation">Linked-list implementation</a></li>
+          </ul>
+        </li>
+        <li><a href="#參考來源">參考來源</a></li>
+      </ul></nav>
+      <hr />
+    </div>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="queue-api"
     >
-      Algorithm
-    </a>
-  </span>
+        Queue Api
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html#queue-api" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Queue Api" aria-label="Anchor to: Queue Api" href="#queue-api">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<hr>
+<p>Just like stack api, only name different</p>
+<pre tabindex="0"><code>public clacc QueueOfStrings
 
-        </span>
-      
-    
-    
-  
-
-
-
-
-        </div>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="../Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html">Weighted Quick Union</a>
-        </h1>
-      </header>
-
-      <section class="gdoc-markdown">
-        Imporvement 1: weighting Data Structure Find Union Implement Weighted quick-union analysis Running time. Proposition Can we impove it even further? 參考來源 How to imporvements Quick-union?
-上一篇中， Quick-Union 演算法中，最後可能因為每個tree長得太高，導致效率變差。
-Imporvement 1: weighting 在每次 Union 時，順帶記錄每棵樹的 size (number of objects)
-在每次 Union 時，刻意將較小的樹連接到較大的樹下
-Data Structure 與 quick-union 一樣，但多追蹤每棵樹的大小 (size of objects for roots)
-Find 與 quick-union 一樣
-Union 修改為：
-將小的樹往大的樹接 更新 sz[] array Implement public class QuickUnionUF { private int[] id; private int[] sz; // size of objects for roots (site indexed) // set id of each object to itself (N array access) public WeightedQuickFindUF(int N) { id = new int[N]; for (int i = 0; i &lt; N; i++) { id[i] = i; } // init sz of every objects sz = new int[N]; for (int i = 0; i &lt; N; i++) { sz[i] = 1; } } public int root(int i) { while (i !
-      </section>
-
-      <div class="gdoc-post__readmore">
-        
-          <a
-            class="flex-inline align-center fake-link"
-            title="Read full post"
-            href="../Programming/Algorithm/Algs4Princeton/Week1/UnionFind/WeithgedQuickUnion.html"
-          >
-            Read full post
-            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-          </a>
-        
-      </div>
-
-      <footer class="gdoc-post__footer">
-        <div class="flex flex-wrap align-center gdoc-post__meta">
-          <span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
-  <span class="gdoc-post__tag">
-    <time datetime="2023-07-29T15:14:13&#43;08:00">
-      
-      Jul 29, 2023
-    </time>
-  </span>
-</span>
-
-<span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">3 minutes to read</span>
-</span>
-
-
-
-  
-    
-    
-      
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/Algorithm.html"
-      title="All posts tagged with &#39;Algorithm&#39;"
+		QueueOfStrings() // create am empyt queue
+	void enqueue(String item) // insert a new strig onto queue
+	String dequeue() //remove and return the string most recently added
+	booleam isEmpty() // is the queue empty?
+	int size() // number of strings on the queue
+</code></pre><div class="gdoc-page__anchorwrap">
+    <h3 id="linked-list-implementation"
     >
-      Algorithm
-    </a>
-  </span>
+        Linked-list implementation
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html#linked-list-implementation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Linked-list implementation" aria-label="Anchor to: Linked-list implementation" href="#linked-list-implementation">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h3>
+</div>
+<p>有兩個指針，分別指向第一個以及最後一個 node</p>
+<p>insert 新 item在最後面，remove item在最前面</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LinkedQueueOfStrings</span>
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">private</span> <span class="n">Node</span> <span class="n">first</span><span class="o">,</span> <span class="n">last</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">private</span> <span class="kd">class</span> <span class="nc">Node</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">String</span> <span class="n">item</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Node</span> <span class="n">next</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isEmpty</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">first</span> <span class="o">==</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">enqueue</span><span class="o">(</span><span class="n">String</span> <span class="n">item</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Node</span> <span class="n">oldlast</span> <span class="o">=</span> <span class="n">last</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">last</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Node</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">last</span><span class="o">.</span><span class="na">item</span> <span class="o">=</span> <span class="n">item</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">last</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">(</span><span class="n">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">first</span> <span class="o">=</span> <span class="n">last</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">oldlast</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">last</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">  <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">public</span> <span class="n">String</span> <span class="nf">dequeue</span><span class="o">()</span>
+</span></span><span class="line"><span class="cl">  <span class="o">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">String</span> <span class="n">item</span> <span class="o">=</span> <span class="n">first</span><span class="o">.</span><span class="na">item</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">first</span> <span class="o">=</span> <span class="n">first</span><span class="o">.</span><span class="na">next</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">(</span><span class="n">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">last</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">item</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><blockquote>
+<p>Suppose that you implement a queue using a null-terminated singly-linked list, maintaining a reference to the item least recently added (the front of the list) but not maintaining a reference to the item most recently added (the end of the list). What are the worst-case running times for <em>enqueue</em> and <em>dequeue</em>?</p>
+</blockquote>
+<p>Ans. Linear time for enqueue and constant time for dequeue.</p>
+<p>單鏈表的話沒有 last 指針，要找到最後一個元素要遍歷整個linked list</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="參考來源"
+    >
+        參考來源
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html#參考來源" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 參考來源" aria-label="Anchor to: 參考來源" href="#%e5%8f%83%e8%80%83%e4%be%86%e6%ba%90">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div id="refer-anchor-1"></div>
+<p>[1] <a href="https://algs4.cs.princeton.edu/lectures/keynote/13StacksAndQueues.pdf" target="_blank">Algorithms in Java, Lecture slide</a></p>
 
-        </span>
-      
+  </article>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="disqus markdown">
+    <div id="disqus_thread"></div>
+<script>
     
+
     
-  
 
+    (function() { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lazyvic-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-
-
-        </div>
-      </footer>
-    </article>
-  
-  
-
-
-<nav class="gdoc-paging flex flex-even align-center" role="navigation">
-  <div class="gdoc-paging__item gdoc-paging__item--prev">
-    
-  </div>
-  <div class="gdoc-paging__state">1/1</div>
-  <div class="gdoc-paging__item gdoc-paging__item--next">
-    
-  </div>
-</nav>
-
+</div>
 
 
 
@@ -1555,7 +1192,7 @@ Union 修改為：
     </div>
 
     
-  <script defer src="../js/search-83320133.bundle.min.js"></script>
+  <script defer src="../../../../../js/search-83320133.bundle.min.js"></script>
 
   </body>
 </html>
