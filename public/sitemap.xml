@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/SelectionSort.html</loc>
+    <lastmod>2023-08-22T08:00:41+08:00</lastmod>
+  </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</loc>
-    <lastmod>2023-08-20T15:47:18+08:00</lastmod>
+    <lastmod>2023-08-21T08:19:51+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Languages/Miscellaneous/ConvertListToTree.html</loc>
     <lastmod>2023-08-19T16:09:29+08:00</lastmod>
@@ -30,7 +33,7 @@
     <lastmod>2023-06-26T22:42:18+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html</loc>
-    <lastmod>2023-08-20T15:47:18+08:00</lastmod>
+    <lastmod>2023-08-21T08:19:51+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Grind75/Array/BestTimeToBuyAndSellStock.html</loc>
     <lastmod>2023-08-06T09:26:01+08:00</lastmod>
@@ -54,7 +57,7 @@
     <lastmod>2023-07-29T15:40:40+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Queues.html</loc>
-    <lastmod>2023-08-21T07:00:41+08:00</lastmod>
+    <lastmod>2023-08-21T08:19:51+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Grind75/Array/MajorityElement.html</loc>
     <lastmod>2023-08-06T09:26:01+08:00</lastmod>
@@ -120,13 +123,16 @@
     <lastmod>2023-06-21T23:12:00+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags/Algorithm.html</loc>
-    <lastmod>2023-08-21T07:00:41+08:00</lastmod>
+    <lastmod>2023-08-22T08:00:41+08:00</lastmod>
   </url><url>
-    <loc>https://lazyvic.com/tags/stacks.html</loc>
-    <lastmod>2023-08-21T07:00:41+08:00</lastmod>
+    <loc>https://lazyvic.com/tags/sorts.html</loc>
+    <lastmod>2023-08-22T08:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags.html</loc>
-    <lastmod>2023-08-21T07:00:41+08:00</lastmod>
+    <lastmod>2023-08-22T08:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/tags/stacks.html</loc>
+    <lastmod>2023-08-21T08:19:51+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags/php.html</loc>
     <lastmod>2023-08-19T16:09:29+08:00</lastmod>

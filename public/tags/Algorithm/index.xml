@@ -6,7 +6,16 @@
     <description>Recent content in Algorithm on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Aug 2023 07:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/Algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Aug 2023 08:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/Algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Selection Sort</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/SelectionSort.html</link>
+      <pubDate>Tue, 22 Aug 2023 08:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/SelectionSort.html</guid>
+      <description>Template for sort classes Selection sort: Java implementation Mathematical analysis Reference In iteration i, find index min of smallest reamining entry. Swap a[i] and a[min] Template for sort classes public class Example { public static void sort(Comparable[] a) { /* sort algorithms need to implement */ } private static boolean less(Comparable v, Comparable w) { return v.compareTo(w) &amp;lt; 0; } private in compsreTo(Comparable v, Comparable w) { if(v &amp;gt; w) { return 1; } if(v &amp;lt; w) { return -1; } return 0; } private static void exch(Comparable[] a, int i, int j) { Comparable swap = a[i]; a[i] = j; a[j] = swap; } public static boolean isSorted(Comparable[] a) { // Test whether the array entries are in order.</description>
+    </item>
+    
     <item>
       <title>Stacks</title>
       <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/Stacks.html</link>
