@@ -28,21 +28,24 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
+  <meta name="description" content="Idea Reference Idea 基本上就是做了很多次 insertion sort，但 insertion sort 是往左邊一個比較，比較的間隔為1，Shell sort 每次會比較 h 個間隔，隨著 h 的遞減，直到h &lt;1為止。
+也就是說 insertion sort 就是 h = 1 的 shell sort.
+public class Shell { public static void sort(Comparable[] a) { int N = a.length; // 得出初始的h值，這邊是用3N&#43;1，也可以嘗試用不同的算式 int h = 1; while (h &lt; N/3) { h = 3*h &#43; 1; } while (h &gt;= 1) { // 不同的 h 去做的insert sort， 之前的insertion sort的話其實h就是1 for (int i = h; i &lt; N; i&#43;&#43;) { for (int j = i; j &gt;= h &amp;&amp; less(a[j], a[j-h]); j -=h) { exch(a, j, j-h); } } // 遞減 h 直到 h &lt; 1為止 h = h/3; } } } Reference [1] Algorithms in Java, Lecture slide" />
 
-    <title>sorts | Log of Vic</title>
+    <title>Shell Sort | Log of Vic</title>
 
-    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../../../../../favicon/favicon.svg" />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="../favicon/favicon-32x32.png"
+  href="../../../../../favicon/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="../favicon/favicon-16x16.png"
+  href="../../../../../favicon/favicon-16x16.png"
 />
 
     
@@ -50,84 +53,133 @@ if (!doNotTrack) {
     
   <meta
     property="og:title"
-    content="sorts"
+    content="Shell Sort"
   />
   <meta property="og:site_name" content="Log of Vic" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://lazyvic.com/tags/sorts.html" />
+  <meta property="og:description" content="Idea Reference Idea 基本上就是做了很多次 insertion sort，但 insertion sort 是往左邊一個比較，比較的間隔為1，Shell sort 每次會比較 h 個間隔，隨著 h 的遞減，直到h &lt;1為止。
+也就是說 insertion sort 就是 h = 1 的 shell sort.
+public class Shell { public static void sort(Comparable[] a) { int N = a.length; // 得出初始的h值，這邊是用3N&#43;1，也可以嘗試用不同的算式 int h = 1; while (h &lt; N/3) { h = 3*h &#43; 1; } while (h &gt;= 1) { // 不同的 h 去做的insert sort， 之前的insertion sort的話其實h就是1 for (int i = h; i &lt; N; i&#43;&#43;) { for (int j = i; j &gt;= h &amp;&amp; less(a[j], a[j-h]); j -=h) { exch(a, j, j-h); } } // 遞減 h 直到 h &lt; 1為止 h = h/3; } } } Reference [1] Algorithms in Java, Lecture slide" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/ShellSort.html" />
 
-
+<meta property="article:section" content="Programming" />
+    <meta
+      property="article:published_time"
+      content="2023-08-26T08:00:41+08:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2023-08-26T08:00:41+08:00"
+    />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="sorts" />
+<meta name="twitter:title" content="Shell Sort" />
+  <meta name="twitter:description" content="Idea Reference Idea 基本上就是做了很多次 insertion sort，但 insertion sort 是往左邊一個比較，比較的間隔為1，Shell sort 每次會比較 h 個間隔，隨著 h 的遞減，直到h &lt;1為止。
+也就是說 insertion sort 就是 h = 1 的 shell sort.
+public class Shell { public static void sort(Comparable[] a) { int N = a.length; // 得出初始的h值，這邊是用3N&#43;1，也可以嘗試用不同的算式 int h = 1; while (h &lt; N/3) { h = 3*h &#43; 1; } while (h &gt;= 1) { // 不同的 h 去做的insert sort， 之前的insertion sort的話其實h就是1 for (int i = h; i &lt; N; i&#43;&#43;) { for (int j = i; j &gt;= h &amp;&amp; less(a[j], a[j-h]); j -=h) { exch(a, j, j-h); } } // 遞減 h 直到 h &lt; 1為止 h = h/3; } } } Reference [1] Algorithms in Java, Lecture slide" />
 
 
+  <script type="application/ld+json">
+  {
+      "@context": "http://schema.org",
+      "@type": "TechArticle",
+      "articleSection": "Programming",
+      "name": "Shell Sort",
+      "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/ShellSort.html",
+      "headline": "Shell Sort",
+      "description": "Idea Reference Idea 基本上就是做了很多次 insertion sort，但 insertion sort 是往左邊一個比較，比較的間隔為1，Shell sort 每次會比較 h 個間隔，隨著 h 的遞減，直到h \u003c1為止。\n也就是說 insertion sort 就是 h = 1 的 shell sort.\npublic class Shell { public static void sort(Comparable[] a) { int N = a.length; \/\/ 得出初始的h值，這邊是用3N\u002b1，也可以嘗試用不同的算式 int h = 1; while (h \u003c N\/3) { h = 3*h \u002b 1; } while (h \u003e= 1) { \/\/ 不同的 h 去做的insert sort， 之前的insertion sort的話其實h就是1 for (int i = h; i \u003c N; i\u002b\u002b) { for (int j = i; j \u003e= h \u0026\u0026 less(a[j], a[j-h]); j -=h) { exch(a, j, j-h); } } \/\/ 遞減 h 直到 h \u003c 1為止 h = h\/3; } } } Reference [1] Algorithms in Java, Lecture slide",
+      "wordCount" : "118",
+      "inLanguage": "en",
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/ShellSort.html"
+      },
+      "keywords" : [ "Algorithm" , "sorts" ],
+      "copyrightHolder" : "Log of Vic",
+      "copyrightYear" : "2023",
+      "dateCreated": "2023-08-26T08:00:41.00Z",
+      "datePublished": "2023-08-26T08:00:41.00Z",
+      "dateModified": "2023-08-26T08:00:41.00Z",
+      "publisher":{
+          "@type":"Organization",
+          "name": "Log of Vic",
+          "url": "https://lazyvic.com/",
+          "logo": {
+              "@type": "ImageObject",
+              "url": "https://lazyvic.com/brand.svg",
+              "width":"32",
+              "height":"32"
+          }
+      }
+  }
+  </script>
 
 
     
-  <script src="../js/colortheme-d3e4d351.bundle.min.js"></script>
-<script src="../js/main-fbb9c8b0.bundle.min.js"></script>
+  <script src="../../../../../js/colortheme-d3e4d351.bundle.min.js"></script>
+<script src="../../../../../js/main-fbb9c8b0.bundle.min.js"></script>
 
 <link
   rel="preload"
   as="font"
-  href="../fonts/Metropolis.woff2"
+  href="../../../../../fonts/Metropolis.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 <link
   rel="preload"
   as="font"
-  href="../fonts/LiberationSans.woff2"
+  href="../../../../../fonts/LiberationSans.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 
 <link
   rel="preload"
-  href="../main-ba0e2765.min.css"
+  href="../../../../../main-ba0e2765.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../main-ba0e2765.min.css"
+  href="../../../../../main-ba0e2765.min.css"
   media="all"
 />
 
 <link
   rel="preload"
-  href="../mobile-79ddc617.min.css"
+  href="../../../../../mobile-79ddc617.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../mobile-79ddc617.min.css"
+  href="../../../../../mobile-79ddc617.min.css"
   media="screen and (max-width: 45rem)"
 />
 
 <link
   rel="preload"
-  href="../print-735ccc12.min.css"
+  href="../../../../../print-735ccc12.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../print-735ccc12.min.css"
+  href="../../../../../print-735ccc12.min.css"
   media="print"
 />
 
 <link
   rel="preload"
-  href="../custom.css"
+  href="../../../../../custom.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="../custom.css"
+  href="../../../../../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/tags/sorts.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/ShellSort.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -168,7 +220,7 @@ if (!doNotTrack) {
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
-            src="../brand.svg"
+            src="../../../../../brand.svg"
             alt=""
           />
           <span class="gdoc-brand__title">Log of Vic</span>
@@ -292,7 +344,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming.html"
+                    href="../../../../../Programming.html"
                     class="gdoc-nav__entry"
                   >
                     Programming
@@ -339,7 +391,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/Algorithm.html"
+                    href="../../../../../Programming/Algorithm.html"
                     class="gdoc-nav__entry"
                   >
                     Algorithm
@@ -375,7 +427,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/Languages.html"
+                    href="../../../../../Programming/Languages.html"
                     class="gdoc-nav__entry"
                   >
                     Language
@@ -422,7 +474,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory.html"
+                    href="../../../../../Programming/SiteStory.html"
                     class="gdoc-nav__entry"
                   >
                     Site Story
@@ -476,7 +528,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/WhyHugo.html"
+                    href="../../../../../Programming/SiteStory/WhyHugo.html"
                     class="gdoc-nav__entry"
                   >
                     Why Hugo
@@ -520,7 +572,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/GettingStart.html"
+                    href="../../../../../Programming/SiteStory/GettingStart.html"
                     class="gdoc-nav__entry"
                   >
                     Hugo GitHub Page
@@ -593,7 +645,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/SSL.html"
+                    href="../../../../../Programming/SiteStory/SSL.html"
                     class="gdoc-nav__entry"
                   >
                     Install SSL
@@ -637,7 +689,7 @@ if (!doNotTrack) {
               
                 <span class="flex">
                   <a
-                    href="../Programming/SiteStory/TyporaUpic.html"
+                    href="../../../../../Programming/SiteStory/TyporaUpic.html"
                     class="gdoc-nav__entry"
                   >
                     Typora &#43; Upic
@@ -676,190 +728,6 @@ if (!doNotTrack) {
     
   </section>
 
-  
-    <section class="gdoc-nav--tags">
-      <h2>Tags</h2>
-      <ul class="gdoc-nav__list">
-        
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/Algorithm.html"
-              >
-                Algorithm
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/array.html"
-              >
-                array
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/backtrack.html"
-              >
-                backtrack
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/cache.html"
-              >
-                cache
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/cipher.html"
-              >
-                cipher
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/hugo.html"
-              >
-                hugo
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/infra.html"
-              >
-                infra
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/java.html"
-              >
-                java
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/leetcode.html"
-              >
-                leetcode
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/php.html"
-              >
-                php
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/recursive.html"
-              >
-                recursive
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry is-active"
-                href="../tags/sorts.html"
-              >
-                sorts
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/stacks.html"
-              >
-                stacks
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/trash-talk.html"
-              >
-                trash talk
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/tree.html"
-              >
-                tree
-              </a>
-            </li>
-          
-        
-          
-            <li>
-              <a
-                class="gdoc-nav__entry"
-                href="../tags/unittest.html"
-              >
-                unittest
-              </a>
-            </li>
-          
-        
-      </ul>
-    </section>
   
 
 
@@ -988,131 +856,99 @@ if (!doNotTrack) {
         <div class="gdoc-page">
           
   
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="../Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/SelectionSort.html">Selection Sort</a>
-        </h1>
-      </header>
-
-      <section class="gdoc-markdown">
-        Template for sort classes Selection sort: Java implementation Mathematical analysis Reference In iteration i, find index min of smallest reamining entry. Swap a[i] and a[min] Template for sort classes public class Example { public static void sort(Comparable[] a) { /* sort algorithms need to implement */ } private static boolean less(Comparable v, Comparable w) { return v.compareTo(w) &lt; 0; } private int compareTo(Comparable v, Comparable w) { if(v &gt; w) { return 1; } if(v &lt; w) { return -1; } return 0; } private static void exch(Comparable[] a, int i, int j) { Comparable swap = a[i]; a[i] = j; a[j] = swap; } public static boolean isSorted(Comparable[] a) { // Test whether the array entries are in order.
-      </section>
-
-      <div class="gdoc-post__readmore">
-        
-          <a
-            class="flex-inline align-center fake-link"
-            title="Read full post"
-            href="../Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/SelectionSort.html"
-          >
-            Read full post
-            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-          </a>
-        
-      </div>
-
-      <footer class="gdoc-post__footer">
-        <div class="flex flex-wrap align-center gdoc-post__meta">
-          <span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
-  <span class="gdoc-post__tag">
-    <time datetime="2023-08-22T09:06:24&#43;08:00">
-      
-      Aug 22, 2023
-    </time>
-  </span>
-</span>
-
-<span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">One minute to read</span>
-</span>
-
 
 
   
+
+
+
+
+
+
+<div
+  class="gdoc-page__header flex flex-wrap
+  
+    justify-between
+  
+  hidden-mobile
+  "
+  itemprop="breadcrumb"
+>
+  
+    <div>
+      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
+      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        
+        
+        
+        
+  
+  
     
     
-      
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton.html' href='../../../../../Programming/Algorithm/Algs4Princeton.html'><span itemprop='name'>Princeton Algorithms</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week2.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week2.html'><span itemprop='name'>Week 2</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week2/ElementSorts.html'><span itemprop='name'>Elementary Sorts</span></a><meta itemprop='position' content='5' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Shell Sort</span><meta itemprop='position' content='6' /></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+      </ol>
+    </div>
+  
+  
+</div>
+
+
+
+  <article
+    class="gdoc-markdown gdoc-markdown__align--left"
+  >
+    <h1>Shell Sort</h1>
+    <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
         <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/Algorithm.html"
-      title="All posts tagged with &#39;Algorithm&#39;"
-    >
-      Algorithm
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-    
-    
-      
-        <span class="flex align-center">
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/sorts.html"
-      title="All posts tagged with &#39;sorts&#39;"
-    >
-      sorts
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-
-
-
-
-        </div>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="../Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html">Insertion Sort</a>
-        </h1>
-      </header>
-
-      <section class="gdoc-markdown">
-        Algorithm Insertion sort inner loop Java implementation Analysis Reference Algorithm In iteration i, swap a[i] with each larger entry to its left
-Insertion sort inner loop To maintain algorithm invariants:
-move the pointer to the right
-i++
-Moving from right to left, exchange a[i] with each larger entry to its left.
-for (int j = i; j &gt; 0 ; j--) { if(less(a[j], a[j-1])) { exch(a, j, j-1); } else { break; } } Java implementation public static void insertionSort(int[] a) { int N = a.
-      </section>
-
-      <div class="gdoc-post__readmore">
-        
-          <a
-            class="flex-inline align-center fake-link"
-            title="Read full post"
-            href="../Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html"
-          >
-            Read full post
-            <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-          </a>
-        
-      </div>
-
-      <footer class="gdoc-post__footer">
-        <div class="flex flex-wrap align-center gdoc-post__meta">
-          <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
     <time datetime="2023-08-26T08:00:41&#43;08:00">
@@ -1139,7 +975,7 @@ for (int j = i; j &gt; 0 ; j--) { if(less(a[j], a[j-1])) { exch(a, j, j-1); } el
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/Algorithm.html"
+      href="../../../../../tags/Algorithm.html"
       title="All posts tagged with &#39;Algorithm&#39;"
     >
       Algorithm
@@ -1159,7 +995,7 @@ for (int j = i; j &gt; 0 ; j--) { if(less(a[j], a[j-1])) { exch(a, j, j-1); } el
   <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
     <a
       class="gdoc-button__link"
-      href="../tags/sorts.html"
+      href="../../../../../tags/sorts.html"
       title="All posts tagged with &#39;sorts&#39;"
     >
       sorts
@@ -1175,109 +1011,90 @@ for (int j = i; j &gt; 0 ; j--) { if(less(a[j], a[j-1])) { exch(a, j, j-1); } el
 
 
 
-        </div>
-      </footer>
-    </article>
-  
-    <article class="gdoc-post">
-      <header class="gdoc-post__header">
-        <h1 class="gdoc-post__title">
-          <a href="../Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/ShellSort.html">Shell Sort</a>
-        </h1>
-      </header>
-
-      <section class="gdoc-markdown">
-        Idea Reference Idea 基本上就是做了很多次 insertion sort，但 insertion sort 是往左邊一個比較，比較的間隔為1，Shell sort 每次會比較 h 個間隔，隨著 h 的遞減，直到h &lt;1為止。
-也就是說 insertion sort 就是 h = 1 的 shell sort.
-public class Shell { public static void sort(Comparable[] a) { int N = a.length; // 得出初始的h值，這邊是用3N+1，也可以嘗試用不同的算式 int h = 1; while (h &lt; N/3) { h = 3*h + 1; } while (h &gt;= 1) { // 不同的 h 去做的insert sort， 之前的insertion sort的話其實h就是1 for (int i = h; i &lt; N; i++) { for (int j = i; j &gt;= h &amp;&amp; less(a[j], a[j-h]); j -=h) { exch(a, j, j-h); } } // 遞減 h 直到 h &lt; 1為止 h = h/3; } } } Reference [1] Algorithms in Java, Lecture slide
-      </section>
-
-      <div class="gdoc-post__readmore">
-        
-      </div>
-
-      <footer class="gdoc-post__footer">
-        <div class="flex flex-wrap align-center gdoc-post__meta">
-          <span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
-  <span class="gdoc-post__tag">
-    <time datetime="2023-08-26T08:00:41&#43;08:00">
-      
-      Aug 26, 2023
-    </time>
-  </span>
-</span>
-
-<span class="flex align-center no-wrap">
-  <svg class="gdoc-icon gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg>
-  <span class="gdoc-post__tag">One minute to read</span>
-</span>
+    </div>
 
 
 
-  
-    
-    
-      
-        <span class="flex align-center no-wrap">
-          <svg class="gdoc-icon gdoc_bookmark"><use xlink:href="#gdoc_bookmark"></use></svg>
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/Algorithm.html"
-      title="All posts tagged with &#39;Algorithm&#39;"
+
+    <div class="gdoc-toc gdoc-toc__level--6">
+      <nav id="TableOfContents"><ul>
+        <li><a href="#idea">Idea</a></li>
+        <li><a href="#reference">Reference</a></li>
+      </ul></nav>
+      <hr />
+    </div>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="idea"
     >
-      Algorithm
-    </a>
-  </span>
-
-        </span>
-      
-    
-    
-  
-    
-    
-      
-        <span class="flex align-center">
-          
-  <span class="gdoc-post__tag gdoc-button gdoc-button--regular">
-    <a
-      class="gdoc-button__link"
-      href="../tags/sorts.html"
-      title="All posts tagged with &#39;sorts&#39;"
+        Idea
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/ShellSort.html#idea" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Idea" aria-label="Anchor to: Idea" href="#idea">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<p>基本上就是做了很多次 insertion sort，但 insertion sort 是往左邊一個比較，比較的間隔為1，Shell sort 每次會比較 h 個間隔，隨著 h 的遞減，直到h &lt;1為止。</p>
+<p>也就是說 insertion sort 就是 h = 1 的 shell sort.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Shell</span>
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">sort</span><span class="o">(</span><span class="n">Comparable</span><span class="o">[]</span> <span class="n">a</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">N</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// 得出初始的h值，這邊是用3N+1，也可以嘗試用不同的算式
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kt">int</span> <span class="n">h</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="o">(</span><span class="n">h</span> <span class="o">&lt;</span> <span class="n">N</span><span class="o">/</span><span class="mi">3</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">h</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">h</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="o">(</span><span class="n">h</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">      <span class="c1">// 不同的 h 去做的insert sort， 之前的insertion sort的話其實h就是1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">h</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="n">h</span> <span class="o">&amp;&amp;</span> <span class="n">less</span><span class="o">(</span><span class="n">a</span><span class="o">[</span><span class="n">j</span><span class="o">],</span> <span class="n">a</span><span class="o">[</span><span class="n">j</span><span class="o">-</span><span class="n">h</span><span class="o">]);</span> <span class="n">j</span> <span class="o">-=</span><span class="n">h</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">          <span class="n">exch</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">j</span><span class="o">,</span> <span class="n">j</span><span class="o">-</span><span class="n">h</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">      <span class="o">}</span>
+</span></span><span class="line"><span class="cl">      <span class="c1">// 遞減 h 直到 h &lt; 1為止
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="n">h</span> <span class="o">=</span> <span class="n">h</span><span class="o">/</span><span class="mi">3</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="gdoc-page__anchorwrap">
+    <h2 id="reference"
     >
-      sorts
-    </a>
-  </span>
+        Reference
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/ShellSort.html#reference" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Reference" aria-label="Anchor to: Reference" href="#reference">
+            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div>
+<div id="refer-anchor-1"></div>
+<p>[1] <a href="https://algs4.cs.princeton.edu/lectures/keynote/21ElementarySorts.pdf" target="_blank">Algorithms in Java, Lecture slide</a></p>
 
-        </span>
-      
+  </article>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="disqus markdown">
+    <div id="disqus_thread"></div>
+<script>
     
+
     
-  
 
+    (function() { 
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lazyvic-com.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-
-
-        </div>
-      </footer>
-    </article>
-  
-  
-
-
-<nav class="gdoc-paging flex flex-even align-center" role="navigation">
-  <div class="gdoc-paging__item gdoc-paging__item--prev">
-    
-  </div>
-  <div class="gdoc-paging__state">1/1</div>
-  <div class="gdoc-paging__item gdoc-paging__item--next">
-    
-  </div>
-</nav>
-
+</div>
 
 
 
@@ -1337,7 +1154,7 @@ public class Shell { public static void sort(Comparable[] a) { int N = a.length;
     </div>
 
     
-  <script defer src="../js/search-83320133.bundle.min.js"></script>
+  <script defer src="../../../../../js/search-83320133.bundle.min.js"></script>
 
   </body>
 </html>

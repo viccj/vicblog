@@ -27,7 +27,7 @@ public class Example
   private static boolean less(Comparable v, Comparable w) {
     return v.compareTo(w) < 0;
   }
-  private in compsreTo(Comparable v, Comparable w) {
+  private int compareTo(Comparable v, Comparable w) {
     if(v > w) {
       return 1;
     }

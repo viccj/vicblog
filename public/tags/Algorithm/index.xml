@@ -6,14 +6,14 @@
     <description>Recent content in Algorithm on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Aug 2023 08:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/Algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Aug 2023 08:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/Algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Selection Sort</title>
       <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/SelectionSort.html</link>
       <pubDate>Tue, 22 Aug 2023 08:00:41 +0800</pubDate>
       
       <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/SelectionSort.html</guid>
-      <description>Template for sort classes Selection sort: Java implementation Mathematical analysis Reference In iteration i, find index min of smallest reamining entry. Swap a[i] and a[min] Template for sort classes public class Example { public static void sort(Comparable[] a) { /* sort algorithms need to implement */ } private static boolean less(Comparable v, Comparable w) { return v.compareTo(w) &amp;lt; 0; } private in compsreTo(Comparable v, Comparable w) { if(v &amp;gt; w) { return 1; } if(v &amp;lt; w) { return -1; } return 0; } private static void exch(Comparable[] a, int i, int j) { Comparable swap = a[i]; a[i] = j; a[j] = swap; } public static boolean isSorted(Comparable[] a) { // Test whether the array entries are in order.</description>
+      <description>Template for sort classes Selection sort: Java implementation Mathematical analysis Reference In iteration i, find index min of smallest reamining entry. Swap a[i] and a[min] Template for sort classes public class Example { public static void sort(Comparable[] a) { /* sort algorithms need to implement */ } private static boolean less(Comparable v, Comparable w) { return v.compareTo(w) &amp;lt; 0; } private int compareTo(Comparable v, Comparable w) { if(v &amp;gt; w) { return 1; } if(v &amp;lt; w) { return -1; } return 0; } private static void exch(Comparable[] a, int i, int j) { Comparable swap = a[i]; a[i] = j; a[j] = swap; } public static boolean isSorted(Comparable[] a) { // Test whether the array entries are in order.</description>
     </item>
     
     <item>
@@ -25,6 +25,20 @@
       <description>Stack Api Linked-list implementation Array implementation Stack considerations Overflow and underflow. Null items Loitering 參考來源 Stack Api Warmup API. Stack of string data type.
 這裡會建立如下的Stack API
 public clacc StackOfStrings StackOfStrings() // create am empyt stack void push(String item) // insert a new strig onto stack String pop() //remove and return the string most recently added booleam isEmpty() // is the stack empty? int size() // number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除</description>
+    </item>
+    
+    <item>
+      <title>Insertion Sort</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html</link>
+      <pubDate>Sat, 26 Aug 2023 08:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html</guid>
+      <description>Algorithm Insertion sort inner loop Java implementation Analysis Reference Algorithm In iteration i, swap a[i] with each larger entry to its left
+Insertion sort inner loop To maintain algorithm invariants:
+move the pointer to the right
+i++
+Moving from right to left, exchange a[i] with each larger entry to its left.
+for (int j = i; j &amp;gt; 0 ; j--) { if(less(a[j], a[j-1])) { exch(a, j, j-1); } else { break; } } Java implementation public static void insertionSort(int[] a) { int N = a.</description>
     </item>
     
     <item>
@@ -50,6 +64,17 @@ Find p 的 id 為？
 Connected. p 跟 q 是否有相同的 id？
 ex: id[6] = 0, id[7] =1, 6 跟7 並沒有connect
 Union. 要將包含 p 跟 q 的兩個components 合併，找出所有id 為 id[p] 的物件， 將其 id 修改成 id[q].</description>
+    </item>
+    
+    <item>
+      <title>Shell Sort</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/ShellSort.html</link>
+      <pubDate>Sat, 26 Aug 2023 08:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/ShellSort.html</guid>
+      <description>Idea Reference Idea 基本上就是做了很多次 insertion sort，但 insertion sort 是往左邊一個比較，比較的間隔為1，Shell sort 每次會比較 h 個間隔，隨著 h 的遞減，直到h &amp;lt;1為止。
+也就是說 insertion sort 就是 h = 1 的 shell sort.
+public class Shell { public static void sort(Comparable[] a) { int N = a.length; // 得出初始的h值，這邊是用3N+1，也可以嘗試用不同的算式 int h = 1; while (h &amp;lt; N/3) { h = 3*h + 1; } while (h &amp;gt;= 1) { // 不同的 h 去做的insert sort， 之前的insertion sort的話其實h就是1 for (int i = h; i &amp;lt; N; i++) { for (int j = i; j &amp;gt;= h &amp;amp;&amp;amp; less(a[j], a[j-h]); j -=h) { exch(a, j, j-h); } } // 遞減 h 直到 h &amp;lt; 1為止 h = h/3; } } } Reference [1] Algorithms in Java, Lecture slide</description>
     </item>
     
     <item>
