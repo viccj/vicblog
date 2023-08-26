@@ -27,6 +27,17 @@ To maintain algorithm invariants:
 
 - Moving from right to left, exchange `a[i]` with each larger entry to its left.
 
+
+## demo
+
+
+![quick-find-example](https://raw.githubusercontent.com/viccj/upic/master/uPic/insertion-sort.png)
+
+
+
+
+## Inner for loop
+
 ```
   for (int j = i; j > 0 ; j--) {
           if(less(a[j], a[j-1])) {

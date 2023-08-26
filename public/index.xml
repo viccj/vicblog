@@ -87,12 +87,12 @@ Jekyll：Ruby寫的，沒什麼感覺 Hugo：Go寫的，好像很潮 Hexo：Node
       <pubDate>Sat, 26 Aug 2023 08:00:41 +0800</pubDate>
       
       <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html</guid>
-      <description>Algorithm Insertion sort inner loop Java implementation Analysis Reference Algorithm In iteration i, swap a[i] with each larger entry to its left
+      <description>Algorithm Insertion sort inner loop demo Inner for loop Java implementation Analysis Reference Algorithm In iteration i, swap a[i] with each larger entry to its left
 Insertion sort inner loop To maintain algorithm invariants:
 move the pointer to the right
 i++
 Moving from right to left, exchange a[i] with each larger entry to its left.
-for (int j = i; j &amp;gt; 0 ; j--) { if(less(a[j], a[j-1])) { exch(a, j, j-1); } else { break; } } Java implementation public static void insertionSort(int[] a) { int N = a.</description>
+demo Inner for loop for (int j = i; j &amp;gt; 0 ; j--) { if(less(a[j], a[j-1])) { exch(a, j, j-1); } else { break; } } Java implementation public static void insertionSort(int[] a) { int N = a.</description>
     </item>
     
     <item>
