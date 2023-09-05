@@ -28,14 +28,9 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.113.0">
 
 
-  <meta name="description" content="Algorithm Insertion sort inner loop demo Inner for loop Java implementation Analysis Reference Algorithm In iteration i, swap a[i] with each larger entry to its left
-Insertion sort inner loop To maintain algorithm invariants:
-move the pointer to the right
-i&#43;&#43;
-Moving from right to left, exchange a[i] with each larger entry to its left.
-demo Inner for loop for (int j = i; j &gt; 0 ; j--) { if(less(a[j], a[j-1])) { exch(a, j, j-1); } else { break; } } Java implementation public static void insertionSort(int[] a) { int N = a." />
+  <meta name="description" content="Basic plan Java implementation Reference Basic plan Divide array into two halves. Recursively sort each half. Merge two halves Java implementation private static void mergeSort(int [] a) { int [] aux = new int[a.length]; mergeSortHelper(a, aux, 0, a.length -1); } private static void mergeSortHelper(int [] a, int [] aux, int lo, int hi) { if (hi &lt;= lo) { return; } int mid = lo &#43; (hi - lo) / 2; mergeSortHelper(a, aux, lo, mid); mergeSortHelper(a, aux, mid &#43; 1, hi); merge(a, aux, lo, mid, hi); } private static void merge(int [] a, int [] aux, int lo, int mid, int hi) { // copy for (int i :a) { aux[i] = a[i]; } int i = lo, j = mid &#43; 1; for (int k = lo; k &lt;= hi; k&#43;&#43;) { // 如果 i 已經 超過 mid, 代表i 左半邊子樹列已經全部遍歷過一次， // 那麼接下來a[k] 就直接會是右半邊的下一個 item aux[j] if (i &gt; mid) { a[k] = aux[j]; j&#43;&#43;; // 如果 j 已經 超過 hi, 代表右半邊子樹列已經全部遍歷過一次， // 那麼接下來a[k] 就直接會是左半邊的下一個 item aux[i] } else if (j &gt; hi) { a[k] = aux[i]; i&#43;&#43;; // 比較小的放進a[k]內 } else if(less(aux[j], aux[i])) { a[k] = aux[j]; j&#43;&#43;; } else { a[k] = aux[i]; i&#43;&#43;; } } } Reference [1] Algorithms in Java, Lecture slide" />
 
-    <title>Insertion Sort | Log of Vic</title>
+    <title>Merge Sort | Log of Vic</title>
 
     <link rel="icon" type="image/svg+xml" href="../../../../../favicon/favicon.svg" />
 <link
@@ -56,37 +51,27 @@ demo Inner for loop for (int j = i; j &gt; 0 ; j--) { if(less(a[j], a[j-1])) { e
     
   <meta
     property="og:title"
-    content="Insertion Sort"
+    content="Merge Sort"
   />
   <meta property="og:site_name" content="Log of Vic" />
-  <meta property="og:description" content="Algorithm Insertion sort inner loop demo Inner for loop Java implementation Analysis Reference Algorithm In iteration i, swap a[i] with each larger entry to its left
-Insertion sort inner loop To maintain algorithm invariants:
-move the pointer to the right
-i&#43;&#43;
-Moving from right to left, exchange a[i] with each larger entry to its left.
-demo Inner for loop for (int j = i; j &gt; 0 ; j--) { if(less(a[j], a[j-1])) { exch(a, j, j-1); } else { break; } } Java implementation public static void insertionSort(int[] a) { int N = a." />
+  <meta property="og:description" content="Basic plan Java implementation Reference Basic plan Divide array into two halves. Recursively sort each half. Merge two halves Java implementation private static void mergeSort(int [] a) { int [] aux = new int[a.length]; mergeSortHelper(a, aux, 0, a.length -1); } private static void mergeSortHelper(int [] a, int [] aux, int lo, int hi) { if (hi &lt;= lo) { return; } int mid = lo &#43; (hi - lo) / 2; mergeSortHelper(a, aux, lo, mid); mergeSortHelper(a, aux, mid &#43; 1, hi); merge(a, aux, lo, mid, hi); } private static void merge(int [] a, int [] aux, int lo, int mid, int hi) { // copy for (int i :a) { aux[i] = a[i]; } int i = lo, j = mid &#43; 1; for (int k = lo; k &lt;= hi; k&#43;&#43;) { // 如果 i 已經 超過 mid, 代表i 左半邊子樹列已經全部遍歷過一次， // 那麼接下來a[k] 就直接會是右半邊的下一個 item aux[j] if (i &gt; mid) { a[k] = aux[j]; j&#43;&#43;; // 如果 j 已經 超過 hi, 代表右半邊子樹列已經全部遍歷過一次， // 那麼接下來a[k] 就直接會是左半邊的下一個 item aux[i] } else if (j &gt; hi) { a[k] = aux[i]; i&#43;&#43;; // 比較小的放進a[k]內 } else if(less(aux[j], aux[i])) { a[k] = aux[j]; j&#43;&#43;; } else { a[k] = aux[i]; i&#43;&#43;; } } } Reference [1] Algorithms in Java, Lecture slide" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html" />
+<meta property="og:url" content="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort/MergeSort.html" />
 
 <meta property="article:section" content="Programming" />
     <meta
       property="article:published_time"
-      content="2023-08-26T08:00:41+08:00"
+      content="2023-09-03T08:00:41+08:00"
     />
     <meta
       property="article:modified_time"
-      content="2023-08-26T15:26:09+08:00"
+      content="2023-09-03T08:00:41+08:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Insertion Sort" />
-  <meta name="twitter:description" content="Algorithm Insertion sort inner loop demo Inner for loop Java implementation Analysis Reference Algorithm In iteration i, swap a[i] with each larger entry to its left
-Insertion sort inner loop To maintain algorithm invariants:
-move the pointer to the right
-i&#43;&#43;
-Moving from right to left, exchange a[i] with each larger entry to its left.
-demo Inner for loop for (int j = i; j &gt; 0 ; j--) { if(less(a[j], a[j-1])) { exch(a, j, j-1); } else { break; } } Java implementation public static void insertionSort(int[] a) { int N = a." />
+<meta name="twitter:title" content="Merge Sort" />
+  <meta name="twitter:description" content="Basic plan Java implementation Reference Basic plan Divide array into two halves. Recursively sort each half. Merge two halves Java implementation private static void mergeSort(int [] a) { int [] aux = new int[a.length]; mergeSortHelper(a, aux, 0, a.length -1); } private static void mergeSortHelper(int [] a, int [] aux, int lo, int hi) { if (hi &lt;= lo) { return; } int mid = lo &#43; (hi - lo) / 2; mergeSortHelper(a, aux, lo, mid); mergeSortHelper(a, aux, mid &#43; 1, hi); merge(a, aux, lo, mid, hi); } private static void merge(int [] a, int [] aux, int lo, int mid, int hi) { // copy for (int i :a) { aux[i] = a[i]; } int i = lo, j = mid &#43; 1; for (int k = lo; k &lt;= hi; k&#43;&#43;) { // 如果 i 已經 超過 mid, 代表i 左半邊子樹列已經全部遍歷過一次， // 那麼接下來a[k] 就直接會是右半邊的下一個 item aux[j] if (i &gt; mid) { a[k] = aux[j]; j&#43;&#43;; // 如果 j 已經 超過 hi, 代表右半邊子樹列已經全部遍歷過一次， // 那麼接下來a[k] 就直接會是左半邊的下一個 item aux[i] } else if (j &gt; hi) { a[k] = aux[i]; i&#43;&#43;; // 比較小的放進a[k]內 } else if(less(aux[j], aux[i])) { a[k] = aux[j]; j&#43;&#43;; } else { a[k] = aux[i]; i&#43;&#43;; } } } Reference [1] Algorithms in Java, Lecture slide" />
 
 
   <script type="application/ld+json">
@@ -94,23 +79,23 @@ demo Inner for loop for (int j = i; j &gt; 0 ; j--) { if(less(a[j], a[j-1])) { e
       "@context": "http://schema.org",
       "@type": "TechArticle",
       "articleSection": "Programming",
-      "name": "Insertion Sort",
-      "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html",
-      "headline": "Insertion Sort",
-      "description": "Algorithm Insertion sort inner loop demo Inner for loop Java implementation Analysis Reference Algorithm In iteration i, swap a[i] with each larger entry to its left\nInsertion sort inner loop To maintain algorithm invariants:\nmove the pointer to the right\ni\u002b\u002b\nMoving from right to left, exchange a[i] with each larger entry to its left.\ndemo Inner for loop for (int j = i; j \u003e 0 ; j--) { if(less(a[j], a[j-1])) { exch(a, j, j-1); } else { break; } } Java implementation public static void insertionSort(int[] a) { int N = a.",
-      "wordCount" : "161",
+      "name": "Merge Sort",
+      "url" : "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort/MergeSort.html",
+      "headline": "Merge Sort",
+      "description": "Basic plan Java implementation Reference Basic plan Divide array into two halves. Recursively sort each half. Merge two halves Java implementation private static void mergeSort(int [] a) { int [] aux = new int[a.length]; mergeSortHelper(a, aux, 0, a.length -1); } private static void mergeSortHelper(int [] a, int [] aux, int lo, int hi) { if (hi \u003c= lo) { return; } int mid = lo \u002b (hi - lo) \/ 2; mergeSortHelper(a, aux, lo, mid); mergeSortHelper(a, aux, mid \u002b 1, hi); merge(a, aux, lo, mid, hi); } private static void merge(int [] a, int [] aux, int lo, int mid, int hi) { \/\/ copy for (int i :a) { aux[i] = a[i]; } int i = lo, j = mid \u002b 1; for (int k = lo; k \u003c= hi; k\u002b\u002b) { \/\/ 如果 i 已經 超過 mid, 代表i 左半邊子樹列已經全部遍歷過一次， \/\/ 那麼接下來a[k] 就直接會是右半邊的下一個 item aux[j] if (i \u003e mid) { a[k] = aux[j]; j\u002b\u002b; \/\/ 如果 j 已經 超過 hi, 代表右半邊子樹列已經全部遍歷過一次， \/\/ 那麼接下來a[k] 就直接會是左半邊的下一個 item aux[i] } else if (j \u003e hi) { a[k] = aux[i]; i\u002b\u002b; \/\/ 比較小的放進a[k]內 } else if(less(aux[j], aux[i])) { a[k] = aux[j]; j\u002b\u002b; } else { a[k] = aux[i]; i\u002b\u002b; } } } Reference [1] Algorithms in Java, Lecture slide",
+      "wordCount" : "206",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html"
+          "@id": "https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort/MergeSort.html"
       },
       "keywords" : [ "Algorithm" , "sorts" ],
       "copyrightHolder" : "Log of Vic",
       "copyrightYear" : "2023",
-      "dateCreated": "2023-08-26T08:00:41.00Z",
-      "datePublished": "2023-08-26T08:00:41.00Z",
-      "dateModified": "2023-08-26T15:26:09.00Z",
+      "dateCreated": "2023-09-03T08:00:41.00Z",
+      "datePublished": "2023-09-03T08:00:41.00Z",
+      "dateModified": "2023-09-03T08:00:41.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "Log of Vic",
@@ -188,7 +173,7 @@ demo Inner for loop for (int j = i; j &gt; 0 ; j--) { if(less(a[j], a[j-1])) { e
   href="../../../../../custom.css"
   media="all"
 />
-  <link href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html" rel="canonical" type="text/html" />
+  <link href="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort/MergeSort.html" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -929,7 +914,7 @@ demo Inner for loop for (int j = i; j &gt; 0 ; j--) { if(less(a[j], a[j-1])) { e
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton.html' href='../../../../../Programming/Algorithm/Algs4Princeton.html'><span itemprop='name'>Princeton Algorithms</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week2.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week2.html'><span itemprop='name'>Week 2</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week2/ElementSorts.html'><span itemprop='name'>Elementary Sorts</span></a><meta itemprop='position' content='5' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Insertion Sort</span><meta itemprop='position' content='6' /></li>
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='../../../../../'><span itemprop='name'></span></a><meta itemprop='position' content='0' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming.html' href='../../../../../Programming.html'><span itemprop='name'>Programming</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm.html' href='../../../../../Programming/Algorithm.html'><span itemprop='name'>Algorithm</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton.html' href='../../../../../Programming/Algorithm/Algs4Princeton.html'><span itemprop='name'>Princeton Algorithms</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week3.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week3.html'><span itemprop='name'>Week 3</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Programming/Algorithm/Algs4Princeton/Week3/MergeSort.html' href='../../../../../Programming/Algorithm/Algs4Princeton/Week3/MergeSort.html'><span itemprop='name'>Merge Sort</span></a><meta itemprop='position' content='5' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Merge Sort</span><meta itemprop='position' content='6' /></li>
   
 
   
@@ -955,14 +940,14 @@ demo Inner for loop for (int j = i; j &gt; 0 ; j--) { if(less(a[j], a[j-1])) { e
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Insertion Sort</h1>
+    <h1>Merge Sort</h1>
     <div class="flex flex-wrap align-center gdoc-post__meta gdoc-post__meta--head">
         <span class="flex align-center no-wrap">
   <svg class="gdoc-icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
   <span class="gdoc-post__tag">
-    <time datetime="2023-08-26T15:26:09&#43;08:00">
+    <time datetime="2023-09-03T08:00:41&#43;08:00">
       
-      Aug 26, 2023
+      Sep 3, 2023
     </time>
   </span>
 </span>
@@ -1027,126 +1012,96 @@ demo Inner for loop for (int j = i; j &gt; 0 ; j--) { if(less(a[j], a[j-1])) { e
 
     <div class="gdoc-toc gdoc-toc__level--6">
       <nav id="TableOfContents"><ul>
-        <li><a href="#algorithm">Algorithm</a></li>
-        <li><a href="#insertion-sort-inner-loop">Insertion sort inner loop</a></li>
-        <li><a href="#demo">demo</a></li>
-        <li><a href="#inner-for-loop">Inner for loop</a></li>
+        <li><a href="#basic-plan">Basic plan</a></li>
         <li><a href="#java-implementation">Java implementation</a></li>
-        <li><a href="#analysis">Analysis</a></li>
         <li><a href="#reference">Reference</a></li>
       </ul></nav>
       <hr />
     </div>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="algorithm"
+    <h2 id="basic-plan"
     >
-        Algorithm
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html#algorithm" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Algorithm" aria-label="Anchor to: Algorithm" href="#algorithm">
+        Basic plan
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort/MergeSort.html#basic-plan" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Basic plan" aria-label="Anchor to: Basic plan" href="#basic-plan">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<p>In iteration <code>i</code>, swap <code>a[i]</code> with each larger entry to its left</p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="insertion-sort-inner-loop"
-    >
-        Insertion sort inner loop
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html#insertion-sort-inner-loop" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Insertion sort inner loop" aria-label="Anchor to: Insertion sort inner loop" href="#insertion-sort-inner-loop">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p>To maintain algorithm invariants:</p>
 <ul>
-<li>
-<p>move the pointer to the right</p>
-<p><code>i++</code></p>
-</li>
-<li>
-<p>Moving from right to left, exchange <code>a[i]</code> with each larger entry to its left.</p>
-</li>
+<li>Divide array into two halves.</li>
+<li>Recursively sort each half.</li>
+<li>Merge two halves</li>
 </ul>
 <div class="gdoc-page__anchorwrap">
-    <h2 id="demo"
-    >
-        demo
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html#demo" class="gdoc-page__anchor clip flex align-center" title="Anchor to: demo" aria-label="Anchor to: demo" href="#demo">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<p><img
-  src="https://raw.githubusercontent.com/viccj/upic/master/uPic/insertion-sort.png"
-  alt="quick-find-example"
-  
-/></p>
-<div class="gdoc-page__anchorwrap">
-    <h2 id="inner-for-loop"
-    >
-        Inner for loop
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html#inner-for-loop" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Inner for loop" aria-label="Anchor to: Inner for loop" href="#inner-for-loop">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<pre tabindex="0"><code>  for (int j = i; j &gt; 0 ; j--) {
-          if(less(a[j], a[j-1])) {
-              exch(a, j, j-1);
-          } else {
-              break;
-          }
-      }
-</code></pre><div class="gdoc-page__anchorwrap">
     <h2 id="java-implementation"
     >
         Java implementation
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html#java-implementation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Java implementation" aria-label="Anchor to: Java implementation" href="#java-implementation">
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort/MergeSort.html#java-implementation" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Java implementation" aria-label="Anchor to: Java implementation" href="#java-implementation">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
-<pre tabindex="0"><code>public static void insertionSort(int[] a) {
-    int N = a.length;
-    for (int i = 1; i &lt; N; i++) {
-        for (int j = i; j &gt; 0 ; j--) {
-            if(less(a[j], a[j-1])) {
-                exch(a, j, j-1);
+<pre tabindex="0"><code>    private static void mergeSort(int [] a) {
+        int [] aux = new int[a.length];
+        mergeSortHelper(a, aux, 0, a.length -1);
+    }
+
+    private static void mergeSortHelper(int [] a, int [] aux, int lo, int hi) {
+        if (hi &lt;= lo) {
+            return;
+        }
+        int mid = lo + (hi - lo) / 2;
+        mergeSortHelper(a, aux, lo, mid);
+        mergeSortHelper(a, aux, mid + 1, hi);
+        merge(a, aux, lo, mid, hi);
+
+    }
+
+    private static void merge(int [] a, int [] aux, int lo, int mid, int hi) {
+
+        // copy
+        for (int i :a) {
+            aux[i] = a[i];
+        }
+
+        int i = lo, j = mid + 1;
+
+        for (int k = lo; k &lt;= hi; k++) {
+
+            // 如果 i 已經 超過 mid, 代表i 左半邊子樹列已經全部遍歷過一次，
+            // 那麼接下來a[k] 就直接會是右半邊的下一個 item aux[j]
+            if (i &gt; mid) {
+                a[k] = aux[j];
+                j++;
+
+            // 如果 j 已經 超過 hi, 代表右半邊子樹列已經全部遍歷過一次，
+            // 那麼接下來a[k] 就直接會是左半邊的下一個 item aux[i]
+            } else if (j &gt; hi) {
+                a[k] = aux[i];
+                i++;
+
+            // 比較小的放進a[k]內
+            } else if(less(aux[j], aux[i])) {
+                a[k] = aux[j];
+                j++;
             } else {
-                break;
+                a[k] = aux[i];
+                i++;
             }
         }
+
     }
-}
 </code></pre><div class="gdoc-page__anchorwrap">
-    <h2 id="analysis"
-    >
-        Analysis
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html#analysis" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Analysis" aria-label="Anchor to: Analysis" href="#analysis">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h2>
-</div>
-<ul>
-<li>
-<p>Best case. 如果 array 已經排列好，insertion sort 只比較了 N-1 次，且無任何交換</p>
-</li>
-<li>
-<p>Worst case. 如果 array 是 descending order (且無重複)，那麼比了 1/2N^2次也交換了 1/2N^2 次</p>
-</li>
-</ul>
-<p>best: O(N)
-worst: O(N^2)</p>
-<div class="gdoc-page__anchorwrap">
     <h2 id="reference"
     >
         Reference
-        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html#reference" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Reference" aria-label="Anchor to: Reference" href="#reference">
+        <a data-clipboard-text="https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort/MergeSort.html#reference" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Reference" aria-label="Anchor to: Reference" href="#reference">
             <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
         </a>
     </h2>
 </div>
 <div id="refer-anchor-1"></div>
-<p>[1] <a href="https://algs4.cs.princeton.edu/lectures/keynote/21ElementarySorts.pdf" target="_blank">Algorithms in Java, Lecture slide</a></p>
+<p>[1] <a href="https://algs4.cs.princeton.edu/lectures/keynote/22Mergesort.pdf" target="_blank">Algorithms in Java, Lecture slide</a></p>
 
   </article>
 <br>

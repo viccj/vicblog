@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort.html</loc>
+    <lastmod>2023-09-05T08:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort/MergeSort.html</loc>
+    <lastmod>2023-09-03T08:00:41+08:00</lastmod>
+  </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/SelectionSort.html</loc>
     <lastmod>2023-08-26T15:23:48+08:00</lastmod>
   </url><url>
@@ -32,8 +38,14 @@
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week1.html</loc>
     <lastmod>2023-06-26T22:42:18+08:00</lastmod>
   </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort/BottomUpMergeSort.html</loc>
+    <lastmod>2023-09-05T08:00:41+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3.html</loc>
+    <lastmod>2023-09-05T08:00:41+08:00</lastmod>
+  </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/InsertionSort.html</loc>
-    <lastmod>2023-08-26T15:23:48+08:00</lastmod>
+    <lastmod>2023-08-26T15:26:09+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/StackAndQueue/ResizingArrays.html</loc>
     <lastmod>2023-08-21T08:19:51+08:00</lastmod>
@@ -52,6 +64,8 @@
   </url><url>
     <loc>https://lazyvic.com/Programming/Languages/Java.html</loc>
     <lastmod>2023-07-05T23:59:12+08:00</lastmod>
+  </url><url>
+    <loc>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/QuickSort.html</loc>
   </url><url>
     <loc>https://lazyvic.com/Programming/Algorithm/Grind75/Tree.html</loc>
     <lastmod>2023-08-03T15:46:40+08:00</lastmod>
@@ -129,13 +143,13 @@
     <lastmod>2023-06-21T23:12:00+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags/Algorithm.html</loc>
-    <lastmod>2023-08-26T15:23:48+08:00</lastmod>
+    <lastmod>2023-09-05T08:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags/sorts.html</loc>
-    <lastmod>2023-08-26T15:23:48+08:00</lastmod>
+    <lastmod>2023-09-05T08:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags.html</loc>
-    <lastmod>2023-08-26T15:23:48+08:00</lastmod>
+    <lastmod>2023-09-05T08:00:41+08:00</lastmod>
   </url><url>
     <loc>https://lazyvic.com/tags/stacks.html</loc>
     <lastmod>2023-08-21T08:19:51+08:00</lastmod>

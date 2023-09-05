@@ -6,7 +6,16 @@
     <description>Recent content in Algorithm on Log of Vic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 26 Aug 2023 08:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/Algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Sep 2023 08:00:41 +0800</lastBuildDate><atom:link href="https://lazyvic.com/tags/Algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Merge Sort</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort/MergeSort.html</link>
+      <pubDate>Sun, 03 Sep 2023 08:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort/MergeSort.html</guid>
+      <description>Basic plan Java implementation Reference Basic plan Divide array into two halves. Recursively sort each half. Merge two halves Java implementation private static void mergeSort(int [] a) { int [] aux = new int[a.length]; mergeSortHelper(a, aux, 0, a.length -1); } private static void mergeSortHelper(int [] a, int [] aux, int lo, int hi) { if (hi &amp;lt;= lo) { return; } int mid = lo + (hi - lo) / 2; mergeSortHelper(a, aux, lo, mid); mergeSortHelper(a, aux, mid + 1, hi); merge(a, aux, lo, mid, hi); } private static void merge(int [] a, int [] aux, int lo, int mid, int hi) { // copy for (int i :a) { aux[i] = a[i]; } int i = lo, j = mid + 1; for (int k = lo; k &amp;lt;= hi; k++) { // 如果 i 已經 超過 mid, 代表i 左半邊子樹列已經全部遍歷過一次， // 那麼接下來a[k] 就直接會是右半邊的下一個 item aux[j] if (i &amp;gt; mid) { a[k] = aux[j]; j++; // 如果 j 已經 超過 hi, 代表右半邊子樹列已經全部遍歷過一次， // 那麼接下來a[k] 就直接會是左半邊的下一個 item aux[i] } else if (j &amp;gt; hi) { a[k] = aux[i]; i++; // 比較小的放進a[k]內 } else if(less(aux[j], aux[i])) { a[k] = aux[j]; j++; } else { a[k] = aux[i]; i++; } } } Reference [1] Algorithms in Java, Lecture slide</description>
+    </item>
+    
     <item>
       <title>Selection Sort</title>
       <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week2/ElementSorts/SelectionSort.html</link>
@@ -25,6 +34,15 @@
       <description>Stack Api Linked-list implementation Array implementation Stack considerations Overflow and underflow. Null items Loitering 參考來源 Stack Api Warmup API. Stack of string data type.
 這裡會建立如下的Stack API
 public clacc StackOfStrings StackOfStrings() // create am empyt stack void push(String item) // insert a new strig onto stack String pop() //remove and return the string most recently added booleam isEmpty() // is the stack empty? int size() // number of strings on the stack Linked-list implementation 將最新的 item 加到 Linked-list 的最前端，移除的時候也是從第一個開始移除</description>
+    </item>
+    
+    <item>
+      <title>Bottom-up Merge Sort</title>
+      <link>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort/BottomUpMergeSort.html</link>
+      <pubDate>Tue, 05 Sep 2023 08:00:41 +0800</pubDate>
+      
+      <guid>https://lazyvic.com/Programming/Algorithm/Algs4Princeton/Week3/MergeSort/BottomUpMergeSort.html</guid>
+      <description>Basic plan Java implementation Reference Basic plan Pass through array, merging subarrays of size 1. Repeat for subarrays of size 2, 4, 8, .. until end of array. no recursion needed Java implementation private static void mergeSort(int [] a) { int [] aux = new int[a.length]; for (int sz = 1; sz &amp;lt; a.lentgh, sz = sz + sz) { for (int lo = 0; lo &amp;lt; N-sz; lo += sz+sz) { merge(a, aux, lo, lo+sz-1, Math.</description>
     </item>
     
     <item>
